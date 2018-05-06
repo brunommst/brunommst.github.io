@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>sidescrollziz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="diagonal-scroller.css">
+
+    <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/modernizr-custom1.js"></script>
+
+    <script language="javascript" type="text/javascript" src="lockzoom.js"></script>
+
+    
+    </head>
+
+<body>
+    <div id="main">
+        <div id="div1" class="class">
+            <div id="trytry"></div>
+            <div id="trytry2"></div>
+        </div>
+        <div id="div2" class="class" style="height:30vh;" >
+        </div>
+        <div id="div3" class="class"></div>
+        <div id="div4" class="class"></div>
+        <div id="div5" class="class"></div>
+        <div id="div6" class="class"></div>
+        <div id="div7" class="class"></div>
+        <div id="div8" class="class"></div>
+        <div id="div9" class="class"></div>
+        <div id="div10" class="class"></div>
+        <div id="div11" class="class"></div>
+        <div id="div12" class="class"></div>
+        <div id="div13" class="class"></div>
+        <div id="div14" class="class"></div>
+        <div id="div15" class="class"></div>
+        <div id="div16" class="class"></div>
+        <div id="div17" class="class"></div>
+        <div id="div18" class="class"></div>
+        <div id="div19" class="class"></div>
+        <div id="div20" class="class"></div>
+        <div id="div21" class="class"></div>
+        <div id="div22" class="class"></div>
+        <div id="div23" class="class"></div>
+        <div id="div24" class="class"></div>
+        <div id="div25" class="class"></div>
+        <div id="div26" class="class"></div>
+        <div id="div27" class="class"></div>
+        <div id="div28" class="class"></div>
+        <div id="div29" class="class"></div>
+        <div id="div30" class="class"></div>
+    </div>
+
+</body>
+
+
+
+<script>
+    (function($) {
+        'use strict';
+        $.fn.wrapLines = function(options) {
+            var options = $.extend({
+                lineWrap: 'span',
+                lineClassPrefix: 'wrapliner wrap_line_',
+                wordClassPrefix: 'w_line_',
+                index: 0,
+                offsetTop: 0,
+                offsetLeft: 0
+            }, options);
+            return this.each(function() {
+                options.index = 0;
+                options.offset = 0;
+                var parentElm = $(this.innerHTML);
+                var elmText = $(parentElm).html();
+                $(parentElm).html(function(ind, htm) {
+                    var $repText = '<' + options.lineWrap + '>' + elmText.replace(/(<\s*.*?[^>]*>(.*?)<\s*\s*.*?>)|(\s+)/ig, '$1 </' + options.lineWrap + '><' + options.lineWrap + '>');
+                    $repText = $repText + '</' + options.lineWrap + '>';
+                    return $repText;
+                });
+                $(options.lineWrap, parentElm).each(function() {
+                    var spanOffset = $(this).offset();
+                    if (spanOffset.top > options.offsetTop) {
+                        options.offsetTop = spanOffset.top;
+                        options.index++;
+                    }
+                    $(this).addClass(options.wordClassPrefix + options.index);
+                });
+
+
+                for (var x = 1; x <= options.index; x++) {
+                    $('.' + options.wordClassPrefix + x, parentElm)
+                        .wrapAll('<' + options.lineWrap + ' class="' + options.lineClassPrefix + x + '" />');
+                    var innerText = $('.' + options.lineClassPrefix + x, parentElm).text();
+                    $('.' + options.lineClassPrefix + x, parentElm).text(function() {
+                        return innerText;
+                    });
+                }
+            });
+        };
+    })(jQuery);
+
+    var $window = $(window);
+    var $body = $('body');
+    var con = $('#main');
+    var contH = con.outerHeight();
+
+    var scalePage = function() {
+        winH = $window.height();
+        con.css({
+            //    paddingBottom: winH
+        });
+        contH = con.outerHeight();
+
+        $body.css({
+            height: contH - winH / 2
+        });
+
+    };
+
+
+    var initPage = function() {
+
+        var diagonalBlocks = $('.class', con);
+        var heights = 0;
+        var heightsInner = 0;
+        diagonalBlocks.wrapLines();
+        var diagonalInline = $('li', con);
+        diagonalInline.wrapLines();
+        diagonalBlocks.each(function() {
+            var $this = $(this);
+            var ind = $this.index();
+            var thisHeight = $this.outerHeight(true);
+            if ($this.is(':first-child')) {
+                heightsInner = 0;
+            }
+            if (!Modernizr.csstransforms3d && Modernizr.csstransforms) {
+                $this.css({
+                            transform: 'translate(' + heightsInner/10 + 'px,0)'
+                });
+            } else if (Modernizr.csstransforms3d && Modernizr.csstransforms) {
+                $this.css({
+                    transform: 'translate3d(' + heightsInner / 2 + 'px,0,0)'
+                });
+            }
+            if (!Modernizr.csstransforms) {
+                $this.css({
+                    marginLeft: heightsInner
+                });
+            }
+            heightsInner += thisHeight;
+        });
+
+        let yo = 1.5;
+
+        $window.on('touchmove scroll', function() {
+            winScroll = $window.scrollTop() * -0.5;
+
+            if (!Modernizr.csstransforms3d && Modernizr.csstransforms) {
+                con.css({
+                    transform: 'translate(' + winScroll * yo + 'px,' + winScroll + 'px)'
+                });
+            } else if (Modernizr.csstransforms3d && Modernizr.csstransforms) {
+                con.css({
+                    transform: 'translate3d(' + winScroll * yo + 'px,' + winScroll + 'px,0)'
+                });
+            }
+            if (!Modernizr.csstransforms) {
+                con.css({
+                    left: winScroll,
+                    top: winScroll
+                });
+            }
+        });
+            yo += -0.012;
+
+    };
+
+    $window.trigger('scroll resize');
+
+    scalePage();
+    initPage();
+    $body.css({
+        opacity: 1
+    });
+
+    
+    var element = $('.class');
+
+element.scrollIntoView();
+element.scrollIntoView(false);
+    
+    
+</script>
+    
+    
+    
+
+<!--  PREVENT ZOOMING  -->
+
+<script>
+    
+    $(document).keydown(function(event) {
+if (event.ctrlKey==true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109'  || event.which == '187'  || event.which == '189'  ) ) {
+        event.preventDefault();
+     }
+    // 107 Num Key  +
+    // 109 Num Key  -
+    // 173 Min Key  hyphen/underscor Hey
+    // 61 Plus key  +/= key
+});
+
+$(window).bind('mousewheel DOMMouseScroll', function (event) {
+       if (event.ctrlKey == true) {
+       event.preventDefault();
+       }
+});
+    
+</script>
+    
+    
+<!--  MODULES   -->
+<script>    
+
+$('#trytry').each(function() {
+    $(this).insertAfter($(this).parent().find('#div2'));
+    
+});
+    
+</script>
+
+</html>
