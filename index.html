@@ -3,56 +3,66 @@
 <html>
 
 <head>
-    <title>W–C </title>
+    <title>Bruno Santos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="https://brunommst.github.io/wc.css">
+    <link rel="stylesheet" type="text/css" href="brunosantos.css">
 
     <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
     <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
-    <script language="javascript" type="text/javascript" src="libraries/modernizr-custom1.js"></script>
 
-    <script language="javascript" type="text/javascript" src="lockzoom.js"></script>
 
-    
-    </head>
+</head>
 
 <body>
-    <div id="main">
-        <div id="div1" class="class">
-            <div id="trytry"></div>
-            <div id="trytry2"></div>
+    <div id="mainmain">
+        <div id="header">
+            <div id="title">BRUNO SANTOS</div>
+            <div id="cats">
+                <div class="cats">COMMUNICATION DESIGN</div>
+                <div class="cats">UX/UI</div>
+                <div class="cats">EDITORIAL</div>
+                <div class="cats">OTHER STUFF</div>
+            </div>
         </div>
-        <div id="div2" class="class" style="height:30vh;" >
+        <div id="main">
+
+            <div id="leftside">
+                <div id="main-text">↑→ IS A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL FOCUSED ON DEVELOPING INTERFACES TROUGH THOUGHT EXPERIMENT AND MULTIDISCIPLINARY SYSTEMS AND THIS AND THAT IEJRIJERIEJRJERIJEIRJ EIRJE IJRIEJREIRJIEJRIEJR<br> STUDIED COMMUNICATION DESIGN AT (FBAUL) THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON, CURRENTLY WORKING AT IMPOSSIBLE LABS AS A WEBMASTER.
+                    <br><br> CONTACT VIA: brunommst@gmail.com
+                    <br><br> STALK VIA:<br> behance/brunommst
+                    <br> instagram/brunommst
+                    <br> linkedin/brunommst
+
+
+                </div>
+            </div>
+            <div id="ghostleftside"></div>
+            <div id="rightside">
+                <div id="module1">
+                    <div id="image-text">This is a text about this image</div>
+                    <div id="image1">
+                        <img src="images/1-container.png" class="ima">
+                        <img src="images/edit2/2-cover.png" class="ima">
+                        <img src="images/edit2/3.jpg" class="ima">
+                        <img src="images/edit2/4.png" class="ima">
+                        <img src="images/edit2/5.png" class="ima">
+                        <img src="images/edit2/6.png" class="ima">
+                        <img src="images/edit2/7.png" class="ima">
+                        <img src="images/edit2/8.png" class="ima">
+
+                    </div>
+                </div>
+                <div id="module1">
+                    <div id="image-text">This is a text about this image</div>
+                    <div id="image1"><img src="images/unwrapped_vertical1.jpeg" class="ima"></div>
+                </div>
+                <div id="module1">
+                    <div id="image-text">This is a text about this image</div>
+                    <div id="image1"><img src="images/1-container.png" class="ima"></div>
+                </div>
+            </div>
         </div>
-        <div id="div3" class="class"></div>
-        <div id="div4" class="class"></div>
-        <div id="div5" class="class"></div>
-        <div id="div6" class="class"></div>
-        <div id="div7" class="class"></div>
-        <div id="div8" class="class"></div>
-        <div id="div9" class="class"></div>
-        <div id="div10" class="class"></div>
-        <div id="div11" class="class"></div>
-        <div id="div12" class="class"></div>
-        <div id="div13" class="class"></div>
-        <div id="div14" class="class"></div>
-        <div id="div15" class="class"></div>
-        <div id="div16" class="class"></div>
-        <div id="div17" class="class"></div>
-        <div id="div18" class="class"></div>
-        <div id="div19" class="class"></div>
-        <div id="div20" class="class"></div>
-        <div id="div21" class="class"></div>
-        <div id="div22" class="class"></div>
-        <div id="div23" class="class"></div>
-        <div id="div24" class="class"></div>
-        <div id="div25" class="class"></div>
-        <div id="div26" class="class"></div>
-        <div id="div27" class="class"></div>
-        <div id="div28" class="class"></div>
-        <div id="div29" class="class"></div>
-        <div id="div30" class="class"></div>
     </div>
 
 </body>
@@ -60,147 +70,44 @@
 
 
 <script>
-    (function($) {
-        'use strict';
-        $.fn.wrapLines = function(options) {
-            var options = $.extend({
-                lineWrap: 'span',
-                lineClassPrefix: 'wrapliner wrap_line_',
-                wordClassPrefix: 'w_line_',
-                index: 0,
-                offsetTop: 0,
-                offsetLeft: 0
-            }, options);
-            return this.each(function() {
-                options.index = 0;
-                options.offset = 0;
-                var parentElm = $(this.innerHTML);
-                var elmText = $(parentElm).html();
-                $(parentElm).html(function(ind, htm) {
-                    var $repText = '<' + options.lineWrap + '>' + elmText.replace(/(<\s*.*?[^>]*>(.*?)<\s*\s*.*?>)|(\s+)/ig, '$1 </' + options.lineWrap + '><' + options.lineWrap + '>');
-                    $repText = $repText + '</' + options.lineWrap + '>';
-                    return $repText;
-                });
-                $(options.lineWrap, parentElm).each(function() {
-                    var spanOffset = $(this).offset();
-                    if (spanOffset.top > options.offsetTop) {
-                        options.offsetTop = spanOffset.top;
-                        options.index++;
-                    }
-                    $(this).addClass(options.wordClassPrefix + options.index);
-                });
+    myFunction();
+
+    function myFunction() {
+        document.getElementById("leftside").style.WebkitTransition = "all 0.2s"; // Code for Safari 3.1 to 6.0
+        document.getElementById("leftside").style.transition = "all 0.2s"; // Standard syntax
+        document.getElementById("ghostleftside").style.WebkitTransition = "all 0.2s"; // Code for Safari 3.1 to 6.0
+        document.getElementById("ghostleftside").style.transition = "all 0.2s"; // Standard syntax
+        document.getElementById("rightside").style.WebkitTransition = "all 0.2s"; // Code for Safari 3.1 to 6.0
+        document.getElementById("rightside").style.transition = "all 0.2s"; // Standard syntax
+
+        document.getElementById("rightside").style.WebkitColor = "all 0.2s"; // Code for Safari 3.1 to 6.0
+        document.getElementById("rightside").style.color = "all 0.2s"; // Standard syntax
 
 
-                for (var x = 1; x <= options.index; x++) {
-                    $('.' + options.wordClassPrefix + x, parentElm)
-                        .wrapAll('<' + options.lineWrap + ' class="' + options.lineClassPrefix + x + '" />');
-                    var innerText = $('.' + options.lineClassPrefix + x, parentElm).text();
-                    $('.' + options.lineClassPrefix + x, parentElm).text(function() {
-                        return innerText;
-                    });
-                }
-            });
-        };
-    })(jQuery);
 
-    var $window = $(window);
-    var $body = $('body');
-    var con = $('#main');
-    var contH = con.outerHeight();
-
-    var scalePage = function() {
-        winH = $window.height();
-        con.css({
-            //    paddingBottom: winH
-        });
-        contH = con.outerHeight();
-
-        $body.css({
-            height: contH - winH / 2
-        });
-
-    };
+    }
 
 
-    var initPage = function() {
-
-        var diagonalBlocks = $('.class', con);
-        var heights = 0;
-        var heightsInner = 0;
-        diagonalBlocks.wrapLines();
-        var diagonalInline = $('li', con);
-        diagonalInline.wrapLines();
-        diagonalBlocks.each(function() {
-            var $this = $(this);
-            var ind = $this.index();
-            var thisHeight = $this.outerHeight(true);
-            if ($this.is(':first-child')) {
-                heightsInner = 0;
-            }
-            if (!Modernizr.csstransforms3d && Modernizr.csstransforms) {
-                $this.css({
-                            transform: 'translate(' + heightsInner/10 + 'px,0)'
-                });
-            } else if (Modernizr.csstransforms3d && Modernizr.csstransforms) {
-                $this.css({
-                    transform: 'translate3d(' + heightsInner / 2 + 'px,0,0)'
-                });
-            }
-            if (!Modernizr.csstransforms) {
-                $this.css({
-                    marginLeft: heightsInner
-                });
-            }
-            heightsInner += thisHeight;
-        });
-
-        let yo = 1.5;
-
-        $window.on('touchmove scroll', function() {
-            winScroll = $window.scrollTop() * -0.5;
-
-            if (!Modernizr.csstransforms3d && Modernizr.csstransforms) {
-                con.css({
-                    transform: 'translate(' + winScroll * yo + 'px,' + winScroll + 'px)'
-                });
-            } else if (Modernizr.csstransforms3d && Modernizr.csstransforms) {
-                con.css({
-                    transform: 'translate3d(' + winScroll * yo + 'px,' + winScroll + 'px,0)'
-                });
-            }
-            if (!Modernizr.csstransforms) {
-                con.css({
-                    left: winScroll,
-                    top: winScroll
-                });
-            }
-        });
-            yo += -0.012;
-
-    };
-
-    $window.trigger('scroll resize');
-
-    scalePage();
-    initPage();
-    $body.css({
-        opacity: 1
-    });
-
+//    function scrolli() {
+//        var elmnt = document.getElementById("image1");
+//        elmnt.scrollLeft += 500;
+//    }
+//    
+//    document.getElementById("image1").addEventListener("click", scrolli);
     
-    var element = $('.class');
+    $("#image1").click(function(){
+      this.animate({scrollLeft: "400px"}, {duration: 1600});
+      return false;
+   }); 
+    
 
-element.scrollIntoView();
-element.scrollIntoView(false);
-    
-    
 </script>
-    
-    
-    
+
+
 
 <!--  PREVENT ZOOMING  -->
 
+<!--
 <script>
     
     $(document).keydown(function(event) {
@@ -221,15 +128,7 @@ $(window).bind('mousewheel DOMMouseScroll', function (event) {
     
 </script>
     
-    
-<!--  MODULES   -->
-<script>    
+-->
 
-$('#trytry').each(function() {
-    $(this).insertAfter($(this).parent().find('#div2'));
-    
-});
-    
-</script>
 
 </html>
