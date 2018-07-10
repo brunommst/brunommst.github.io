@@ -6,62 +6,55 @@
     <title>Bruno Santos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="https://brunommst.github.io/style.css">
+    <link href="web.gif" rel="shortcut icon" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="brunosantos.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
 
     <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="canvas.js"></script>
 
 
 </head>
 
 <body>
     <div id="mainmain">
-        <div id="header">
-            <div id="title">BRUNO SANTOS</div>
-            <div id="cats">
-                <div class="cats">COMMUNICATION DESIGN</div>
-                <div class="cats">UX/UI</div>
-                <div class="cats">EDITORIAL</div>
-                <div class="cats">OTHER STUFF</div>
-            </div>
-        </div>
         <div id="main">
 
             <div id="leftside">
-                <div id="main-text">↑→ IS A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL FOCUSED ON DEVELOPING INTERFACES TROUGH THOUGHT EXPERIMENT AND MULTIDISCIPLINARY SYSTEMS AND THIS AND THAT IEJRIJERIEJRJERIJEIRJ EIRJE IJRIEJREIRJIEJRIEJR<br> STUDIED COMMUNICATION DESIGN AT (FBAUL) THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON, CURRENTLY WORKING AT IMPOSSIBLE LABS AS A WEBMASTER.
+                <div id="container">
+                <p id="name">BRUNO SANTOS</p>
+                <div class="main-text">HI IS (AM) A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL FOCUSED ON DEVELOPING INTERFACES AND EXPERIENCES TROUGH EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS, LIKE ITERATION, DEVELOPMENT, CODING AND TECHNICALITIES THAT MOST PEOPLE DON'T LIKE<br> STUDIED COMMUNICATION DESIGN AT (FBAUL) THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON, CURRENTLY WAITING FOR A DIGITAL EXPERIENCE DESIGN POST-GRAD YEAR TO BEGIN, WHILST DOING STUFF LIKE THIS WEBSITE ON THE SIDE.
                     <br><br> CONTACT VIA: brunommst@gmail.com
                     <br><br> STALK VIA:<br> behance/brunommst
                     <br> instagram/brunommst
                     <br> linkedin/brunommst
-
-
                 </div>
+                </div>
+                <div id="bh">
+                    <button type="button" id="open" class="button"></button>
+                    <button type="button" id="close" class="button"></button>
+                </div>
+
             </div>
             <div id="ghostleftside"></div>
-            <div id="rightside">
-                <div id="module1">
-                    <div id="image-text">This is a text about this image</div>
-                    <div id="image1">
-                        <img src="https://i.imgur.com/uEiqA2H.jpg"" class="ima">
-                        <img src="images/2-cover.png" class="ima">
-                        <img src="images/3.jpg" class="ima">
-                        <img src="images/4.png" class="ima">
-                        <img src="images/5.png" class="ima">
-                        <img src="images/6.png" class="ima">
-                        <img src="images/7.png" class="ima">
-                        <img src="images/8.png" class="ima">
 
-                    </div>
+            <div id="centerside">
+
+                <div id="frame">
+                    <div id="text">Hi! Sorry, this website is currently under development but in the meantime if you're really cool and interested in me you can donwload my Portfolio as a PDF file and read this div on the left.
+                        <br><br><a href="rel.pdf" download>Download link</a></div>
+                    <div id="down-button"></div>
                 </div>
-                <div id="module1">
-                    <div id="image-text">This is a text about this image</div>
-                    <div id="image1"><img src="images/unwrapped_vertical1.jpeg" class="ima"></div>
-                </div>
-                <div id="module1">
-                    <div id="image-text">This is a text about this image</div>
-                    <div id="image1"><img src="images/1-container.png" class="ima"></div>
-                </div>
+
             </div>
+            <div id="shade"></div>
+    
+
         </div>
     </div>
 
@@ -69,66 +62,120 @@
 
 
 
+
+
+
 <script>
-    myFunction();
+    //necessary evils//
 
-    function myFunction() {
-        document.getElementById("leftside").style.WebkitTransition = "all 0.2s"; // Code for Safari 3.1 to 6.0
-        document.getElementById("leftside").style.transition = "all 0.2s"; // Standard syntax
-        document.getElementById("ghostleftside").style.WebkitTransition = "all 0.2s"; // Code for Safari 3.1 to 6.0
-        document.getElementById("ghostleftside").style.transition = "all 0.2s"; // Standard syntax
-        document.getElementById("rightside").style.WebkitTransition = "all 0.2s"; // Code for Safari 3.1 to 6.0
-        document.getElementById("rightside").style.transition = "all 0.2s"; // Standard syntax
+    window.onresize = function(){ location.reload(); }
 
-        document.getElementById("rightside").style.WebkitColor = "all 0.2s"; // Code for Safari 3.1 to 6.0
-        document.getElementById("rightside").style.color = "all 0.2s"; // Standard syntax
+    $(document).keydown(function(event) {
+        if (event.ctrlKey == true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109' || event.which == '187' || event.which == '189')) {
+            event.preventDefault();
+        }
+        //     107 Num Key  +
+        //     109 Num Key  -
+        //     173 Min Key  hyphen/underscor Hey
+        //     61 Plus key  +/= key
+    });
+
+    $(window).bind('mousewheel DOMMouseScroll', function(event) {
+        if (event.ctrlKey == true) {
+            event.preventDefault();
+        }
+    });
+    //ok bye
+
+</script>
+<script>
+    $("#bh").hide();
+    $(".button").hide();
+
+    if (window.innerHeight > window.innerWidth) {
+
+        $("#bh").show();
+        $("#open").show();
+        $("#open").click(function(openit) {
+            $("#close").show();
+            $("#open").hide();
+            document.getElementById("leftside").style.height = "var(--lefttouch)";
+            document.getElementById("leftside").style.width = "100%";
+            document.getElementById("ghostleftside").style.height = "var(--lefttouch)";
+            document.getElementById("ghostleftside").style.width = "100%";
+            document.getElementById("centerside").style.height = "var(--centertouch)";
+            document.getElementById("centerside").style.width = "100%";
+        });
+
+        $("#close").click(function(closeit) {
+            $("#close").hide();
+            document.getElementById("leftside").style.height = "var(--lefth)";
+            document.getElementById("leftside").style.width = "100%";
+            document.getElementById("ghostleftside").style.height = "var(--lefth)";
+            document.getElementById("ghostleftside").style.width = "100%";
+            document.getElementById("centerside").style.height = "var(--centerh)";
+            document.getElementById("centerside").style.width = "100%";
+
+            $("#open").show();
+        });
+
+
+        var left = document.getElementById('name');
+        var center = document.getElementById('centerside');
+
+
+        var mcl = new Hammer(left);
+        var mcc = new Hammer(center);
+
+
+        mcc.get('pan').set({
+            direction: Hammer.DIRECTION_ALL
+        });
+        mcl.get('pan').set({
+            direction: Hammer.DIRECTION_ALL
+        });
+
+
+        mcl.on("pandown", function(openit) {
+        
+            $("#close").show();
+            $("#open").hide();
+            document.getElementById("leftside").style.height = "var(--lefttouch)";
+            document.getElementById("leftside").style.width = "100%";
+            document.getElementById("ghostleftside").style.height = "var(--lefttouch)";
+            document.getElementById("ghostleftside").style.width = "100%";
+            document.getElementById("centerside").style.height = "var(--centertouch)";
+            document.getElementById("centerside").style.width = "100%";
+        });
+
+        mcc.on("panup", function(closeit) {
+            $("#close").hide();
+            document.getElementById("leftside").style.height = "var(--lefth)";
+            document.getElementById("leftside").style.width = "100%";
+            document.getElementById("ghostleftside").style.height = "var(--lefth)";
+            document.getElementById("ghostleftside").style.width = "100%";
+            document.getElementById("centerside").style.height = "var(--centerh)";
+            document.getElementById("centerside").style.width = "100%";
+//            document.getElementById("leftside").scrollTo(0, 0); 
+           
+
+            $("#leftside").animate({scrollTop:0}, 100, 'swing');
+            
+            $("#open").show();
+            
+        });
 
 
 
+
+    } else {
+        $("#close").hide();
+        $("#open").hide();
     }
 
-
-//    function scrolli() {
-//        var elmnt = document.getElementById("image1");
-//        elmnt.scrollLeft += 500;
-//    }
-//    
-//    document.getElementById("image1").addEventListener("click", scrolli);
-    
-    $("#image1").click(function(){
-      this.animate({scrollLeft: "400px"}, {duration: 1600});
-      return false;
-   }); 
-    
-
 </script>
 
 
-
-<!--  PREVENT ZOOMING  -->
-
-<!--
-<script>
-    
-    $(document).keydown(function(event) {
-if (event.ctrlKey==true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109'  || event.which == '187'  || event.which == '189'  ) ) {
-        event.preventDefault();
-     }
-    // 107 Num Key  +
-    // 109 Num Key  -
-    // 173 Min Key  hyphen/underscor Hey
-    // 61 Plus key  +/= key
-});
-
-$(window).bind('mousewheel DOMMouseScroll', function (event) {
-       if (event.ctrlKey == true) {
-       event.preventDefault();
-       }
-});
-    
-</script>
-    
--->
 
 
 </html>
