@@ -1,0 +1,186 @@
+@media only screen and (orientation: portrait) and (max-width: 600px) {
+     :root {
+        --lefth: 10vh;
+        --centerh: calc(100% - var(--lefth));
+        --lefttouch: 80vh;
+        --centertouch: calc(100vh - var(--leftsidehover));
+        min-width: 300px;
+         --fontsizename: calc(7.5vw + 5px);
+         --fontsizemain: calc(7vw + 5px);
+    }
+    #mainmain {
+        width: 100vw;
+        height: 100vh;
+    }
+    #main {
+        width: 100%;
+        height: 100vh;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    #leftside {
+        width: 100%;
+        height: var(--lefth);
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    #ghostleftside {
+        width: 100%;
+        height: var(--lefth);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #centerside {
+        width: 100%;
+        height: var(--centerh);
+        border: 4px solid black;
+    }
+    #leftside:hover {
+        height: var(--lefttouch);
+        width: 100%;
+    }
+    #leftside:hover~#ghostleftside {
+        height: var(--lefttouch);
+        width: 100%;
+    }
+    #leftside:hover~#centerside {
+        height: var(--centertouch);
+        width: 100%;
+    }#leftside:hover~#centerside {
+        height: var(--centertouch);
+        width: 100%;
+    }
+/*
+    #leftside:hover~#name {
+    height: 45px;
+    margin-bottom: calc((var(--lefth) - 45px - 20px)/2);
+    font-size: 30px;
+        width: calc(100vw - 10px);
+    }
+*/
+    
+    #container {
+        height: calc(100vw * 2.2);
+    }
+    
+    #name {
+        width: calc(100vw - 10px);
+        height: 45px;
+        font-size: 30px;
+        vertical-align: middle;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: calc((var(--lefth) - 45px - 20px)/2);
+        margin-bottom: calc((var(--lefth) - 45px - 20px)/2);
+    }
+
+   
+    .main-text {
+/*        padding-top: 30px;*/
+        max-width: 100vw;
+        font-size: 28px;
+        height: calc(100% - 10vh);
+        margin: 0px;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+    
+    @media only screen and (orientation: portrait) and (max-width: 400px) {
+        #name {
+            font-size: 7.5vw;
+            height: var(--fontsizename);
+            margin-top: calc((var(--lefth) - var(--fontsizename) - 20px)/2);
+        margin-bottom: calc((var(--lefth) - var(--fontsizename) - 20px)/2);
+            line-height: 7.5vw;
+        }
+        .main-text {
+            font-size: 7vw;
+        }
+        
+        #container {
+        height: calc(100vw * 3.75);
+    }
+    }
+    
+    
+    /*    /////////////*/
+    #open {
+        background-image: url(files/menu.png);
+        display: none;
+    }
+    #close {
+        background-image: url(files/close.png);
+        display: none;
+    }
+    .button {
+        display: block;
+        width: 30px;
+        min-height: 30px;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 1000;
+        overflow: visible;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .module {
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    margin-bottom: 50px;
+    height: 
+}
+ 
+#image-text {
+    height: 50px;
+}
+
+ #image1 {
+     width: calc(100%-100px);
+     height: 600px;
+/*     background-image: url(images/1-container.png);*/
+     background-position: left;
+     /*    background-size: contain;*/
+     background-repeat: repeat;
+     /*    background-clip: border-box;*/
+     background-size: contain;
+     overflow-x: scroll;
+     overflow-y: hidden;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     
+     
+ }
+
+
+.ima {
+    height: 100%;
+/*    width: 500px;*/
+    
+}
+
+
+
+#bh {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+    
+    #shade {
+        display: none;
+    }
+    
+}
