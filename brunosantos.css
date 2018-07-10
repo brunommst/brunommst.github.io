@@ -1,0 +1,230 @@
+
+
+:root {
+    --leftside: 12vw;
+    --centerside: calc(100% - var(--leftside));
+    --leftsidehover: 70vw;
+    --centersidehover: calc(100vw - var(--leftsidehover));
+}
+
+
+
+body {
+    background-color: white;
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    /*     overflow: hidden;*/
+}
+
+#mainmain {
+    width: 90vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden
+        ;
+    /*     padding-top: 30px;*/
+}
+
+#leftside {
+    width: var(--leftside);
+    height: 100vh;
+    background-color: white;
+    /*    opacity: 0.6;*/
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#ghostleftside {
+    width: var(--leftside);
+    height: 100vh;
+/*    background-color: white;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 10px;
+    -webkit-box-sizing: padding-box;
+    box-sizing: padding-box;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+#leftside::-webkit-scrollbar {
+    display: none;
+}
+
+#ghostleftside::-webkit-scrollbar {
+    display: none;
+}
+
+/*
+#leftside:hover #name {
+    height: 80px;
+    width: 100px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+*/
+
+#leftside:hover {
+    width: var(--leftsidehover);
+}
+
+#leftside:hover~#ghostleftside {
+    width: var(--leftsidehover);
+}
+
+#leftside:hover~#centerside {
+    width: var(--centersidehover);
+}
+
+#name {
+    height: 80px;
+    width: 100px;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Sporting Grotesque_Regular', sans-serif;
+    font-style: italic;
+    /*     font-weight: 400;*/
+    -webkit-box-sizing: content-box;
+    box-sizing: padding-box;
+    margin: 0px;
+    
+}
+
+.main-text {
+    height: calc(100%);
+    font-size: 24px;
+    font-family: 'Sporting Grotesque_Regular', sans-serif;
+    font-style: italic;
+    /*     font-weight: 400;*/
+    margin-bottom: 200px;
+    max-width: 90vw;
+}
+
+#centerside {
+    width: var(--centerside);
+    height: 100vh;
+/*    background-color: white;*/
+    border: 3px solid black;
+    
+/*    padding: 10px;*/
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: black;
+    
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    
+}
+
+#frame {
+    width: auto;
+    max-width: 50%;
+    min-width: 50%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#text {
+    font-size: 18px;
+    text-align: center;
+    font-family: sans-serif;
+    /*    font-style: italic;*/
+}
+
+#bh {
+    display: none;
+}
+
+
+#shade{
+    width: 5vw;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    z-index: 100;
+    background-color: white;
+}
+
+
+
