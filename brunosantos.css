@@ -123,6 +123,7 @@ body {
     display: none;
 }
 
+@media only screen and (orientation: portrait) and (min-width: 600px) {
 #leftside:hover #name {
     height: 80px;
     width: 500px;
@@ -131,7 +132,7 @@ body {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
-
+}
 #leftside:hover {
     width: var(--leftsidehover);
 }
