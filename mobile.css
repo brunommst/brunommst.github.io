@@ -24,6 +24,7 @@
         width: 100%;
         height: var(--lefth);
         padding: 10px;
+
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         -webkit-transition: all 0.2s;
@@ -55,49 +56,42 @@
         height: var(--centertouch);
         width: 100%;
     }
-/*
-    #leftside:hover~#name {
-    height: 45px;
-    margin-bottom: calc((var(--lefth) - 45px - 20px)/2);
-    font-size: 30px;
-        width: calc(100vw - 10px);
-    }
-*/
-    
-    #container {
-        height: calc(100vw * 2.2);
-    }
+
     
     #name {
         width: calc(100vw - 10px);
         height: 45px;
-        font-size: 30px;
+        font-size: 26px;
         vertical-align: middle;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         margin-top: calc((var(--lefth) - 45px - 20px)/2);
         margin-bottom: calc((var(--lefth) - 45px - 20px)/2);
+        line-height: 7vh;
     }
 
+    #container {
+        height: calc(100vh * 2);
+    }
    
     .main-text {
 /*        padding-top: 30px;*/
         max-width: 100vw;
         font-size: 28px;
-        height: calc(100% - 10vh);
+        height: auto;
         margin: 0px;
+        margin-bottom: 200px;
         -webkit-box-sizing: content-box;
         box-sizing: content-box;
     }
     
     @media only screen and (orientation: portrait) and (max-width: 400px) {
         #name {
-            font-size: 7.5vw;
+            font-size: 6.8vw;
             height: var(--fontsizename);
             margin-top: calc((var(--lefth) - var(--fontsizename) - 20px)/2);
         margin-bottom: calc((var(--lefth) - var(--fontsizename) - 20px)/2);
-            line-height: 7.5vw;
         }
         .main-text {
             font-size: 7vw;
@@ -111,7 +105,7 @@
     
     /*    /////////////*/
     #open {
-        background-image: url(files/menu.png);
+        background-image: url(files/more.png);
         display: none;
     }
     #close {
@@ -120,11 +114,11 @@
     }
     .button {
         display: block;
-        width: 30px;
-        min-height: 30px;
+        width: calc(4vh);
+        min-height: calc(4vh);;
         position: fixed;
-        top: 30px;
-        right: 30px;
+        top: 3vh;
+        right: 8vw;
         z-index: 1000;
         overflow: visible;
         background-repeat: no-repeat;
@@ -183,4 +177,10 @@
         display: none;
     }
     
+}
+
+#frame {
+    position: static;
+    z-index: 0;
+    overflow: hidden;
 }
