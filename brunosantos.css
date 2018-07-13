@@ -219,11 +219,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     word-break: normal;
-    
-    position: absolute;
-    cursor: move;
-    z-index: 101;
-    
+ 
 }
 
 #frame a {
