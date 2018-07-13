@@ -8,14 +8,14 @@
 }
 
 ::-moz-selection {
-  background: #f9f072; /* WebKit/Blink Browsers */
+  background: #ffc6a8; /* WebKit/Blink Browsers */
 }
 
 ::selection {
-  background: #f9f072; /* WebKit/Blink Browsers */
+  background: #ffc6a8; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: yellow; /* Gecko Browsers */
+  background: #ffc6a8; /* Gecko Browsers */
 }
 
 body {
