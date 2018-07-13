@@ -89,6 +89,7 @@ body {
     box-sizing: padding-box;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
+    will-change: transform;
 }
 
 #ghostleftside {
@@ -112,6 +113,7 @@ body {
     box-sizing: padding-box;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    will-change: transform;
 }
 
 
