@@ -122,7 +122,6 @@ body {
 #ghostleftside::-webkit-scrollbar {
     display: none;
 }
-
 @media only screen and (orientation: portrait) and (min-width: 600px) {
 #leftside:hover #name {
     height: 80px;
@@ -133,6 +132,7 @@ body {
     transition: all 0.2s;
 }
 }
+
 #leftside:hover {
     width: var(--leftsidehover);
 }
