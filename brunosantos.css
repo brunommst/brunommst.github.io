@@ -204,7 +204,7 @@ body {
 }
 
 #frame {
-    max-width: 40%;
+    max-width: 45%;
     min-width: 25%;
     height: calc(auto + 200px);
     background-color: white;
