@@ -1,20 +1,20 @@
 @media only screen and (orientation: portrait) and (max-width: 600px) {
      :root {
-        --lefth: 10vh;
-        --centerh: calc(100% - var(--lefth));
-        --lefttouch: 80vh;
-        --centertouch: calc(100vh - var(--leftsidehover));
+        --lefth: 10%;
+        --centerh: calc((calc(var(--vh, 1vh) * 100)) - var(--lefth));
+        --lefttouch: 80%;
+        --centertouch: calc((calc(var(--vh, 1vh) * 100)) - var(--leftsidehover));
         min-width: 300px;
         --fontsizename: calc(7.5vw + 5px);
         --fontsizemain: calc(7vw + 5px);
     }
     #mainmain {
         width: 100vw;
-        height: 100vh;
+        height: (calc(var(--vh, 1vh) * 100));
     }
     #main {
         width: 100%;
-        height: 100vh;
+        height: (calc(var(--vh, 1vh) * 100));
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -66,10 +66,10 @@
         display: flex;
         margin-top: calc((var(--lefth) - 45px - 20px)/2);
         margin-bottom: calc((var(--lefth) - 45px - 20px)/2);
-        line-height: 7vh;
+        line-height: (calc(var(--vh, 1vh) * 7));
     }
     #container {
-        height: calc(100vh * 2);
+        height: calc((calc(var(--vh, 1vh) * 100)) * 2);
     }
     .main-text {
         /*        padding-top: 30px;*/
@@ -94,11 +94,11 @@
     }
     .button {
         display: block;
-        width: calc(4vh);
-        min-height: calc(4vh);
+        width: calc((calc(var(--vh, 1vh) * 4)));
+        min-height: calc((calc(var(--vh, 1vh) * 4)));
         ;
         position: fixed;
-        top: 3vh;
+        top: (calc(var(--vh, 1vh) * 3));
         right: 8vw;
         z-index: 1000;
         overflow: visible;
