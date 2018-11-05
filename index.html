@@ -12,7 +12,7 @@
     <meta http-equiv="Expires" content="0" />
     <link rel="canonical" href="https://brunobrunodesigndesign.com>
     
-    <meta name="description" content="A digital designer portfolio showcase by Bruno Santos">
+    <meta name=" description" content="A digital designer portfolio showcase by Bruno Santos">
     <meta name="keywords" content="Design, Comunicação, Web Design, UX/UI, Interaction Designer, 2018, FBAUL, Faculdade de Belas-Artes, Lisboa">
     <meta name="author" content="Bruno Santos">
 
@@ -75,11 +75,7 @@
 -->
                     </div>
                 </div>
-                <div id="bh">
-
-                    <button type="button" id="open" class="button"></button>
-                    <button type="button" id="close" class="button"></button>
-
+                <div id="bh" class="button" onclick="fn3()">
                 </div>
 
             </div>
@@ -137,7 +133,53 @@
         window.scrollTo(0, 1);
 
 
-        $("#bh").show();
+        function opensmobile() {
+            $('#open-icon').animate({
+                borderSpacing: 0
+            }, {
+                step: function(now, fx) {
+                    $(this).css('-webkit-transform', 'rotate(' + now + 'deg)');
+                    $(this).css('-moz-transform', 'rotate(' + now + 'deg)');
+                    $(this).css('transform', 'rotate(' + now + 'deg)');
+                },
+                duration: 'fast'
+            }, 'linear');
+        }
+
+        function closesmobile() {
+            $('#open-icon').animate({
+                borderSpacing: +180
+            }, {
+                step: function(now, fx) {
+                    $(this).css('-webkit-transform', 'rotate(' + now + 'deg)');
+                    $(this).css('-moz-transform', 'rotate(' + now + 'deg)');
+                    $(this).css('transform', 'rotate(' + now + 'deg)');
+                },
+                duration: 'fast'
+            }, 'linear');
+        }
+
+        function fn3() {
+            var first = true;
+            return function() {
+                first ? fn1() : fn2();
+                first = !first;
+            }
+        };
+
+        function fn1() {
+            console.log(1);
+            opensmobile();
+        };
+
+        function fn2() {
+            console.log(2);
+            closesmobile();
+        };
+
+        
+        
+//        $("#bh").show();
         $("#open").show();
         $("#open").click(function(openit) {
             $("#close").show();
