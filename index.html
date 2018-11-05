@@ -12,7 +12,7 @@
     <meta http-equiv="Expires" content="0" />
     <link rel="canonical" href="https://brunobrunodesigndesign.com>
     
-    <meta name=" description" content="A digital designer portfolio showcase by Bruno Santos">
+<meta name="description" content="A digital designer portfolio showcase by Bruno Santos">
     <meta name="keywords" content="Design, Comunicação, Web Design, UX/UI, Interaction Designer, 2018, FBAUL, Faculdade de Belas-Artes, Lisboa">
     <meta name="author" content="Bruno Santos">
 
@@ -75,11 +75,7 @@
 -->
                     </div>
                 </div>
-                <div id="bh">
-
-                    <button type="button" id="open" class="button"></button>
-                    <button type="button" id="close" class="button"></button>
-
+                <div class="button" onclick="call()">
                 </div>
 
             </div>
@@ -184,23 +180,23 @@
             $("#open").show();
         }
 
-        function fn3() {
-            var first = true;
-            return function() {
-                first ? fn1() : fn2();
-                first = !first;
-            }
-        };
+        var callOne = true;
 
-        function fn1() {
-            console.log(1);
+        function one() {
             opensmobile();
-        };
+            return ('Call one');
+        }
 
-        function fn2() {
-            console.log(2);
+        function two() {
             closesmobile();
-        };
+            return ('Call two');
+        }
+
+        function call() {
+            if (callOne) one();
+            else two();
+            callOne = !callOne;
+        }
 
 
 
