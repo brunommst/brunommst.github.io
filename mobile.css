@@ -85,12 +85,13 @@
     }
     /*    /////////////*/
     #open {
-        background-image: url(files/more.png);
         display: none;
+         background-color:black;
+         transform: scaleX(1.4);
     }
     #close {
-        background-image: url(files/close.png);
         display: none;
+         background-color:black;
     }
     .button {
         display: block;
@@ -157,7 +158,6 @@
         text-align: center;
         font-family: sans-serif;
         /*    font-style: italic;*/
-         background-color: black;
     }
 @media only screen and (orientation: portrait) and (max-width: 400px) {
     #name {
