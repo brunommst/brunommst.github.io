@@ -162,13 +162,13 @@ body {
 
 .main-text {
     height: auto;
-    font-size: 24px;
+    font-size: 25px;
     font-family: sans-serif;
     font-style: italic;
     /*     font-weight: 400;*/
     max-width: 90vw;
     margin-bottom: 200px;
-    line-height: 1.2;
+    line-height: 1.6;
 }
 
 
