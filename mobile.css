@@ -65,7 +65,7 @@
         display: -ms-flexbox;
         display: flex;
         margin-top: calc((var(--lefth) - 8%));
-        margin-bottom: calc((var(--lefth) - 45px - 20px)/2);
+        /* margin-bottom: calc((var(--lefth) - 45px - 20px)/2); */
         line-height: calc(var(--vh) * 7);
     }
     #container {
@@ -158,8 +158,8 @@
     #name {
         font-size: 6.8vw;
         height: var(--fontsizename);
-        margin-top: calc((var(--lefth) - var(--fontsizename) - 20px)/2);
-        margin-bottom: calc((var(--lefth) - var(--fontsizename) - 20px)/2);
+        /* margin-top: calc((var(--lefth) - var(--fontsizename) - 20px)/2);
+        margin-bottom: calc((var(--lefth) - var(--fontsizename) - 20px)/2); */
     }
     .main-text {
         font-size: 7vw;
