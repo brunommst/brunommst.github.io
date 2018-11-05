@@ -147,10 +147,10 @@ body {
 
 
 #name {
-    height: 80px;
-    width: 100px;
+    height: 40px;
+    width: 300px;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 28px;
     font-family: 'sporting_grotesqueregular', serif;
 /*    font-style: italic;*/
     /*     font-weight: 400;*/
