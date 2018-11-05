@@ -87,11 +87,12 @@
     #open {
         display: none;
          background-color:black;
-         transform: scaleX(1.4);
+         transform: scaleY(2);
     }
     #close {
         display: none;
          background-color:black;
+         transform: scaleX(2);
     }
     .button {
         display: block;
@@ -99,8 +100,8 @@
         min-height: calc(calc(var(--vh) * 4));
         ;
         position: fixed;
-        top: calc(var(--vh) * 3);
-        right: 8vw;
+        top: calc(var(--vh) * 3.2);
+        right: 7vw;
         z-index: 1000;
         overflow: visible;
         background-repeat: no-repeat;
