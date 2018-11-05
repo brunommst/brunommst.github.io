@@ -101,6 +101,7 @@
         background-color: black;
         border: none;
          
+         transition: all 0.2s ease;
          transform: scaleY(2);
     }
     .module {
