@@ -225,33 +225,11 @@
 
         mcl.on("pandown", function(openit) {
 
-            $("#close").show();
-            $("#open").hide();
-            document.getElementById("leftside").style.height = "var(--lefttouch)";
-            document.getElementById("leftside").style.width = "100%";
-            document.getElementById("ghostleftside").style.height = "var(--lefttouch)";
-            document.getElementById("ghostleftside").style.width = "100%";
-            document.getElementById("centerside").style.height = "var(--centertouch)";
-            document.getElementById("centerside").style.width = "100%";
+            call()
         });
 
         mcc.on("panup", function(closeit) {
-            $("#close").hide();
-            document.getElementById("leftside").style.height = "var(--lefth)";
-            document.getElementById("leftside").style.width = "100%";
-            document.getElementById("ghostleftside").style.height = "var(--lefth)";
-            document.getElementById("ghostleftside").style.width = "100%";
-            document.getElementById("centerside").style.height = "var(--centerh)";
-            document.getElementById("centerside").style.width = "100%";
-            //            document.getElementById("leftside").scrollTo(0, 0); 
-
-
-            $("#leftside").animate({
-                scrollTop: 0
-            }, 100, 'swing');
-
-            $("#open").show();
-
+            call()
         });
 
     } else {
