@@ -75,7 +75,7 @@
 -->
                     </div>
                 </div>
-                <div class="button" onclick="call()">
+                <div id="button" class="button" onclick="call()">
                 </div>
 
             </div>
@@ -126,7 +126,6 @@
 </script>
 <script>
     $("#bh").hide();
-    $(".button").hide();
 
     if (window.innerHeight > window.innerWidth && window.innerWidth < 600) {
 
@@ -151,6 +150,9 @@
             document.getElementById("ghostleftside").style.width = "100%";
             document.getElementById("centerside").style.height = "var(--centertouch)";
             document.getElementById("centerside").style.width = "100%";
+            
+            document.getElementById("button").style.transform = "initial";
+            document.getElementById("button").style.transform = "scaleY(2)";
 
         }
 
@@ -250,8 +252,8 @@
         });
 
     } else {
-        $("#close").hide();
-        $("#open").hide();
+            $(".button").hide();
+
 
         window.addEventListener('touchstart', function() {
 
