@@ -1,381 +1,208 @@
-< !DOCTYPE html >
-    <
-    html lang = "en" >
-    <
-    head >
-    <
-    title > Bruno Santos < /title> <
-    meta charset = "utf-8" >
-    <
-    meta name = "viewport"
-content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
-    <
-    meta name = "mobile-web-app-capable"
-content = "yes" >
-    <
-    meta name = "apple-mobile-web-app-capable"
-content = "yes" >
-    <
-    meta http - equiv = "Cache-Control"
-content = "no-cache, no-store, must-revalidate" / >
-    <
-    meta http - equiv = "Pragma"
-content = "no-cache" / >
-    <
-    meta http - equiv = "Expires"
-content = "0" / >
-    <
-    link rel = "canonical"
-href = "https://brunobrunodesigndesign.com>
+<!DOCTYPE html>
+<html lang="en">
 
-    <
-    meta name = "description"
-content = "A digital designer portfolio showcase by Bruno Santos" >
-    <
-    meta name = "keywords"
-content = "Design, Comunicação, Web Design, UX/UI, Interaction Designer, 2018, FBAUL, Faculdade de Belas-Artes, Lisboa" >
-    <
-    meta name = "author"
-content = "Bruno Santos" >
+<head>
+    <title>Bruno Santos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="canonical" href="https://brunobrunodesigndesign.com>
+    
+    <meta name="description" content="A digital designer portfolio showcase by Bruno Santos">
+    <meta name="keywords" content="Design, Comunicação, Web Design, UX/UI, Interaction Designer, 2018, FBAUL, Faculdade de Belas-Artes, Lisboa">
+    <meta name="author" content="Bruno Santos">
 
-    <
-    link href = "files/web.png"
-rel = "shortcut icon"
-type = "image/x-icon" >
+    <link href="files/web.png" rel="shortcut icon" type="image/x-icon">
 
     <!-- Marcação JSON-LD gerada pelo Assistente de Marcação para Dados Estruturados Google. -->
-    <
-    script type = "application/ld+json" > {
-        "@context": "http://schema.org",
-        "@type": "Dataset",
-        "name": "BRUNO SANTOS",
-        "email": "brunommst@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "LISBON",
-            "addressCountry": "PORTUGAL"
-        },
-        "description": "HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP UX AND UI AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB. STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY DOING STUFF LIKE THIS WEBSITE ON THE SIDE WHILE WAITING FOR A DIGITAL EXPERIENCE DESIGN POST-GRAD YEAR TO BEGIN"
-    } <
-    /script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Dataset",
+            "name": "BRUNO SANTOS",
+            "email": "brunommst@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "LISBON",
+                "addressCountry": "PORTUGAL"
+            },
+            "description": "HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP UX AND UI AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB. STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY DOING STUFF LIKE THIS WEBSITE ON THE SIDE WHILE WAITING FOR A DIGITAL EXPERIENCE DESIGN POST-GRAD YEAR TO BEGIN"
+        }
+
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <
-    script async src = "https://www.googletagmanager.com/gtag/js?id=UA-122366181-1" > < /script> <
-        script >
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122366181-1"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
+  gtag('config', 'UA-122366181-1');
+</script>
+    <script>
+        let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    </script>
 
-gtag('config', 'UA-122366181-1'); <
-/script> <
-script >
-    let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`); <
-/script>
+    <link rel="stylesheet" type="text/css" href="brunosantos.css">
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
 
-<
-link rel = "stylesheet"
-type = "text/css"
-href = "brunosantos.css" >
-    <
-    link rel = "stylesheet"
-type = "text/css"
-href = "fonts/stylesheet.css" >
-    <
-    link rel = "stylesheet"
-type = "text/css"
-href = "mobile.css" >
+    <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="canvas.js"></script>
+</head>
 
-    <
-    script language = "javascript"
-type = "text/javascript"
-src = "libraries/jquery-3.2.1.min.js" > < /script> <
-    script src = "https://hammerjs.github.io/dist/hammer.js" > < /script> <
-    script language = "javascript"
-type = "text/javascript"
-src = "libraries/p5.js" > < /script> <
-    script language = "javascript"
-type = "text/javascript"
-src = "libraries/p5.dom.js" > < /script> <
-    script language = "javascript"
-type = "text/javascript"
-src = "canvas.js" > < /script> <
-    /head>
+<body>
+    <div id="mainmain">
+        <div id="main">
 
-    <
-    body >
-    <
-    div id = "mainmain" >
-    <
-    div id = "main" >
+            <div id="leftside">
+                <div id="container">
+                    <p id="name">BRUNO SANTOS</p>
+                    <div class="main-text">HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP UX AND UI AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB.<br><br> STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY DOING STUFF LIKE THIS WEBSITE ON THE SIDE WHILE WAITING FOR A DIGITAL EXPERIENCE DESIGN POST-GRAD YEAR TO BEGIN.
+                        <br><br>FOR ANYTHING DESIGN OR WEBSITE RELATED CONTACT VIA:<br><a href="mailto:brunommst@gmail.com" style="color:black;">brunommst@gmail.com</a>
+                        <!--
+                    <br><br> STALK THE VERY DRY SOCIAL MEDIA VIA:<br> behance/brunommst
+                    <br> instagram/brunommst
+                    <br> linkedin/brunommst
+-->
+                    </div>
+                </div>
+                <div id="bh">
 
-    <
-    div id = "leftside" >
-    <
-    div id = "container" >
-    <
-    p id = "name" > BRUNO SANTOS < /p> <
-    div class = "main-text" > HI!I 'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP UX AND UI AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB.<br><br> STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY DOING STUFF LIKE THIS WEBSITE ON THE SIDE WHILE WAITING FOR A DIGITAL EXPERIENCE DESIGN POST-GRAD YEAR TO BEGIN. <
-    br > < br > FOR ANYTHING DESIGN OR WEBSITE RELATED CONTACT VIA: < br > < a href = "mailto:brunommst@gmail.com"
-style = "color:black;" > brunommst @gmail.com < /a>
-    <!--
-    <
-    br > < br > STALK THE VERY DRY SOCIAL MEDIA VIA: < br > behance / brunommst <
-    br > instagram / brunommst <
-    br > linkedin / brunommst
-    -->
-    <
-    /div> <
-    /div> <
-    div id = "bh" >
+                    <button type="button" id="open" class="button"></button>
+                    <button type="button" id="close" class="button"></button>
 
-    <
-    button type = "button"
-id = "open"
-class = "button" > < /button> <
-    button type = "button"
-id = "close"
-class = "button" > < /button>
+                </div>
 
-    <
-    /div>
+            </div>
+            <div id="ghostleftside"></div>
 
-    <
-    /div> <
-    div id = "ghostleftside" > < /div>
+            <div id="centerside">
 
-    <
-    div id = "centerside" >
+                <div id="frame">
+                    <div id="text">Sorry, this website is currently under development but in the meantime if you're really cool and interested in me you can <a href="BrunoSantos-Portfolio.pdf" download>DOWNLOAD MY PORTFOLIO</a> as a PDF file and read about me or mess around with this ellipse.<br>DO COME BACK ANOTHER TIME!</div>
+                    <div id="down-button"></div>
+                </div>
 
-    <
-    div id = "frame" >
-    <
-    div id = "text" > Sorry, this website is currently under development but in the meantime
-if you 're really cool and interested in me you can <a href="BrunoSantos-Portfolio.pdf" download>DOWNLOAD MY PORTFOLIO</a> as a PDF file and read about me or mess around with this ellipse.<br>DO COME BACK ANOTHER TIME!</div> <
-    div id = "down-button" > < /div> <
-    /div>
-
-    <
-    /div> <
-    div id = "shade" > < /div>
+            </div>
+            <div id="shade"></div>
 
 
-    <
-    /div> <
-    /div>
+        </div>
+    </div>
 
-    <
-    /body>
+</body>
 
 
-    <
-    script >
+<script>
     //necessary evils//
 
-    window.onresize = function () {
+    window.onresize = function() {
         location.reload();
     }
 
 
-$(document).keydown(function (event) {
-    if (event.ctrlKey == true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109' || event.which == '187' || event.which == '189')) {
-        event.preventDefault();
-    }
-    //     107 Num Key  +
-    //     109 Num Key  -
-    //     173 Min Key  hyphen/underscor Hey
-    //     61 Plus key  +/= key
-});
-
-$(window).bind('mousewheel DOMMouseScroll', function (event) {
-    if (event.ctrlKey == true) {
-        event.preventDefault();
-    }
-});
-//ok bye
-
-<
-/script> <
-script >
-    $("#bh").hide();
-$(".button").hide();
-
-if (window.innerHeight > window.innerWidth && window.innerWidth < 600) {
-
-    function opensmobile() {
-        $('#open-icon').animate({
-            borderSpacing: 0
-        }, {
-            step: function (now, fx) {
-                $(this).css('-webkit-transform', 'rotate(' + now + 'deg)');
-                $(this).css('-moz-transform', 'rotate(' + now + 'deg)');
-                $(this).css('transform', 'rotate(' + now + 'deg)');
-            },
-            duration: 'fast'
-        }, 'linear');
-
-    };
-
-    function closesmobile() {
-
-        $('#open-icon').animate({
-            borderSpacing: +180
-        }, {
-            step: function (now, fx) {
-                $(this).css('-webkit-transform', 'rotate(' + now + 'deg)');
-                $(this).css('-moz-transform', 'rotate(' + now + 'deg)');
-                $(this).css('transform', 'rotate(' + now + 'deg)');
-            },
-            duration: 'fast'
-        }, 'linear');
-    };
-
-
-    function fn3() {
-        var first = true;
-        return function () {
-            first ? fn1() : fn2();
-            first = !first;
+    $(document).keydown(function(event) {
+        if (event.ctrlKey == true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109' || event.which == '187' || event.which == '189')) {
+            event.preventDefault();
         }
-    };
-
-    function fn1() {
-        console.log(1);
-        opensmobile();
-    };
-
-    function fn2() {
-        console.log(2);
-        closesmobile();
-    };
-
-
-
-    window.scrollTo(0, 1);
-
-
-    $("#bh").show();
-    $("#open").show();
-    $("#open").click(function (openit) {
-        $("#close").show();
-        $("#open").hide();
-        document.getElementById("leftside").style.height = "var(--lefttouch)";
-        document.getElementById("leftside").style.width = "100%";
-        document.getElementById("ghostleftside").style.height = "var(--lefttouch)";
-        document.getElementById("ghostleftside").style.width = "100%";
-        document.getElementById("centerside").style.height = "var(--centertouch)";
-        document.getElementById("centerside").style.width = "100%";
+        //     107 Num Key  +
+        //     109 Num Key  -
+        //     173 Min Key  hyphen/underscor Hey
+        //     61 Plus key  +/= key
     });
 
-    $("#close").click(function (closeit) {
-        $("#close").hide();
-        document.getElementById("leftside").style.height = "var(--lefth)";
-        document.getElementById("leftside").style.width = "100%";
-        document.getElementById("ghostleftside").style.height = "var(--lefth)";
-        document.getElementById("ghostleftside").style.width = "100%";
-        document.getElementById("centerside").style.height = "var(--centerh)";
-        document.getElementById("centerside").style.width = "100%";
+    $(window).bind('mousewheel DOMMouseScroll', function(event) {
+        if (event.ctrlKey == true) {
+            event.preventDefault();
+        }
+    });
+    //ok bye
 
-        $("#leftside").animate({
-            scrollTop: 0
-        }, 100, 'swing');
+</script>
+<script>
+    $("#bh").hide();
+    $(".button").hide();
 
+    if (window.innerHeight > window.innerWidth && window.innerWidth < 600) {
+
+        window.scrollTo(0, 1);
+
+
+        $("#bh").show();
         $("#open").show();
-    });
+        $("#open").click(function(openit) {
+            $("#close").show();
+            $("#open").hide();
+            document.getElementById("leftside").style.height = "var(--lefttouch)";
+            document.getElementById("leftside").style.width = "100%";
+            document.getElementById("ghostleftside").style.height = "var(--lefttouch)";
+            document.getElementById("ghostleftside").style.width = "100%";
+            document.getElementById("centerside").style.height = "var(--centertouch)";
+            document.getElementById("centerside").style.width = "100%";
+        });
+
+        $("#close").click(function(closeit) {
+            $("#close").hide();
+            document.getElementById("leftside").style.height = "var(--lefth)";
+            document.getElementById("leftside").style.width = "100%";
+            document.getElementById("ghostleftside").style.height = "var(--lefth)";
+            document.getElementById("ghostleftside").style.width = "100%";
+            document.getElementById("centerside").style.height = "var(--centerh)";
+            document.getElementById("centerside").style.width = "100%";
+
+            $("#leftside").animate({
+                scrollTop: 0
+            }, 100, 'swing');
+
+            $("#open").show();
+        });
 
 
-    var left = document.getElementById('name');
-    var center = document.getElementById('centerside');
+        var left = document.getElementById('name');
+        var center = document.getElementById('centerside');
 
 
-    var mcl = new Hammer(left);
-    var mcc = new Hammer(center);
+        var mcl = new Hammer(left);
+        var mcc = new Hammer(center);
 
 
-    mcc.get('pan').set({
-        direction: Hammer.DIRECTION_ALL
-    });
-    mcl.get('pan').set({
-        direction: Hammer.DIRECTION_ALL
-    });
-
-
-    mcl.on("pandown", function (openit) {
-
-        $("#close").show();
-        $("#open").hide();
-        document.getElementById("leftside").style.height = "var(--lefttouch)";
-        document.getElementById("leftside").style.width = "100%";
-        document.getElementById("ghostleftside").style.height = "var(--lefttouch)";
-        document.getElementById("ghostleftside").style.width = "100%";
-        document.getElementById("centerside").style.height = "var(--centertouch)";
-        document.getElementById("centerside").style.width = "100%";
-    });
-
-    mcc.on("panup", function (closeit) {
-        $("#close").hide();
-        document.getElementById("leftside").style.height = "var(--lefth)";
-        document.getElementById("leftside").style.width = "100%";
-        document.getElementById("ghostleftside").style.height = "var(--lefth)";
-        document.getElementById("ghostleftside").style.width = "100%";
-        document.getElementById("centerside").style.height = "var(--centerh)";
-        document.getElementById("centerside").style.width = "100%";
-        //            document.getElementById("leftside").scrollTo(0, 0); 
-
-
-        $("#leftside").animate({
-            scrollTop: 0
-        }, 100, 'swing');
-
-        $("#open").show();
-
-    });
-
-} else {
-    $("#close").hide();
-    $("#open").hide();
-
-    window.addEventListener('touchstart', function () {
-
-        var left2 = document.getElementById('leftside');
-        var center2 = document.getElementById('centerside');
-
-
-        var mcl2 = new Hammer(left2);
-        var mcc2 = new Hammer(center2);
-
-
-        mcc2.get('pan').set({
+        mcc.get('pan').set({
             direction: Hammer.DIRECTION_ALL
         });
-        mcl2.get('pan').set({
+        mcl.get('pan').set({
             direction: Hammer.DIRECTION_ALL
         });
 
 
-        mcl2.on("panright", function (openit) {
+        mcl.on("pandown", function(openit) {
 
             $("#close").show();
             $("#open").hide();
-            document.getElementById("leftside").style.height = "100%";
-            document.getElementById("leftside").style.width = "70vw";
-            document.getElementById("ghostleftside").style.height = "100%";
-            document.getElementById("ghostleftside").style.width = "70vw";
-            document.getElementById("centerside").style.height = "100%";
-            document.getElementById("centerside").style.width = "calc(100vw - 70vw)";
+            document.getElementById("leftside").style.height = "var(--lefttouch)";
+            document.getElementById("leftside").style.width = "100%";
+            document.getElementById("ghostleftside").style.height = "var(--lefttouch)";
+            document.getElementById("ghostleftside").style.width = "100%";
+            document.getElementById("centerside").style.height = "var(--centertouch)";
+            document.getElementById("centerside").style.width = "100%";
         });
 
-        mcc2.on("panleft", function (closeit) {
+        mcc.on("panup", function(closeit) {
             $("#close").hide();
-            document.getElementById("leftside").style.height = "100%";
-            document.getElementById("leftside").style.width = "12vw";
-            document.getElementById("ghostleftside").style.height = "100%";
-            document.getElementById("ghostleftside").style.width = "12vw";
-            document.getElementById("centerside").style.height = "100%";
-            document.getElementById("centerside").style.width = "calc(100% - 12vw)";
+            document.getElementById("leftside").style.height = "var(--lefth)";
+            document.getElementById("leftside").style.width = "100%";
+            document.getElementById("ghostleftside").style.height = "var(--lefth)";
+            document.getElementById("ghostleftside").style.width = "100%";
+            document.getElementById("centerside").style.height = "var(--centerh)";
+            document.getElementById("centerside").style.width = "100%";
             //            document.getElementById("leftside").scrollTo(0, 0); 
 
 
@@ -386,66 +213,115 @@ if (window.innerHeight > window.innerWidth && window.innerWidth < 600) {
             $("#open").show();
 
         });
-    });
+
+    } else {
+        $("#close").hide();
+        $("#open").hide();
+
+        window.addEventListener('touchstart', function() {
+
+            var left2 = document.getElementById('leftside');
+            var center2 = document.getElementById('centerside');
 
 
-}
+            var mcl2 = new Hammer(left2);
+            var mcc2 = new Hammer(center2);
 
-<
-/script>
 
-<
-script id = "draggable-div" >
+            mcc2.get('pan').set({
+                direction: Hammer.DIRECTION_ALL
+            });
+            mcl2.get('pan').set({
+                direction: Hammer.DIRECTION_ALL
+            });
+
+
+            mcl2.on("panright", function(openit) {
+
+                $("#close").show();
+                $("#open").hide();
+                document.getElementById("leftside").style.height = "100%";
+                document.getElementById("leftside").style.width = "70vw";
+                document.getElementById("ghostleftside").style.height = "100%";
+                document.getElementById("ghostleftside").style.width = "70vw";
+                document.getElementById("centerside").style.height = "100%";
+                document.getElementById("centerside").style.width = "calc(100vw - 70vw)";
+            });
+
+            mcc2.on("panleft", function(closeit) {
+                $("#close").hide();
+                document.getElementById("leftside").style.height = "100%";
+                document.getElementById("leftside").style.width = "12vw";
+                document.getElementById("ghostleftside").style.height = "100%";
+                document.getElementById("ghostleftside").style.width = "12vw";
+                document.getElementById("centerside").style.height = "100%";
+                document.getElementById("centerside").style.width = "calc(100% - 12vw)";
+                //            document.getElementById("leftside").scrollTo(0, 0); 
+
+
+                $("#leftside").animate({
+                    scrollTop: 0
+                }, 100, 'swing');
+
+                $("#open").show();
+
+            });
+        });
+
+
+    }
+
+</script>
+
+<script id="draggable-div">
     //Make the DIV element draggagle:
     dragElement(document.getElementById("frame"));
 
-function dragElement(elmnt) {
-    var pos1 = 0,
-        pos2 = 0,
-        pos3 = 0,
-        pos4 = 0;
-    if (document.getElementById(elmnt.id + "frame")) {
-        /* if present, the header is where you move the DIV from:*/
-        document.getElementById(elmnt.id + "frame").onmousedown = dragMouseDown;
-    } else {
-        /* otherwise, move the DIV from anywhere inside the DIV:*/
-        elmnt.onmousedown = dragMouseDown;
+    function dragElement(elmnt) {
+        var pos1 = 0,
+            pos2 = 0,
+            pos3 = 0,
+            pos4 = 0;
+        if (document.getElementById(elmnt.id + "frame")) {
+            /* if present, the header is where you move the DIV from:*/
+            document.getElementById(elmnt.id + "frame").onmousedown = dragMouseDown;
+        } else {
+            /* otherwise, move the DIV from anywhere inside the DIV:*/
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement() {
+            /* stop moving when mouse button is released:*/
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
     }
 
-    function dragMouseDown(e) {
-        e = e || window.event;
-        e.preventDefault();
-        // get the mouse cursor position at startup:
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        document.onmouseup = closeDragElement;
-        // call a function whenever the cursor moves:
-        document.onmousemove = elementDrag;
-    }
-
-    function elementDrag(e) {
-        e = e || window.event;
-        e.preventDefault();
-        // calculate the new cursor position:
-        pos1 = pos3 - e.clientX;
-        pos2 = pos4 - e.clientY;
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-        // set the element's new position:
-        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-    }
-
-    function closeDragElement() {
-        /* stop moving when mouse button is released:*/
-        document.onmouseup = null;
-        document.onmousemove = null;
-    }
-}
-
-<
-/script>
+</script>
 
 
-<
-/html>
+</html>
