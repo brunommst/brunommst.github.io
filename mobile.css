@@ -84,16 +84,7 @@
         line-height: 1.5;
     }
     /*    /////////////*/
-    #open {
-        display: none;
-         background-color:black;
-         transform: scaleY(2);
-    }
-    #close {
-        display: none;
-         background-color:black;
-         transform: scaleX(2);
-    }
+   
     .button {
         display: block;
         width: calc(calc(var(--vh) * 9));
@@ -107,8 +98,10 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        background-color: transparent;
+        background-color: black;
         border: none;
+         
+         transform: scaleY(2);
     }
     .module {
         -webkit-box-sizing: padding-box;
