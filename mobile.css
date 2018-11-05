@@ -96,12 +96,12 @@
     }
     .button {
         display: block;
-        width: calc(calc(var(--vh) * 4));
-        min-height: calc(calc(var(--vh) * 4));
+        width: calc(calc(var(--vh) * 9));
+        min-height: calc(calc(var(--vh) * 9));
         ;
         position: fixed;
         top: calc(var(--vh) * 3.2);
-        right: 7vw;
+        right: 4vw;
         z-index: 1000;
         overflow: visible;
         background-repeat: no-repeat;
