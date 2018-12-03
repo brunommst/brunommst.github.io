@@ -486,7 +486,7 @@ footer p {
     display: flex;
     position: absolute;
     z-index: 1;
-    pointer-events: none;
+/*    pointer-events: none;*/
     
     left: 0px;
     
