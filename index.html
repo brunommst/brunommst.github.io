@@ -378,8 +378,13 @@
 
             var imageslide2 = document.getElementsByClassName('image-slide');
             for (var i = 0, j = imageslide2.length; i < j; i++) {
-                imageslide2[i].style.position = "absolute";
-                imageslide2[i].style.visibility = "visible";
+                imageslide2[i].style.position = "";
+                imageslide2[i].style.visibility = "";
+                imageslide2[i].style.height = "80vh";
+            };
+            var imageslide3 = document.getElementsByClassName('ima');
+            for (var i = 0, j = imageslide3.length; i < j; i++) {
+                imageslide3[i].style.height = "80vh";
             };
             var imagetext2 = document.getElementsByClassName('image-text');
             for (var i = 0, j = imagetext2.length; i < j; i++) {
