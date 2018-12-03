@@ -9,20 +9,7 @@
         --fontsizemain: calc(7vw + 5px);
     }
 
-    .preloader {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: calc(var(--vh) * 100);
-        z-index: 9999;
-        background-color: #FFF;
-/*
-        background-image: url('../images/default.gif');
-        background-repeat: no-repeat;
-        background-position: center;
-*/
-    }
+    
 
     #mainmain {
         width: 100vw;
@@ -148,6 +135,9 @@
     }
 
     .image-text {
+        width: 90%;
+    }
+    .image-text p {
         width: 90%;
     }
 
