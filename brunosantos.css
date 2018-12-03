@@ -65,6 +65,24 @@ body {
     /*     overflow: hidden;*/
 }
 
+.preloader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(var(--vh) * 100);
+        z-index: 9999;
+        background-color: #FFF;
+    }
+#preload-square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: calc(50vw - 50px);
+    top: calc(50vh - 50px);
+    background: black;
+}
+
 #mainmain {
     width: 90vw;
     height: 100vh;
