@@ -49,7 +49,7 @@
 
     #centerside {
         width: 100%;
-        height: var(--centerh);
+        height: auto;
         border: 4px solid black;
         overflow-y: scroll;
         overflow-x: scroll;
