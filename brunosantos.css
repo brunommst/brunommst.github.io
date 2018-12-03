@@ -81,7 +81,27 @@ body {
     left: calc(50vw - 50px);
     top: calc(50vh - 50px);
     background: black;
+    -webkit-animation: preload 4s infinite; /* Safari 4.0 - 8.0 */
+    animation: preload 4s infinite;
 }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes preload {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(90deg);}
+    50%  {transform: rotate(180deg);}
+    75%  {transform: rotate(250deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* Standard syntax */
+@keyframes preload {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(90deg);}
+    50%  {transform: rotate(180deg);}
+    75%  {transform: rotate(250deg);}
+    100% {transform: rotate(360deg);}
+}
+
 
 #mainmain {
     width: 90vw;
