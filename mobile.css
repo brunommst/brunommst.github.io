@@ -2,7 +2,7 @@
     :root {
         --lefth: 10%;
         --centerh: calc(calc(var(--vh) * 100) - var(--lefth));
-        --lefttouch: 80%;
+        --lefttouch: 85%;
         --centertouch: calc(calc(var(--vh) * 100) - var(--leftsidehover));
         min-width: 300px;
         --fontsizename: calc(7.5vw + 5px);
