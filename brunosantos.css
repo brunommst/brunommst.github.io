@@ -321,7 +321,7 @@ footer p {
 }
 .link:hover {
     color: darkorange;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 #bh {
@@ -354,7 +354,7 @@ footer p {
     overflow-y: hidden;
     margin: 3% 0;
     position: relative;
-    cursor: url(files/cursor.png), auto;
+    /*cursor: url(files/cursor.png), auto; */
 }
 .active {
     left: -4300px !important;
@@ -396,15 +396,15 @@ footer p {
 .scroll-left {
     width: 50%;
     height: 100%;
-    cursor: help;
+    /*cursor: help; */
 }
 
 .scroll-right {
     width: 50%;
     height: 100%;
-    cursor: all-scroll;
+    /*cursor: all-scroll; */
 }
-*/
+
 
 .image-text {
     height: auto;
