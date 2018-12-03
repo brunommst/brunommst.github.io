@@ -326,22 +326,23 @@
             document.getElementById("ghostleftside").style.width = "100%";
 
             document.getElementById("centerside").style.width = "100%";
+            document.getElementById("centerside").style.top = "var(--lefttouch)";
 
             document.getElementById("button").style.transform = "initial";
             document.getElementById("button").style.transform = "scaleX(2)";
 
 
 
-
+            var imageslide = document.getElementsByClassName('image-slide');
+            for (var i = 0, j = imageslide.length; i < j; i++) {
+                imageslide[i].style.position = "static";
+                imageslide[i].style.visibility = "none";
+            };
             var imagetext = document.getElementsByClassName('image-text');
             for (var i = 0, j = imagetext.length; i < j; i++) {
                 imagetext[i].style.background = "black";
             };
-            var imageslide = document.getElementsByClassName('image-slide');
-            for (var i = 0, j = imageslide.length; i < j; i++) {
-                imageslide[i].style.visibility = "none";
-                imageslide[i].style.position = "static";
-            };
+            
         }
 
         function closesmobile() {
@@ -366,21 +367,22 @@
             
 //            document.getElementById("centerside").style.marginTop = "";
             document.getElementById("centerside").style.width = "100%";
+            document.getElementById("centerside").style.top = "";
 
             document.getElementById("button").style.transform = "initial";
             document.getElementById("button").style.transform = "scaleY(2)";
 
 
-
+            var imageslide2 = document.getElementsByClassName('image-slide');
+            for (var i = 0, j = imageslide2.length; i < j; i++) {
+                imageslide2[i].style.position = "absolute";
+                imageslide2[i].style.visibility = "visible";
+            };
             var imagetext2 = document.getElementsByClassName('image-text');
             for (var i = 0, j = imagetext2.length; i < j; i++) {
                 imagetext2[i].style.background = "";
             };
-            var imageslide2 = document.getElementsByClassName('image-slide');
-            for (var i = 0, j = imageslide2.length; i < j; i++) {
-                imageslide2[i].style.visibility = "visible";
-                imageslide2[i].style.position = "absolute";
-            };
+            
 
             $("#leftside").animate({
                 scrollTop: 0
