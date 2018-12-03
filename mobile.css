@@ -131,7 +131,7 @@
         -webkit-box-sizing: padding-box;
         box-sizing: padding-box;
         margin-bottom: 50px;
-        height: 80%;
+        height: 85%;
     }
     
     .texts-wrapper {
@@ -143,6 +143,7 @@
     }
     .image-text p {
         width: 90%;
+        font-size: 4vw;
     }
 
     .image-text:hover {

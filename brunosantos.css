@@ -244,6 +244,12 @@ body {
     line-height: 1.4;
 }
 
+footer p {
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
 
 
 #centerside {
@@ -358,6 +364,7 @@ body {
 }
 
 #module-draw {
+    display: none;
     margin: 0px;
     margin-left: -1%;
     margin-bottom: -1%;
