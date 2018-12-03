@@ -9,10 +9,10 @@
         --fontsizemain: calc(7vw + 5px);
     }
 
-    * {
+    body * {
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
-        overflow: scroll;
+        overflow: scroll !important;
     }
 
 
