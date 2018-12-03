@@ -326,7 +326,7 @@
             document.getElementById("ghostleftside").style.width = "100%";
 
             document.getElementById("centerside").style.overflow = "hidden";
-            document.getElementById("centerside").style.height = "var(--centertouch)";
+//            document.getElementById("centerside").style.marginTop = "80vh";
             document.getElementById("centerside").style.width = "100%";
 
             document.getElementById("button").style.transform = "initial";
@@ -342,6 +342,7 @@
             var imageslide = document.getElementsByClassName('image-slide');
             for (var i = 0, j = imageslide.length; i < j; i++) {
                 imageslide[i].style.visibility = "none";
+                imageslide[i].style.position = "static";
             };
         }
 
@@ -364,8 +365,8 @@
             document.getElementById("leftside").style.width = "100%";
             document.getElementById("ghostleftside").style.height = "var(--lefth)";
             document.getElementById("ghostleftside").style.width = "100%";
-            document.getElementById("centerside").style.overflow = "";
-            document.getElementById("centerside").style.height = "var(--centerh)";
+            
+//            document.getElementById("centerside").style.marginTop = "";
             document.getElementById("centerside").style.width = "100%";
 
             document.getElementById("button").style.transform = "initial";
@@ -379,7 +380,8 @@
             };
             var imageslide2 = document.getElementsByClassName('image-slide');
             for (var i = 0, j = imageslide2.length; i < j; i++) {
-                imageslide2[i].style.display = "";
+                imageslide2[i].style.visibility = "";
+                imageslide2[i].style.position = "";
             };
 
             $("#leftside").animate({

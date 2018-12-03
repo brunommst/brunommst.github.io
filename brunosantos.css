@@ -86,20 +86,20 @@ body {
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes preload {
-    0%   {transform: rotate(0deg);}
-    25%  {transform: rotate(90deg);}
-    50%  {transform: rotate(180deg);}
-    75%  {transform: rotate(270deg);}
-    100% {transform: rotate(360deg);}
+    0%   {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    25%  {-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+    50%  {-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+    75%  {-webkit-transform: rotate(270deg);transform: rotate(270deg);}
+    100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 }
 
 /* Standard syntax */
 @keyframes preload {
-    0%   {transform: rotate(0deg);}
-    25%  {transform: rotate(90deg);}
-    50%  {transform: rotate(180deg);}
-    75%  {transform: rotate(250deg);}
-    100% {transform: rotate(360deg);}
+    0%   {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    25%  {-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+    50%  {-webkit-transform: rotate(180deg);transform: rotate(180deg);}
+    75%  {-webkit-transform: rotate(250deg);transform: rotate(250deg);}
+    100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 }
 
 
@@ -278,6 +278,10 @@ footer p {
     overflow-x: hidden;
     padding: 1% 0 0% 0%;
     position: relative;
+    
+    -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
 }
 
 #frame {
@@ -486,11 +490,9 @@ footer p {
     
     left: 0px;
     
-    -webkit-transition: all 3s linear;
-    
-    -o-transition: all 3s linear;
-    
-    transition: all 3s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 
