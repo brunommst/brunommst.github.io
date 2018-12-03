@@ -88,10 +88,7 @@
 
             <div id="centerside">
                 <div id="module7" class="module">
-                    <div class="scroll-wrapper">
-                        <div id="scroll-left7" class="scroll-left"></div>
-                        <div id="scroll-right7" class="scroll-right"></div>
-                    </div>
+                    
                     <div class="image-text">
                         <h2>CRISE DE IDENTIDADE</h2>
                         <div class="texts-wrapper">
@@ -109,10 +106,7 @@
                     </div>
                 </div>
                 <div id="module6" class="module">
-                    <div class="scroll-wrapper">
-                        <div id="scroll-left6" class="scroll-left"></div>
-                        <div id="scroll-right6" class="scroll-right"></div>
-                    </div>
+                    
                     <div class="image-slide">
                         <img src="images/mint/1.png" class="ima">
                         <img src="images/mint/2.png" class="ima">
@@ -136,10 +130,7 @@
 
                 </div>
                 <div id="module5" class="module">
-                    <div class="scroll-wrapper">
-                        <div id="scroll-left5" class="scroll-left"></div>
-                        <div id="scroll-right5" class="scroll-right"></div>
-                    </div>
+                    
                     <div class="image-text">
                         <h2>onfailure</h2>
                         <div class="texts-wrapper">
@@ -161,10 +152,7 @@
                     </div>
                 </div>
                 <div id="module4" class="module">
-                    <div class="scroll-wrapper">
-                        <div id="scroll-left4" class="scroll-left"></div>
-                        <div id="scroll-right4" class="scroll-right"></div>
-                    </div>
+                    
                     <div class="image-text">
                         <h2>Manifesto for a Critical Progressivism</h2>
                         <div class="texts-wrapper">
@@ -189,10 +177,7 @@
                     </div>
                 </div>
                 <div id="module3" class="module">
-                    <div class="scroll-wrapper">
-                        <div id="scroll-left3" class="scroll-left"></div>
-                        <div id="scroll-right3" class="scroll-right"></div>
-                    </div>
+                    
                     <div class="image-text">
                         <h2>The Old Man and The Sea - Reissue</h2>
                         <div class="texts-wrapper">
@@ -212,10 +197,7 @@
                     </div>
                 </div>
                 <div id="module2" class="module">
-                    <div class="scroll-wrapper">
-                        <div id="scroll-left2" class="scroll-left"></div>
-                        <div id="scroll-right2" class="scroll-right"></div>
-                    </div>
+                    
                     <div class="image-text">
                         <h2>Unidentified</h2>
                         <div class="texts-wrapper">
@@ -234,10 +216,7 @@
                     </div>
                 </div>
                 <div id="module1" class="module">
-                    <div class="scroll-wrapper">
-                        <div id="scroll-left1" class="scroll-left"></div>
-                        <div id="scroll-right1" class="scroll-right"></div>
-                    </div>
+                    
                     <div class="image-text">
                         <h2>ON THE ROLE magazine</h2>
                         <div class="texts-wrapper">
@@ -328,17 +307,21 @@
                 duration: 'fast'
             }, 'linear');
 
+            document.getElementById("centerside").style.background = "black";
+            
             document.getElementById("leftside").style.height = "var(--lefttouch)";
             document.getElementById("leftside").style.width = "100%";
             document.getElementById("ghostleftside").style.height = "var(--lefttouch)";
             document.getElementById("ghostleftside").style.width = "100%";
+            
+            document.getElementById("centerside").style.overflow = "hidden";
             document.getElementById("centerside").style.height = "var(--centertouch)";
             document.getElementById("centerside").style.width = "100%";
 
             document.getElementById("button").style.transform = "initial";
             document.getElementById("button").style.transform = "scaleX(2)";
 
-            document.getElementById("centerside").style.background = "black";
+            
 
 
             var imagetext = document.getElementsByClassName('image-text');
@@ -352,6 +335,9 @@
         }
 
         function closesmobile() {
+            
+            document.getElementById("centerside").style.background = "initial";
+            
             $('#open-icon').animate({
                 borderSpacing: +180
             }, {
@@ -367,13 +353,14 @@
             document.getElementById("leftside").style.width = "100%";
             document.getElementById("ghostleftside").style.height = "var(--lefth)";
             document.getElementById("ghostleftside").style.width = "100%";
+            document.getElementById("centerside").style.overflow = "";
             document.getElementById("centerside").style.height = "var(--centerh)";
             document.getElementById("centerside").style.width = "100%";
 
             document.getElementById("button").style.transform = "initial";
             document.getElementById("button").style.transform = "scaleY(2)";
 
-            document.getElementById("centerside").style.background = "initial";
+            
 
             var imagetext2 = document.getElementsByClassName('image-text');
             for (var i = 0, j = imagetext2.length; i < j; i++) {
@@ -436,9 +423,7 @@
 
 
     } else {
-        $(".button").hide();
-
-
+        $(".button").hide();        
 
         $('#module7').mousedown(function() {
             $('#module7').animate({
@@ -575,58 +560,5 @@
     }
 
 </script>
-
-<!--
-<script id="draggable-div">
-    //Make the DIV element draggagle:
-    dragElement(document.getElementById("frame"));
-
-    function dragElement(elmnt) {
-        var pos1 = 0,
-            pos2 = 0,
-            pos3 = 0,
-            pos4 = 0;
-        if (document.getElementById(elmnt.id + "frame")) {
-            /* if present, the header is where you move the DIV from:*/
-            document.getElementById(elmnt.id + "frame").onmousedown = dragMouseDown;
-        } else {
-            /* otherwise, move the DIV from anywhere inside the DIV:*/
-            elmnt.onmousedown = dragMouseDown;
-        }
-
-        function dragMouseDown(e) {
-            e = e || window.event;
-            e.preventDefault();
-            // get the mouse cursor position at startup:
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            document.onmouseup = closeDragElement;
-            // call a function whenever the cursor moves:
-            document.onmousemove = elementDrag;
-        }
-
-        function elementDrag(e) {
-            e = e || window.event;
-            e.preventDefault();
-            // calculate the new cursor position:
-            pos1 = pos3 - e.clientX;
-            pos2 = pos4 - e.clientY;
-            pos3 = e.clientX;
-            pos4 = e.clientY;
-            // set the element's new position:
-            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-        }
-
-        function closeDragElement() {
-            /* stop moving when mouse button is released:*/
-            document.onmouseup = null;
-            document.onmousemove = null;
-        }
-    }
-
-</script>
--->
-
 
 </html>
