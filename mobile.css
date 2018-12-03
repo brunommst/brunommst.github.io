@@ -13,7 +13,7 @@
         -webkit-overflow-scrolling: touch;
         scroll-behavior: smooth;
     }
-    
+
 
     #mainmain {
         width: 100vw;
@@ -137,7 +137,11 @@
         margin-bottom: 50px;
         height: 85%;
     }
-    
+
+    .module-draw {
+        display: none;
+    }
+
     .texts-wrapper {
         flex-direction: column;
     }
@@ -145,6 +149,7 @@
     .image-text {
         width: 90%;
     }
+
     .image-text p {
         width: 90%;
         font-size: 4vw;
