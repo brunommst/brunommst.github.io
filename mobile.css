@@ -1,7 +1,7 @@
 @media only screen and (orientation: portrait) and (max-width: 600px) {
     :root {
-        --lefth: 10%;
-        --centerh: calc(calc(var(--vh) * 100) - var(--lefth));
+        --lefth: calc(var(--vh) * 10);
+        --centerh: calc(calc(var(--vh) * 90));
         --lefttouch: 85%;
         --centertouch: calc(calc(var(--vh) * 100) - var(--leftsidehover));
         min-width: 300px;
@@ -54,17 +54,18 @@
         border: 4px solid black;
         overflow-y: scroll;
         overflow-x: scroll;
+        position: -webkit-sticky;
         position: sticky;
         top: var(--lefth);
     }
 
     #leftside:hover {
-        height: var(--lefttouch);
+        height: none;
         width: 100%;
     }
 
     #leftside:hover ~ #ghostleftside {
-        height: var(--lefttouch);
+        height: none;
         width: 100%;
     }
 
@@ -150,11 +151,16 @@
     }
 
     .texts-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .image-text {
         width: 90%;
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
         transition: all 0.2s;
     }
 
@@ -227,6 +233,10 @@
 
         .main-text {
             font-size: 7vw;
+        }
+        
+        #name {
+            margin-top: 5px;
         }
 
         #container {
