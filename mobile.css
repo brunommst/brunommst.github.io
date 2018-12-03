@@ -136,6 +136,8 @@
         box-sizing: padding-box;
         margin-bottom: 50px;
         height: 85%;
+        overflow: auto;
+        overflow-y: auto !important;
     }
 
     #module-draw {
