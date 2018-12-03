@@ -9,25 +9,18 @@ function windowResized() {
 function setup() {
 
 
-    var element = document.getElementById('centerside');
-    var positionInfo = element.getBoundingClientRect();
-
-    var height = positionInfo.height;
-    var width = $("#centerside").width();
-    var top = positionInfo.top;
-    var left = positionInfo.left;
-    var right = positionInfo.right;
+//    var element = document.getElementById('centerside');
+//    var positionInfo = element.getBoundingClientRect();
+//
+//    var height = positionInfo.height;
+    var height = $("#module-draw").height();
+    var width = $("#module-draw").width();
 
     canvas = createCanvas(width, height);
-    canvas.parent("centerside");
-
-    if (windowWidth > 600) {
-        canvas.position(left+30, top);
-    } else {
-        canvas.position(left, top);
-    }
+    canvas.parent("module-draw");
+    
     canvas.style('z-index', '-1');
-    canvas.style('width', '100vw');
+    canvas.style('position', 'static');
 
     frameRate(60);
 }
