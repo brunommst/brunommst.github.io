@@ -162,6 +162,7 @@
         font-size: 4vw;
     }
 
+/*
     .image-text:hover {
         z-index: 1;
     }
@@ -169,6 +170,7 @@
     .image-text:active {
         z-index: 10;
     }
+*/
 
     .scroll-wrapper {
         display: none;
@@ -211,7 +213,7 @@
     }
     
     .image-slide {
-        overflow: auto;
+/*        overflow: auto;*/
     }
 
     @media only screen and (orientation: portrait) and (max-width: 400px) {
