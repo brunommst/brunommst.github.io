@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-<!--
+    <!--
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -35,6 +35,7 @@
             },
             "description": "HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP DIGITAL INTERFACES AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB. STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY ON A POST-GRAD DEGREE IN DIGITAL EXPERIENCE DESIGN."
         }
+
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122366181-1"></script>
@@ -238,9 +239,11 @@
                     </div>
                 </div>
                 <div id="module-draw" class="module">
-                    <div id="classroll-wrapper">
-                        <div class="scroll-left"></div>
-                        <div class="scrrightleft"></div>
+                    <div id="foot">
+                        <p>That's all for now!</p>
+                        <p>There's a lot more coming, be sure to come back in the future.</p>
+                        <br>
+                        <p>Also, thanks to all the wonderful people who cooperated in some of these projects.</p>
                     </div>
                 </div>
 
@@ -270,32 +273,32 @@
     });
 
 
-//    var lastScrollLeft = 0;
-//    $("#module7").scroll(function() {
-//        var documentScrollLeft = $(this).scrollLeft();
-//        if (lastScrollLeft != documentScrollLeft) {
-//            console.log('scroll x');
-//            lastScrollLeft = documentScrollLeft;
-//            document.getElementById("module7").getElementsByClassName("image-text")[0].style.position = "fixed";
-//        }
-//    });
+    //    var lastScrollLeft = 0;
+    //    $("#module7").scroll(function() {
+    //        var documentScrollLeft = $(this).scrollLeft();
+    //        if (lastScrollLeft != documentScrollLeft) {
+    //            console.log('scroll x');
+    //            lastScrollLeft = documentScrollLeft;
+    //            document.getElementById("module7").getElementsByClassName("image-text")[0].style.position = "fixed";
+    //        }
+    //    });
 
 
-//    $(document).keydown(function(event) {
-//        if (event.ctrlKey == true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109' || event.which == '187' || event.which == '189')) {
-//            event.preventDefault();
-//        }
-//        //     107 Num Key  +
-//        //     109 Num Key  -
-//        //     173 Min Key  hyphen/underscor Hey
-//        //     61 Plus key  +/= key
-//    });
-//
-//    $(window).bind('mousewheel DOMMouseScroll', function(event) {
-//        if (event.ctrlKey == true) {
-//            event.preventDefault();
-//        }
-//    });
+    //    $(document).keydown(function(event) {
+    //        if (event.ctrlKey == true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109' || event.which == '187' || event.which == '189')) {
+    //            event.preventDefault();
+    //        }
+    //        //     107 Num Key  +
+    //        //     109 Num Key  -
+    //        //     173 Min Key  hyphen/underscor Hey
+    //        //     61 Plus key  +/= key
+    //    });
+    //
+    //    $(window).bind('mousewheel DOMMouseScroll', function(event) {
+    //        if (event.ctrlKey == true) {
+    //            event.preventDefault();
+    //        }
+    //    });
     //ok bye
 
 </script>
@@ -343,7 +346,7 @@
             for (var i = 0, j = imagetext.length; i < j; i++) {
                 imagetext[i].style.background = "black";
             };
-            
+
         }
 
         function closesmobile() {
@@ -366,8 +369,8 @@
             document.getElementById("leftside").style.overflow = "";
             document.getElementById("ghostleftside").style.height = "var(--lefth)";
             document.getElementById("ghostleftside").style.width = "100%";
-            
-//            document.getElementById("centerside").style.marginTop = "";
+
+            //            document.getElementById("centerside").style.marginTop = "";
             document.getElementById("centerside").style.width = "100%";
             document.getElementById("centerside").style.top = "";
 
@@ -389,7 +392,7 @@
             for (var i = 0, j = imagetext2.length; i < j; i++) {
                 imagetext2[i].style.background = "";
             };
-            
+
 
             $("#leftside").animate({
                 scrollTop: 0
@@ -416,30 +419,30 @@
             callOne = !callOne;
         }
 
-//        var left = document.getElementById('name');
-//        var center = document.getElementById('centerside');
-//
-//
-//        var mcl = new Hammer(left);
-//        var mcc = new Hammer(center);
-//
-//
-//        mcc.get('pan').set({
-//            direction: Hammer.DIRECTION_ALL
-//        });
-//        mcl.get('pan').set({
-//            direction: Hammer.DIRECTION_ALL
-//        });
+        //        var left = document.getElementById('name');
+        //        var center = document.getElementById('centerside');
+        //
+        //
+        //        var mcl = new Hammer(left);
+        //        var mcc = new Hammer(center);
+        //
+        //
+        //        mcc.get('pan').set({
+        //            direction: Hammer.DIRECTION_ALL
+        //        });
+        //        mcl.get('pan').set({
+        //            direction: Hammer.DIRECTION_ALL
+        //        });
 
 
 
 
-//        var imagetextclick = document.getElementsByClassName('image-text');
-//        for (var i = 0, j = imagetextclick.length; i < j; i++) {
-//            imagetextclick[i].onclick = function() {
-//
-//            }
-//        };
+        //        var imagetextclick = document.getElementsByClassName('image-text');
+        //        for (var i = 0, j = imagetextclick.length; i < j; i++) {
+        //            imagetextclick[i].onclick = function() {
+        //
+        //            }
+        //        };
 
 
     } else {

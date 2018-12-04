@@ -53,7 +53,7 @@
         height: calc(var(--centerh) + 4px);
         border: 4px solid black;
         overflow-y: scroll;
-        overflow-x: scroll;
+/*        overflow-x: scroll;*/
         position: -webkit-sticky;
         position: sticky;
         top: var(--lefth);
@@ -146,10 +146,6 @@
         overflow-y: hidden;
     }
 
-    #module-draw {
-        display: none;
-    }
-
     .texts-wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -169,7 +165,6 @@
         font-size: 4vw;
     }
 
-/*
     .image-text:hover {
         z-index: 1;
     }
@@ -177,7 +172,6 @@
     .image-text:active {
         z-index: 10;
     }
-*/
 
     .scroll-wrapper {
         display: none;
@@ -208,10 +202,17 @@
         /*    font-style: italic;*/
     }
 
+    #module-draw {
+        background: black;
+    }
     #module-draw canvas {
         width: 101vw !important;
+        display: none;
+    }#foot {
+        height: 24vh;
+        padding: 4vh 0;
     }
-
+    
     #module4 .image-text {
         width: 92%;
     }
