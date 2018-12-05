@@ -51,7 +51,6 @@
     <link rel="stylesheet" type="text/css" href="mobile.css">
 
     <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
-    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
     <script language="javascript" type="text/javascript" src="canvas.js"></script>
@@ -60,6 +59,8 @@
 <body>
     <div class="preloader">
         <div id="preload-square"></div>
+        <div id="wow">WOW!!!!</div>
+        <div id="imsorry"><b style="margin-bottom: 5px;">This is taking longer than expected!</b><br>I'm sorry, please bare with me these images are very big boys and also this is partly your fault for having sub-par internet,<br>but I forgive you :)</div>
     </div>
     <div id="mainmain">
         <div id="main">
@@ -248,45 +249,28 @@
 
         </div>
     </div>
-
-<!--
-    <script>
-        (() => {
-            'use strict';
-            // Page is loaded
-            const objects = document.getElementsByClassName('load');
-            Array.from(objects).map((item) => {
-                // Start loading image
-                const img = new Image();
-                img.src = item.dataset.src;
-                // Once image is loaded replace the src of the HTML element
-                img.onload = () => {
-                    item.classList.remove('load');
-                    return item.nodeName === 'IMG' ?
-                        item.src = item.dataset.src :
-                        item.style.backgroundImage = `url(${item.dataset.src})`;
-                };
-            });
-        })();
-
-    </script>
--->
 </body>
 
 
 <script>
     //necessary evils//
+    setTimeout(function() {
+        document.getElementById("imsorry").style.display = "block";
+        document.getElementById("wow").style.display = "block";
 
-    //    window.onresize = function() {
-    //        location.reload();
-    //    }
+        setTimeout(function() {
+            document.getElementById("imsorry").style.color = "black";
+            document.getElementById("wow").style.color = "black";
+        }, 10)
+    }, 10000);
+
 
     window.addEventListener('load', function() {
         console.log('done');
-        $('.preloader').css({
-            transform: 'scale(300)',
-        }, 1000);
-        $('.preloader').fadeOut('slow');
+                $('.preloader').css({
+                    transform: 'scale(300)',
+                }, 10000);
+                $('.preloader').fadeOut('slow');
     });
 
 
@@ -435,32 +419,6 @@
             else two();
             callOne = !callOne;
         }
-
-        //        var left = document.getElementById('name');
-        //        var center = document.getElementById('centerside');
-        //
-        //
-        //        var mcl = new Hammer(left);
-        //        var mcc = new Hammer(center);
-        //
-        //
-        //        mcc.get('pan').set({
-        //            direction: Hammer.DIRECTION_ALL
-        //        });
-        //        mcl.get('pan').set({
-        //            direction: Hammer.DIRECTION_ALL
-        //        });
-
-
-
-
-        //        var imagetextclick = document.getElementsByClassName('image-text');
-        //        for (var i = 0, j = imagetextclick.length; i < j; i++) {
-        //            imagetextclick[i].onclick = function() {
-        //
-        //            }
-        //        };
-
 
     } else {
         $(".button").hide();

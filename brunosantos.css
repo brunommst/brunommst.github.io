@@ -103,6 +103,41 @@ body {
     100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 }
 
+#imsorry {
+    display: none;
+    position: absolute;
+    margin: auto;
+    width: 550px;
+    color: white;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: sans-serif;
+    bottom: 10vh;
+    left: calc((100% - 550px) / 2);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+#wow {
+    width: 50%;
+    display: none;
+    position: absolute;
+    margin: auto;
+    font-weight: bold;
+    color: white;
+    line-height: 1.6;
+    font-size: 2rem;
+    text-align: center;
+    font-family: sans-serif;
+    top: 15vh;
+    left: 25%;
+    font-family: 'sporting_grotesqueregular', serif;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
 
 #mainmain {
     width: 90vw;
@@ -354,7 +389,7 @@ footer p {
     overflow-y: hidden;
     margin: 3% 0;
     position: relative;
-    /*cursor: url(files/cursor.png), auto; */
+    cursor: url(files/cursor.png), auto; 
 }
 .active {
     left: -4300px !important;
