@@ -211,13 +211,20 @@
 
     #module-draw {
         background: black;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
     #module-draw canvas {
         width: 101vw !important;
         display: none;
     }#foot {
-        height: 24vh;
+        height: auto;
         padding: 4vh 0;
+        margin: 0;
     }
     
     #module4 .image-text {
