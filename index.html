@@ -49,6 +49,7 @@
     <link rel="stylesheet" type="text/css" href="brunosantos.css">
     <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
 
     <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
@@ -66,8 +67,8 @@
         <div id="main">
             <div id="button" class="button" onclick="call()"></div>
             <div id="leftside">
-                <div id="container">
-                    <p id="name" onclick="call()">BRUNO SANTOS</p>
+                <div id="container" onclick="call()">
+                    <p id="name" >BRUNO SANTOS</p>
                     <div class="main-text">HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP DIGITAL INTERFACES AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB.<br><br> STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY ON A POSTGRADUATE DEGREE IN DIGITAL EXPERIENCE DESIGN WHILE DOING SOME FREELANCE STUFF ON THE SIDE.
                         <br><br>FOR ANYTHING DESIGN OR WEBSITE RELATED CONTACT VIA:<br><a href="mailto:brunommst@gmail.com" class="link">brunommst@gmail.com</a><br><a href="www.linkedin.com/in/brunommst/" class="link" target="_blank"> Or my LinkedIn</a>
                         <!--
@@ -234,7 +235,7 @@
                         <img src="images/otr/7.png" class="ima load">
                     </div>
                 </div>
-                <div id="module-draw" class="module">
+                <div id="module-draw" class="module" style="cursor: none;">
                     <div id="foot">
                         <p>That's all for now!</p>
                         <p>There's a lot more coming, be sure to come back in the future.</p>
@@ -252,6 +253,19 @@
 </body>
 
 
+<script>
+    window.onload = function() {
+        var cenSide = $("#centerside");
+        cenSide.scroll(function() {
+            var scrolldist = cenSide.scrollTop() * 0.002;
+            var value = 'skew(-' + scrolldist + 'deg)';
+            $("#centerside").css('transform', value);
+//            document.documentElement.style.setProperty('--skew', `skew(-${scrolldist}deg)`);
+//            console.log(value);
+        });
+    }    
+</script>
+    
 <script>
     //necessary evils//
     setTimeout(function() {
@@ -273,35 +287,6 @@
                 $('.preloader').fadeOut('slow');
     });
 
-
-    //    var lastScrollLeft = 0;
-    //    $("#module7").scroll(function() {
-    //        var documentScrollLeft = $(this).scrollLeft();
-    //        if (lastScrollLeft != documentScrollLeft) {
-    //            console.log('scroll x');
-    //            lastScrollLeft = documentScrollLeft;
-    //            document.getElementById("module7").getElementsByClassName("image-text")[0].style.position = "fixed";
-    //        }
-    //    });
-
-
-    //    $(document).keydown(function(event) {
-    //        if (event.ctrlKey == true && (event.which == '61' || event.which == '107' || event.which == '173' || event.which == '109' || event.which == '187' || event.which == '189')) {
-    //            event.preventDefault();
-    //        }
-    //        //     107 Num Key  +
-    //        //     109 Num Key  -
-    //        //     173 Min Key  hyphen/underscor Hey
-    //        //     61 Plus key  +/= key
-    //    });
-    //
-    //    $(window).bind('mousewheel DOMMouseScroll', function(event) {
-    //        if (event.ctrlKey == true) {
-    //            event.preventDefault();
-    //        }
-    //    });
-    //ok bye
-
 </script>
 <script>
     $("#bh").hide();
@@ -319,7 +304,7 @@
                     $(this).css('-moz-transform', 'rotate(' + now + 'deg)');
                     $(this).css('transform', 'rotate(' + now + 'deg)');
                 },
-                duration: 'fast'
+                duration: 200
             }, 'linear');
 
             document.getElementById("centerside").style.background = "black";
@@ -352,7 +337,7 @@
 
         function closesmobile() {
 
-            document.getElementById("centerside").style.background = "initial";
+            document.getElementById("centerside").style.background = "";
 
             $('#open-icon').animate({
                 borderSpacing: +180
@@ -365,10 +350,10 @@
                 duration: 'fast'
             }, 'linear');
 
-            document.getElementById("leftside").style.height = "var(--lefth)";
+            document.getElementById("leftside").style.height = ")";
             document.getElementById("leftside").style.width = "100%";
             document.getElementById("leftside").style.overflow = "";
-            document.getElementById("ghostleftside").style.height = "var(--lefth)";
+            document.getElementById("ghostleftside").style.height = "";
             document.getElementById("ghostleftside").style.width = "100%";
 
             //            document.getElementById("centerside").style.marginTop = "";

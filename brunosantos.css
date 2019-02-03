@@ -3,6 +3,7 @@
     --centerside: calc(100% - var(--leftside));
     --leftsidehover: 40vw;
     --centersidehover: calc(100vw - var(--leftsidehover));
+/*    --skew: skew(-7deg);*/
 }
 
 ::-moz-selection {
@@ -58,9 +59,11 @@ body {
     margin: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
 /*    overflow: hidden;*/
     /*     overflow: hidden;*/
@@ -144,10 +147,12 @@ body {
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
 /*    overflow: hidden;*/
 }
@@ -159,10 +164,12 @@ body {
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
+    -webkit-flex-direction: row;
     flex-direction: row;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -171,22 +178,26 @@ body {
 }
 
 #leftside {
-    width: var(--leftside);
+    width: calc(var(--leftside) + 200px);
     height: 100vh;
     background-color: white;
     /*    opacity: 0.6;*/
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-negative: 0;
+    -webkit-flex-shrink: 0;
     flex-shrink: 0;
     -webkit-box-flex: 0;
     -ms-flex-positive: 0;
+    -webkit-flex-grow: 0;
     flex-grow: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     padding: 10px;
     padding-top: 15px;
@@ -205,15 +216,19 @@ body {
     /*    background-color: white;*/
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-negative: 0;
+    -webkit-flex-shrink: 0;
     flex-shrink: 0;
     -webkit-box-flex: 0;
     -ms-flex-positive: 0;
+    -webkit-flex-grow: 0;
     flex-grow: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     padding: 10px;
     -webkit-box-sizing: padding-box;
@@ -261,7 +276,7 @@ body {
     height: 50px;
     width: 340px;
     font-weight: 600;
-    font-size: 29px;
+    font-size: 30px;
     font-family: 'sporting_grotesqueregular', serif;
     /*    font-style: italic;*/
     /*     font-weight: 400;*/
@@ -289,18 +304,24 @@ footer p {
 
 
 #centerside {
+    
+    background: white;
+    
     width: var(--centerside);
     height: auto;
     border: 3px solid black;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -329,12 +350,15 @@ footer p {
     padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     word-break: normal;
 
@@ -365,6 +389,7 @@ footer p {
 
 
 #shade {
+    
     width: 5vw;
     height: 100vh;
     position: absolute;
@@ -380,10 +405,12 @@ footer p {
     height: 90vh;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     overflow: auto;
     overflow-y: hidden;
@@ -423,6 +450,7 @@ footer p {
     display: -webkit-box;
     display: ms-flexbox;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
 
 }
@@ -440,6 +468,7 @@ footer p {
     position: sticky;
     left: 2%;
     -ms-flex-item-align: start;
+    -webkit-align-self: flex-start;
     align-self: flex-start;
 }
 
@@ -448,7 +477,7 @@ footer p {
 }
 
 .image-text h2 {
-    font-size: 25px;
+    font-size: 45px;
     font-weight: bold;
     margin: 0px;
     font-family: 'sporting_grotesqueregular', serif;
@@ -467,13 +496,16 @@ footer p {
 .texts-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
+    -webkit-flex-direction: row;
     flex-direction: row;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 
@@ -484,6 +516,7 @@ footer p {
     width: max-content;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     padding-right: 5%;
     margin-top: 10px;
@@ -506,6 +539,7 @@ footer p {
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     position: absolute;
     z-index: 1;
