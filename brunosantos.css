@@ -3,7 +3,7 @@
     --centerside: calc(100% - var(--leftside));
     --leftsidehover: 40vw;
     --centersidehover: calc(100vw - var(--leftsidehover));
-/*    --skew: skew(-7deg);*/
+    --fontfamily: 'Space-Grotesque', sans-serif;
 }
 
 ::-moz-selection {
@@ -135,7 +135,7 @@ body {
     font-family: sans-serif;
     top: 15vh;
     left: 25%;
-    font-family: 'sporting_grotesqueregular', serif;
+    font-family: var(--fontfamily)
     -webkit-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
@@ -276,8 +276,8 @@ body {
     height: 50px;
     width: 340px;
     font-weight: 600;
-    font-size: 30px;
-    font-family: 'sporting_grotesqueregular', serif;
+    font-size: 35px;
+    font-family: var(--fontfamily);
     /*    font-style: italic;*/
     /*     font-weight: 400;*/
     -webkit-box-sizing: content-box;
@@ -480,7 +480,7 @@ footer p {
     font-size: 45px;
     font-weight: bold;
     margin: 0px;
-    font-family: 'sporting_grotesqueregular', serif;
+    font-family: var(--fontfamily);
 }
 
 .image-text p {
