@@ -259,10 +259,8 @@
         cenSide.scroll(function() {
             var scrolldist = cenSide.scrollTop() * 0.002;
             var value = 'skew(-' + scrolldist + 'deg)';
-            $("#centerside").css('transform', value);
             $("#shade").css('transform', value);
-//            document.documentElement.style.setProperty('--skew', `skew(-${scrolldist}deg)`);
-//            console.log(value);
+            $("#centerside").css('transform', value);
         });
     }    
 </script>
