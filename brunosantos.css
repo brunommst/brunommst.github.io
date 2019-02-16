@@ -3,7 +3,7 @@
     --centerside: calc(100% - var(--leftside));
     --leftsidehover: 40vw;
     --centersidehover: calc(100vw - var(--leftsidehover));
-    --fontfamily: 'Space-Grotesque', sans-serif;
+    --fontfamily: 'Bangla', sans-serif;
 }
 
 ::-moz-selection {
