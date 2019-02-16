@@ -138,7 +138,6 @@ body {
     line-height: 1.6;
     font-size: 2rem;
     text-align: center;
-    font-family: sans-serif;
     top: 15vh;
     left: 25%;
     font-family: var(--fontfamily)
@@ -294,7 +293,7 @@ body {
 .main-text {
     height: auto;
     font-size: 25px;
-    font-family: sans-serif;
+    font-family: var(--fontfamily);
     /*     font-weight: 400;*/
     max-width: 90vw;
     margin-bottom: 200px;
@@ -303,7 +302,7 @@ body {
 
 footer p {
     font-size: 25px;
-    font-family: sans-serif;
+    font-family: var(--fontfamily);
     margin-bottom: 10px;
 }
 
@@ -377,7 +376,7 @@ footer p {
 #text {
     font-size: 18px;
     text-align: center;
-    font-family: sans-serif;
+    font-family: var(--fontfamily);
     /*    font-style: italic;*/
 }
 
@@ -495,7 +494,7 @@ footer p {
     max-width: 600px;
     margin: 0px;
     margin-top: 10px;
-    font-family: sans-serif;
+    font-family: var(--fontfamily);
     line-height: 1.6;
 }
 
@@ -528,7 +527,7 @@ footer p {
     margin-top: 10px;
     color: black;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: var(--fontfamily);
 } .texts-wrapper a:hover {
     color: darkorange;
 }
@@ -591,7 +590,7 @@ footer p {
     color: black;
     border: 1px solid;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: var(--fontfamily);
     text-align: center;
     position: absolute;   
     padding: 2% 0;
