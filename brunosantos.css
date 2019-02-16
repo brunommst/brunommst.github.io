@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Bangla-bold;
+    src: url(fonts/BanglaSangamMN-Bold-02.ttf);
+}
+
+
 :root {
     --leftside: 12vw;
     --centerside: calc(100% - var(--leftside));
