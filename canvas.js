@@ -27,7 +27,7 @@ function setup() {
 
 
 function draw() {
-    ellipse(mouseX-100, mouseY, pmouseX, pmouseY);
+    ellipse(mouseX-150, mouseY, pmouseX, pmouseY);
 }
 
 function mousePressed() {
