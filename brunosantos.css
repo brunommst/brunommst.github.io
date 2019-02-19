@@ -122,7 +122,7 @@ body {
     line-height: 1.6;
     font-size: 1.2rem;
     text-align: center;
-    font-family: sans-serif;
+    font-family: var(--fontfamily);
     bottom: 10vh;
     left: calc((100% - 550px) / 2);
     -webkit-transition: all 1s;
@@ -139,7 +139,7 @@ body {
     line-height: 1.6;
     font-size: 2rem;
     text-align: center;
-    font-family: sans-serif;
+    font-family: var(--fontfamily);
     top: 15vh;
     left: 25%;
     font-family: var(--fontfamily)
