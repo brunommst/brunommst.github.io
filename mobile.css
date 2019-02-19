@@ -91,7 +91,7 @@
     #name {
         width: calc(100vw - 10px);
         height: 45px;
-        font-size: 30px;
+        font-size: 10vw;
         vertical-align: middle;
         display: -webkit-box;
         display: -ms-flexbox;

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    
+
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -47,6 +47,7 @@
     </script>
 
     <link rel="stylesheet" type="text/css" href="brunosantos.css">
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
 
@@ -67,7 +68,7 @@
             <div id="button" class="button" onclick="call()"></div>
             <div id="leftside">
                 <div id="container" onclick="call()">
-                    <p id="name" >BRUNO SANTOS</p>
+                    <p id="name">Bruno Santos</p>
                     <div class="main-text">HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP DIGITAL INTERFACES AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB.<br><br> STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY ON A POSTGRADUATE DEGREE IN DIGITAL EXPERIENCE DESIGN WHILE DOING SOME FREELANCE STUFF ON THE SIDE.
                         <br><br>FOR ANYTHING DESIGN OR WEBSITE RELATED CONTACT VIA:<br><a href="mailto:brunommst@gmail.com" class="link">brunommst@gmail.com</a><br><a href="www.linkedin.com/in/brunommst/" class="link" target="_blank"> Or my LinkedIn</a>
                         <!--
@@ -261,9 +262,10 @@
             $("#shade").css('transform', value);
             $("#centerside").css('transform', value);
         });
-    }    
+    }
+
 </script>
-    
+
 <script>
     //necessary evils//
     setTimeout(function() {
@@ -279,10 +281,10 @@
 
     window.addEventListener('load', function() {
         console.log('done');
-                $('.preloader').css({
-                    transform: 'scale(300)',
-                }, 10000);
-                $('.preloader').fadeOut('slow');
+        $('.preloader').css({
+            transform: 'scale(300)',
+        }, 15000);
+        $('.preloader').fadeOut('slow');
     });
 
 </script>
@@ -405,6 +407,23 @@
 
     } else {
         $(".button").hide();
+
+
+        $('#leftside').addClass("leftsihov");
+        $('#ghostleftside').addClass("leftsihov");
+        $('#centerside').addClass("centersihov");
+        var fontWidthName = $('#centerside').width();
+        $('#name').css({
+            'font-size': '' + fontWidthName / 15 + 'px'
+        });
+
+
+        $('#centerside').hover(function() {
+            $('#leftside').removeClass("leftsihov");
+            $('#ghostleftside').removeClass("leftsihov");
+            $('#centerside').removeClass("centersihov");
+        });
+
 
         $('#module7').mousedown(function() {
             $('#module7').animate({

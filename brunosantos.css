@@ -3,12 +3,13 @@
     src: url(fonts/BanglaSangamMN-Bold-02.ttf);
 }
 
-
 :root {
     --leftside: 12vw;
     --centerside: calc(100% - var(--leftside));
     --leftsidehover: 40vw;
     --centersidehover: calc(100vw - var(--leftsidehover));
+    --leftsidehoverfirst: 50vw;
+    --centersidehoverfirst: calc(100vw - var(--leftsidehoverfirst));
     --fontfamily: 'Bangla-bold', sans-serif;
 }
 
@@ -138,6 +139,7 @@ body {
     line-height: 1.6;
     font-size: 2rem;
     text-align: center;
+    font-family: sans-serif;
     top: 15vh;
     left: 25%;
     font-family: var(--fontfamily)
@@ -264,22 +266,27 @@ body {
     }
 }
 
+.leftsihov {
+    width: var(--leftsidehoverfirst) !important;
+}
+.centersihov {
+    width: var(--centersidehoverfirst) !important;
+}
+
 #leftside:hover {
     width: var(--leftsidehover);
 }
-
 #leftside:hover ~ #ghostleftside {
     width: var(--leftsidehover);
 }
-
 #leftside:hover ~ #centerside {
     width: var(--centersidehover);
 }
 
 
 #name {
-    height: 50px;
-    width: 340px;
+    height: auto;
+    width: 1000px;
     font-weight: 600;
     font-size: 35px;
     font-family: var(--fontfamily);
@@ -293,16 +300,17 @@ body {
 .main-text {
     height: auto;
     font-size: 25px;
-    font-family: var(--fontfamily);
+    font-family: sans-serif;
     /*     font-weight: 400;*/
     max-width: 90vw;
     margin-bottom: 200px;
-    line-height: 1.4;
+    line-height: 1.5;
+    padding-right: 15px;
 }
 
 footer p {
     font-size: 25px;
-    font-family: var(--fontfamily);
+    font-family: sans-serif;
     margin-bottom: 10px;
 }
 
@@ -376,7 +384,7 @@ footer p {
 #text {
     font-size: 18px;
     text-align: center;
-    font-family: var(--fontfamily);
+    font-family: sans-serif;
     /*    font-style: italic;*/
 }
 
@@ -494,7 +502,7 @@ footer p {
     max-width: 600px;
     margin: 0px;
     margin-top: 10px;
-    font-family: var(--fontfamily);
+    font-family: sans-serif;
     line-height: 1.6;
 }
 
@@ -527,7 +535,7 @@ footer p {
     margin-top: 10px;
     color: black;
     font-size: 16px;
-    font-family: var(--fontfamily);
+    font-family: sans-serif;
 } .texts-wrapper a:hover {
     color: darkorange;
 }
@@ -590,7 +598,7 @@ footer p {
     color: black;
     border: 1px solid;
     font-size: 16px;
-    font-family: var(--fontfamily);
+    font-family: sans-serif;
     text-align: center;
     position: absolute;   
     padding: 2% 0;
