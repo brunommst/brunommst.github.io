@@ -34,3 +34,11 @@ function mousePressed() {
     $("canvas")[0].getContext('2d').clearRect(0, 0, width, height);
 }
 
+function keyTyped() {
+    if (key === 's') {
+        fill(0);
+    } else if (key === 'd') {
+        fill(255);
+    }    
+}
+
