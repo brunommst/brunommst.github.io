@@ -1,5 +1,6 @@
 var canvas;
 var mic;
+var value = 255;
 
 function windowResized() {
     //console.log('resized');
@@ -7,14 +8,8 @@ function windowResized() {
 }
 
 function setup() {
-
-
-//    var element = document.getElementById('centerside');
-//    var positionInfo = element.getBoundingClientRect();
-//
-//    var height = positionInfo.height;
-    var height = $("#module-draw").height();
-    var width = $("#module-draw").width();
+    var height = $("#module-draw").outerHeight();
+    var width = $("#module-draw").outerWidth();
 
     canvas = createCanvas(width, height);
     canvas.parent("module-draw");
@@ -27,7 +22,8 @@ function setup() {
 
 
 function draw() {
-    ellipse(mouseX-150, mouseY, pmouseX, pmouseY);
+    fill(value);
+    ellipse(mouseX-50, mouseY, pmouseX, pmouseY);
 }
 
 function mousePressed() {
@@ -35,10 +31,14 @@ function mousePressed() {
 }
 
 function keyTyped() {
-    if (key === 's') {
-        fill(0);
-    } else if (key === 'd') {
-        fill(255);
-    }    
+    if (value === 0) {
+    value = 255;
+  } else {
+    value = 0;
+  }    
+}
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
 }
 

@@ -69,8 +69,8 @@
             <div id="leftside">
                 <div id="container" onclick="call()">
                     <p id="name">Bruno Santos</p>
-                    <div class="main-text">HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP DIGITAL INTERFACES AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB.<br><br> STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY ON A POSTGRADUATE DEGREE IN DIGITAL EXPERIENCE DESIGN WHILE DOING SOME FREELANCE STUFF ON THE SIDE.
-                        <br><br>FOR ANYTHING DESIGN OR WEBSITE RELATED CONTACT VIA:<br><a href="mailto:brunommst@gmail.com" class="link">brunommst@gmail.com</a><br><a href="www.linkedin.com/in/brunommst/" class="link" target="_blank"> Or my LinkedIn</a>
+                    <div class="main-text"><span>HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP DIGITAL INTERFACES AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB.<br><br> STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY ON A POSTGRADUATE DEGREE IN DIGITAL EXPERIENCE DESIGN WHILE DOING SOME FREELANCE STUFF ON THE SIDE.
+                        <br><br>FOR ANYTHING DESIGN OR WEBSITE RELATED CONTACT VIA:<br><a href="mailto:brunommst@gmail.com" class="link">brunommst@gmail.com</a><br><a href="www.linkedin.com/in/brunommst/" class="link" target="_blank"> Or my LinkedIn</a></span>
                         <!--
                     <br><br> STALK THE VERY DRY SOCIAL MEDIA VIA:<br> behance/brunommst
                     <br> instagram/brunommst
@@ -410,6 +410,8 @@
 
 
         $('#leftside').addClass("leftsihov");
+        $('#leftside span, #name').addClass("hidentext");
+        
         $('#ghostleftside').addClass("leftsihov");
         $('#centerside').addClass("centersihov");
         var fontWidthName = $('#centerside').width();
@@ -420,8 +422,14 @@
 
         $('#centerside').hover(function() {
             $('#leftside').removeClass("leftsihov");
+            $('#leftside span, #name').addClass("hidentext");
             $('#ghostleftside').removeClass("leftsihov");
             $('#centerside').removeClass("centersihov");
+            windowResized();
+        });
+        
+        $('#leftside').hover(function() {
+            $('#name, #leftside span').removeClass("hidentext");
         });
 
 

@@ -286,7 +286,7 @@ body {
 
 #name {
     height: auto;
-    width: 1000px;
+    width: max-content;
     font-weight: 600;
     font-size: 35px;
     font-family: var(--fontfamily);
@@ -312,6 +312,14 @@ footer p {
     font-size: 25px;
     font-family: sans-serif;
     margin-bottom: 10px;
+}
+
+.hidentext {
+    background-color: #000;
+    box-shadow: 0.5em 0 0 #000, -0.5em 0 0 #000;
+}
+span {
+    transition: all 0.2s;
 }
 
 
@@ -449,6 +457,7 @@ footer p {
     margin-bottom: -1%;
     height: 50vh;
     width: 101%;
+        overflow: hidden;
 }
 
 #module-draw canvas {
