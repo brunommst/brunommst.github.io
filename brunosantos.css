@@ -58,6 +58,7 @@
 }
 
 img {
+    height: 100%;
     image-resolution: snap;
     object-fit:contain;
     image-rendering: crisp-edges;
