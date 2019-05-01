@@ -63,7 +63,7 @@ img {
     object-fit:contain;
     image-rendering: crisp-edges;
     background-image: url(images/loading-final.gif);
-    background-size: 40px;
+    background-size: 150px;
     background-position: center;
     background-repeat: no-repeat;
 }
