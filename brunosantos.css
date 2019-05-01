@@ -75,7 +75,10 @@ body {
     overflow-x: hidden;
     /*     overflow: hidden;*/
 }
-
+.lazy {
+    object-fit:contain;
+    image-rendering: crisp-edges;
+}
 .preloader {
         position: absolute;
         top: 0;
