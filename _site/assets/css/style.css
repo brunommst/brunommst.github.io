@@ -1,0 +1,10 @@
+body {
+  font-family: "Helvetica", sans-serif; }
+
+a {
+  color: red; }
+
+h2 {
+  color: red;
+  font-size: 30px;
+  text-decoration: line-through; }

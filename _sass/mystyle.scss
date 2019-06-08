@@ -1,0 +1,21 @@
+
+$mytype: 'Helvetica', sans-serif;
+$brandcolor: red;
+
+body {
+    font-family: $mytype;
+}
+
+a {
+    color: $brandcolor;
+}
+
+@mixin cordaletra {
+    color: $brandcolor;
+    font-size: 30px;
+    text-decoration: line-through;
+}
+
+h2 {
+    @include cordaletra;
+}

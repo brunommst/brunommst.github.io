@@ -1,9 +1,0 @@
-{
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "My Portfolio Website",
-  "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-imagemin": "^3.1.0"
-  }
-}
