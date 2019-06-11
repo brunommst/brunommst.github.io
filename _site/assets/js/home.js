@@ -23,40 +23,40 @@
 
     // NAVEGACAO EM MOBILE
 
-    if (window.innerWidth < 480) {
-        $("#jumpto").click(function () {
-            if ($(this).hasClass('on')) {
-                $(this).toggleClass('off', 'on');
-                $("#nav").find("a").show(250);
-                $("#nome").stop().css({
-                    "z-index": "-1"
-                }).animate({
-                    opacity: "0.1"
-                });
-            };
-            if ($(this).hasClass('off')) {
-                close();
-            };
-
-            function close() {
-                $("#nav").find("a").hide(250);
-                $("#nome").stop().css({
-                    "z-index": "initial"
-                }).animate({
-                    opacity: "1"
-                });
-            }
-
-        });
-        setTimeout(function () {
-            $("#nav").find("a").hide(250);
-            $("#nome").css({
-                "z-index": "initial"
-            }).animate({
-                opacity: "1"
-            });
-        }, 2000);
-    };
+//    if (window.innerWidth < 480) {
+//        $("#jumpto").click(function () {
+//            if ($(this).hasClass('on')) {
+//                $(this).toggleClass('off', 'on');
+//                $("#nav").find("a").show(250);
+//                $("#nome").stop().css({
+//                    "z-index": "-1"
+//                }).animate({
+//                    opacity: "0.1"
+//                });
+//            };
+//            if ($(this).hasClass('off')) {
+//                close();
+//            };
+//
+//            function close() {
+//                $("#nav").find("a").hide(250);
+//                $("#nome").stop().css({
+//                    "z-index": "initial"
+//                }).animate({
+//                    opacity: "1"
+//                });
+//            }
+//
+//        });
+//        setTimeout(function () {
+//            $("#nav").find("a").hide(250);
+//            $("#nome").css({
+//                "z-index": "initial"
+//            }).animate({
+//                opacity: "1"
+//            });
+//        }, 2000);
+//    };
 
 
     // BOTAO PARA IR PARA O TOPO

@@ -1,9 +1,7 @@
 title: Bru-no Digital Designer
 author: Bruno Santos
 email: brunommst@gmail.com
-description: > # this means to ignore newlines until "exclude"
-  Write an awesome description for your new site here. This could
-  for example be used for SEO purposes.
+description: description
 
 exclude:
   - Gemfile
@@ -11,13 +9,11 @@ exclude:
   - README.md
   - .gitignore
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  
 # Date format for posts
-# refer to http://shopify.github.io/liquid/filters/date/ if you
-# want to customize this
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 date_format: "%b %-d, %Y"
-
-# generate social links in footer
-social_links:
-  twitter: brunommst
-  github: brunommst
-  facebook: brunommst

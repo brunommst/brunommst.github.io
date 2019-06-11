@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link rel="canonical" href="https://bru-no.com">
-    <link rel="stylesheet" href="/assets/css/style.css">
+<!--    <link rel="stylesheet" href="/assets/css/style.css">-->
 
     <meta name="theme-color" content="#000000">
     <meta property="og:image" content="/uploads/info.jpg">
@@ -52,49 +52,41 @@
 <body>
       <div class="wrapper"><header>
     <nav id="nav">
+        <h3 id="jumpto">Guess I needed a menu of sorts:</h3>
         <ul>
-            <li id="jumpto" class="on off">Jump to:</li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#education">Education and Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">Some of What I've Done</a></li>
-            <li><a href="#contacto">Contact Me!</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="projects">Some of what I've done</a></li>
+            <li><a href="about">About me</a></li>
+            <li><a href="#contacto">Contacts</a></li>
         </ul>
-        <img id="topo" src="imagens/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
     </nav>
+    <div id="top-closed-menu">
+        <div id="menu-buttton"></div>
+        <a class="button">
+            <span class="arrow arrow-back">1</span>
+            <h5>Back to the beginning</h5> 
+        </a>
+    </div>
 </header>
 <main aria-label="Content">
-                <article class="post h-entry">
-
-  <header class="post-header">
-    <h1 class="post-title p-name">Welcome To Jekyll</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="2016-05-20T00:00:00+01:00">May 20, 2016
-      </time></p>
-  </header>
-
-  <div class="post-content e-content">
-    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
-
-
-  </div>
+                <article>
+    <h1>Welcome To Jekyll</h1>
+    <p></p>
+    
+    <ul>
+        
+    </ul>
 </article>
-
 
         </main><footer>
     <p>Lisbon — 2019</p>
+    <div id="sticky-bottom">
+        <a class="button">
+            <span class="arrow arrow-back">1</span>
+            <h5>Back to the beginning</h5>
+        </a>
+        <img id="topo" src="imagens/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
+    </div>
 </footer>
 </div>
   </body>

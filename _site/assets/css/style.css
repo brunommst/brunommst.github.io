@@ -1,10 +1,285 @@
-body {
-  font-family: "Helvetica", sans-serif; }
+@charset "UTF-8";
+@font-face {
+  font-family: Bangla-bold;
+  src: url(/assets/fonts/BanglaSangamMN-Bold-02.ttf); }
+* {
+  list-style: none;
+  --black: black;
+  --white: white;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 a {
-  color: red; }
+  color: var(--black); }
+  a:hover {
+    text-decoration: none; }
 
-h2 {
-  color: red;
-  font-size: 30px;
-  text-decoration: line-through; }
+iframe {
+  width: 350px;
+  height: 700px;
+  border: 1px solid black; }
+
+p,
+ul {
+  margin: 0;
+  padding: 0; }
+
+/* BODY E CONTENTOR PRINCIPAL */
+body {
+  width: 100%;
+  background-color: var(--white);
+  color: var(--black);
+  margin: 0; }
+
+.wrapper {
+  position: relative;
+  width: 100%; }
+
+/* NAVEGAÇÃO */
+nav {
+  width: 100%;
+  min-width: 810px;
+  height: auto; }
+  nav a {
+    text-decoration: none; }
+  nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0; }
+  nav li {
+    background: black;
+    float: left;
+    margin: 20px;
+    list-style: none;
+    font-size: 14px;
+    font-family: Bangla-bold, sans-serif;
+    color: var(--black);
+    text-decoration: underline; }
+    nav li:first-of-type {
+      text-decoration: none;
+      background: transparent; }
+    nav li:not(:first-of-type):hover {
+      background: transparent; }
+
+/* NOME */
+#nome {
+  width: 100%;
+  margin: 0;
+  color: var(--black);
+  font-size: 20vw;
+  font-family: Bangla-bold, sans-serif;
+  line-height: 1.3;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-transform: var(--skew);
+  -ms-transform: var(--skew);
+  transform: var(--skew);
+  -webkit-transform-origin: 90% 10%;
+  -ms-transform-origin: 90% 10%;
+  transform-origin: 90% 10%; }
+
+/* SOBRE */
+#sobre {
+  margin: 300px 5vw 200px 33vw;
+  padding: 60px 20px 10px;
+  color: var(--black);
+  font-size: 25px;
+  font-family: Bangla-bold, sans-serif;
+  line-height: 1.8; }
+
+#sobre:hover,
+#education .bloco:hover,
+#skills .bloco:hover {
+  background: var(--white);
+  opacity: 0.9;
+  z-index: 10; }
+
+/* EDUCATION */
+#education {
+  white-space: nowrap; }
+  #education .titulo-bloco {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; }
+  #education ul {
+    margin-bottom: 15px; }
+
+/* SKILLS */
+#skills .titulo-bloco {
+  margin-bottom: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px; }
+#skills .bloco ul:not(:last-of-type)::after {
+  content: '+'; }
+#skills h3 {
+  font-size: 45px;
+  margin: 0 auto; }
+
+/* SOME OF WHAT I'VE DONE */
+#bloco-work {
+  padding-left: 15vw; }
+
+#work h3 {
+  font-family: Bangla-bold, sans-serif;
+  font-size: 35px; }
+#work p {
+  width: 600px;
+  padding: 10px;
+  padding-left: 0;
+  position: relative;
+  z-index: 1;
+  font-family: Bangla-bold, sans-serif;
+  font-size: 16px; }
+  #work p:hover, #work p:hover ~ p {
+    background: rgba(255, 255, 255, 0.8);
+    cursor: help; }
+#work ul {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-top: -100px; }
+#work li {
+  display: inline-block; }
+#work img {
+  height: 800px;
+  margin-right: 75px; }
+
+article {
+  margin-bottom: 200px; }
+
+/* CONTACT */
+#contacto {
+  margin-bottom: 250px; }
+  #contacto p:first-of-type {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+
+/* FOOTER */
+footer {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-family: Bangla-bold, sans-serif; }
+
+#topo {
+  width: 40px;
+  height: 40px;
+  background: black;
+  display: block;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 10; }
+  #topo:hover {
+    background: none;
+    cursor: pointer; }
+
+/* CLASSES */
+.bloco {
+  margin: 0 5vw 200px 33vw;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Bangla-bold, sans-serif;
+  line-height: 1.8; }
+
+.underline {
+  text-decoration: underline; }
+
+.hidden {
+  display: none; }
+
+.titulo-bloco {
+  margin-left: 15vw;
+  margin-top: 0;
+  padding-top: 50px;
+  font-family: Bangla-bold, sans-serif;
+  font-size: 80px; }
+
+@media only screen and (max-width: 480px) {
+  nav {
+    min-width: initial;
+    height: 40vh; }
+    nav ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center; }
+    nav li {
+      font-size: 20px; }
+    nav a {
+      display: none; }
+
+  #jumpto {
+    text-decoration: underline; }
+
+  #nome {
+    top: 50px;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+
+  #sobre {
+    margin: 200px auto 150px auto;
+    font-size: 16px; }
+
+  #education {
+    white-space: normal; }
+
+  #skills .titulo-bloco {
+    top: 0; }
+
+  #skills h3 {
+    font-size: 25px; }
+
+  #bloco-work {
+    padding-left: 5vw;
+    padding-right: 5vw; }
+
+  article {
+    margin-bottom: 100px; }
+
+  #work p {
+    width: auto;
+    padding: 0; }
+  #work ul {
+    width: 100vw;
+    margin-left: -5vw; }
+  #work img {
+    height: 100vw;
+    margin-right: 75px; }
+
+  .titulo-bloco {
+    font-size: 50px;
+    margin-left: 5vw;
+    margin-bottom: 0; }
+
+  .bloco {
+    text-align: center;
+    margin: auto;
+    font-size: 16px; }
+
+  #contacto .titulo-bloco {
+    text-align: center;
+    margin: 0; }
+  #contacto p {
+    font-size: 18px; } }

@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <link rel="canonical" href="https://bru-no.com">
-    <link rel="stylesheet" href="/assets/css/style.css">
+<!--    <link rel="stylesheet" href="/assets/css/style.css">-->
 
     <meta name="theme-color" content="#000000">
     <meta property="og:image" content="/uploads/info.jpg">
@@ -52,16 +52,21 @@
 <body>
       <div class="wrapper"><header>
     <nav id="nav">
+        <h3 id="jumpto">Guess I needed a menu of sorts:</h3>
         <ul>
-            <li id="jumpto" class="on off">Jump to:</li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#education">Education and Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#work">Some of What I've Done</a></li>
-            <li><a href="#contacto">Contact Me!</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="projects">Some of what I've done</a></li>
+            <li><a href="about">About me</a></li>
+            <li><a href="#contacto">Contacts</a></li>
         </ul>
-        <img id="topo" src="imagens/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
     </nav>
+    <div id="top-closed-menu">
+        <div id="menu-buttton"></div>
+        <a class="button">
+            <span class="arrow arrow-back">1</span>
+            <h5>Back to the beginning</h5> 
+        </a>
+    </div>
 </header>
 <main aria-label="Content">
                 <style type="text/css" media="screen">
@@ -87,6 +92,13 @@
 
         </main><footer>
     <p>Lisbon — 2019</p>
+    <div id="sticky-bottom">
+        <a class="button">
+            <span class="arrow arrow-back">1</span>
+            <h5>Back to the beginning</h5>
+        </a>
+        <img id="topo" src="imagens/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
+    </div>
 </footer>
 </div>
   </body>

@@ -2,14 +2,19 @@
 layout: about
 ---
 
+
 <section title="sobre" id="sobre">
-    <h2 class="titulo-bloco hidden">About me</h2>
+    <header>
+        <h2 class="titulo-bloco hidden">About me</h2>
+    </header>
     <p>HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP DIGITAL INTERFACES AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB.</p>
     <p>STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY ON A POSTGRADUATE DEGREE IN DIGITAL EXPERIENCE DESIGN WHILE DOING SOME FREELANCE STUFF ON THE SIDE.</p>
 </section>
 
 <section title="Education and Experience" id="education">
-    <h2 class="titulo-bloco">Education and<br>Experience</h2>
+    <header>
+        <h2 class="titulo-bloco">Education and<br>Experience</h2>
+    </header>
     <div class="bloco">
         <p class="hidden">Academic course:</p>
         <ul>
@@ -30,7 +35,10 @@ layout: about
 </section>
 
 <section title="skills" id="skills">
-    <h2 class="titulo-bloco">Skills</h2>
+    <header>
+        <h2 class="titulo-bloco">Skills</h2>
+        <p>In case you’re wondering why and what you should hire me for.</p>
+    </header>
     <div class="bloco">
         <h3>Website and Design Stuff</h3>
         <p class="underline">The languages:</p>
