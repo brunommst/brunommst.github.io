@@ -83,11 +83,13 @@ header {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    will-change: transform; }
     header nav h3 {
       font-size: 16px;
       font-family: Bangla-Regular, sans-serif;
-      text-decoration: line-through; }
+      text-decoration: line-through;
+      margin-bottom: 70px; }
     header nav ul {
       display: flex;
       flex-direction: column; }
@@ -106,6 +108,9 @@ header {
     justify-content: space-between; }
     header #top-closed-menu #menu-button {
       display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
       width: 15vw;
       height: 15vw;
       z-index: 1000;
@@ -118,8 +123,15 @@ header {
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
       transition: all .2s ease;
-      -webkit-transform: scaleY(2.5);
-      -ms-transform: scaleY(2.5);
-      transform: scaleY(2.5); }
+      -webkit-transform: scaleX(2);
+      -ms-transform: scaleX(2);
+      transform: scaleX(2); }
+      header #top-closed-menu #menu-button.transform-button {
+        -webkit-transform: scaleY(2.3);
+        -ms-transform: scaleY(2.3);
+        transform: scaleY(2.3); }
     header #top-closed-menu .button-back {
       z-index: 1; }
+
+.home .button-back {
+  display: none !important; }

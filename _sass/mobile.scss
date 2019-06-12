@@ -30,20 +30,23 @@ header {
         flex-direction: column;
         justify-content: space-between;
 
+        will-change: transform;
+
         h3 {
             font-size: 16px;
             font-family: Bangla-Regular, sans-serif;
             text-decoration: line-through;
+            margin-bottom: 70px;
         }
-        
+
         ul {
             display: flex;
             flex-direction: column;
-            
+
             li {
                 font-size: 25px;
                 margin: 5px 0;
-                
+
                 a {
                     text-decoration: none;
                 }
@@ -60,13 +63,18 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        
+
         #menu-button {
             display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+
             width: 15vw;
             height: 15vw;
             z-index: 1000;
             overflow: visible;
+
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
@@ -75,18 +83,32 @@ header {
             -webkit-transition: all .2s ease;
             -o-transition: all .2s ease;
             transition: all .2s ease;
-            -webkit-transform: scaleY(2.5);
-            -ms-transform: scaleY(2.5);
-            transform: scaleY(2.5)
+
+            -webkit-transform: scaleX(2);
+            -ms-transform: scaleX(2);
+            transform: scaleX(2);
+
+            &.transform-button {
+                -webkit-transform: scaleY(2.3);
+                -ms-transform: scaleY(2.3);
+                transform: scaleY(2.3);
+            }
         }
-        
+
         .button-back {
             z-index: 1;
         }
     }
 }
 
+.transform-button {}
 
+.home {
+
+    .button-back {
+        display: none !important;
+    }
+}
 
 ///* BODY E CONTENTOR PRINCIPAL */
 //body {

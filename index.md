@@ -1,5 +1,6 @@
 ---
 layout: home
+title: home
 ---
 
 <h1 id="nome">Bru-no Santos Digital Designer</h1>

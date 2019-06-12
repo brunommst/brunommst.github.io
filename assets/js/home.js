@@ -11,15 +11,6 @@
         }
     }
 
-    // BOTOES DA NAV ANIMAREM A PAGINA
-    $(document).ready(function () {
-        $("#nav").find("a").click(function (event) {
-            event.preventDefault();
-            $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top
-            }, 200);
-        });
-    });
 
     // NAVEGACAO EM MOBILE
 
