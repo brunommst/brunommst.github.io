@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Bangla-Bold;
+    src: url(/assets/fonts/BanglaSangamMN-Bold-02.ttf);
+}
+
+@font-face {
+    font-family: Bangla-Regular;
+    src: url(/assets/fonts/BanglaSangamMN-01.ttf);
+}
+
+* {
+    list-style: none;
+    --black: black;
+    --white: white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    -webkit-overflow-scrolling: touch;
+    text-rendering: geometricPrecision;
+}
+
+a {
+    color: var(--black);
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.button {
+    width: calc(100vw - 20px - 20px - 15vw - 20px);
+    height: 60px;
+    
+    background: var(--white);
+    border: 1px solid black;
+    
+    display: flex;
+    justify-content: center;   
+    
+    &.button-back {
+        flex-direction: row;
+        .arrow span {
+            transform: rotate(-90deg);
+            transform-origin: center center;
+        }
+    }
+    &.button-forward {
+        flex-direction: row-reverse;
+        .arrow span {
+            transform: rotate(90deg);
+            transform-origin: center center;
+        }
+    }
+    
+    .arrow {
+        width: 28px;
+        height: 100%;
+        
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        span {
+            width: 100%;
+            height: 28px;
+            margin-top: 2px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+    h5 {
+        height: 100%;
+        width: 100%;
+        max-width: 175px;
+        margin: 1px 0 0;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-size: 18px;
+    }
+}
