@@ -19,6 +19,13 @@
     text-rendering: geometricPrecision;
 }
 
+::-moz-selection {
+    background: #ffc6a8;
+}
+::selection {
+    background: #ffc6a8;
+}
+
 a {
     color: var(--black);
     &:hover {
@@ -32,6 +39,12 @@ ul {
     padding: 0;
 }
 
+.hidden {
+    visibility: hidden;
+}
+.center {
+    margin: 0 auto;
+}
 
 .button {
     width: calc(100vw - 20px - 20px - 15vw - 20px);
@@ -41,20 +54,27 @@ ul {
     border: 1px solid black;
     
     display: flex;
-    justify-content: center;   
+    justify-content: center;
+    text-decoration: none;
     
     &.button-back {
         flex-direction: row;
-        .arrow span {
-            transform: rotate(-90deg);
-            transform-origin: center center;
+        .arrow {
+            margin-right: 10px;
+            span {
+                transform: rotate(-90deg);
+                transform-origin: center center;
+            }
         }
     }
     &.button-forward {
         flex-direction: row-reverse;
-        .arrow span {
-            transform: rotate(90deg);
-            transform-origin: center center;
+        .arrow {
+            margin-left: 10px;
+            span {
+                transform: rotate(90deg);
+                transform-origin: center center;
+            }
         }
     }
     
@@ -66,6 +86,7 @@ ul {
         display: flex;
         justify-content: center;
         align-items: center;
+        
         
         span {
             width: 100%;
@@ -79,7 +100,6 @@ ul {
     }
     h5 {
         height: 100%;
-        width: 100%;
         max-width: 175px;
         margin: 1px 0 0;
         

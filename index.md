@@ -2,18 +2,21 @@
 layout: home
 title: home
 ---
-
-<h1 id="nome">Bru-no Santos Digital Designer</h1>
-
+<section title="name" id="name">
+    <h1>Bru-no Santos Digital Designer</h1>
+</section>
 <section title="sobre" id="sobre">
     <header>
         <h2 class="titulo-bloco hidden">About me</h2>
     </header>
-    <p>HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP DIGITAL INTERFACES AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB.</p>
-    <a class="button">
-        <span class="arrow arrow-back">1</span>
-        <h5>Back to the beginning</h5>
-    </a>
+    <p>Hi! Welcome to my website/portfolio</p>
+    <p>I’m a Digital Experience Designer from Lisbon and if you’re looking for a guy for your next website and/or digital solution, you’ve come to the right place!</p>
+    <a href="about" class="button button-forward center">
+            <div class="arrow">
+                <span>1</span>
+            </div>
+            <h5>find out more</h5>
+        </a>
 </section>
 
 <section title="Some of what I've done" id="work">

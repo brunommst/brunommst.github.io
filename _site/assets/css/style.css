@@ -13,6 +13,12 @@
   -webkit-overflow-scrolling: touch;
   text-rendering: geometricPrecision; }
 
+::-moz-selection {
+  background: #ffc6a8; }
+
+::selection {
+  background: #ffc6a8; }
+
 a {
   color: var(--black); }
   a:hover {
@@ -23,23 +29,34 @@ ul {
   margin: 0;
   padding: 0; }
 
+.hidden {
+  visibility: hidden; }
+
+.center {
+  margin: 0 auto; }
+
 .button {
   width: calc(100vw - 20px - 20px - 15vw - 20px);
   height: 60px;
   background: var(--white);
   border: 1px solid black;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  text-decoration: none; }
   .button.button-back {
     flex-direction: row; }
-    .button.button-back .arrow span {
-      transform: rotate(-90deg);
-      transform-origin: center center; }
+    .button.button-back .arrow {
+      margin-right: 10px; }
+      .button.button-back .arrow span {
+        transform: rotate(-90deg);
+        transform-origin: center center; }
   .button.button-forward {
     flex-direction: row-reverse; }
-    .button.button-forward .arrow span {
-      transform: rotate(90deg);
-      transform-origin: center center; }
+    .button.button-forward .arrow {
+      margin-left: 10px; }
+      .button.button-forward .arrow span {
+        transform: rotate(90deg);
+        transform-origin: center center; }
   .button .arrow {
     width: 28px;
     height: 100%;
@@ -56,7 +73,6 @@ ul {
       align-items: flex-end; }
   .button h5 {
     height: 100%;
-    width: 100%;
     max-width: 175px;
     margin: 1px 0 0;
     display: flex;
@@ -135,3 +151,38 @@ header {
 
 .home .button-back {
   display: none !important; }
+.home section {
+  margin: 100px 0;
+  padding: 20px; }
+  .home section:nth-of-type(2) {
+    margin-top: 0; }
+  .home section h2 {
+    font-size: 50px;
+    margin: 0; }
+  .home section#sobre header {
+    height: 0; }
+  .home section#sobre h2 {
+    margin: 0; }
+  .home section#sobre p:first-of-type {
+    margin-bottom: 30px; }
+  .home section#sobre .button {
+    margin-top: 50px; }
+
+#name {
+  overflow: hidden;
+  padding: 10px 0 10px 10px;
+  margin: 0; }
+  #name h1 {
+    width: 100%;
+    margin: 0;
+    color: var(--black);
+    font-size: 100px;
+    line-height: 1.3;
+    overflow: hidden;
+    pointer-events: none;
+    -webkit-transform: var(--skew);
+    -ms-transform: var(--skew);
+    transform: var(--skew);
+    -webkit-transform-origin: 0 60%;
+    -ms-transform-origin: 0 60%;
+    transform-origin: 0 60%; }
