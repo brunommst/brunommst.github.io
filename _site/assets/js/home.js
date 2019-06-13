@@ -31,50 +31,6 @@
     })();
 
 
-    //    FILTER
-
-    $(document).ready(function () {
-        if (window.matchMedia('(max-width:500px)').matches) {
-            var open = 0;
-            if (open == 0) {
-                $(".filter").click(function (e) {
-                    if (!$(".filter-close").is(e.target)){
-                    console.log(open);
-                    $(this).find("ul").stop().slideDown(100, 'swing');
-                    $(this).animate({
-                        width: '290px',
-                        height: '230px',
-                        marginRight: '0'
-                    }, 100).css({
-                        borderRight: '1px solid black'
-                    });
-                    $(".filter-open").hide();
-                    $(".filter-close").show();
-                    
-                    
-                        e.stopPropagation();
-                        console.log('not');
-                        open = 1;
-                    }
-                });
-            }
-            
-            $("body, .filter-close").click(function () {
-                console.log(open);
-                $(".filter-open").show();
-                $(".filter-close").hide();
-                $(".filter").find("ul").stop().slideUp(100, 'swing');
-                $(".filter").css({
-                    width: '',
-                    height: '',
-                    marginRight: '',
-                    borderRight: ''
-                }, 100);
-                open = 0;
-            });
-        }
-    });
-
     // NAVEGACAO EM MOBILE
 
     //    if (window.innerWidth < 480) {

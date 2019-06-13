@@ -167,12 +167,6 @@ header {
     margin-bottom: 30px; }
   .home section#sobre .button {
     margin-top: 50px; }
-  .home section#projects {
-    display: flex;
-    flex-direction: column; }
-    .home section#projects header {
-      display: flex;
-      flex-direction: column; }
 
 #name {
   overflow: hidden;
@@ -192,35 +186,3 @@ header {
     -webkit-transform-origin: 0 60%;
     -ms-transform-origin: 0 60%;
     transform-origin: 0 60%; }
-
-.filter {
-  width: 90px;
-  height: 50px;
-  background: white;
-  border: 1px solid black;
-  border-right: 0;
-  padding: 10px 15px 20px;
-  margin-right: -20px;
-  align-self: flex-end;
-  position: sticky;
-  top: 100px;
-  right: 0;
-  transition: all .06s; }
-  .filter h3 {
-    height: 40px;
-    font-size: 25px;
-    margin: 0;
-    position: absolute; }
-    .filter h3.filter-close {
-      display: none;
-      text-transform: capitalize;
-      padding: 5px; }
-  .filter ul {
-    height: 160px;
-    display: none;
-    text-align: right;
-    margin-top: 50px;
-    font-size: 20px;
-    line-height: 40px; }
-    .filter ul .filter-selected {
-      text-decoration: underline; }

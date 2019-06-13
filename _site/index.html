@@ -71,6 +71,7 @@
     </div>
     <script>
         $(document).ready(function() {
+
             if (window.matchMedia('(max-width:500px)').matches) {
                 var open = 0;
                 $("#nav").hide();
@@ -81,6 +82,7 @@
                 });
 
                 $("main").not("header *").on('click', function() {
+                    console.log('teste');
                     if (open == 1) {
                         $("#nav").stop().slideToggle(100, 'swing', function() {
                             open = open ? 0 : 1;
@@ -88,8 +90,10 @@
                         });
                     }
                 });
+
             }
         });
+
     </script>
 </header>
 <main aria-label="Content">
@@ -110,20 +114,20 @@
         </a>
 </section>
 
-<section title="Some of what I've done" id="projects">
+<section title="Some of what I've done" id="work">
     <header>
         <h2 class="titulo-bloco">Some of<br />what I've<br />done</h2>
+        <aside class="filter">
+            <h3>filter</h3>
+            <h3>x</h3>
+            <ul class="filter-options">
+                <li>Everything</li>
+                <li>Product Design</li>
+                <li>Websites</li>
+                <li>General Design Stuff</li>
+            </ul>
+        </aside>
     </header>
-    <aside class="filter">
-        <h3 class="filter-open">filter</h3>
-        <h3 class="filter-close">x</h3>
-        <ul class="filter-options">
-            <li class="filter-selected">Everything</li>
-            <li>Product Design</li>
-            <li>Websites</li>
-            <li>General Design Stuff</li>
-        </ul>
-    </aside>
     <div id="bloco-work">
         
         <a href="/projects/CRISE" class="CRISE">
