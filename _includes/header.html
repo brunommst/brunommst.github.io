@@ -19,7 +19,6 @@
     </div>
     <script>
         $(document).ready(function() {
-
             if (window.matchMedia('(max-width:500px)').matches) {
                 var open = 0;
                 $("#nav").hide();
@@ -30,7 +29,6 @@
                 });
 
                 $("main").not("header *").on('click', function() {
-                    console.log('teste');
                     if (open == 1) {
                         $("#nav").stop().slideToggle(100, 'swing', function() {
                             open = open ? 0 : 1;
@@ -38,9 +36,7 @@
                         });
                     }
                 });
-
             }
         });
-
     </script>
 </header>
