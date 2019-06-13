@@ -27,15 +27,15 @@ title: home
         <h3 class="filter-open">filter</h3>
         <h3 class="filter-close">x</h3>
         <ul class="filter-options">
-            <li class="filter-selected">Everything</li>
-            <li>Product Design</li>
-            <li>Websites</li>
-            <li>General Design Stuff</li>
+            <li id="everything" class="filter-selected">Everything</li>
+            <li id="product">Product Design</li>
+            <li id="websites">Websites</li>
+            <li id="general">General Design Stuff</li>
         </ul>
     </aside>
     <div id="bloco-work">
         {% for project in site.projects %}
-        <a href="{{ site.baseurl }}/projects/{{ project.slug }}" class="{{ project.slug}}">
+        <a href="{{ site.baseurl }}/projects/{{ project.slug }}" class=" project {{ project.slug }} filter-{{ project.category }}">
             <article>
                 <h3>{{ project.title }}</h3>
                 <p>{{ project.description }}</p>

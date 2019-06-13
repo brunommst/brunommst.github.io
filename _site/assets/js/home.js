@@ -14,53 +14,45 @@
             }
             ticking = false;
         };
-
         var requestTick = function () {
             if (!ticking) {
                 window.requestAnimationFrame(update);
                 ticking = true;
             }
         };
-
         var onScroll = function () {
             lastScrollY = window.scrollY;
             requestTick();
         };
-
         $(window).on('scroll', onScroll);
     })();
 
 
-    //    FILTER
+    //    FILTER BUTTON
 
     $(document).ready(function () {
         if (window.matchMedia('(max-width:500px)').matches) {
             var open = 0;
             if (open == 0) {
                 $(".filter").click(function (e) {
-                    if (!$(".filter-close").is(e.target)){
-                    console.log(open);
-                    $(this).find("ul").stop().slideDown(100, 'swing');
-                    $(this).animate({
-                        width: '290px',
-                        height: '230px',
-                        marginRight: '0'
-                    }, 100).css({
-                        borderRight: '1px solid black'
-                    });
-                    $(".filter-open").hide();
-                    $(".filter-close").show();
-                    
-                    
+                    if (!$(".filter-close").is(e.target)) {
+                        $(this).find("ul").stop().slideDown(100, 'swing');
+                        $(this).animate({
+                            width: '290px',
+                            height: '230px',
+                            marginRight: '0'
+                        }, 100).css({
+                            borderRight: '1px solid black'
+                        });
+                        $(".filter-open").hide();
+                        $(".filter-close").show();
                         e.stopPropagation();
-                        console.log('not');
                         open = 1;
                     }
                 });
             }
-            
+
             $("body, .filter-close").click(function () {
-                console.log(open);
                 $(".filter-open").show();
                 $(".filter-close").hide();
                 $(".filter").find("ul").stop().slideUp(100, 'swing');
@@ -73,6 +65,27 @@
                 open = 0;
             });
         }
+
+        $("#everything").click(function () {
+            $(this).addClass("filter-selected").siblings().removeClass("filter-selected");
+            $(".project").fadeIn();
+        });
+        $("#product").click(function () {
+            $(this).addClass("filter-selected").siblings().removeClass("filter-selected");
+            $(".filter-product").fadeIn();
+            $(".project").not(".filter-product").fadeOut();
+        });
+        $("#websites").click(function () {
+            $(this).addClass("filter-selected").siblings().removeClass("filter-selected");
+            $(".filter-websites").fadeIn();
+            $(".project").not(".filter-websites").fadeOut();
+        });
+        $("#general").click(function () {
+            $(this).addClass("filter-selected").siblings().removeClass("filter-selected");
+            $(".filter-general").fadeIn();
+            $(".project").not(".filter-general").fadeOut();
+        });
+
     });
 
     // NAVEGACAO EM MOBILE
