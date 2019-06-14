@@ -4,7 +4,7 @@
 body {
     background-color: var(--white);
     color: var(--black);
-    font-family: Bangla-Bold, sans-serif;
+    font-family: $font-bold;
     margin: 0;
     transition: all .2s ease-in-out;
 }
@@ -76,7 +76,8 @@ body {
     }
 }
 
-// ALL
+
+// COMMON
 
 header {
     position: relative;
@@ -96,7 +97,7 @@ header {
 
         h3 {
             font-size: 16px;
-            font-family: Bangla-Regular, sans-serif;
+            font-family: $font-bold;
             text-decoration: line-through;
             margin-bottom: 70px;
         }
@@ -132,8 +133,8 @@ header {
             top: 0;
             right: 0;
 
-            width: 15vw;
-            height: 15vw;
+            width: 60px;
+            height: 60px;
             z-index: 1000;
             overflow: visible;
 
@@ -151,9 +152,9 @@ header {
             transform: scaleX(2);
 
             &.transform-button {
-                -webkit-transform: scaleY(2.3);
-                -ms-transform: scaleY(2.3);
-                transform: scaleY(2.3);
+                -webkit-transform: scaleY(2.2);
+                -ms-transform: scaleY(2.2);
+                transform: scaleY(2.2);
             }
         }
 
@@ -228,8 +229,53 @@ footer {
     }
 }
 
-// HOME
+.filter {
+    width: 90px;
+    height: 50px;
+    background: white;
+    border: 1px solid var(--black);
+    border-right: 0;
 
+    padding: 10px 15px 20px;
+    margin-right: -20px;
+    margin-bottom: 20px;
+
+    align-self: flex-end;
+    position: sticky;
+    top: 200px;
+    right: 0;
+
+    transition: all .06s;
+
+    h3 {
+        height: 40px;
+        font-size: 25px;
+        margin: 0;
+        position: absolute;
+
+        &.filter-close {
+            display: none;
+            text-transform: capitalize;
+            padding: 5px;
+        }
+    }
+
+    ul {
+        height: 160px;
+        display: none;
+        text-align: right;
+        margin-top: 50px;
+        font-size: 20px;
+        line-height: 40px;
+
+        .filter-selected {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+// HOME PAGE
 .home {
     .button-back {
         display: none !important;
@@ -265,10 +311,16 @@ footer {
                 margin-top: 50px;
             }
         }
+
         &#projects {
             @include projects;
             display: flex;
             flex-direction: column;
+            margin-bottom: 50px;
+        }
+        
+        &#contact {
+            margin-top: 50px;
         }
     }
 
@@ -282,7 +334,6 @@ footer {
         }
     }
 }
-
 
 // NOME 
 
@@ -309,52 +360,6 @@ footer {
         -webkit-transform-origin: 0 60%;
         -ms-transform-origin: 0 60%;
         transform-origin: 0 60%;
-    }
-}
-
-// FILTER
-
-.filter {
-    width: 90px;
-    height: 50px;
-    background: white;
-    border: 1px solid var(--black);
-    border-right: 0;
-
-    padding: 10px 15px 20px;
-    margin-right: -20px;
-
-    align-self: flex-end;
-    position: sticky;
-    top: 200px;
-    right: 0;
-
-    transition: all .06s;
-
-    h3 {
-        height: 40px;
-        font-size: 25px;
-        margin: 0;
-        position: absolute;
-
-        &.filter-close {
-            display: none;
-            text-transform: capitalize;
-            padding: 5px;
-        }
-    }
-
-    ul {
-        height: 160px;
-        display: none;
-        text-align: right;
-        margin-top: 50px;
-        font-size: 20px;
-        line-height: 40px;
-
-        .filter-selected {
-            text-decoration: underline;
-        }
     }
 }
 
@@ -430,6 +435,7 @@ footer {
     }
 
 }
+
 
 
 
@@ -537,7 +543,6 @@ footer {
         display: none;
     }
 }
-
 
 
 //EXPERIMENTS PAGE

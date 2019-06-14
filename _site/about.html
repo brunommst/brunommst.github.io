@@ -62,12 +62,15 @@
         </ul>
     </nav>
     <div id="top-closed-menu">
+        
         <a href="/" class="button button-back">
             <div class="arrow">
                 <span>1</span>
             </div>
             <h5>Back to beginning</h5>
         </a>
+        
+
         <div id="menu-button" class="transform-button"></div>
     </div>
     <script>
@@ -79,6 +82,9 @@
                     $("#nav").stop().slideToggle(150, 'swing');
                     open = open ? 0 : 1;
                     $("#menu-button").toggleClass('transform-button');
+                    $("#top-closed-menu").animate({
+                        'top': '20px'
+                    });
                 });
 
                 $("main").not("header *").on('click', function() {
@@ -86,11 +92,15 @@
                         $("#nav").stop().slideToggle(100, 'swing', function() {
                             open = open ? 0 : 1;
                             $("#menu-button").toggleClass('transform-button');
+                            $("#top-closed-menu").animate({
+                                'top': ''
+                            });
                         });
                     }
                 });
             }
         });
+
     </script>
 </header>
 <main aria-label="Content">
@@ -193,7 +203,7 @@
     </div>
 </footer>
 
-<script language="javascript" type="text/javascript" src="/assets/js/home.js"></script>
+
 </div>
   </body>
 
