@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single-project
 title: onfailure
 category: general
 description: "onfailure compiles various artists of the experimental electronic music genre into a special edition issue. Contains a CD, a descriptive booklet and a series of 12 computer generated music visualizations. Each of them is created by a script that processes the CD’s songs and produces prints based on their individual characteristics."

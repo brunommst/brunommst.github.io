@@ -16,13 +16,13 @@
     // If it's Monday - Friday
     if (weekDay >= 1 && weekDay <= 5) {
         // Start at 7am, end at 8pm
-        hours.start.setHours(7);
-        hours.end.setHours(23);
+        hours.start.setHours(24);
+        hours.end.setHours(8);
         // If it's Saturday
     } else if (weekDay >= 6) {
         // Start at 8am, end at 8pm
-        hours.start.setHours(8);
-        hours.end.setHours(21);
+        hours.start.setHours(9);
+        hours.end.setHours(20);
     }
 
     function countDown() {
@@ -44,10 +44,8 @@
             $('.countdown').hide();
             document.documentElement.style.setProperty('--black', 'white');
             document.documentElement.style.setProperty('--white', 'black');
-            console.log('teste');
         } else if ($('.countdown').not(':visible')) {
-            $('.countdown').show();
-            console.log('teste');
+
         }
 
         setInterval(function () {
@@ -68,12 +66,10 @@
         $("#sticky-bottom").stop().hide();
         var update = function () {
             if (lastScrollY < 500) {
-                scrolldist = lastScrollY * 0.05;
-                document.documentElement.style.setProperty('--skew', `scaleY(calc(1 - ${scrolldist*0.05})) scaleX(calc(1 + ${scrolldist*0.02}))`);
-                $("#sticky-bottom").stop().fadeOut(50);
+                scrolldist = lastScrollY * .5;
+                document.documentElement.style.setProperty('--skew', `rotate(${-scrolldist*1}deg) skew(${scrolldist*2}deg)`);
             } else {
-                document.documentElement.style.setProperty('--skew', `scaleY(0) scaleX(0)`);
-                $("#sticky-bottom").stop().fadeIn(50);
+                document.documentElement.style.setProperty('--skew', `rotate(0deg)`);
             }
             ticking = false;
         };
