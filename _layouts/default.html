@@ -4,7 +4,7 @@
   {%- include head.html -%}
 
   <body>
-      <div class="wrapper {{ page.title }}">
+      <div class="wrapper {{ page.title }} {% if page.collection == 'projects' %}project-page{% endif %}">
 
         {%- include header.html -%}
 
@@ -12,9 +12,15 @@
                 {{ content }}
         </main>
 
-        {%- include footer.html -%}
-
+        
+        {% if page.collection == 'projects' %}
+          {%- include single_project-footer.html -%}
+        {% else %}
+          {%- include footer.html -%}
+        {% endif %}
       </div>
+      
+      <script language="javascript" type="text/javascript" src="{{ "/assets/js/all.js" | relative_url }}"></script>
   </body>
 
 </html>

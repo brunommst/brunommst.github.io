@@ -540,6 +540,40 @@ footer {
 
 
 
+//EXPERIMENTS PAGE
+#experiments {
+    
+    overflow: hidden;
+    
+    #name {
+        overflow: unset;
+        h1 {
+            transform-origin: top right;
+        }
+    }
+    
+    #timer {
+        h4 {
+            text-align: center;
+            max-width: 240px
+        }
+    }
+    
+    section:not(#name) {
+        padding: 20px;
+    }
+    
+    footer {
+        p {
+            margin-bottom: 0;
+        }
+    #sticky-bottom {
+        display: none;
+    }
+    }
+}
+
+
 ///* BODY E CONTENTOR PRINCIPAL */
 //body {
 //    width: 100%;
