@@ -10,13 +10,16 @@
 
 * {
     list-style: none;
-    --black: black;
-    --white: white;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     
     -webkit-overflow-scrolling: touch;
     text-rendering: geometricPrecision;
+}
+
+:root {
+    --black: black;
+    --white: white;
 }
 
 ::-moz-selection {
@@ -41,9 +44,13 @@ ul {
 
 .hidden {
     visibility: hidden;
+    height: 0;
 }
 .center {
     margin: 0 auto;
+}
+.underline {
+    text-decoration: underline;
 }
 
 .button {
@@ -51,7 +58,7 @@ ul {
     height: 60px;
     
     background: var(--white);
-    border: 1px solid black;
+    border: 1px solid var(--black);
     
     display: flex;
     justify-content: center;

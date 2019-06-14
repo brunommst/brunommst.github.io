@@ -6,12 +6,14 @@
   src: url(/assets/fonts/BanglaSangamMN-01.ttf); }
 * {
   list-style: none;
-  --black: black;
-  --white: white;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   text-rendering: geometricPrecision; }
+
+:root {
+  --black: black;
+  --white: white; }
 
 ::-moz-selection {
   background: #ffc6a8; }
@@ -30,16 +32,20 @@ ul {
   padding: 0; }
 
 .hidden {
-  visibility: hidden; }
+  visibility: hidden;
+  height: 0; }
 
 .center {
   margin: 0 auto; }
+
+.underline {
+  text-decoration: underline; }
 
 .button {
   width: calc(100vw - 20px - 20px - 15vw - 20px);
   height: 60px;
   background: var(--white);
-  border: 1px solid black;
+  border: 1px solid var(--black);
   display: flex;
   justify-content: center;
   text-decoration: none; }
@@ -84,7 +90,8 @@ body {
   background-color: var(--white);
   color: var(--black);
   font-family: Bangla-Bold, sans-serif;
-  margin: 0; }
+  margin: 0;
+  transition: all .2s ease-in-out; }
 
 .wrapper {
   position: relative;
@@ -96,7 +103,7 @@ header {
     width: 100%;
     height: 350px;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px solid var(--black);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -134,7 +141,7 @@ header {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      background-color: #000;
+      background-color: var(--black);
       border: none;
       -webkit-transition: all .2s ease;
       -o-transition: all .2s ease;
@@ -148,6 +155,53 @@ header {
         transform: scaleY(2.3); }
     header #top-closed-menu .button-back {
       z-index: 1; }
+
+#contact {
+  margin-top: 200px;
+  text-align: center; }
+  #contact .bloco {
+    margin-top: 20px; }
+    #contact .bloco a {
+      font-size: 20px;
+      line-height: 50px; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  footer p {
+    height: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  footer #sticky-bottom {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 20px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000; }
+    footer #sticky-bottom .button {
+      height: 100%;
+      width: calc(100vw - 20px - 20px - 50px - 20px); }
+    footer #sticky-bottom img {
+      width: 50px;
+      height: 50px;
+      background: black;
+      display: block;
+      position: absolute;
+      right: 20px; }
+      footer #sticky-bottom img:hover {
+        background: none;
+        cursor: pointer; }
 
 .home .button-back {
   display: none !important; }
@@ -170,9 +224,35 @@ header {
   .home section#projects {
     display: flex;
     flex-direction: column; }
-    .home section#projects header {
+    .home section#projects #bloco-work .project {
+      width: 100%;
+      height: 480px;
+      border: 1px solid var(--black);
+      margin-bottom: 20px;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .home section#projects #bloco-work .project article {
+        width: 100%;
+        height: 100%;
+        padding: 20px; }
+        .home section#projects #bloco-work .project article h3 {
+          height: 10%;
+          margin: 0;
+          font-size: 20px;
+          text-align: center; }
+        .home section#projects #bloco-work .project article img {
+          width: 100%;
+          height: 90%;
+          object-fit: cover; }
+    .home section#projects footer {
+      width: 100%;
+      text-align: center; }
+.home footer p {
+  margin-bottom: 0; }
+.home footer #sticky-bottom {
+  display: none; }
 
 #name {
   overflow: hidden;
@@ -182,7 +262,7 @@ header {
     width: 100%;
     margin: 0;
     color: var(--black);
-    font-size: 100px;
+    font-size: 90px;
     line-height: 1.3;
     overflow: hidden;
     pointer-events: none;
@@ -197,13 +277,13 @@ header {
   width: 90px;
   height: 50px;
   background: white;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   border-right: 0;
   padding: 10px 15px 20px;
   margin-right: -20px;
   align-self: flex-end;
   position: sticky;
-  top: 100px;
+  top: 200px;
   right: 0;
   transition: all .06s; }
   .filter h3 {
@@ -224,3 +304,126 @@ header {
     line-height: 40px; }
     .filter ul .filter-selected {
       text-decoration: underline; }
+
+#timer {
+  width: 100vw;
+  height: 400px;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #timer .wrapper {
+    width: 100%;
+    max-width: 380px;
+    padding: 10px;
+    background: var(--white);
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-12deg);
+    animation: hover 20s ease-in-out infinite alternate; }
+    #timer .wrapper .countdown {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #timer .wrapper .countdown h3 {
+        margin: 0;
+        font-size: 60px; }
+    #timer .wrapper h4 {
+      margin: 0;
+      font-size: 18px; }
+@keyframes hover {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+    -webkit-transform-origin: top center;
+    transform-origin: top center; }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left; }
+  100% {
+    -webkit-transform: rotate(-17deg);
+    transform: rotate(-17deg);
+    -webkit-transform-origin: center right;
+    transform-origin: center right; } }
+.projects {
+  font-size: 18px;
+  line-height: 1.7; }
+  .projects main {
+    padding-top: 50px; }
+  .projects section {
+    padding: 20px;
+    margin: 100px 0; }
+    .projects section h2 {
+      font-size: 45px;
+      margin: 0 0 20px; }
+    .projects section .bloco {
+      text-align: center; }
+  .projects #bloco-work .project {
+    width: 100%;
+    height: 480px;
+    border: 1px solid var(--black);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .projects #bloco-work .project article {
+      width: 100%;
+      height: 100%;
+      padding: 20px; }
+      .projects #bloco-work .project article h3 {
+        height: 10%;
+        margin: 0;
+        font-size: 20px;
+        text-align: center; }
+      .projects #bloco-work .project article img {
+        width: 100%;
+        height: 90%;
+        object-fit: cover; }
+  .projects footer {
+    width: 100%;
+    text-align: center; }
+  .projects header h2 {
+    margin-bottom: 0; }
+  .projects .filter {
+    margin-bottom: 20px; }
+
+.about {
+  font-size: 18px;
+  line-height: 1.7;
+  /* EDUCATION */
+  /* SKILLS */ }
+  .about main {
+    padding-top: 50px; }
+  .about section {
+    padding: 20px;
+    margin: 100px 0; }
+    .about section h2 {
+      font-size: 45px;
+      margin: 0 0 20px; }
+    .about section .bloco {
+      text-align: center; }
+  .about section header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.9); }
+  .about #education {
+    white-space: nowrap; }
+    .about #education .titulo-bloco {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0; }
+    .about #education ul {
+      margin-bottom: 15px; }
+  .about #skills .bloco ul:not(:last-of-type)::after {
+    content: '+'; }

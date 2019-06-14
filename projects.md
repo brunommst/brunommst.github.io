@@ -1,32 +1,32 @@
 ---
 layout: about
+title: projects
 ---
 
-<section title="Some of what I've done" id="work">
+<section title="Some of what I've done" id="projects">
     <header>
         <h2 class="titulo-bloco">Some of<br>what I've<br>done</h2>
-        <aside class="filter">
-            <h3>filter</h3>
-            <h3>x</h3>
-            <ul class="filter-options">
-                <li>Everything</li>
-                <li>Product Design</li>
-                <li>Websites</li>
-                <li>General Design Stuff</li>
-            </ul>
-        </aside>
     </header>
+    <aside class="filter">
+        <h3 class="filter-open">filter</h3>
+        <h3 class="filter-close">x</h3>
+        <ul class="filter-options">
+            <li id="everything" class="filter-selected">Everything</li>
+            <li id="product">Product Design</li>
+            <li id="websites">Websites</li>
+            <li id="general">General Design Stuff</li>
+        </ul>
+    </aside>
     <div id="bloco-work">
         {% for project in site.projects %}
-        <article>
-            <h3>{{ project.title }}</h3>
-            <p>{{ project.description }}</p>
-            <ul>
-                {% for image in project.images %}
-                <li><img data-src="{{ image.url }}" alt="{{ image.alt }}"></li>
+        <a href="{{ site.baseurl }}/projects/{{ project.slug }}" class=" project {{ project.slug }} filter-{{ project.category }}">
+            <article>
+                <h3>{{ project.title }}</h3>
+                {% for cover in project.covers %}
+                    <img src="{{ cover.url }}" alt="{{ cover.alt }}">
                 {% endfor %}
-            </ul>
-        </article>
+            </article>
+        </a>
         {% endfor %}
     </div>
     <footer>

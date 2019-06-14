@@ -29,9 +29,10 @@
             "email": "brunommst@gmail.com",
             "description": "Digital Experience Designer based in Lisbon, Portugal."
         }
+
     </script>
 
-<!--
+    <!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141497063-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -45,7 +46,7 @@
 
     </script>
 -->
-    
+
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
 </head>
@@ -57,7 +58,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/projects">Some of what I've done</a></li>
             <li><a href="/about">About me</a></li>
-            <li><a href="#contacto">Contacts</a></li>
+            <li><a href="/about#contact">Contacts</a></li>
         </ul>
     </nav>
     <div id="top-closed-menu">
@@ -117,13 +118,17 @@
         </main><footer>
     <p>Lisbon — 2019</p>
     <div id="sticky-bottom">
-        <a class="button">
-            <span class="arrow arrow-back">1</span>
-            <h5>Back to the beginning</h5>
+        <a href="/" class="button button-back">
+            <div class="arrow">
+                <span>1</span>
+            </div>
+            <h5>Back to beginning</h5>
         </a>
-        <img id="topo" src="imagens/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
+        <img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
     </div>
 </footer>
+
+<script language="javascript" type="text/javascript" src="/assets/js/home.js"></script>
 </div>
   </body>
 

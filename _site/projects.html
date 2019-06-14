@@ -29,9 +29,10 @@
             "email": "brunommst@gmail.com",
             "description": "Digital Experience Designer based in Lisbon, Portugal."
         }
+
     </script>
 
-<!--
+    <!--
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141497063-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -45,19 +46,19 @@
 
     </script>
 -->
-    
+
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
 </head>
 <body>
-      <div class="wrapper "><header>
+      <div class="wrapper projects"><header>
     <nav id="nav">
         <h3>Guess I needed a menu of sorts.</h3>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/projects">Some of what I've done</a></li>
             <li><a href="/about">About me</a></li>
-            <li><a href="#contacto">Contacts</a></li>
+            <li><a href="/about#contact">Contacts</a></li>
         </ul>
     </nav>
     <div id="top-closed-menu">
@@ -93,47 +94,46 @@
     </script>
 </header>
 <main aria-label="Content">
-                <section title="Some of what I've done" id="work">
+                <section title="Some of what I've done" id="projects">
     <header>
         <h2 class="titulo-bloco">Some of<br />what I've<br />done</h2>
-        <aside class="filter">
-            <h3>filter</h3>
-            <h3>x</h3>
-            <ul class="filter-options">
-                <li>Everything</li>
-                <li>Product Design</li>
-                <li>Websites</li>
-                <li>General Design Stuff</li>
-            </ul>
-        </aside>
     </header>
+    <aside class="filter">
+        <h3 class="filter-open">filter</h3>
+        <h3 class="filter-close">x</h3>
+        <ul class="filter-options">
+            <li id="everything" class="filter-selected">Everything</li>
+            <li id="product">Product Design</li>
+            <li id="websites">Websites</li>
+            <li id="general">General Design Stuff</li>
+        </ul>
+    </aside>
     <div id="bloco-work">
         
-        <article>
-            <h3>CRISE DE IDENTIDADE</h3>
-            <p>A5 "Dínamo" Notebook 
-80 Pages 
-Cover 280 grams, offset printing 
-Inside pages Conqueror Paper</p>
-            <ul>
+        <a href="/projects/CRISE" class=" project CRISE filter-general">
+            <article>
+                <h3>CRISE DE IDENTIDADE</h3>
                 
-                <li><img data-src="/assets/images/pato.png" alt="link" /></li>
+                    <img src="/assets/images/projects/crise/catalogo.png" alt="Crise de Identidade" />
                 
-                <li><img data-src="/assets/images/pato.png" alt="link" /></li>
+            </article>
+        </a>
+        
+        <a href="/projects/onfailure" class=" project onfailure filter-general">
+            <article>
+                <h3>onfailure</h3>
                 
-                <li><img data-src="/assets/images/pato.png" alt="link" /></li>
+                    <img src="/assets/images/projects/onfa/cd.png" alt="Crise de Identidade" />
                 
-                <li><img data-src="/assets/images/pato.png" alt="link" /></li>
-                
-            </ul>
-        </article>
+            </article>
+        </a>
         
     </div>
     <footer>
         <p>A lot more coming<br />be sure to check back soon!</p>
     </footer>
 </section>
-<section title="Contact" id="contacto">
+<section title="Contact" id="contact">
     <h2 class="titulo-bloco">Contact me!</h2>
     <div class="bloco">
         <p><a href="mailto:brunommst@gmail.com?Subject=Hey,%20Let's%20talk!" target="_blank">brunommst@gmail.com</a></p>
@@ -143,13 +143,17 @@ Inside pages Conqueror Paper</p>
         </main><footer>
     <p>Lisbon — 2019</p>
     <div id="sticky-bottom">
-        <a class="button">
-            <span class="arrow arrow-back">1</span>
-            <h5>Back to the beginning</h5>
+        <a href="/" class="button button-back">
+            <div class="arrow">
+                <span>1</span>
+            </div>
+            <h5>Back to beginning</h5>
         </a>
-        <img id="topo" src="imagens/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
+        <img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
     </div>
 </footer>
+
+<script language="javascript" type="text/javascript" src="/assets/js/home.js"></script>
 </div>
   </body>
 

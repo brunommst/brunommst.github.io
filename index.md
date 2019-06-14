@@ -38,12 +38,9 @@ title: home
         <a href="{{ site.baseurl }}/projects/{{ project.slug }}" class=" project {{ project.slug }} filter-{{ project.category }}">
             <article>
                 <h3>{{ project.title }}</h3>
-                <p>{{ project.description }}</p>
-                <ul>
-                    {% for image in project.images %}
-                    <li><img data-src="{{ image.url }}" alt="{{ image.alt }}"></li>
-                    {% endfor %}
-                </ul>
+                {% for cover in project.covers %}
+                    <img src="{{ cover.url }}" alt="{{ cover.alt }}">
+                {% endfor %}
             </article>
         </a>
         {% endfor %}
@@ -54,6 +51,12 @@ title: home
 </section>
 
 <section title="Countdown" id="timer">
-    <div>02h24m50s</div>
-    <h3>You probably should come back later</h3>
+    <div class="wrapper">
+        <div class="countdown">
+            <h3 class="hours"></h3>
+            <h3 class="minutes"></h3>
+            <h3 class="seconds"></h3>
+        </div>
+        <h4>You probably should come back later</h4>
+    </div>
 </section>
