@@ -39,7 +39,7 @@ title: home
             <article>
                 <h3>{{ project.title }}</h3>
                 {% for cover in project.covers %}
-                    <img src="{{ cover.url }}" alt="{{ cover.alt }}">
+                    <img class="lazy" data-src="{{ cover.url }}" alt="{{ cover.alt }}">
                 {% endfor %}
             </article>
         </a>
@@ -60,3 +60,4 @@ title: home
         <h4>You probably should come back later</h4>
     </div>
 </section>
+

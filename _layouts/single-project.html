@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article>
+    <header>
+        <h1>{{ page.title | escape }}</h1>
+        <p>{{ page.description}}</p>
+        {% for link in page.links %}
+            <a href="{{ link.url }}">{{ link.linktext }}</a>
+        {% endfor %}
+    </header>
+    <main>
+        <ul>
+            {% for image in page.images %}
+            <li><img class="lazy" data-src="{{ image.url }}" alt="{{ image.alt }}"></li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <h4>In collaboration with:</h4>
+        {% for person in page.persons %}
+            <a href="{{ person.link }}">{{ person.name }}</a>
+        {% endfor %}
+        <h4>{{ page.year }}</h4>
+    </footer>
+</article>

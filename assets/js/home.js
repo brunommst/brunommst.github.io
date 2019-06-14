@@ -1,6 +1,13 @@
-//TIMER 
 
 (function ($) {
+
+    $('.lazy').Lazy({
+        appendScroll: $('main'),
+        effect: "fadeIn",
+        effectTime: 500
+    });
+    
+    //TIMER 
     var date = new Date(),
         month = date.getMonth();
     day = date.getDate(),
