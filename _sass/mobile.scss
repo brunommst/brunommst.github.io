@@ -550,6 +550,10 @@ footer {
     
     overflow: hidden;
     
+    &>header {
+        display: none;
+    }
+    
     #name {
         overflow: unset;
         h1 {

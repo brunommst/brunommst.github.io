@@ -1,9 +1,7 @@
-
-
 (function ($) {
-    
+
     //TIMER 
-    
+
     var date = new Date(),
         month = date.getMonth();
     day = date.getDate(),
@@ -16,8 +14,8 @@
     // If it's Monday - Friday
     if (weekDay >= 1 && weekDay <= 5) {
         // Start at 7am, end at 8pm
-        hours.start.setHours(24);
-        hours.end.setHours(8);
+        hours.start.setHours(7);
+        hours.end.setHours(23);
         // If it's Saturday
     } else if (weekDay >= 6) {
         // Start at 8am, end at 8pm
@@ -35,19 +33,24 @@
         $('.countdown .minutes').text(countMinutes + 'm');
         $('.countdown .seconds').html(countSeconds + 's');
     }
+    
+    function itsStilDayTime() {
+        $("main > section, footer").not("#timer").hide();
+        $("main").addClass('main-vertical-center');
+    }
 
     $(function () {
-        // If it's currently not within the hours, don't show the countdown
-        if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours() && !window.location.href.match('/experiments')) {
-            window.location.href = "/experiments";
-        } else if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()) {
-            $('.countdown').hide();
+        if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()) {
+            // THIS MEANS THAT WE OUTSIDE OF INTERVAL
+
+        } else {
+            // THIS MEANS THAT WE INSIDE OF INTERVAL
             document.documentElement.style.setProperty('--black', 'white');
             document.documentElement.style.setProperty('--white', 'black');
-        } else if ($('.countdown').not(':visible')) {
-
+            itsStilDayTime();
         }
-
+        
+        countDown();
         setInterval(function () {
             countDown();
         }, 1000);
@@ -66,7 +69,7 @@
         $("#sticky-bottom").stop().hide();
         var update = function () {
             if (lastScrollY < 500) {
-                scrolldist = lastScrollY * .5;
+                scrolldist = lastScrollY * .2;
                 document.documentElement.style.setProperty('--skew', `rotate(${-scrolldist*1}deg) skew(${scrolldist*2}deg)`);
             } else {
                 document.documentElement.style.setProperty('--skew', `rotate(0deg)`);
@@ -85,7 +88,7 @@
         };
         $(window).on('scroll', onScroll);
     })();
-    
+
 })(jQuery);
 
 

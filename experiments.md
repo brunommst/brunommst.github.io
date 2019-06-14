@@ -3,14 +3,6 @@ layout: experiments
 title: experiments
 ---
 
-<style>
-    :root {
-        --black: white;
-        --white: black;
-    }
-
-</style>
-
 <section title="name" id="name">
     <h1>Bru-no Santos Digital Designer</h1>
 </section>

@@ -51,18 +51,60 @@
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
 </head>
 <body>
-      <div id="experiments" class="wrapper">
+      <div id="experiments" class="wrapper"><header>
+    <nav id="nav">
+        <h3>Guess I needed a menu of sorts.</h3>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects">Some of what I've done</a></li>
+            <li><a href="/about">About me</a></li>
+            <li><a href="/about#contact">Contacts</a></li>
+        </ul>
+    </nav>
+    <div id="top-closed-menu">
+        
+        <a href="/" class="button button-back">
+            <div class="arrow">
+                <span>1</span>
+            </div>
+            <h5>Back to beginning</h5>
+        </a>
+        
 
-        <main aria-label="Content">
-                <style>
-    :root {
-        --black: white;
-        --white: black;
-    }
+        <div id="menu-button" class="transform-button"></div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            if (window.matchMedia('(max-width:500px)').matches) {
+                var open = 0;
+                $("#nav").hide();
+                $("#menu-button").click(function() {
+                    $("#nav").stop().slideToggle(150, 'swing');
+                    open = open ? 0 : 1;
+                    $("#menu-button").toggleClass('transform-button');
+                    $("#top-closed-menu").animate({
+                        'top': '20px'
+                    });
+                });
 
-</style>
+                $("main").not("header *").on('click', function() {
+                    if (open == 1) {
+                        $("#nav").stop().slideToggle(100, 'swing', function() {
+                            open = open ? 0 : 1;
+                            $("#menu-button").toggleClass('transform-button');
+                            $("#top-closed-menu").animate({
+                                'top': ''
+                            });
+                        });
+                    }
+                });
+            }
+        });
 
-<section title="name" id="name">
+    </script>
+</header>
+<main aria-label="Content">
+                <section title="name" id="name">
     <h1>Bru-no Santos Digital Designer</h1>
 </section>
 

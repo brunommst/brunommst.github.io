@@ -29,6 +29,9 @@
     background: #ffc6a8;
 }
 
+$font-bold: Bangla-Bold, sans-serif;
+$font-regular: Bangla-Regular, sans-serif;
+
 a {
     color: var(--black);
     &:hover {
@@ -48,6 +51,11 @@ ul {
 }
 .center {
     margin: 0 auto;
+}
+.main-vertical-center {
+    display: flex;
+    align-items: center;
+    height: 100vh;
 }
 .underline {
     text-decoration: underline;
