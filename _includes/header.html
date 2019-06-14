@@ -9,12 +9,22 @@
         </ul>
     </nav>
     <div id="top-closed-menu">
+        {% if page.collection == 'projects' %}
+        <a href="javascript:history.back()" class="button button-back">
+            <div class="arrow">
+                <span>1</span>
+            </div>
+            <h5>Back to projects</h5>
+        </a>
+        {% else %}
         <a href="/" class="button button-back">
             <div class="arrow">
                 <span>1</span>
             </div>
             <h5>Back to beginning</h5>
         </a>
+        {% endif %}
+
         <div id="menu-button" class="transform-button"></div>
     </div>
     <script>
@@ -26,6 +36,9 @@
                     $("#nav").stop().slideToggle(150, 'swing');
                     open = open ? 0 : 1;
                     $("#menu-button").toggleClass('transform-button');
+                    $("#top-closed-menu").animate({
+                        'top': '20px'
+                    });
                 });
 
                 $("main").not("header *").on('click', function() {
@@ -33,10 +46,14 @@
                         $("#nav").stop().slideToggle(100, 'swing', function() {
                             open = open ? 0 : 1;
                             $("#menu-button").toggleClass('transform-button');
+                            $("#top-closed-menu").animate({
+                                'top': ''
+                            });
                         });
                     }
                 });
             }
         });
+
     </script>
 </header>

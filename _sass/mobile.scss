@@ -52,6 +52,30 @@ body {
     }
 }
 
+@mixin pages {
+    font-size: 18px;
+    line-height: 1.7;
+
+    main {
+        padding-top: 50px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 100px 0;
+
+        h2 {
+            font-size: 45px;
+            margin: 0 0 20px;
+        }
+
+        .bloco {
+            text-align: center;
+        }
+
+    }
+}
+
 // ALL
 
 header {
@@ -409,45 +433,24 @@ footer {
 
 
 
-@mixin pages {
-    font-size: 18px;
-    line-height: 1.7;
-
-    main {
-        padding-top: 50px;
-    }
-
-    section {
-        padding: 20px;
-        margin: 100px 0;
-
-        h2 {
-            font-size: 45px;
-            margin: 0 0 20px;
-        }
-
-        .bloco {
-            text-align: center;
-        }
-
-    }
-}
-
-
-
+//PROJECTS PAGE
 .projects {
     @include pages;
     @include projects;
 
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+
     header h2 {
+        height: 200px;
         margin-bottom: 0;
     }
 
-    .filter {
-        margin-bottom: 20px;
-    }
 }
 
+//ABOUT PAGE
 .about {
 
     @include pages;
@@ -486,6 +489,53 @@ footer {
 
     }
 
+}
+
+//SINGLE PROJECT PAGE
+.project-page {
+    article {
+        padding: 20px;
+        padding-top: 150px;
+
+        header {
+            margin-bottom: 50px;
+
+            h1 {
+                font-size: 45px;
+                margin: 0 0 20px;
+            }
+
+            p {
+                font-family: $font-regular;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+        }
+        main {
+            ul {
+                display: flex;
+                flex-direction: column;
+                
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        footer {
+            margin: 50px auto 150px;
+            font-size: 18px;
+            
+            h4:last-of-type {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    footer p {
+        display: none;
+    }
 }
 
 
