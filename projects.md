@@ -33,3 +33,5 @@ title: projects
         <p>A lot more coming<br>be sure to check back soon!</p>
     </footer>
 </section>
+
+<script language="javascript" type="text/javascript" src="{{ "/assets/js/filter.js" | relative_url }}"></script>

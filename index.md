@@ -61,3 +61,5 @@ title: home
     </div>
 </section>
 
+<script language="javascript" type="text/javascript" src="{{ "/assets/js/home.js" | relative_url }}"></script>
+<script language="javascript" type="text/javascript" src="{{ "/assets/js/filter.js" | relative_url }}"></script>

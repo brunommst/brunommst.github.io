@@ -51,60 +51,41 @@
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
 </head>
 <body>
-      <div class="wrapper "><header>
-    <nav id="nav">
-        <h3>Guess I needed a menu of sorts.</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Some of what I've done</a></li>
-            <li><a href="/about">About me</a></li>
-            <li><a href="/about#contact">Contacts</a></li>
-        </ul>
-    </nav>
-    <div id="top-closed-menu">
-        
-        <a href="/" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to beginning</h5>
-        </a>
-        
+      <div id="experiments" class="wrapper">
 
-        <div id="menu-button" class="transform-button"></div>
+        <main aria-label="Content">
+                <style>
+    :root {
+        --black: white;
+        --white: black;
+    }
+
+</style>
+
+<section title="name" id="name">
+    <h1>Bru-no Santos Digital Designer</h1>
+</section>
+
+<section title="sobre" id="sobre">
+    <header>
+        <h2 class="titulo-bloco hidden">Experiments</h2>
+    </header>
+    <p>Hi! Welcome to my website/portfolio</p>
+    <p>I’m a Digital Experience Designer from Lisbon and if you’re looking for a guy for your next website and/or digital solution, you’ve come to the right place!</p>
+</section>
+
+<section title="Countdown" id="timer">
+    <div class="wrapper">
+        <div class="countdown">
+            <h3 class="hours"></h3>
+            <h3 class="minutes"></h3>
+            <h3 class="seconds"></h3>
+        </div>
+        <h4>Come back during the day for the real stuff.</h4>
     </div>
-    <script>
-        $(document).ready(function() {
-            if (window.matchMedia('(max-width:500px)').matches) {
-                var open = 0;
-                $("#nav").hide();
-                $("#menu-button").click(function() {
-                    $("#nav").stop().slideToggle(150, 'swing');
-                    open = open ? 0 : 1;
-                    $("#menu-button").toggleClass('transform-button');
-                    $("#top-closed-menu").animate({
-                        'top': '20px'
-                    });
-                });
+</section>
 
-                $("main").not("header *").on('click', function() {
-                    if (open == 1) {
-                        $("#nav").stop().slideToggle(100, 'swing', function() {
-                            open = open ? 0 : 1;
-                            $("#menu-button").toggleClass('transform-button');
-                            $("#top-closed-menu").animate({
-                                'top': ''
-                            });
-                        });
-                    }
-                });
-            }
-        });
-
-    </script>
-</header>
-<main aria-label="Content">
-                <section title="Experiments" id="experiments">
+<section title="Experiments" id="experiments">
     <header>
         <h2 class="titulo-bloco">ExPerimEnts</h2>
     </header>
@@ -116,13 +97,7 @@
         <p>ALWAYS LOOKING TO COLLAB OR JUST HANG OUT!</p>
     </footer>
 </section>
-<section title="Contact" id="contact">
-    <h2 class="titulo-bloco">Contact me!</h2>
-    <div class="bloco">
-        <p><a href="mailto:brunommst@gmail.com?Subject=Hey,%20Let's%20talk!" target="_blank">brunommst@gmail.com</a></p>
-        <p><a href="https://www.linkedin.com/in/brunommst/" target="_blank">linkedin.com/in/brunommst</a></p>
-    </div>
-</section>
+
         </main><footer>
     <p>Lisbon — 2019</p>
     <div id="sticky-bottom">
@@ -138,6 +113,8 @@
 
 
 </div>
+      
+      <script language="javascript" type="text/javascript" src="/assets/js/experiments.js"></script>
   </body>
 
 </html>
