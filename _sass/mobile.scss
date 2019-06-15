@@ -274,99 +274,9 @@ footer {
     }
 }
 
-
-// HOME PAGE
-.home {
-    .button-back {
-        display: none !important;
-    }
-
-    section {
-        margin: 100px 0;
-        padding: 20px;
-
-        &:nth-of-type(2) {
-            margin-top: 0;
-        }
-
-        h2 {
-            font-size: 50px;
-            margin: 0;
-        }
-
-        &#sobre {
-            header {
-                height: 0;
-            }
-
-            h2 {
-                margin: 0;
-            }
-
-            p:first-of-type {
-                margin-bottom: 30px;
-            }
-
-            .button {
-                margin-top: 50px;
-            }
-        }
-
-        &#projects {
-            @include projects;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 50px;
-        }
-        
-        &#contact {
-            margin-top: 50px;
-        }
-    }
-
-    footer {
-        p {
-            margin-bottom: 0;
-        }
-
-        #sticky-bottom {
-            display: none;
-        }
-    }
-}
-
-// NOME 
-
-#name {
-    overflow: hidden;
-    padding: 10px 0 10px 10px;
-    margin: 0;
-
-    h1 {
-        width: 100%;
-        margin: 0;
-
-        color: var(--black);
-        font-size: 90px;
-        line-height: 1.3;
-
-        overflow: hidden;
-        pointer-events: none;
-
-        -webkit-transform: var(--skew);
-        -ms-transform: var(--skew);
-        transform: var(--skew);
-
-        -webkit-transform-origin: 0 60%;
-        -ms-transform-origin: 0 60%;
-        transform-origin: 0 60%;
-    }
-}
-
 // TIMER
-
 #timer {
-    width: 100vw;
+    width: 100%;
     height: 400px;
     overflow-x: hidden;
     padding: 0;
@@ -435,6 +345,97 @@ footer {
     }
 
 }
+
+// HOME PAGE
+.home {
+    .button-back {
+        display: none !important;
+    }
+
+    section {
+        margin: 100px 0;
+        padding: 20px;
+
+        &:nth-of-type(2) {
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 45px;
+            margin: 0;
+        }
+
+        &#sobre {
+            header {
+                height: 0;
+            }
+
+            h2 {
+                margin: 0;
+            }
+
+            p:first-of-type {
+                margin-bottom: 30px;
+            }
+
+            .button {
+                margin-top: 50px;
+            }
+        }
+
+        &#projects {
+            @include projects;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+        
+        &#contact {
+            margin-top: 50px;
+        }
+    }
+
+    footer {
+        p {
+            margin-bottom: 0;
+        }
+
+        #sticky-bottom {
+            display: none;
+        }
+    }
+}
+
+// NOME 
+#name {
+    overflow: hidden;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+
+    h1 {
+        width: 100%;
+        margin: 0;
+
+        color: var(--black);
+        font-size: 90px;
+        line-height: 1.3;
+
+        overflow: hidden;
+        pointer-events: none;
+
+        -webkit-transform: var(--skew);
+        -ms-transform: var(--skew);
+        transform: var(--skew);
+
+        -webkit-transform-origin: 0 60%;
+        -ms-transform-origin: 0 60%;
+        transform-origin: 0 60%;
+        
+        will-change: transform;
+    }
+}
+
+
 
 
 

@@ -1,7 +1,7 @@
 //  FILTER BUTTON
 
 (function ($) {
-    if (window.matchMedia('(max-width:500px)').matches) {
+    if (window.matchMedia('(max-width:768px)').matches) {
         var open = 0;
         if (open == 0) {
             $(".filter").click(function (e) {

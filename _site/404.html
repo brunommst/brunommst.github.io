@@ -139,6 +139,14 @@
         </a>
         <img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
     </div>
+    
+    <script>
+        function goTop() {
+            $("html, body").stop().animate({
+                scrollTop: 0
+            }, 400, 'swing');
+        }
+    </script>
 </footer>
 
 

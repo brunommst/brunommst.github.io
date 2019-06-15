@@ -3,7 +3,7 @@ layout: home
 title: home
 ---
 <section title="name" id="name">
-    <h1>Bru-no Santos Digital Designer</h1>
+    <h1>bru-no santos digital designer</h1>
 </section>
 <section title="sobre" id="sobre">
     <header>
@@ -12,11 +12,11 @@ title: home
     <p>Hi! Welcome to my website/portfolio</p>
     <p>I’m a Digital Experience Designer from Lisbon and if you’re looking for a guy for your next website and/or digital solution, you’ve come to the right place!</p>
     <a href="about" class="button button-forward center">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>find out more</h5>
-        </a>
+        <div class="arrow">
+            <span>1</span>
+        </div>
+        <h5>find out more</h5>
+    </a>
 </section>
 
 <section title="Some of what I've done" id="projects">
@@ -39,13 +39,19 @@ title: home
             <article>
                 <h3>{{ project.title }}</h3>
                 {% for cover in project.covers %}
-                    <img class="lazy" data-src="{{ cover.url }}" alt="{{ cover.alt }}">
+                <img class="lazy" data-src="{{ cover.url }}" alt="{{ cover.alt }}">
                 {% endfor %}
             </article>
         </a>
         {% endfor %}
     </div>
     <footer>
+        <a href="about" class="button button-forward center">
+            <div class="arrow">
+                <span>1</span>
+            </div>
+            <h5>see all projects</h5>
+        </a>
         <p>A lot more coming<br>be sure to check back soon!</p>
     </footer>
 </section>

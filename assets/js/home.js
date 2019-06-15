@@ -1,6 +1,44 @@
-
-
 (function ($) {
+    
+    // NOME ALTERAR COM O SCROLL
+
+    (function () {
+        var lastScrollY = 0;
+        var ticking = false;
+        var scrolldist, posX, posY;
+
+        $("#sticky-bottom").stop().hide();
+        var update = function () {
+            if (lastScrollY < 500 && window.innerWidth < 500) {
+                scrolldist = lastScrollY * 0.05;
+
+                document.querySelector("#name h1").style.transform = "scaleY(calc(1 - " + scrolldist*0.05 + ")) scaleX(calc(1 + " + scrolldist*0.02 + "))";
+                $("#sticky-bottom").stop().fadeOut(50);
+            } else if (lastScrollY < 1000 && window.innerWidth > 500) {
+                scrolldist = lastScrollY * 0.02;
+        
+                document.querySelector("#name h1").style.transform = "scaleY(calc(1 - " + scrolldist*0.05 + ")) scaleX(calc(1 + " + scrolldist*0.02 + "))";
+                $("#sticky-bottom").stop().fadeOut(50);
+            } else {
+                document.querySelector("#name h1").style.transform = "scaleY(0) scaleX(0)";
+                $("#sticky-bottom").stop().fadeIn(50);
+            }
+            ticking = false;
+        };
+        var requestTick = function () {
+            if (!ticking) {
+                window.requestAnimationFrame(update);
+                ticking = true;
+            }
+        };
+        var onScroll = function () {
+            lastScrollY = window.scrollY;
+            requestTick();
+        };
+        $(window).on('scroll', onScroll);
+    })();
+    
+    
     
     //TIMER 
     
@@ -39,7 +77,7 @@
     $(function () {
         // If it's currently not within the hours, don't show the countdown
         if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours() && !window.location.href.match('/experiments')) {
-            window.location.href = "/experiments";
+//            window.location.href = "/experiments";
         } else if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()) {
             $('.countdown').hide();
             document.documentElement.style.setProperty('--black', 'white');
@@ -49,86 +87,12 @@
             $('.countdown').show();
             console.log('teste');
         }
-
+        
+        countDown();
         setInterval(function () {
             countDown();
         }, 1000);
 
     });
-
-
-
-    // NOME ALTERAR COM O SCROLL
-
-    (function () {
-        var lastScrollY = 0;
-        var ticking = false;
-        var scrolldist, posX, posY;
-
-        $("#sticky-bottom").stop().hide();
-        var update = function () {
-            if (lastScrollY < 500) {
-                scrolldist = lastScrollY * 0.05;
-                document.documentElement.style.setProperty('--skew', `scaleY(calc(1 - ${scrolldist*0.05})) scaleX(calc(1 + ${scrolldist*0.02}))`);
-                $("#sticky-bottom").stop().fadeOut(50);
-            } else {
-                document.documentElement.style.setProperty('--skew', `scaleY(0) scaleX(0)`);
-                $("#sticky-bottom").stop().fadeIn(50);
-            }
-            ticking = false;
-        };
-        var requestTick = function () {
-            if (!ticking) {
-                window.requestAnimationFrame(update);
-                ticking = true;
-            }
-        };
-        var onScroll = function () {
-            lastScrollY = window.scrollY;
-            requestTick();
-        };
-        $(window).on('scroll', onScroll);
-    })();
     
 })(jQuery);
-
-
-
-
-
-// NAVEGACAO EM MOBILE
-
-//    if (window.innerWidth < 480) {
-//        $("#jumpto").click(function () {
-//            if ($(this).hasClass('on')) {
-//                $(this).toggleClass('off', 'on');
-//                $("#nav").find("a").show(250);
-//                $("#nome").stop().css({
-//                    "z-index": "-1"
-//                }).animate({
-//                    opacity: "0.1"
-//                });
-//            };
-//            if ($(this).hasClass('off')) {
-//                close();
-//            };
-//
-//            function close() {
-//                $("#nav").find("a").hide(250);
-//                $("#nome").stop().css({
-//                    "z-index": "initial"
-//                }).animate({
-//                    opacity: "1"
-//                });
-//            }
-//
-//        });
-//        setTimeout(function () {
-//            $("#nav").find("a").hide(250);
-//            $("#nome").css({
-//                "z-index": "initial"
-//            }).animate({
-//                opacity: "1"
-//            });
-//        }, 2000);
-//    };

@@ -4,14 +4,7 @@
         appendScroll: $('main'),
         effect: "fadeIn",
         effectTime: 500
-    });
-    
-    // BOTAO PARA IR PARA O TOPO
-    function goTop() {
-        $("html, body").stop().animate({
-            scrollTop: 0
-        }, 400, 'swing');
-    }
+    });    
     
     (function () {
         var lastScrollY = 0;

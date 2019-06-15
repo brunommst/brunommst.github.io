@@ -105,7 +105,7 @@
 </header>
 <main aria-label="Content">
                 <section title="name" id="name">
-    <h1>Bru-no Santos Digital Designer</h1>
+    <h1>bru-no santos digital designer</h1>
 </section>
 <section title="sobre" id="sobre">
     <header>
@@ -114,11 +114,11 @@
     <p>Hi! Welcome to my website/portfolio</p>
     <p>I’m a Digital Experience Designer from Lisbon and if you’re looking for a guy for your next website and/or digital solution, you’ve come to the right place!</p>
     <a href="about" class="button button-forward center">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>find out more</h5>
-        </a>
+        <div class="arrow">
+            <span>1</span>
+        </div>
+        <h5>find out more</h5>
+    </a>
 </section>
 
 <section title="Some of what I've done" id="projects">
@@ -141,7 +141,7 @@
             <article>
                 <h3>CRISE DE IDENTIDADE</h3>
                 
-                    <img class="lazy" data-src="/assets/images/projects/crise/catalogo.png" alt="Crise de Identidade" />
+                <img class="lazy" data-src="/assets/images/projects/crise/catalogo.png" alt="Crise de Identidade" />
                 
             </article>
         </a>
@@ -150,13 +150,19 @@
             <article>
                 <h3>onfailure</h3>
                 
-                    <img class="lazy" data-src="/assets/images/projects/onfa/cd.png" alt="Crise de Identidade" />
+                <img class="lazy" data-src="/assets/images/projects/onfa/cd.png" alt="Crise de Identidade" />
                 
             </article>
         </a>
         
     </div>
     <footer>
+        <a href="about" class="button button-forward center">
+            <div class="arrow">
+                <span>1</span>
+            </div>
+            <h5>see all projects</h5>
+        </a>
         <p>A lot more coming<br />be sure to check back soon!</p>
     </footer>
 </section>
@@ -197,6 +203,14 @@
         </a>
         <img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
     </div>
+    
+    <script>
+        function goTop() {
+            $("html, body").stop().animate({
+                scrollTop: 0
+            }, 400, 'swing');
+        }
+    </script>
 </footer>
 
 
