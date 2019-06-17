@@ -47,13 +47,14 @@
         width: 100%;
         max-width: 1300px;
         margin: 0 auto;
+        
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         padding: 50px 20px 20px;
 
         nav {
-            height: 35px;
+            height: 50px;
             padding: 0;
             border: 0;
 
@@ -65,6 +66,7 @@
             }
 
             ul {
+                height: 35px;
                 width: 500px;
                 justify-content: space-between;
                 flex-direction: row;
@@ -72,6 +74,7 @@
                 li {
                     font-size: 18px;
                     background: black;
+                    transition: background .06s;
 
                     &:hover {
                         background: none;
@@ -211,6 +214,10 @@
     }
 
     .about {
+        font-size: 20px;
+        p {
+            font-family: $font-regular;
+        }
         #sobre {
             max-width: 700px;
         }
@@ -222,7 +229,7 @@
         
         header h1 {
             height: auto;
-            margin-bottom: 0;
+            margin: 0;
             font-size:60px;
         }
     }
