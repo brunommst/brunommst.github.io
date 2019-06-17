@@ -361,10 +361,16 @@ body {
       text-align: center; }
   .home section#contact {
     margin-top: 50px; }
-.home footer p {
-  margin-bottom: 0; }
-.home footer #sticky-bottom {
-  display: none; }
+.home footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  height: 150px;
+  margin-top: 50px; }
+  .home footer p {
+    margin-bottom: 0; }
+  .home footer #sticky-bottom {
+    display: none; }
 
 #name {
   overflow: hidden;

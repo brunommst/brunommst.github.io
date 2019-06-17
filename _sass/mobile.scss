@@ -396,6 +396,12 @@ body {
     }
 
     footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 150px;
+        margin-top: 50px;
+        
         p {
             margin-bottom: 0;
         }
