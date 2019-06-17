@@ -1,0 +1,208 @@
+@media only screen and (min-width: 768px) {
+
+    @mixin projects {
+        header {
+            padding-left: 50px;
+        }
+
+        #bloco-work {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+
+            .project {
+                margin: 0;
+                background: var(--white);
+
+                transition: all .06s ease-in-out;
+
+                &:hover {
+                    transform: skewX(-5deg);
+                    background: black;
+                }
+            }
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+
+            padding: 0 20vw;
+
+            .button {
+                margin: unset;
+            }
+        }
+    }
+
+    .wrapper > header {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 50px 20px 20px;
+
+        nav {
+            height: 35px;
+            padding: 0;
+            border: 0;
+
+            flex-direction: row;
+            justify-content: flex-end;
+
+            h3 {
+                display: none;
+            }
+
+            ul {
+                width: 500px;
+                justify-content: space-between;
+                flex-direction: row;
+
+                li {
+                    font-size: 18px;
+                    background: black;
+
+                    &:hover {
+                        background: none;
+                    }
+
+                    &:first-of-type {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        #top-closed-menu {
+            position: static;
+            display: flex;
+            align-items: center;
+
+            #menu-button {
+                display: none;
+            }
+        }
+    }
+
+    .wrapper > footer {
+        max-width: 1300px;
+        margin: 0 auto;
+        height: 150px;
+
+        #sticky-bottom {
+            max-width: 1300px;
+            margin: 40px auto;
+        }
+    }
+
+    .wrapper > main {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .filter {
+        width: 700px;
+        height: 50px;
+
+        border: 1px solid var(--black);
+        padding: 10px;
+        margin-right: 0px;
+
+        position: sticky;
+        top: 50px;
+
+        display: flex;
+        align-self: flex-end;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            width: 10%;
+            height: 100%;
+            position: static;
+            font-size: 20px;
+            line-height: 35px;
+            margin: 0 auto;
+
+            &.filter-close {
+                display: none;
+                text-transform: capitalize;
+                padding: 5px;
+            }
+        }
+
+        ul {
+            width: 85%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            font-size: 16px;
+            line-height: 32px;
+            font-family: $font-regular;
+
+            li {
+                cursor: pointer;
+            }
+        }
+    }
+
+    #timer {
+        margin: 100px 0;
+    }
+
+    .home {
+
+        #sobre {
+            margin: 0 5vw 100px 45vw;
+            padding: 30px 20px 20px;
+
+            font-family: $font-regular;
+            font-size: 18px;
+
+            &:hover {
+                background: rgba(255, 255, 255, .95);
+                z-index: 10;
+                position: relative;
+            }
+        }
+
+        @include projects;
+
+        section #contact {
+            margin-top: 150px;
+        }
+    }
+
+    #name {
+        height: 300px;
+
+        h1 {
+            width: 70%;
+            padding: 20px 0 20px 20px;
+
+            font-size: 12vw;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+
+            -webkit-transform-origin: top left;
+            -ms-transform-origin: top left;
+            transform-origin: top left;
+        }
+    }
+
+    .projects {
+        @include pages;
+        @include projects;
+    }
+
+
+}

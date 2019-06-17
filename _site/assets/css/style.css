@@ -97,7 +97,7 @@ ul {
 
 @media only screen and (min-width: 768px) {
   .button {
-    width: 200px;
+    max-width: 250px;
     height: 50px; }
     .button:hover {
       color: var(--white);
@@ -113,9 +113,9 @@ body {
   position: relative;
   width: 100%; }
 
-header {
+.wrapper > header {
   position: relative; }
-  header nav {
+  .wrapper > header nav {
     width: 100%;
     height: 350px;
     padding: 20px;
@@ -124,20 +124,20 @@ header {
     flex-direction: column;
     justify-content: space-between;
     will-change: transform; }
-    header nav h3 {
+    .wrapper > header nav h3 {
       font-size: 16px;
       font-family: Bangla-Bold, sans-serif;
       text-decoration: line-through;
       margin-bottom: 70px; }
-    header nav ul {
+    .wrapper > header nav ul {
       display: flex;
       flex-direction: column; }
-      header nav ul li {
+      .wrapper > header nav ul li {
         font-size: 25px;
         margin: 5px 0; }
-        header nav ul li a {
+        .wrapper > header nav ul li a {
           text-decoration: none; }
-  header #top-closed-menu {
+  .wrapper > header #top-closed-menu {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -145,7 +145,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-    header #top-closed-menu #menu-button {
+    .wrapper > header #top-closed-menu #menu-button {
       display: block;
       position: absolute;
       top: 0;
@@ -165,11 +165,11 @@ header {
       -webkit-transform: scaleX(2);
       -ms-transform: scaleX(2);
       transform: scaleX(2); }
-      header #top-closed-menu #menu-button.transform-button {
+      .wrapper > header #top-closed-menu #menu-button.transform-button {
         -webkit-transform: scaleY(2.2);
         -ms-transform: scaleY(2.2);
         transform: scaleY(2.2); }
-    header #top-closed-menu .button-back {
+    .wrapper > header #top-closed-menu .button-back {
       z-index: 1; }
 
 #contact {
@@ -181,19 +181,19 @@ header {
       font-size: 20px;
       line-height: 50px; }
 
-footer {
+.wrapper > footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center; }
-  footer p {
+  .wrapper > footer p {
     height: 100px;
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center; }
-  footer #sticky-bottom {
+  .wrapper > footer #sticky-bottom {
     width: 100%;
     height: 50px;
     display: flex;
@@ -205,17 +205,17 @@ footer {
     position: fixed;
     bottom: 0px;
     z-index: 1000; }
-    footer #sticky-bottom .button {
+    .wrapper > footer #sticky-bottom .button {
       height: 100%;
       width: calc(100vw - 20px - 20px - 50px - 20px); }
-    footer #sticky-bottom img {
+    .wrapper > footer #sticky-bottom img {
       width: 50px;
       height: 50px;
       background: black;
       display: block;
       position: absolute;
       right: 20px; }
-      footer #sticky-bottom img:hover {
+      .wrapper > footer #sticky-bottom img:hover {
         background: none;
         cursor: pointer; }
 
@@ -496,31 +496,48 @@ footer {
     display: none; }
 
 @media only screen and (min-width: 768px) {
-  header nav {
+  .wrapper > header {
     max-width: 1300px;
-    height: auto;
     margin: 0 auto;
-    padding: 50px 20px 0;
-    border: 0;
-    flex-direction: row;
-    justify-content: flex-end; }
-    header nav h3 {
-      display: none; }
-    header nav ul {
-      width: 500px;
-      justify-content: space-between;
-      flex-direction: row; }
-      header nav ul li {
-        font-size: 18px;
-        background: black; }
-        header nav ul li:hover {
-          background: none; }
-        header nav ul li:first-of-type {
-          display: none; }
-  header #top-closed-menu #menu-button {
-    display: none; }
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 50px 20px 20px; }
+    .wrapper > header nav {
+      height: 35px;
+      padding: 0;
+      border: 0;
+      flex-direction: row;
+      justify-content: flex-end; }
+      .wrapper > header nav h3 {
+        display: none; }
+      .wrapper > header nav ul {
+        width: 500px;
+        justify-content: space-between;
+        flex-direction: row; }
+        .wrapper > header nav ul li {
+          font-size: 18px;
+          background: black; }
+          .wrapper > header nav ul li:hover {
+            background: none; }
+          .wrapper > header nav ul li:first-of-type {
+            display: none; }
+    .wrapper > header #top-closed-menu {
+      position: static;
+      display: flex;
+      align-items: center; }
+      .wrapper > header #top-closed-menu #menu-button {
+        display: none; }
 
-  main {
+  .wrapper > footer {
+    max-width: 1300px;
+    margin: 0 auto;
+    height: 150px; }
+    .wrapper > footer #sticky-bottom {
+      max-width: 1300px;
+      margin: 40px auto; }
+
+  .wrapper > main {
     max-width: 1300px;
     margin: 0 auto; }
 
@@ -588,7 +605,7 @@ footer {
         background: black; }
   .home footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     padding: 0 20vw; }
     .home footer .button {
@@ -608,4 +625,68 @@ footer {
       z-index: 0;
       -webkit-transform-origin: top left;
       -ms-transform-origin: top left;
-      transform-origin: top left; } }
+      transform-origin: top left; }
+
+  .projects {
+    font-size: 18px;
+    line-height: 1.7; }
+    .projects main {
+      padding-top: 50px; }
+    .projects section {
+      padding: 20px;
+      margin: 100px 0; }
+      .projects section h2 {
+        font-size: 45px;
+        margin: 0 0 20px; }
+      .projects section .bloco {
+        text-align: center; }
+    .projects header {
+      padding-left: 50px; }
+    .projects #bloco-work {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px; }
+      .projects #bloco-work .project {
+        margin: 0;
+        background: var(--white);
+        transition: all .06s ease-in-out; }
+        .projects #bloco-work .project:hover {
+          transform: skewX(-5deg);
+          background: black; }
+    .projects footer {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      padding: 0 20vw; }
+      .projects footer .button {
+        margin: unset; }
+
+  .project-page > main {
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden; }
+  .project-page header p {
+    font-size: 16px; }
+  .project-page article {
+    height: calc(100vh - 120px);
+    padding-top: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 3fr 1fr;
+    grid-gap: 20px; }
+    .project-page article main {
+      border: 1px solid black;
+      height: 100%;
+      position: relative;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      grid-column: 2;
+      grid-row: 1 / span 2; }
+    .project-page article footer, .project-page article header {
+      margin: 0;
+      padding: 20px; }
+  .project-page > footer {
+    display: none; } }

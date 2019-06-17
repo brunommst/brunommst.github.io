@@ -79,7 +79,7 @@ body {
 
 // COMMON
 
-header {
+.wrapper > header {
     position: relative;
 
     nav {
@@ -178,7 +178,7 @@ header {
     }
 }
 
-footer {
+.wrapper > footer {
     display: flex;
     flex-direction: column;
     justify-content: center;

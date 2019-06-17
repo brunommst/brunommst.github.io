@@ -46,7 +46,7 @@ title: home
         {% endfor %}
     </div>
     <footer>
-        <a href="about" class="button button-forward center">
+        <a href="projects" class="button button-forward center">
             <div class="arrow">
                 <span>1</span>
             </div>
