@@ -34,6 +34,19 @@
     background: #ffc6a8;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--white); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--black); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: orangered; 
+}
+
 $font-bold: Bangla-Bold,
 sans-serif;
 $font-regular: Bangla-Regular,
@@ -145,7 +158,7 @@ ul {
 
 
 @media only screen and (min-width: 768px) {
-    
+
     .button {
         max-width: 250px;
         height: 50px;

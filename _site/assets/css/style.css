@@ -25,6 +25,18 @@
 ::selection {
   background: #ffc6a8; }
 
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background: var(--white); }
+
+::-webkit-scrollbar-thumb {
+  background: var(--black); }
+
+::-webkit-scrollbar-thumb:hover {
+  background: orangered; }
+
 a {
   color: var(--black); }
   a:hover {
@@ -415,9 +427,10 @@ body {
   .projects #projects {
     display: flex;
     flex-direction: column; }
-  .projects header h2 {
+  .projects header h1 {
     height: 200px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 45px; }
 
 .about {
   font-size: 18px;
@@ -456,7 +469,7 @@ body {
   padding-top: 150px; }
   .project-page article header {
     margin-bottom: 50px; }
-    .project-page article header h1 {
+    .project-page article header h2 {
       font-size: 45px;
       margin: 0 0 20px; }
     .project-page article header p {
@@ -471,7 +484,9 @@ body {
       object-fit: contain; }
   .project-page article footer {
     margin: 50px auto 150px;
-    font-size: 18px; }
+    font-size: 18px;
+    text-align: center;
+    line-height: 2; }
     .project-page article footer h4:last-of-type {
       margin-top: 50px; }
 .project-page footer p {
@@ -497,6 +512,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .wrapper > header {
+    width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     display: flex;
@@ -539,7 +555,9 @@ body {
 
   .wrapper > main {
     max-width: 1300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px; }
 
   .filter {
     width: 700px;
@@ -575,6 +593,8 @@ body {
       font-family: Bangla-Regular, sans-serif; }
       .filter ul li {
         cursor: pointer; }
+        .filter ul li:hover {
+          text-decoration: underline; }
 
   #timer {
     margin: 100px 0; }
@@ -627,66 +647,66 @@ body {
       -ms-transform-origin: top left;
       transform-origin: top left; }
 
-  .projects {
-    font-size: 18px;
-    line-height: 1.7; }
-    .projects main {
-      padding-top: 50px; }
-    .projects section {
-      padding: 20px;
-      margin: 100px 0; }
-      .projects section h2 {
-        font-size: 45px;
-        margin: 0 0 20px; }
-      .projects section .bloco {
-        text-align: center; }
-    .projects header {
-      padding-left: 50px; }
-    .projects #bloco-work {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px; }
-      .projects #bloco-work .project {
-        margin: 0;
-        background: var(--white);
-        transition: all .06s ease-in-out; }
-        .projects #bloco-work .project:hover {
-          transform: skewX(-5deg);
-          background: black; }
-    .projects footer {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-      padding: 0 20vw; }
-      .projects footer .button {
-        margin: unset; }
+  .about #sobre {
+    max-width: 700px; }
 
+  .projects section {
+    margin: 20px 0; }
+  .projects header {
+    padding-left: 50px; }
+  .projects #bloco-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; }
+    .projects #bloco-work .project {
+      margin: 0;
+      background: var(--white);
+      transition: all .06s ease-in-out; }
+      .projects #bloco-work .project:hover {
+        transform: skewX(-5deg);
+        background: black; }
+  .projects footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 0 20vw; }
+    .projects footer .button {
+      margin: unset; }
+  .projects header h1 {
+    height: auto;
+    margin-bottom: 0;
+    font-size: 60px; }
+
+  .project-page > header {
+    position: absolute;
+    left: 0;
+    right: 0; }
   .project-page > main {
+    height: 100vh;
     max-width: 1400px;
     margin: auto;
-    overflow: hidden; }
+    overflow-x: hidden;
+    overflow-y: scroll; }
   .project-page header p {
     font-size: 16px; }
   .project-page article {
-    height: calc(100vh - 120px);
-    padding-top: 20px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    grid-template-rows: 3fr 1fr;
-    grid-gap: 20px; }
+    padding-top: 20px; }
+    .project-page article header {
+      position: fixed;
+      top: 150px;
+      max-width: 500px;
+      padding: 10px; }
+      .project-page article header:hover {
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 4; }
     .project-page article main {
-      border: 1px solid black;
-      height: 100%;
       position: relative;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      grid-column: 2;
-      grid-row: 1 / span 2; }
-    .project-page article footer, .project-page article header {
-      margin: 0;
+      z-index: 3;
+      pointer-events: none; }
+    .project-page article footer {
+      margin: 100px 0;
       padding: 20px; }
   .project-page > footer {
     display: none; } }

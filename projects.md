@@ -5,7 +5,7 @@ title: projects
 
 <section title="Some of what I've done" id="projects">
     <header>
-        <h2 class="titulo-bloco">Some of<br>what I've<br>done</h2>
+        <h1 class="titulo-bloco">Some of<br>what I've<br>done</h1>
     </header>
     <aside class="filter">
         <h3 class="filter-open">filter</h3>

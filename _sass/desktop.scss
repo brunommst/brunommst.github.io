@@ -1,5 +1,10 @@
 @media only screen and (min-width: 768px) {
 
+    @mixin pages {
+        section {
+            margin: 20px 0;
+        }
+    }
     @mixin projects {
         header {
             padding-left: 50px;
@@ -39,6 +44,7 @@
     }
 
     .wrapper > header {
+        width: 100%;
         max-width: 1300px;
         margin: 0 auto;
         display: flex;
@@ -103,6 +109,8 @@
     .wrapper > main {
         max-width: 1300px;
         margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .filter {
@@ -148,6 +156,9 @@
 
             li {
                 cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -199,17 +210,35 @@
         }
     }
 
+    .about {
+        #sobre {
+            max-width: 700px;
+        }
+    }
+    
     .projects {
         @include pages;
         @include projects;
+        
+        header h1 {
+            height: auto;
+            margin-bottom: 0;
+            font-size:60px;
+        }
     }
 
     .project-page {
-        
+        &>header {
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
         &>main {
+            height: 100vh;
             max-width: 1400px;
             margin: auto;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: scroll;
         }
         
         header {
@@ -219,29 +248,27 @@
         }    
             
         article {
-            height: calc(100vh - 120px);
+            
             padding-top: 20px;
 
-            overflow: hidden;
-
-            display: grid;
-            grid-template-columns: 2fr 4fr;
-            grid-template-rows: 3fr 1fr;
-            grid-gap: 20px;
-
-            main {
-                border: 1px solid black;
-                height: 100%;
-                position: relative;
-                overflow-y: scroll;
-                overflow-x: hidden;
+            header {
+                position: fixed;
+                top: 150px;
+                max-width: 500px;
+                padding: 10px;
                 
-                grid-column: 2;
-                grid-row: 1 / span 2;
+                &:hover {
+                    background: rgba(255,255,255,.9);
+                    z-index: 4;
+                }
             }
-            
-            footer, header {
-                margin: 0;
+            main {
+                position: relative;
+                z-index: 3;
+                pointer-events: none;
+            }
+            footer {
+                margin: 100px 0;
                 padding: 20px;
             }
         }

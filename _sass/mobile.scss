@@ -450,9 +450,10 @@ body {
         flex-direction: column;
     }
 
-    header h2 {
+    header h1 {
         height: 200px;
         margin-bottom: 0;
+        font-size: 45px;
     }
 
 }
@@ -507,7 +508,7 @@ body {
         header {
             margin-bottom: 50px;
 
-            h1 {
+            h2 {
                 font-size: 45px;
                 margin: 0 0 20px;
             }
@@ -533,7 +534,9 @@ body {
         footer {
             margin: 50px auto 150px;
             font-size: 18px;
-            
+            text-align:center;
+            line-height: 2;
+
             h4:last-of-type {
                 margin-top: 50px;
             }

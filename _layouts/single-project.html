@@ -18,9 +18,11 @@ layout: default
     </main>
     <footer>
         <h4>In collaboration with:</h4>
-        {% for person in page.persons %}
-            <a href="{{ person.link }}">{{ person.name }}</a>
-        {% endfor %}
+        <ul>
+            {% for person in page.persons %}
+                <li><a href="{{ person.link }}">{{ person.name }}</a></li>
+            {% endfor %}
+        </ul>
         <h4>{{ page.year }}</h4>
     </footer>
 </article>
