@@ -36,6 +36,7 @@
 
             .project {
                 margin: 0;
+                height: 480px;
                 background: var(--white);
 
                 transition: all .06s ease-in-out;
@@ -268,6 +269,11 @@
             p {
                 font-size: 16px;
             }
+        }
+        
+        #sticky-bottom {
+            margin-bottom: 30px;
+            display: block;
         }
 
         article {
