@@ -27,3 +27,10 @@ persons:
 - name: Paloma Moniz
   link: https://www.instagram.com/palomamoniiz/
 ---
+<footer>
+    <h4>In collaboration with:</h4>
+    <ul>
+        <li><a href="https://www.instagram.com/oricardogoncalves/" target="_blank">Paloma Moniz</a></li><li><a href="https://www.instagram.com/palomamoniiz/" target="_blank">Ricardo Gonçalves</a></li>
+    </ul>
+    <h4>2017</h4>
+</footer>

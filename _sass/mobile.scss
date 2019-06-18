@@ -17,7 +17,7 @@ body {
 @mixin projects {
     #bloco-work .project {
         width: 100%;
-        height: 480px;
+        height: 430px;
         border: 1px solid var(--black);
         margin-bottom: 20px;
 
@@ -49,6 +49,7 @@ body {
     footer {
         width: 100%;
         text-align: center;
+        margin: 200px 0 30px;
     }
 }
 
@@ -471,6 +472,10 @@ body {
         margin-bottom: 0;
         font-size: 45px;
     }
+    
+    &>footer p {
+        display: none;
+    }
 
 }
 
@@ -578,7 +583,7 @@ body {
                 }
             }
         }
-
+        
         footer {
             margin: 50px auto 150px;
             font-size: 18px;
@@ -591,6 +596,10 @@ body {
         }
     }
 
+    #sticky-bottom {
+        display: none;
+    }
+    
     footer p {
         display: none;
     }
@@ -623,6 +632,14 @@ body {
 
     section:not(#name) {
         padding: 20px;
+    }
+    
+    #module-draw {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     footer {

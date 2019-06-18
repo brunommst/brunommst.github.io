@@ -36,6 +36,7 @@
 
             .project {
                 margin: 0;
+                height: 480px;
                 background: var(--white);
 
                 transition: all .06s ease-in-out;
@@ -138,7 +139,7 @@
 
         border: 1px solid var(--black);
         padding: 10px;
-        margin-right: 0px;
+        margin: -30px 0px 50px;
 
         position: sticky;
         top: 50px;
@@ -263,11 +264,16 @@
             overflow-x: hidden;
             overflow-y: scroll;
         }
-
+        
         header {
             p {
                 font-size: 16px;
             }
+        }
+        
+        #sticky-bottom {
+            margin-bottom: 30px;
+            display: block;
         }
 
         article {

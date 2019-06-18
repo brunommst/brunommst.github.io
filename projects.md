@@ -31,8 +31,13 @@ title: projects
         {% endfor %}
     </div>
     <footer>
-        <p>A lot more coming<br>be sure to check back soon!</p>
+        <p>Still working on adding more projects.<br>Have a lot more coming, be sure to check back soon!</p>
     </footer>
 </section>
-
+<script>
+      $('.lazy').Lazy({
+        effect: "fadeIn",
+        effectTime: 500
+    });
+</script>
 <script language="javascript" type="text/javascript" src="{{ "/assets/js/filter.js" | relative_url }}"></script>
