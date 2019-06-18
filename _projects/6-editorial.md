@@ -18,3 +18,6 @@ images:
 - url: "/assets/images/projects/edit/edit4.png"
   alt: Editorial Design
 ---
+<footer>
+    <h4>2018</h4>
+</footer>
