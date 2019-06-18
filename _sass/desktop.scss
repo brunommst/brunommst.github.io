@@ -1,10 +1,27 @@
 @media only screen and (min-width: 768px) {
 
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--white);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--black);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: orangered;
+    }
+
     @mixin pages {
         section {
             margin: 20px 0;
         }
     }
+
     @mixin projects {
         header {
             padding-left: 50px;
@@ -47,7 +64,7 @@
         width: 100%;
         max-width: 1300px;
         margin: 0 auto;
-        
+
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -159,7 +176,8 @@
 
             li {
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     text-decoration: underline;
                 }
             }
@@ -215,47 +233,46 @@
 
     .about {
         font-size: 20px;
-        p {
-            font-family: $font-regular;
-        }
+
         #sobre {
             max-width: 700px;
         }
     }
-    
+
     .projects {
         @include pages;
         @include projects;
-        
+
         header h1 {
             height: auto;
             margin: 0;
-            font-size:60px;
+            font-size: 60px;
         }
     }
 
     .project-page {
-        &>header {
+        & > header {
             position: absolute;
             left: 0;
             right: 0;
         }
-        &>main {
+
+        & > main {
             height: 100vh;
             max-width: 1400px;
             margin: auto;
             overflow-x: hidden;
             overflow-y: scroll;
         }
-        
+
         header {
-            p{
+            p {
                 font-size: 16px;
             }
-        }    
-            
+        }
+
         article {
-            
+
             padding-top: 20px;
 
             header {
@@ -263,25 +280,28 @@
                 top: 150px;
                 max-width: 500px;
                 padding: 10px;
-                
+
                 &:hover {
-                    background: rgba(255,255,255,.9);
+                    background: rgba(255, 255, 255, .9);
                     z-index: 4;
                 }
             }
+
             main {
                 position: relative;
                 z-index: 3;
                 pointer-events: none;
             }
+
             footer {
                 margin: 100px 0;
                 padding: 20px;
             }
         }
-        &>footer {
+
+        & > footer {
             display: none;
-        } 
+        }
     }
 
 }

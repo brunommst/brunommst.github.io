@@ -24,27 +24,14 @@
 :root {
     --black: black;
     --white: white;
+    scroll-behavior: smooth;
 }
 
 ::-moz-selection {
     background: #ffc6a8;
 }
-
 ::selection {
     background: #ffc6a8;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: var(--white); 
-}
-::-webkit-scrollbar-thumb {
-  background: var(--black); 
-}
-::-webkit-scrollbar-thumb:hover {
-  background: orangered; 
 }
 
 $font-bold: Bangla-Bold,
@@ -81,8 +68,17 @@ ul {
     height: 100vh;
 }
 
+.small-text {
+    font-size: 14px;
+}
 .underline {
     text-decoration: underline;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-family: $font-bold;
 }
 
 .button {

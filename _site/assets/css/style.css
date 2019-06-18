@@ -17,25 +17,14 @@
 
 :root {
   --black: black;
-  --white: white; }
+  --white: white;
+  scroll-behavior: smooth; }
 
 ::-moz-selection {
   background: #ffc6a8; }
 
 ::selection {
   background: #ffc6a8; }
-
-::-webkit-scrollbar {
-  width: 10px; }
-
-::-webkit-scrollbar-track {
-  background: var(--white); }
-
-::-webkit-scrollbar-thumb {
-  background: var(--black); }
-
-::-webkit-scrollbar-thumb:hover {
-  background: orangered; }
 
 a {
   color: var(--black); }
@@ -59,8 +48,17 @@ ul {
   align-items: center;
   height: 100vh; }
 
+.small-text {
+  font-size: 14px; }
+
 .underline {
   text-decoration: underline; }
+
+.italic {
+  font-style: italic; }
+
+.bold {
+  font-family: Bangla-Bold, sans-serif; }
 
 .button {
   width: calc(100vw - 20px - 20px - 15vw - 20px);
@@ -187,11 +185,15 @@ body {
 #contact {
   margin-top: 200px;
   text-align: center; }
+  #contact h3 {
+    font-size: 18px;
+    font-family: Bangla-Regular, sans-serif;
+    margin-bottom: 50px; }
   #contact .bloco {
     margin-top: 20px; }
     #contact .bloco a {
       font-size: 20px;
-      line-height: 50px; }
+      line-height: 60px; }
 
 .wrapper > footer {
   display: flex;
@@ -453,12 +455,17 @@ body {
       margin: 0 0 20px; }
     .about section .bloco {
       text-align: center; }
+  .about p:not(#contact > .bloco > p) {
+    font-family: Bangla-Regular, sans-serif; }
   .about section header {
     width: 100%;
     position: sticky;
     top: 0;
     padding-top: 20px;
     background: rgba(255, 255, 255, 0.9); }
+  .about #sobre p {
+    font-family: Bangla-Regular, sans-serif;
+    line-height: 1.8; }
   .about #education {
     white-space: nowrap; }
     .about #education .titulo-bloco {
@@ -466,7 +473,11 @@ body {
       position: sticky;
       top: 0; }
     .about #education ul {
-      margin-bottom: 15px; }
+      margin-bottom: 50px; }
+      .about #education ul li {
+        margin: 15px 0; }
+  .about #skills h2 {
+    margin: 0; }
   .about #skills .bloco ul:not(:last-of-type)::after {
     content: '+'; }
 
@@ -517,6 +528,18 @@ body {
     display: none; }
 
 @media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 10px; }
+
+  ::-webkit-scrollbar-track {
+    background: var(--white); }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--black); }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: orangered; }
+
   .wrapper > header {
     width: 100%;
     max-width: 1300px;
@@ -657,8 +680,6 @@ body {
 
   .about {
     font-size: 20px; }
-    .about p {
-      font-family: Bangla-Regular, sans-serif; }
     .about #sobre {
       max-width: 700px; }
 

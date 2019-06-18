@@ -8,8 +8,11 @@ title: about
     <header>
         <h2 class="titulo-bloco">About me</h2>
     </header>
-    <p>HI! I'M A COMMUNICATION DESIGNER FROM LISBON, PORTUGAL WHO LOVES TO DEVELOP DIGITAL INTERFACES AND HOPES TO BECOME A WEBMASTER ONE DAY. I’M ALSO A TECHNOLOGY ENTHUSIAST sometimes a little too much even WHO ADVOCATES EXPERIMENTATION AND MULTIDISCIPLINARY SYSTEMS AS A WAY TO BETTER ACHIEVE PROGRESS AND DO MY JOB.</p>
-    <p>STUDIED COMMUNICATION DESIGN AT THE FACULTY OF FINE ARTS OF THE UNIVERSITY OF LISBON (FBAUL), CURRENTLY ON A POSTGRADUATE DEGREE IN DIGITAL EXPERIENCE DESIGN WHILE DOING SOME FREELANCE STUFF ON THE SIDE.</p>
+    <p>Hi again! My name is Bruno Santos <span class="italic small-text">(in case you haven't seen the 100px sized name on the front)</span> and I'm a Digital Designer from Lisbon who loves to explore, experiment and have fun with the web.</p>
+    <br>    
+    <p><span class="bold">Design</span>, <span class="bold">Multidisciplinarity</span>, <span class="bold">Experimentation</span>, <span class="bold">Code</span> and <span class="bold italic">the ability to Google my way into anything</span> are my best traits. I really want to get design and interaction in the hands of people and those are my best tools to get there. <br><span class="italic">Even though I've done them</span>, boring websites or apps with "pre-formatted" design aren't <span class="italic">it</span> for me — <span class="underline">there is a time and a place for them</span> — but I believe that <span class="italic small-text">regarding digital design of course</span> we should try to have fun by breaking as many rules and  abusing our endless platforms as much as possible.</p>
+    <br>
+    <p>Currently <span class="italic">(as of June 2019)</span>, I just finished my Postgraduate in Digital Experience Design and I'm looking for new challenges to grow as a designer in the field. <a href="mailto:hello@bru-no.com?subject=I really want to talk to you!&body=Hi Bruno — I'm really cool cause I clicked that link to actually talk to you!">Let me know if you're looking for me!</a></p>
 </section>
 
 <section title="Education and Experience" id="education">
@@ -19,18 +22,13 @@ title: about
     <div class="bloco">
         <p class="hidden">Academic course:</p>
         <ul>
-            <li>Communication Design BA @ <a href="http://www.belasartes.ulisboa.pt">FBAUL</a></li>
-            <li>Post-Graduate in Digital Experience Design<br>also @ <a href="http://www.belasartes.ulisboa.pt">FBAUL</a><a href="http://dxd.belasartes.ulisboa.pt">(PG-DXD)</a></li>
+            <li><p>Communication Design BA @    <a href="http://www.belasartes.ulisboa.pt" target="_blank">FBAUL</a></p></li>
+            <li><p>Postgraduate in <br>Digital Experience Design<br>also @<a href="http://www.belasartes.ulisboa.pt" target="_blank">FBAUL</a><a href="http://dxd.belasartes.ulisboa.pt" target="_blank">(PG-DXD)</a></p></li>
+            <li><p>Weekend Workshop <br>in Web Copywriting<br>@<a href="https://edit.com.pt/" target="_blank">EDIT</a></p></li>
         </ul>
         <p class="underline">Freelance work:</p>
         <ul>
-            <li>as a Wordpress Developer and Designer</li>
-            <li>a website consultant</li>
-        </ul>
-        <p class="underline">Volunteering:</p>
-        <ul>
-            <li>Websummit 2017</li>
-            <li>xCoAx 2017</li>
+            <li><p>as a Website Designer and Developer.</p></li>
         </ul>
     </div>
 </section>
@@ -38,48 +36,37 @@ title: about
 <section title="skills" id="skills">
     <header>
         <h2 class="titulo-bloco">Skills</h2>
-        <p>In case you’re wondering why and what you should hire me for.</p>
+        <p>In case you’re wondering why and what you could hire me for.</p>
     </header>
     <div class="bloco">
-        <h3>Website and Design Stuff</h3>
-        <p class="underline">The languages:</p>
+        <br>
+        <p class="underline">Digital Design:</p>
         <ul>
-            <li>HTML5</li>
-            <li>CSS</li>
+            <li>UX/UI</li>
+            <li>Interaction Design</li>
+            <li>Product Design</li>
+            <li>Service Design</li>
+        </ul>
+        <p class="underline">Website stuff:</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS/SCSS</li>
             <li>JavaScript</li>
-            <li>(and libs like jQuery, p5js, Grunt ...)</li>
-            <li>English</li>
-            <li>Portuguese</li>
+            <li>libs like jQuery, p5js...</li>
+            <li>Git, Jekyll, Grunt</li>
+            <li>SEO</li>
+            <li>Wordpress</li>
+            <li>Cloudfare is amazing</li>
         </ul>
-        <p class="underline">The cool tools:</p>
-        <ul>
-            <li>All the Adobes except for the odd ones</li>
-            <li>Figma</li>
-            <li>Sketch</li>
-            <li>Framer X (what i’m trying rn)</li>
-            <li>Xd</li>
-            <li>Invision</li>
-        </ul>
-        <p class="underline">The necessaries:</p>
-        <ul>
-            <li>The Dead Microsoft Office</li>
-            <li>The Google Apps that replaced them</li>
-            <li>Slack</li>
-            <li>Trello</li>
-            <li>(...there’s a lot more and I’m a fast learner anyways...)</li>
-        </ul>
-        <p class="underline">The odd ones:</p>
-        <ul>
-            <li>Blender</li>
-            <li>Lightwave 3D</li>
-            <li>Wordpress stuff</li>
-            <li>Never enough amounts of SEO</li>
-        </ul>
-        <p class="underline">The OSes:</p>
-        <ul>
-            <li>been on Windows for too long</li>
-            <li>now on Mac</li>
-        </ul>
+    </div>
+</section>
+
+<section title="Contact" id="contact">
+    <h2 class="titulo-bloco">Contact me!</h2>
+    <h3>if you're looking for a designer who can navigate the web, or just talk about stuff!</h3>
+    <div class="bloco">
+        <p><a href="mailto:hello@bru-no.com?Subject=Hey,%20Let's%20talk!" target="_blank">hello@bru-no.com</a></p>
+        <p><a href="https://www.linkedin.com/in/bru-no/" target="_blank" rel="noreferrer">linkedin.com/in/bru-no</a></p>
     </div>
 </section>
 
