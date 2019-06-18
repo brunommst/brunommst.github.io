@@ -24,7 +24,7 @@ title: projects
             <article>
                 <h3>{{ project.title }}</h3>
                 {% for cover in project.covers %}
-                    <img class="lazy" data-src="{{ cover.url }}" alt="{{ cover.alt }}">
+                    <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io{{ cover.url }}&h=500&q=60" src="https://images.weserv.nl?url=https://brunommst.github.io{{ cover.url }}&h=1" alt="{{ cover.alt }}">
                 {% endfor %}
             </article>
         </a>
