@@ -15,7 +15,7 @@
     if (weekDay >= 1 && weekDay <= 5) {
         // Start at 7am, end at 8pm
         hours.start.setHours(7);
-        hours.end.setHours(23);
+        hours.end.setHours(15);
         // If it's Saturday
     } else if (weekDay >= 6) {
         // Start at 8am, end at 8pm
@@ -42,7 +42,8 @@
     $(function () {
         if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()) {
             // THIS MEANS THAT WE OUTSIDE OF INTERVAL
-
+document.documentElement.style.setProperty('--black', 'white');
+            document.documentElement.style.setProperty('--white', 'black');
         } else {
             // THIS MEANS THAT WE INSIDE OF INTERVAL
             document.documentElement.style.setProperty('--black', 'white');
