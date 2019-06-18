@@ -88,10 +88,8 @@
             $('.countdown').hide();
             document.documentElement.style.setProperty('--black', 'white');
             document.documentElement.style.setProperty('--white', 'black');
-            console.log('teste');
         } else if ($('.countdown').not(':visible')) {
             $('.countdown').show();
-            console.log('teste');
         }
         
         countDown();
