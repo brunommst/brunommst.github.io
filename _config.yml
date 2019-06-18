@@ -12,7 +12,7 @@ exclude:
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /projects/:title
   
 # Date format for posts
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this

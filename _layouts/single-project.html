@@ -6,16 +6,18 @@ layout: default
         <h1>{{ page.title | escape }}</h1>
         <p>{{ page.description}}</p>
         {% for link in page.links %}
-            <a href="{{ link.url }}">{{ link.linktext }}</a>
+            <a href="{{ link.url }}" target="_blank">{{ link.linktext }}</a>
         {% endfor %}
     </header>
     <main>
         <ul>
             {% for image in page.images %}
-            <li><img class="lazy" data-src="{{ image.url }}" alt="{{ image.alt }}"></li>
+            <li><h4>{{ image.text }}</h4><img class="lazy" data-src="{{ image.url }}" alt="{{ image.alt }}"></li>
             {% endfor %}
         </ul>
     </main>
+    {{ content }}
+<!--
     <footer>
         <h4>In collaboration with:</h4>
         <ul>
@@ -25,4 +27,12 @@ layout: default
         </ul>
         <h4>{{ page.year }}</h4>
     </footer>
+-->
+    <script>
+        $('.lazy').Lazy({
+            appendScroll: $('main'),
+            effect: "fadeIn",
+            effectTime: 500
+        });
+    </script>
 </article>

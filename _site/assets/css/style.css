@@ -328,6 +328,9 @@ body {
     height: 0; }
   .home section#sobre h2 {
     margin: 0; }
+  .home section#sobre p {
+    font-size: 18px;
+    line-height: 1.8; }
   .home section#sobre p:first-of-type {
     margin-bottom: 30px; }
   .home section#sobre .button {
@@ -357,7 +360,7 @@ body {
         .home section#projects #bloco-work .project article img {
           width: 100%;
           height: 90%;
-          object-fit: cover; }
+          object-fit: contain; }
     .home section#projects footer {
       width: 100%;
       text-align: center; }
@@ -382,7 +385,7 @@ body {
     width: 100%;
     margin: 0;
     color: var(--black);
-    font-size: 90px;
+    font-size: 95px;
     line-height: 1.3;
     overflow: hidden;
     pointer-events: none;
@@ -428,7 +431,7 @@ body {
       .projects #bloco-work .project article img {
         width: 100%;
         height: 90%;
-        object-fit: cover; }
+        object-fit: contain; }
   .projects footer {
     width: 100%;
     text-align: center; }
@@ -486,19 +489,30 @@ body {
   padding-top: 150px; }
   .project-page article header {
     margin-bottom: 50px; }
-    .project-page article header h2 {
+    .project-page article header h1 {
       font-size: 45px;
       margin: 0 0 20px; }
     .project-page article header p {
       font-family: Bangla-Regular, sans-serif;
       font-size: 18px;
-      line-height: 1.6; }
+      line-height: 1.6;
+      margin-bottom: 20px; }
+    .project-page article header a {
+      font-size: 20px; }
   .project-page article main ul {
     display: flex;
     flex-direction: column; }
-    .project-page article main ul img {
+    .project-page article main ul h4 {
+      text-align: center;
+      background: white;
       width: 100%;
-      object-fit: contain; }
+      padding: 0;
+      margin: 0; }
+    .project-page article main ul img {
+      max-height: 90%;
+      width: 100%;
+      object-fit: contain;
+      object-position: 50% 50%; }
   .project-page article footer {
     margin: 50px auto 150px;
     font-size: 18px;
@@ -652,8 +666,7 @@ body {
       background: var(--white);
       transition: all .06s ease-in-out; }
       .home #bloco-work .project:hover {
-        transform: skewX(-5deg);
-        background: black; }
+        transform: skewX(-5deg); }
   .home footer {
     display: flex;
     flex-direction: row-reverse;
@@ -698,8 +711,7 @@ body {
       background: var(--white);
       transition: all .06s ease-in-out; }
       .projects #bloco-work .project:hover {
-        transform: skewX(-5deg);
-        background: black; }
+        transform: skewX(-5deg); }
   .projects footer {
     display: flex;
     flex-direction: row-reverse;
@@ -735,6 +747,7 @@ body {
         background: rgba(255, 255, 255, 0.9);
         z-index: 4; }
     .project-page article main {
+      margin-top: 65vh;
       position: relative;
       z-index: 3;
       pointer-events: none; }

@@ -3,14 +3,14 @@ layout: home
 title: home
 ---
 <section title="name" id="name">
-    <h1>bru-no santos digital designer</h1>
+    <h1>Bru-no Santos Digital Designer</h1>
 </section>
 <section title="sobre" id="sobre">
     <header>
         <h2 class="titulo-bloco hidden">About me</h2>
     </header>
-    <p>Hey!! Welcome to my website / portfolio / online drive where I put my stuff and that I'm never satisfied with.</p>
-    <p>I’m a Digital Experience Designer from Lisbon who loves to experiment with the web. If you’re looking for a guy for your next website and/or digital solution <a href="#contact">let's talk!</a></p>
+    <p>Hey! Welcome to my website / portfolio / online place where I put my stuff that I'm never satisfied with.</p>
+    <p>I’m a Digital Experience Designer from Lisbon who loves to explore, experiment and have fun with the web. Feel free to explore around or just <a href="#contact">talk to me!</a></p>
     <a href="about" class="button button-forward center">
         <div class="arrow">
             <span>1</span>

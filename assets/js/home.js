@@ -1,5 +1,11 @@
 (function ($) {
     
+    $('.lazy').Lazy({
+        effect: "fadeIn",
+        effectTime: 500
+    });
+    
+    
     // NOME ALTERAR COM O SCROLL
 
     (function () {

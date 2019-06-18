@@ -1,11 +1,5 @@
 (function ($) {
     
-    $('.lazy').Lazy({
-        appendScroll: $('main'),
-        effect: "fadeIn",
-        effectTime: 500
-    });    
-    
     (function () {
         var lastScrollY = 0;
         var ticking = false;
