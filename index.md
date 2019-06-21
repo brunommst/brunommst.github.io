@@ -63,7 +63,7 @@ title: home
             <h3 class="minutes"></h3>
             <h3 class="seconds"></h3>
         </div>
-        <h4>You probably should come back later</h4>
+        <h4>Come back later tonight!</h4>
     </div>
 </section>
 

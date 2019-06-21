@@ -29,18 +29,25 @@ body {
         article {
             width: 100%;
             height: 100%;
-            padding: 20px;
+            //            padding: 20px;
+            position: relative;
 
             h3 {
-                height: 10%;
+                height: 20px;
+                width: 100%;
                 margin: 0;
+                padding: 20px 0;
+                box-sizing: content-box;
+                background: rgba(255, 255, 255, .8);
                 font-size: 20px;
                 text-align: center;
+                position: absolute;
+                top: 0;
             }
 
             img {
                 width: 100%;
-                height: 90%;
+                height: 100%;
                 object-fit: contain;
             }
         }
@@ -49,7 +56,7 @@ body {
     footer {
         width: 100%;
         text-align: center;
-        margin: 200px 0 30px;
+        margin: 100px 0 30px;
     }
 }
 
@@ -62,7 +69,7 @@ body {
     }
 
     section {
-        padding: 20px;
+        padding: 25px;
         margin: 100px 0;
 
         h2 {
@@ -97,7 +104,7 @@ body {
         will-change: transform;
 
         h3 {
-            font-size: 16px;
+            font-size: 13px;
             font-family: $font-bold;
             text-decoration: line-through;
             margin-bottom: 70px;
@@ -148,9 +155,10 @@ body {
             -o-transition: all .2s ease;
             transition: all .2s ease;
 
-            -webkit-transform: scaleX(2);
-            -ms-transform: scaleX(2);
-            transform: scaleX(2);
+            -webkit-transform: scaleX(1.7);
+            -ms-transform: scaleX(1.7);
+            transform: scaleX(1.7);
+            transform-origin: center right;
 
             &.transform-button {
                 -webkit-transform: scaleY(2.2);
@@ -174,7 +182,7 @@ body {
         font-family: $font-regular;
         margin-bottom: 50px;
     }
-    
+
     .bloco {
         margin-top: 20px;
 
@@ -251,6 +259,7 @@ body {
     position: sticky;
     top: 200px;
     right: 0;
+    z-index: 10;
 
     transition: all .06s;
 
@@ -295,8 +304,7 @@ body {
     align-items: center;
 
     .wrapper {
-        width: 100%;
-        max-width: 380px;
+        width: 390px;
         padding: 10px;
 
         background: var(--white);
@@ -385,6 +393,7 @@ body {
                 font-size: 18px;
                 line-height: 1.8;
             }
+
             p:first-of-type {
                 margin-bottom: 30px;
             }
@@ -472,8 +481,8 @@ body {
         margin-bottom: 0;
         font-size: 45px;
     }
-    
-    &>footer p {
+
+    & > footer p {
         display: none;
     }
 
@@ -488,6 +497,10 @@ body {
         font-family: $font-regular;
     }
 
+    li {
+        font-family: $font-regular;
+    }
+
     section header {
         width: 100%;
         position: sticky;
@@ -495,7 +508,7 @@ body {
         padding-top: 20px;
         background: rgba(255, 255, 255, .9);
     }
-    
+
     #sobre p {
         font-family: $font-regular;
         line-height: 1.8;
@@ -514,7 +527,7 @@ body {
 
         ul {
             margin-bottom: 50px;
-            
+
             li {
                 margin: 15px 0;
             }
@@ -528,7 +541,7 @@ body {
         h2 {
             margin: 0;
         }
-        
+
         .bloco ul:not(:last-of-type)::after {
             content: '+';
         }
@@ -557,6 +570,7 @@ body {
                 line-height: 1.6;
                 margin-bottom: 20px;
             }
+
             a {
                 font-size: 20px;
             }
@@ -566,7 +580,7 @@ body {
             ul {
                 display: flex;
                 flex-direction: column;
-                
+
                 h4 {
                     text-align: center;
                     background: white;
@@ -574,7 +588,7 @@ body {
                     padding: 0;
                     margin: 0;
                 }
-                
+
                 img {
                     max-height: 90%;
                     width: 100%;
@@ -583,7 +597,7 @@ body {
                 }
             }
         }
-        
+
         footer {
             margin: 50px auto 150px;
             font-size: 18px;
@@ -599,7 +613,7 @@ body {
     #sticky-bottom {
         display: none;
     }
-    
+
     footer p {
         display: none;
     }
@@ -608,7 +622,6 @@ body {
 
 //EXPERIMENTS PAGE
 #experiments {
-
     overflow: hidden;
 
     & > header {
@@ -617,428 +630,92 @@ body {
 
     #name {
         overflow: unset;
-
         h1 {
             transform-origin: top right;
         }
     }
 
+    #sobre {
+        header {
+            height: 0;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        p:first-of-type {
+            margin-bottom: 30px;
+        }
+
+        .button {
+            margin-top: 50px;
+        }
+    }
+
     #timer {
+        color: white;
+
         h4 {
             text-align: center;
             max-width: 240px
         }
     }
-
-    section:not(#name) {
-        padding: 20px;
-    }
     
-    #module-draw {
+    #experiments-block {
+        
+        header {
+            font-size: 22px;
+            max-width: 600px;
+        }
+        
+        main {
+            margin: 100px;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            h3 {
+                width: 500px;
+                margin: 0 auto;
+                text-align: center;
+                font-family: $font-regular;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    section:not(#name):not(#experiments-block) {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    #c2 {
         width: 100vw;
-        height: 100vh;
-        position: fixed;
+        height: 100%;
+        position: absolute;
         top: 0;
         left: 0;
+        z-index: -1;
     }
 
     footer {
+        height: unset;
+        margin-top: 200px;
         p {
             margin-bottom: 0;
-        }
-
-        #sticky-bottom {
-            display: none;
+            height: unset;
+            
+            &:last-of-type {
+                margin: 30px 0;
+            }
         }
     }
 }
-
-
-///* BODY E CONTENTOR PRINCIPAL */
-//body {
-//    width: 100%;
-//    background-color: var(--white);
-//    color: var(--black);
-//    margin: 0;
-//}
-//
-//.wrapper {
-//    position: relative;
-//    width: 100%;
-//}
-//
-///* NAVEGAÇÃO */
-//
-//nav {
-//    width: 100%;
-//    min-width: 810px;
-//    height: auto;
-//
-//    a {
-//        text-decoration: none;
-//    }
-//
-//    ul {
-//        display: -webkit-box;
-//        display: -webkit-flex;
-//        display: -ms-flexbox;
-//        display: flex;
-//        -webkit-box-orient: horizontal;
-//        -webkit-box-direction: normal;
-//        -webkit-flex-direction: row;
-//        -ms-flex-direction: row;
-//        flex-direction: row;
-//        -webkit-box-pack: justify;
-//        -webkit-justify-content: space-between;
-//        -ms-flex-pack: justify;
-//        justify-content: space-between;
-//        padding: 0;
-//        margin: 0;
-//    }
-//
-//    li {
-//        background: black;
-//        float: left;
-//        margin: 20px;
-//        list-style: none;
-//        font-size: 14px;
-//        font-family: Bangla-bold, sans-serif;
-//        color: var(--black);
-//        text-decoration: underline;
-//
-//        &:first-of-type {
-//            text-decoration: none;
-//            background: transparent;
-//        }
-//
-//        &:not(:first-of-type):hover {
-//            background: transparent;
-//        }
-//    }
-//}
-//
-///* NOME */
-//
-//#nome {
-//    width: 100%;
-//    margin: 0;
-//
-//    color: var(--black);
-//    font-size: 20vw;
-//    font-family: Bangla-bold, sans-serif;
-//    line-height: 1.3;
-//
-//    overflow: hidden;
-//    position: absolute;
-//    left: 0;
-//    top: 0;
-//    z-index: 0;
-//    pointer-events: none;
-//
-//    -webkit-transform: var(--skew);
-//    -ms-transform: var(--skew);
-//    transform: var(--skew);
-//
-//    -webkit-transform-origin: 90% 10%;
-//    -ms-transform-origin: 90% 10%;
-//    transform-origin: 90% 10%;
-//}
-//
-//
-//
-///* SOBRE */
-//
-//#sobre {
-//    margin: 300px 5vw 200px 33vw;
-//    padding: 60px 20px 10px;
-//
-//    color: var(--black);
-//    font-size: 25px;
-//    font-family: Bangla-bold, sans-serif;
-//    line-height: 1.8;
-//}
-//
-//#sobre:hover,
-//#education .bloco:hover,
-//#skills .bloco:hover {
-//    background: var(--white);
-//    opacity: 0.9;
-//    z-index: 10;
-//}
-//
-//
-//
-//
-///* EDUCATION */
-//
-//#education {
-//    white-space: nowrap;
-//
-//    .titulo-bloco {
-//        position: -webkit-sticky;
-//        position: sticky;
-//        top: 0;
-//    }
-//
-//    ul {
-//        margin-bottom: 15px;
-//    }
-//}
-//
-//
-///* SKILLS */
-//
-//#skills {
-//
-//    .titulo-bloco {
-//        margin-bottom: 0;
-//        position: -webkit-sticky;
-//        position: sticky;
-//        top: 50px;
-//    }
-//
-//    .bloco ul:not(:last-of-type)::after {
-//        content: '+';
-//    }
-//
-//    h3 {
-//        font-size: 45px;
-//        margin: 0 auto;
-//    }
-//    
-//}
-//
-///* SOME OF WHAT I'VE DONE */
-//
-//#bloco-work {
-//    padding-left: 15vw;
-//}
-//
-//#work {
-//    
-//    h3 {
-//        font-family: Bangla-bold, sans-serif;
-//        font-size: 35px;
-//    }
-//
-//    p {
-//        width: 600px;
-//        padding: 10px;
-//        padding-left: 0;
-//
-//        position: relative;
-//        z-index: 1;
-//
-//        font-family: Bangla-bold, sans-serif;
-//        font-size: 16px;
-//        
-//        &:hover,
-//        &:hover ~ p {
-//            background: rgba(255, 255, 255, 0.8);
-//            cursor: help;
-//        }
-//    }
-//
-//    ul {
-//        overflow-x: scroll;
-//        overflow-y: hidden;
-//        white-space: nowrap;
-//        margin-top: -100px;
-//    }
-//
-//    li {
-//        display: inline-block;
-//    }
-//
-//    img {
-//        height: 800px;
-//        margin-right: 75px;
-//    }
-//    
-//}
-//
-//article {
-//    margin-bottom: 200px;
-//}
-//
-//
-//
-///* CONTACT */
-//
-//#contacto {
-//    margin-bottom: 250px;
-//
-//    p:first-of-type {
-//        margin-top: 30px;
-//        margin-bottom: 30px;
-//    }
-//}
-//
-//
-//
-///* FOOTER */
-//
-//footer {
-//    margin-bottom: 50px;
-//
-//    text-align: center;
-//    font-size: 16px;
-//    font-family: Bangla-bold, sans-serif;
-//}
-//
-//#topo {
-//    width: 40px;
-//    height: 40px;
-//    background: black;
-//
-//    display: block;
-//    position: fixed;
-//    right: 40px;
-//    bottom: 40px;
-//
-//    z-index: 10;
-//
-//    &:hover {
-//        background: none;
-//        cursor: pointer;
-//    }
-//}
-//
-//
-//
-//
-///* CLASSES */
-//
-//.bloco {
-//    margin: 0 5vw 200px 33vw;
-//    padding: 20px;
-//
-//    text-align: center;
-//    font-size: 25px;
-//    font-family: Bangla-bold, sans-serif;
-//    line-height: 1.8;
-//}
-//
-//.underline {
-//    text-decoration: underline;
-//}
-//
-//.hidden {
-//    display: none;
-//}
-//
-//.titulo-bloco {
-//    margin-left: 15vw;
-//    margin-top: 0;
-//    padding-top: 50px;
-//
-//    font-family: Bangla-bold, sans-serif;
-//    font-size: 80px;
-//}
-//
-//
-//@media only screen and (max-width: 480px) {
-//
-//    nav {
-//        min-width: initial;
-//        height: 40vh;
-//        
-//        ul {
-//            -webkit-box-orient: vertical;
-//            -webkit-box-direction: normal;
-//            -webkit-flex-direction: column;
-//            -ms-flex-direction: column;
-//            flex-direction: column;
-//            text-align: center;
-//        }
-//        
-//        li {
-//            font-size: 20px;
-//        }
-//
-//        a {
-//            display: none;
-//        }
-//    }
-//
-//
-//    #jumpto {
-//        text-decoration: underline;
-//    }
-//
-//    
-//
-//    #nome {
-//        top: 50px;
-//
-//        -webkit-transform-origin: 50% 50%;
-//        -ms-transform-origin: 50% 50%;
-//        transform-origin: 50% 50%;
-//    }
-//
-//    #sobre {
-//        margin: 200px auto 150px auto;
-//        font-size: 16px;
-//    }
-//
-//    #education {
-//        white-space: normal;
-//    }
-//
-//    #skills .titulo-bloco {
-//        top: 0;
-//    }
-//
-//    #skills h3 {
-//        font-size: 25px;
-//    }
-//
-//    #bloco-work {
-//        padding-left: 5vw;
-//        padding-right: 5vw;
-//    }
-//
-//    article {
-//        margin-bottom: 100px;
-//    }
-//
-//    #work {
-//        p {
-//            width: auto;
-//            padding: 0;
-//        }
-//
-//        ul {
-//            width: 100vw;
-//            margin-left: -5vw;
-//        }
-//
-//        img {
-//            height: 100vw;
-//            margin-right: 75px;
-//        }
-//    }
-//
-//    .titulo-bloco {
-//        font-size: 50px;
-//        margin-left: 5vw;
-//        margin-bottom: 0;
-//    }
-//
-//    .bloco {
-//        text-align: center;
-//        margin: auto;
-//        font-size: 16px;
-//    }
-//
-//    #contacto {
-//        .titulo-bloco {
-//            text-align: center;
-//            margin: 0;
-//        }
-//
-//        p {
-//            font-size: 18px;
-//        }
-//    }
-//}

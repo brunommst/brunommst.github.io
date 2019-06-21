@@ -83,7 +83,7 @@
     $(function () {
         // If it's currently not within the hours, don't show the countdown
         if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours() && !window.location.href.match('/experiments')) {
-//            window.location.href = "/experiments";
+            window.location.href = "/experiments";
         } else if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()) {
             $('.countdown').hide();
             document.documentElement.style.setProperty('--black', 'white');
