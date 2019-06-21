@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>bru-no digital designer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="canonical" href="https://bru-no.com">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <meta name="theme-color" content="#000000">
+    <meta property="og:image" content="/assets/images/share.jpg">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="320">
+    <link href="/assets/images/favicon.gif" rel="shortcut icon" type="image/x-icon">
+
+    <meta name="author" content="BrunoSantos@ brunobrunodesigndesign.com">
+    <meta name="description" content="Digital Experience Designer based in Lisbon, Portugal.">
+    <meta name="keywords" content="Graphic Design, Designer, Lisbon, Portugal, Independent, Graphic Bureau, Art Direction, Exhibition Design, Web Design, Website Designer, Website Developer, Visual Designer, Interaction Designer, Experience Designer">
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Dataset",
+            "name": "Bruno Santos",
+            "email": "brunommst@gmail.com",
+            "description": "Digital Experience Designer based in Lisbon, Portugal."
+        }
+
+    </script>
+
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141497063-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-141497063-1');
+
+    </script>
+-->
+
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/assets/js/libs/typebutter.jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/assets/js/libs/typebutter.banglabold.js"></script>
+    <script language="javascript" type="text/javascript" src="/assets/js/libs/typebutter.banglaregular.js"></script>
+</head>
+<body>
+      <div class="wrapper projects "><header>
+    <nav id="nav">
+        <h3>Guess I needed a menu of sorts.</h3>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects">Some of what I've done</a></li>
+            <li><a href="/about">About me</a></li>
+            <li><a href="/about#contact">Contacts</a></li>
+        </ul>
+    </nav>
+    <div id="top-closed-menu">
+        
+        <a href="/" class="button button-back">
+            <div class="arrow">
+                <span>1</span>
+            </div>
+            <h5>Back to beginning</h5>
+        </a>
+        
+
+        <div id="menu-button" class="transform-button"></div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            if (window.matchMedia('(max-width:500px)').matches) {
+                var open = 0;
+                $("#nav").hide();
+                $("#menu-button").click(function() {
+                    $("#nav").stop().slideToggle(150, 'swing');
+                    open = open ? 0 : 1;
+                    $("#menu-button").toggleClass('transform-button');
+                    $("#top-closed-menu").animate({
+                        'top': '20px'
+                    });
+                });
+
+                $("main").not("header *").on('click', function() {
+                    if (open == 1) {
+                        $("#nav").stop().slideToggle(100, 'swing', function() {
+                            open = open ? 0 : 1;
+                            $("#menu-button").toggleClass('transform-button');
+                            $("#top-closed-menu").animate({
+                                'top': ''
+                            });
+                        });
+                    }
+                });
+            }
+        });
+
+    </script>
+</header>
+<main aria-label="Content">
+                <section title="Some of what I've done" id="projects">
+    <header>
+        <h1 class="titulo-bloco">Some of<br />what I've<br />done</h1>
+        <p></p>
+    </header>
+    <aside class="filter">
+        <h3 class="filter-open">filter</h3>
+        <h3 class="filter-close">x</h3>
+        <ul class="filter-options">
+            <li id="everything" class="filter-selected">Everything</li>
+            <li id="product">Product Design</li>
+            <li id="websites">Websites</li>
+            <li id="general">General Design Stuff</li>
+        </ul>
+    </aside>
+    <div id="bloco-work">
+        
+        <a href="/projects/anjos70" class=" project anjos70 filter-websites">
+            
+            <article style="background-image:url('https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/june.png&amp;h=1" alt="Anjos70 website')">
+                <h3>Anjos70</h3>
+                    <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/june.png&amp;w=1200&amp;q=70" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/june.png&amp;h=1" alt="Anjos70 website" />
+            </article>
+            
+        </a>
+        
+        <a href="/projects/crise-de-identidade" class=" project crise-de-identidade filter-general filter-websites">
+            
+            <article style="background-image:url('https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/crise/catalogo.png&amp;h=1" alt="Crise de Identidade')">
+                <h3>CRISE DE IDENTIDADE</h3>
+                    <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/crise/catalogo.png&amp;w=1200&amp;q=70" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/crise/catalogo.png&amp;h=1" alt="Crise de Identidade" />
+            </article>
+            
+        </a>
+        
+        <a href="/projects/raise" class=" project raise filter-product">
+            
+            <article style="background-image:url('https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/cover.jpg&amp;h=1" alt="Raise')">
+                <h3>Raise</h3>
+                    <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/cover.jpg&amp;w=1200&amp;q=70" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/cover.jpg&amp;h=1" alt="Raise" />
+            </article>
+            
+        </a>
+        
+        <a href="/projects/mint" class=" project mint filter-product">
+            
+            <article style="background-image:url('https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/cover.jpg&amp;h=1" alt="mint')">
+                <h3>mint</h3>
+                    <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/cover.jpg&amp;w=1200&amp;q=70" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/cover.jpg&amp;h=1" alt="mint" />
+            </article>
+            
+        </a>
+        
+        <a href="/projects/ontherole" class=" project ontherole filter-general">
+            
+            <article style="background-image:url('https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/otr/1.png&amp;h=1" alt="On The Role image')">
+                <h3>ON THE ROLE</h3>
+                    <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/otr/1.png&amp;w=1200&amp;q=70" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/otr/1.png&amp;h=1" alt="On The Role image" />
+            </article>
+            
+        </a>
+        
+        <a href="/projects/editorial" class=" project editorial filter-general">
+            
+            <article style="background-image:url('https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit1.png&amp;h=1" alt="Editorial Design')">
+                <h3>Editorial Design</h3>
+                    <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit1.png&amp;w=1200&amp;q=70" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit1.png&amp;h=1" alt="Editorial Design" />
+            </article>
+            
+        </a>
+        
+    </div>
+    <footer>
+        <p>Still working on adding more projects.<br />Have a lot more coming, be sure to check back soon!</p>
+    </footer>
+</section>
+<script>
+      $('.lazy').Lazy({
+        effect: "fadeIn",
+        effectTime: 500
+    });
+</script>
+
+<script language="javascript" type="text/javascript" src="/assets/js/filter.js"></script>
+
+    
+
+        </main>
+
+        
+        <footer>
+    <p>Lisbon — 2019</p>
+    <div id="sticky-bottom">
+        <a href="/" class="button button-back">
+            <div class="arrow">
+                <span>1</span>
+            </div>
+            <h5>Back to beginning</h5>
+        </a>
+        <img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
+    </div>
+    
+    <script>
+        function goTop() {
+            $("html, body").stop().animate({
+                scrollTop: 0
+            }, 400, 'swing');
+        }
+    </script>
+</footer>
+
+
+
+      </div>
+      
+      <script language="javascript" type="text/javascript" src="/assets/js/all.js"></script>
+  </body>
+
+</html>

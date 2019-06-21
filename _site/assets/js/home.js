@@ -15,7 +15,7 @@
 
         $("#sticky-bottom").stop().hide();
         var update = function () {
-            if (lastScrollY < 500 && window.innerWidth < 500) {
+            if (lastScrollY < 700 && window.innerWidth < 700) {
                 scrolldist = lastScrollY * 0.05;
 
                 document.querySelector("#name h1").style.transform = "scaleY(calc(1 - " + scrolldist*0.05 + ")) scaleX(calc(1 + " + scrolldist*0.02 + "))";

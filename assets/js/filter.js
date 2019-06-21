@@ -44,22 +44,22 @@
 
     $("#everything").click(function () {
         $(this).addClass("filter-selected").siblings().removeClass("filter-selected");
-        $(".project").fadeIn();
+        $(".project").fadeIn(240);
     });
     $("#product").click(function () {
         $(this).addClass("filter-selected").siblings().removeClass("filter-selected");
-        $(".filter-product").fadeIn();
-        $(".project").not(".filter-product").fadeOut();
+        $(".filter-product").fadeIn(240);
+        $(".project").not(".filter-product").fadeOut(240);
     });
     $("#websites").click(function () {
         $(this).addClass("filter-selected").siblings().removeClass("filter-selected");
-        $(".filter-websites").fadeIn();
-        $(".project").not(".filter-websites").fadeOut();
+        $(".filter-websites").fadeIn(240);
+        $(".project").not(".filter-websites").fadeOut(240);
     });
     $("#general").click(function () {
         $(this).addClass("filter-selected").siblings().removeClass("filter-selected");
-        $(".filter-general").fadeIn();
-        $(".project").not(".filter-general").fadeOut();
+        $(".filter-general").fadeIn(240);
+        $(".project").not(".filter-general").fadeOut(240);
     });
     
 })(jQuery);

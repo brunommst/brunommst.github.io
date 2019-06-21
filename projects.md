@@ -21,12 +21,12 @@ title: projects
     <div id="bloco-work">
         {% for project in site.projects %}
         <a href="{{ site.baseurl }}/projects/{{ project.slug }}" class=" project {{ project.slug }} filter-{{ project.category }}">
-            <article>
+            {% for cover in project.covers %}
+            <article style="background-image:url('https://images.weserv.nl?url=https://brunommst.github.io{{ cover.url }}&h=1" alt="{{ cover.alt }}')">
                 <h3>{{ project.title }}</h3>
-                {% for cover in project.covers %}
                     <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io{{ cover.url }}&w=1200&q=70" src="https://images.weserv.nl?url=https://brunommst.github.io{{ cover.url }}&h=1" alt="{{ cover.alt }}">
-                {% endfor %}
             </article>
+            {% endfor %}
         </a>
         {% endfor %}
     </div>
