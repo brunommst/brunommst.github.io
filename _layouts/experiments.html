@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body>
-      <div id="experiments" class="wrapper">
+<body>
+    <div id="experiments" class="wrapper">
 
-          {%- include header.html -%}
-          
+        {%- include header.html -%}
+
         <main aria-label="Content">
-                {{ content }}
+            {{ content }}
         </main>
+        <footer>
+            <section>
+                <p>Let me know if this sparked any ideas for me to try out.</p>
+                <p><a href="mailto:hello@bru-no.com?Subject=Hey,%20Let's%20talk!" target="_blank">hello@bru-no.com</a></p>
+            </section>
+            <p>Lisbon — 2019</p>
+        </footer>
 
-          {%- include footer.html -%}
+    </div>
 
-      </div>
-      
-      <script language="javascript" type="text/javascript" src="{{ "/assets/js/experiments.js" | relative_url }}"></script>
-  </body>
+    <script language="javascript" type="text/javascript" src="{{ "/assets/js/experiments.js" | relative_url }}"></script>
+</body>
 
 </html>

@@ -15,7 +15,7 @@
     if (weekDay >= 1 && weekDay <= 5) {
         // Start at 7am, end at 8pm
         hours.start.setHours(7);
-        hours.end.setHours(15);
+        hours.end.setHours(23);
         // If it's Saturday
     } else if (weekDay >= 6) {
         // Start at 8am, end at 8pm
@@ -37,16 +37,15 @@
     function itsStilDayTime() {
         $("main > section, footer").not("#timer").hide();
         $("main").addClass('main-vertical-center');
+        $("#timer h4").html('Come back later tonight!');
     }
 
     $(function () {
         if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()) {
             // THIS MEANS THAT WE OUTSIDE OF INTERVAL
-document.documentElement.style.setProperty('--black', 'white');
             document.documentElement.style.setProperty('--white', 'black');
         } else {
             // THIS MEANS THAT WE INSIDE OF INTERVAL
-            document.documentElement.style.setProperty('--black', 'white');
             document.documentElement.style.setProperty('--white', 'black');
             itsStilDayTime();
         }
@@ -69,12 +68,8 @@ document.documentElement.style.setProperty('--black', 'white');
 
         $("#sticky-bottom").stop().hide();
         var update = function () {
-            if (lastScrollY < 500) {
                 scrolldist = lastScrollY * .2;
                 document.documentElement.style.setProperty('--skew', `rotate(${-scrolldist*1}deg) skew(${scrolldist*2}deg)`);
-            } else {
-                document.documentElement.style.setProperty('--skew', `rotate(0deg)`);
-            }
             ticking = false;
         };
         var requestTick = function () {
