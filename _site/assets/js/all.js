@@ -26,4 +26,8 @@
         $(window).on('scroll', onScroll);
     })();
     
+    $('p, h3, li').typeButter({
+        'default-spacing' : '0.005em'
+    });
+    
 })(jQuery);
