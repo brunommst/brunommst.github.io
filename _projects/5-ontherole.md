@@ -6,7 +6,7 @@ category: general
 year: 2017
 description: "On The Role is a question in form of a magazine, that aims to provoque discussion around the role of men in feminist day to day struggles. With the more recent growth of the feminist movement it is mandatory that all individuals should consider it as well as be considered by it. Achieving through this, emancipation of all human beings."
 covers:
-- url: "/assets/images/projects/otr/1.png"
+- url: "/assets/images/thumbnails/otr-thumb.jpg"
   alt: On The Role image
 images:
 - url: "/assets/images/projects/otr/1.png"

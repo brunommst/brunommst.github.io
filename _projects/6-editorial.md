@@ -6,7 +6,7 @@ category: general
 year: 2018
 description: "This is a reissue of Ernest Hemingway’s acclaimed work using computer generated pagination to obtain the represented visuals. A book completely coded in a Javascript environment and printed using a Risograph process on recicled paper."
 covers:
-- url: "/assets/images/projects/edit/edit1.png"
+- url: "/assets/images/thumbnails/edit-thumb.jpg"
   alt: Editorial Design
 images:
 - url: "/assets/images/projects/edit/edit1.png"

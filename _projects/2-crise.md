@@ -9,7 +9,7 @@ links:
 - url: "http://crisedeidentidade.belasartes.ulisboa.pt/"
   linktext: Website
 covers:
-- url: "/assets/images/projects/crise/catalogo.png"
+- url: "/assets/images/thumbnails/crise-thumb.jpg"
   alt: Crise de Identidade
 images:
 - url: "/assets/images/projects/crise/catalogo.png"

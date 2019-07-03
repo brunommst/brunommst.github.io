@@ -54,7 +54,7 @@
     <script language="javascript" type="text/javascript" src="/assets/js/libs/typebutter.banglaregular.js"></script>
 </head>
 <body>
-    <div class="wrapper Anjos70 project-page"><header>
+    <div class="wrapper Anjos70 website project-page"><header>
     <nav id="nav">
         <h3>Guess I needed a menu of sorts.</h3>
         <ul>
@@ -77,7 +77,11 @@
         <div id="menu-button" class="transform-button"></div>
     </div>
     <script>
-        $(document).ready(function() {
+        
+        window.addEventListener('resize', header);
+        
+        function header() {
+            console.log('teste');
             if (window.matchMedia('(max-width:500px)').matches) {
                 var open = 0;
                 $("#nav").hide();
@@ -101,15 +105,17 @@
                         });
                     }
                 });
+            } else {
+                $("#nav").show();
             }
-        });
+        };
 
     </script>
 </header>
 <main aria-label="Content">
             <article>
                 <header>
-                    <h1>Anjos70</h1>
+                    <h1>Anjos70 website</h1>
                     <p>Designed and implemented a dynamic website for Anjos70. This was a very challenging project where I learned a lot about performance optimization, backoffice integration and dynamic content fetching.<br>The website changes monthly to accommodate the ever changing events hosted on the venue, but also the design chosen for each month.</p>
                     
                     <a href="http://anjos70.org/" target="_blank">Website</a>
@@ -118,14 +124,24 @@
                 <main>
                     <ul>
                         
-                        <li>
-                            <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/june.png&w=1500&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/june.png&h=1&q=10" alt="Anjos70 website">
+                        <li class="">
+                            <h4>June Website</h4>
+                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/junedesktop.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/junedesktop.png&h=1&q=5" alt="Anjos70 website">
                         </li>
                         
-                        <li>
+                        <li class="desktop">
                             <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile-all.png&w=1500&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile-all.png&h=1&q=10" alt="Anjos70 website">
+                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile-all.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile-all.png&h=1&q=5" alt="Anjos70 website">
+                        </li>
+                        
+                        <li class="mobile">
+                            <h4></h4>
+                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile.png&h=1&q=5" alt="Anjos70 website">
+                        </li>
+                        
+                        <li class="mobile">
+                            <h4></h4>
+                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile3.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile3.png&h=1&q=5" alt="Anjos70 website">
                         </li>
                         
                     </ul>

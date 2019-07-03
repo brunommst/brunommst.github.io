@@ -77,7 +77,11 @@
         <div id="menu-button" class="transform-button"></div>
     </div>
     <script>
-        $(document).ready(function() {
+        
+        window.addEventListener('resize', header);
+        
+        function header() {
+            console.log('teste');
             if (window.matchMedia('(max-width:500px)').matches) {
                 var open = 0;
                 $("#nav").hide();
@@ -101,8 +105,10 @@
                         });
                     }
                 });
+            } else {
+                $("#nav").show();
             }
-        });
+        };
 
     </script>
 </header>
@@ -116,24 +122,24 @@
                 <main>
                     <ul>
                         
-                        <li>
+                        <li class="">
                             <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit1.png&w=1500&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit1.png&h=1&q=10" alt="Editorial Design">
+                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit1.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit1.png&h=1&q=5" alt="Editorial Design">
                         </li>
                         
-                        <li>
+                        <li class="">
                             <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit2.png&w=1500&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit2.png&h=1&q=10" alt="Editorial Design">
+                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit2.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit2.png&h=1&q=5" alt="Editorial Design">
                         </li>
                         
-                        <li>
+                        <li class="">
                             <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit3.png&w=1500&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit3.png&h=1&q=10" alt="Editorial Design">
+                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit3.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit3.png&h=1&q=5" alt="Editorial Design">
                         </li>
                         
-                        <li>
+                        <li class="">
                             <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit4.png&w=1500&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit4.png&h=1&q=10" alt="Editorial Design">
+                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit4.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/edit/edit4.png&h=1&q=5" alt="Editorial Design">
                         </li>
                         
                     </ul>

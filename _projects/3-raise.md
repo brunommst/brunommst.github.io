@@ -4,10 +4,9 @@ title: Raise
 slug: raise
 category: product
 year: 2019
-description: "mint is a UX/UI case study that aims to reinvent the traditionally confusing interface of photo cameras by giving it a modern experience with intuitive smartphone-like features such as a cleaner, more approachable look and a simpler interface with a faster learning curve for everyone.
-mint is also a cloud based aecosystem that focuses on easier sharing options like multi-device syncronization and a simple to use photo management system on the go."
+description: "Raise is donation service case study. It was designed with one thing in mind: Get more people donating money! <br>Sounds hard, but really it shouldn't. People generally like to give money and those who can don't feel comfortable doing it; organizations, the smaller they are the less direct platforms to create and share campaigns they have; and finally companies like to be associated with good causes but don't have the pressure to do it.<br>With all this in mind we set out to create an MVP for a service that accommodates all of these parties' needs and connects them to bring more money to those who need it."
 covers:
-- url: "/assets/images/projects/raise/cover.jpg"
+- url: "/assets/images/thumbnails/raise-thumb.jpg"
   alt: Raise
 images:
 - url: "/assets/images/projects/raise/raise.png"
@@ -25,6 +24,7 @@ persons:
     <h4>In collaboration with:</h4>
     <ul>
         <li><a href="https://www.linkedin.com/in/nicole-henriques/" target="_blank">Nicole Henriques</a></li>
+        <li><a href="https://www.linkedin.com/in/joaofirmo/" target="_blank">João Firmo</a></li>
     </ul>
     <h4>2019</h4>
 </footer>
