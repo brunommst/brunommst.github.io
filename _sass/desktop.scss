@@ -23,10 +23,6 @@
     }
 
     @mixin projects {
-        header {
-            padding-left: 50px;
-        }
-
         #bloco-work {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -35,7 +31,7 @@
 
             .project {
                 margin: 0;
-                height: 480px;
+                height: 400px;
                 background: var(--white);
 
                 transition: all .06s ease-in-out;
@@ -44,20 +40,28 @@
                 article {
                     h3 {
                         display: none;
+                        position: absolute;
                         height: 100%;
                         align-items: center;
                         justify-content: center;
                         padding: 0;
                         font-size: 22px;
-                    }   
+                        margin: 0;
+                    }
+                    
+                    img {
+                        height: 100%;
+                    }
                 }
-                
+
                 &:hover {
                     transform: skewX(5deg);
-                    
+
                     h3 {
                         display: flex;
+                        border: 1px solid black;
                     }
+
                     img {
                         opacity: .1;
                     }
@@ -249,13 +253,14 @@
         }
     }
 
+    
     .about {
         font-size: 20px;
 
         #sobre {
             max-width: 700px;
         }
-        
+
         #contact h3 {
             max-width: 700px;
             margin: 0 auto 50px;
@@ -266,10 +271,25 @@
         @include pages;
         @include projects;
 
-        header h1 {
-            height: auto;
-            margin: 0;
-            font-size: 60px;
+        #projects header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+            padding-left: 50px;
+
+            h1 {
+                height: auto;
+                width: 50%;
+                margin: 0;
+                font-size: 60px;
+            }
+
+            p {
+                width: 40%;
+                margin-right: 10%;
+            }
         }
     }
 
@@ -287,13 +307,13 @@
             overflow-x: hidden;
             overflow-y: scroll;
         }
-        
+
         header {
             p {
                 font-size: 16px;
             }
         }
-        
+
         #sticky-bottom {
             margin-bottom: 30px;
             display: block;
@@ -308,10 +328,14 @@
                 top: 150px;
                 max-width: 500px;
                 padding: 10px;
+                border: 1px solid transparent;
+
 
                 &:hover {
+                    border: 1px solid black;
                     background: rgba(255, 255, 255, .9);
                     z-index: 4;
+                    cursor: help;
                 }
             }
 
@@ -320,6 +344,13 @@
                 position: relative;
                 z-index: 3;
                 pointer-events: none;
+                
+                ul .desktop {
+                    display: block;
+                }
+                ul .mobile {
+                    display: none;
+                }
             }
 
             footer {
@@ -332,10 +363,10 @@
             display: none;
         }
     }
-    
+
     #experiments {
         cursor: url(/assets/images/cursor.png) 10 10, auto;
-        
+
         #sobre {
             margin: 0 5vw 100px 45vw;
             padding: 30px 20px 20px;
@@ -349,7 +380,7 @@
                 position: relative;
             }
         }
-        
+
     }
 
 }

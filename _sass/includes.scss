@@ -2,14 +2,14 @@
     font-family: Bangla-Bold;
     src: url(/assets/fonts/BanglaSangamMN-Bold-02.ttf);
     font-style: bold;
-    font-display: fallback;
+    font-display: block;
 }
 
 @font-face {
     font-family: Bangla-Regular;
     src: url(/assets/fonts/BanglaSangamMN-01.ttf);
     font-style: normal;
-    font-display: fallback;
+    font-display: block;
 }
 
 * {
@@ -82,7 +82,7 @@ ul {
 }
 
 .button {
-    width: calc(100vw - 20px - 20px - 15vw - 20px);
+    width: calc(100vw - 40px - 60px - 30px);
     height: 60px;
 
     background: var(--white);
@@ -148,7 +148,7 @@ ul {
         justify-content: center;
         align-items: center;
 
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -162,6 +162,10 @@ ul {
         &:hover {
             color: var(--white);
             background: var(--black);
+        }
+        
+        h5 {
+            font-size: 18px;
         }
     }
 }
