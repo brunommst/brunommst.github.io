@@ -1,7 +1,7 @@
 https://brunommst.github.io
 
 <h1><b>Lista de Tecnologias utilizadas</b></h1>
-<h3>LTD@PG-DXD2019</h3>
+<h3>    LTD@PG-DXD2019</h3>
 
 Grids!
 - Utilizei grids tanto na HomePage como na página de todos os projetos para mais facilmente criar a grelha com as imagens e links para as páginas individuais de cada projeto.
@@ -14,3 +14,8 @@ Animações!
 
 Forms¡
 - Decidi não utilizar formulários no website, pois não achei oportuno criar espaço propositadamente para utilizar a tecnologia.
+
+
+<h3><b>Nota Final</b></h3>
+Este website vai funcionar como meu website pessoal pelo menos durante uns tempos, é provável que ainda sofra alguns ajustes dentro da próxima semana.
+Also, se já passar da meia noite quando alguém ler isto, é melhor voltar amanhã para algo mais completo e limpinho ;)
