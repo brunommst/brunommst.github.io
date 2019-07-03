@@ -28,7 +28,11 @@
         <div id="menu-button" class="transform-button"></div>
     </div>
     <script>
-        $(document).ready(function() {
+        
+        window.addEventListener('resize', header);
+        
+        function header() {
+            console.log('teste');
             if (window.matchMedia('(max-width:500px)').matches) {
                 var open = 0;
                 $("#nav").hide();
@@ -52,8 +56,10 @@
                         });
                     }
                 });
+            } else {
+                $("#nav").show();
             }
-        });
+        };
 
     </script>
 </header>

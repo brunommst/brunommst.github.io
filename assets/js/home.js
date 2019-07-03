@@ -57,17 +57,8 @@
             end: new Date(date.getFullYear(), month, day)
         };
 
-    // If it's Monday - Friday
-    if (weekDay >= 1 && weekDay <= 5) {
-        // Start at 7am, end at 8pm
         hours.start.setHours(7);
         hours.end.setHours(23);
-        // If it's Saturday
-    } else if (weekDay >= 6) {
-        // Start at 8am, end at 8pm
-        hours.start.setHours(8);
-        hours.end.setHours(21);
-    }
 
     function countDown() {
         var date = new Date(),

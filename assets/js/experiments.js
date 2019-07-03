@@ -4,25 +4,16 @@
 
     var date = new Date(),
         month = date.getMonth();
-    day = date.getDate(),
+        day = date.getDate(),
         weekDay = date.getDay(),
         hours = {
             start: new Date(date.getFullYear(), month, day),
             end: new Date(date.getFullYear(), month, day)
         };
 
-    // If it's Monday - Friday
-    if (weekDay >= 1 && weekDay <= 5) {
-        // Start at 7am, end at 8pm
         hours.start.setHours(7);
         hours.end.setHours(23);
-        // If it's Saturday
-    } else if (weekDay >= 6) {
-        // Start at 8am, end at 8pm
-        hours.start.setHours(9);
-        hours.end.setHours(20);
-    }
-
+    
     function countDown() {
         var date = new Date(),
             countHours = ('0' + (hours.end.getHours() - date.getHours())).substr(-2),

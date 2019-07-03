@@ -1,5 +1,4 @@
 (function ($) {
-    
     (function () {
         var lastScrollY = 0;
         var ticking = false;
