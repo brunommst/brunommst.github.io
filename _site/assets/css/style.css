@@ -8,9 +8,37 @@
   src: url(/assets/fonts/BanglaSangamMN-01.ttf);
   font-style: normal;
   font-display: block; }
+#outdated {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
+  color: #eb4034;
+  margin: 0;
+  pointer-events: none; }
+  #outdated h2 {
+    margin: 0;
+    font-size: 14vw; }
+  #outdated h4 {
+    pointer-events: all;
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    margin: 0;
+    font-size: 15vw; }
+    #outdated h4, #outdated h4 a {
+      font-size: 20px !important;
+      color: #eb4034; }
+
 * {
   list-style: none;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
   text-rendering: optimizeLegibility; }
@@ -44,7 +72,15 @@ ul {
   margin: 0 auto; }
 
 .main-vertical-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100vh; }
 
@@ -61,47 +97,121 @@ ul {
   font-family: Bangla-Bold, sans-serif; }
 
 .button {
+  width: -webkit-calc(100vw - 40px - 60px - 30px);
+  width: -moz-calc(100vw - 40px - 60px - 30px);
   width: calc(100vw - 40px - 60px - 30px);
   height: 60px;
   background: var(--white);
   border: 1px solid var(--black);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-decoration: none; }
   .button.button-back {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row; }
     .button.button-back .arrow {
       margin-right: 10px; }
       .button.button-back .arrow span {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
         transform: rotate(-90deg);
+        -webkit-transform-origin: center center;
+        -moz-transform-origin: center center;
+        -ms-transform-origin: center center;
+        -o-transform-origin: center center;
         transform-origin: center center; }
   .button.button-forward {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
     .button.button-forward .arrow {
       margin-left: 10px; }
       .button.button-forward .arrow span {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
         transform: rotate(90deg);
+        -webkit-transform-origin: center center;
+        -moz-transform-origin: center center;
+        -ms-transform-origin: center center;
+        -o-transform-origin: center center;
         transform-origin: center center; }
   .button .arrow {
     width: 28px;
     height: 100%;
     font-size: 23px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     .button .arrow span {
       width: 100%;
       height: 28px;
       margin-top: 2px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      -moz-box-align: end;
+      -ms-flex-align: end;
       align-items: flex-end; }
   .button h5 {
     height: 100%;
     max-width: 175px;
     margin: 1px 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 16px; }
 

@@ -5,6 +5,12 @@ title: experiments
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
 <script src="/assets/js/canvas.js"></script>
 
+
+<div id="outdated">
+<h2>This website is outdated<br>This website is outdated</h2>
+<h4><a href="#contact">Contact me</a> for updated news!</h4>
+</div>
+
 <section title="name" id="name">
     <h1>Bru-no Santos <span class="italic small-text">Experimental</span> Digital Designer</h1>
 </section>

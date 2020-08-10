@@ -2,6 +2,12 @@
 layout: home
 title: home
 ---
+
+<div id="outdated">
+<h2>This website is outdated<br>This website is outdated</h2>
+<h4><a href="#contact">Contact me</a> for updated news!</h4>
+</div>
+
 <section title="name" id="name">
     <h1>Bru-no Santos Digital Designer</h1>
 </section>
@@ -10,7 +16,7 @@ title: home
         <h2 class="titulo-bloco hidden">About me</h2>
     </header>
     <p>Hey! Welcome to my website / portfolio / online place where I put my stuff that I'm never satisfied with.</p>
-    <p>I’m a Digital Experience Designer from Lisbon who loves to explore, experiment and have fun with the web. Feel free to explore around or just <a href="#contact">talk to me!</a></p>
+    <p>I’m a Digital Experience Designer from Lisbon who loves to explore, experiment and have fun with the web. Feel free to explore around or just <a href="#contact">talk to me!<a href="#contact"></p>
     <a href="about" class="button button-forward center">
         <div class="arrow">
             <span>1</span>
