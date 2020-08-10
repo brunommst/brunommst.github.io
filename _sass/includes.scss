@@ -31,6 +31,9 @@
 	h2 {
 		margin: 0;
 		font-size: 14vw;
+		@media screen and (max-width: 767px) {
+			font-size: 21vw;
+		}
 	}
 	h4 {
 		pointer-events: all;
@@ -42,6 +45,7 @@
 		transform: translate3d(-50%,-50%,0);
 		margin: 0;
 		font-size: 15vw;
+		text-align: center;
 
 		&, a {
 			font-size: 20px !important;
