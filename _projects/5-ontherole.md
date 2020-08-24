@@ -33,5 +33,15 @@ persons:
   link: https://www.instagram.com/oricardogoncalves/
 - name: Paloma Moniz
   link: https://www.instagram.com/palomamoniiz/
+links: []
+cover-image: "/assets/images/projects/2020-08/otr-thumb.jpg"
+gallery:
+- "/assets/images/projects/otr/1.png"
+- "/assets/images/projects/otr/2.png"
+- "/assets/images/projects/otr/3.png"
+- "/assets/images/projects/otr/4.png"
+- "/assets/images/projects/otr/5.png"
+- "/assets/images/projects/otr/6.png"
+- "/assets/images/projects/otr/7.png"
 
 ---
