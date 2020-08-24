@@ -19,25 +19,11 @@ fields:
   name: description
   label: description
 - name: category
-  type: select
+  type: tag_list
   default: []
-  config:
-    required: false
-    options:
-    - Website
-    - Communication
-    - Typography
-    - Product Design
-    - Experimental
-    - Digital Design
-    - Editorial
-    - Creative Coding
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
   label: Category
+  description: Website<br>Communication<br>Typography<br>Product Design<br>Experimental<br>Digital
+    Design<br>Editorial<br>Creative Coding
 - type: field_group_list
   name: covers
   label: covers
