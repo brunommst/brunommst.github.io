@@ -25,5 +25,11 @@ images:
 persons:
 - name: Nicole Henriques
   link: https://www.linkedin.com/in/nicole-henriques/
+links: []
+cover-image: "/assets/images/projects/2020-08/mint-thumb.jpg"
+gallery:
+- "/assets/images/projects/mint/1.png"
+- "/assets/images/projects/mint/features.jpg"
+- "/assets/images/projects/mint/landscape.jpg"
 
 ---
