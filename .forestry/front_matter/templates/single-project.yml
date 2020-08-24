@@ -1,0 +1,55 @@
+---
+label: Single Project
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: slug
+  label: slug
+- type: text
+  name: category
+  label: category
+- type: number
+  name: year
+  label: year
+- type: textarea
+  name: description
+  label: description
+- type: field_group_list
+  name: links
+  label: links
+  fields:
+  - type: text
+    name: url
+    label: url
+  - type: text
+    name: linktext
+    label: linktext
+- type: field_group_list
+  name: covers
+  label: covers
+  fields:
+  - type: file
+    name: url
+    label: url
+  - type: text
+    name: alt
+    label: alt
+- type: field_group_list
+  name: images
+  label: images
+  fields:
+  - type: file
+    name: url
+    label: url
+  - type: text
+    name: alt
+    label: alt
+  - type: text
+    name: text
+    label: text
