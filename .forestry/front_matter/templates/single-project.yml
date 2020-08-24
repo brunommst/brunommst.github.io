@@ -12,13 +12,10 @@ fields:
 - type: text
   name: slug
   label: slug
-- type: text
-  name: category
-  label: category
-- name: category-new
+- name: category
   type: tag_list
   default: []
-  label: Category New
+  label: Category
 - type: text
   name: year
   label: year
