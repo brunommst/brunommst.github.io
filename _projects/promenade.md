@@ -4,11 +4,15 @@ title: Promenade
 slug: promenade
 category:
 - Website
-year: ''
+- Digital Design
+- Typography
+year: "2020"
 description: ''
 covers: []
 images: []
-persons: []
+persons:
+- name: José "Cosmvs" Torres
+  link: https://cosmvs.com
 category-new:
 - Website
 published: false
