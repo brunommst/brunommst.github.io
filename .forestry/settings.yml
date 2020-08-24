@@ -7,19 +7,16 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
-- type: jekyll-posts
-  label: Posts
-  create: all
 - type: directory
   path: _projects
   label: Projects
   create: all
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: assets/images/projects
+public_path: "/assets/images/projects"
 front_matter_path: ''
 use_front_matter_path: false
-file_template: ":filename:"
+file_template: ":year:-:month:/:filename:"
 build:
   preview_env:
   - JEKYLL_ENV=staging
