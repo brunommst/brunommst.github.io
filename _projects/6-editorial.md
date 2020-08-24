@@ -31,5 +31,6 @@ gallery:
 - "/assets/images/projects/edit/edit2.png"
 - "/assets/images/projects/edit/edit3.png"
 - "/assets/images/projects/edit/edit4.png"
+cover-image: "/assets/images/projects/2020-08/artboard-5.jpg"
 
 ---
