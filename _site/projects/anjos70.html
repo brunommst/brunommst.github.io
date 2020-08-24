@@ -54,136 +54,125 @@
     <script language="javascript" type="text/javascript" src="/assets/js/libs/typebutter.banglaregular.js"></script>
 </head>
 <body>
-    <div class="wrapper Anjos70 website project-page"><header>
-    <nav id="nav">
-        <h3>Guess I needed a menu of sorts.</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Some of what I've done</a></li>
-            <li><a href="/about">About me</a></li>
-            <li><a href="/about#contact">Contacts</a></li>
-        </ul>
-    </nav>
-    <div id="top-closed-menu">
-        
-        <a href="javascript:history.back()" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to projects</h5>
-        </a>
-        
+	<div class="wrapper Anjos70 website project-page"><header>
+	<nav id="nav">
+		<h3>A navigation of sorts</h3>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/projects">Some of what I've done</a></li>
+			<li><a href="/about">About me</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="top-closed-menu">
+		
+		<a href="javascript:history.back()" class="button button-back">
+			<div class="arrow">
+				<span>1</span>
+			</div>
+			<h5>Back to projects</h5>
+		</a>
+		
 
-        <div id="menu-button" class="transform-button"></div>
-    </div>
-    <script>
-        
-        window.addEventListener('resize', header);
-        
-        function header() {
-            console.log('teste');
-            if (window.matchMedia('(max-width:500px)').matches) {
-                var open = 0;
-                $("#nav").hide();
-                $("#menu-button").click(function() {
-                    $("#nav").stop().slideToggle(150, 'swing');
-                    open = open ? 0 : 1;
-                    $("#menu-button").toggleClass('transform-button');
-                    $("#top-closed-menu").animate({
-                        'top': '20px'
-                    });
-                });
+		<div id="menu-button" class="transform-button"></div>
+	</div>
+	<script>
+		window.addEventListener('resize', header);
 
-                $("main").not("header *").on('click', function() {
-                    if (open == 1) {
-                        $("#nav").stop().slideToggle(100, 'swing', function() {
-                            open = open ? 0 : 1;
-                            $("#menu-button").toggleClass('transform-button');
-                            $("#top-closed-menu").animate({
-                                'top': ''
-                            });
-                        });
-                    }
-                });
-            } else {
-                $("#nav").show();
-            }
-        };
+		function header() {
+			if (window.matchMedia('(max-width:500px)').matches) {
+				var open = 0;
+				$("#nav").hide();
+				$("#menu-button").click(function() {
+					$("#nav").stop().slideToggle(150, 'swing');
+					open = open ? 0 : 1;
+					$("#menu-button").toggleClass('transform-button');
+					$("#top-closed-menu").animate({
+						'top': '20px'
+					});
+				});
 
-    </script>
-</header>
-<main aria-label="Content">
-            <article>
-                <header>
-                    <h1>Anjos70 website</h1>
-                    <p>Designed and implemented a dynamic website for Anjos70. This was a very challenging project where I learned a lot about performance optimization, backoffice integration and dynamic content fetching.<br>The website changes monthly to accommodate the ever changing events hosted on the venue, but also the design chosen for each month.</p>
-                    
-                    <a href="http://anjos70.org/" target="_blank">Website</a>
-                    
-                </header>
-                <main>
-                    <ul>
-                        
-                        <li class="">
-                            <h4>June Website</h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/junedesktop.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/junedesktop.png&h=1&q=5" alt="Anjos70 website">
-                        </li>
-                        
-                        <li class="desktop">
-                            <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile-all.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile-all.png&h=1&q=5" alt="Anjos70 website">
-                        </li>
-                        
-                        <li class="mobile">
-                            <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile.png&h=1&q=5" alt="Anjos70 website">
-                        </li>
-                        
-                        <li class="mobile">
-                            <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile3.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile3.png&h=1&q=5" alt="Anjos70 website">
-                        </li>
-                        
-                    </ul>
-                </main>
-                <footer>
-    <h4>In collaboration with:</h4>
-    <ul>
-        <li><a href="https://cosmvs.com" target="_blank">José "Cosmvs" Torres</a></li>
-    </ul>
-    <h4>2019</h4>
-</footer>
+				$("main").not("header *").on('click', function() {
+					if (open == 1) {
+						$("#nav").stop().slideToggle(100, 'swing', function() {
+							open = open ? 0 : 1;
+							$("#menu-button").toggleClass('transform-button');
+							$("#top-closed-menu").animate({
+								'top': ''
+							});
+						});
+					}
+				});
+			} else {
+				$("#nav").show();
+			}
+		};
+	</script>
+</header><main aria-label="Content">
+			<article>
+				<header>
+					<h1>Anjos70 website</h1>
+					<p>Designed and implemented a dynamic website for Anjos70. This was a very challenging project where I learned a lot about performance optimization, backoffice integration and dynamic content fetching.<br>The website changes monthly to accommodate the ever changing events hosted on the venue, but also the design chosen for each month.</p>
+					
+					<a href="http://anjos70.org/" target="_blank">Website</a>
+					
+				</header>
+				<main>
+					<ul>
+						
+						<li class="">
+							<h4>June Website</h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/junedesktop.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/junedesktop.png&h=1&q=5" alt="Anjos70 website">
+						</li>
+						
+						<li class="desktop">
+							<h4></h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile-all.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile-all.png&h=1&q=5" alt="Anjos70 website">
+						</li>
+						
+						<li class="mobile">
+							<h4></h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile.png&h=1&q=5" alt="Anjos70 website">
+						</li>
+						
+						<li class="mobile">
+							<h4></h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile3.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/a70/mobile3.png&h=1&q=5" alt="Anjos70 website">
+						</li>
+						
+					</ul>
+				</main>
+				
 
-                <div id="sticky-bottom">
-                    <a href="javascript:history.back()" class="button button-back">
-                        <div class="arrow">
-                            <span>1</span>
-                        </div>
-                        <h5>Back to projects</h5>
-                    </a>
-                </div>
-                <!--
-    <footer>
-        <h4>In collaboration with:</h4>
-        <ul>
-            
-        </ul>
-        <h4>2019</h4>
-    </footer>
--->
-                <script>
-                    $('.lazy').Lazy({
-                        appendScroll: $('main'),
-                        effect: "fadeIn",
-                        effectTime: 500
-                    });
-
-                </script>
-            </article>
-        </main>
+				<div id="sticky-bottom">
+					<a href="javascript:history.back()" class="button button-back">
+						<div class="arrow">
+							<span>1</span>
+						</div>
+						<h5>Back to projects</h5>
+					</a>
+				</div>
+				<footer>
+					<h4>In collaboration with:</h4>
+					<ul>
+						
+						<li><a href="https://cosmvs.com" target="_blank">José "Cosmvs" Torres</a></li>
+						
+					</ul>
+					<h4>2019</h4>
+				</footer>
+				<script>
+					$('.lazy').Lazy({
+						appendScroll: $('main'),
+						effect: "fadeIn",
+						effectTime: 500
+					});
+				</script>
+			</article>
+		</main>
 
 
-        <footer>
+		<footer>
     <p>Lisbon — 2019</p>
     <div id="sticky-bottom">
         <a href="javascript:history.back()" class="button button-back">
@@ -196,7 +185,7 @@
     </div>
 </footer>
 
-    </div>
+	</div>
 
 </body>
 

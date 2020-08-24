@@ -55,64 +55,60 @@
 </head>
 <body>
       <div class="wrapper projects "><header>
-    <nav id="nav">
-        <h3>Guess I needed a menu of sorts.</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Some of what I've done</a></li>
-            <li><a href="/about">About me</a></li>
-            <li><a href="/about#contact">Contacts</a></li>
-        </ul>
-    </nav>
-    <div id="top-closed-menu">
-        
-        <a href="/" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to beginning</h5>
-        </a>
-        
+	<nav id="nav">
+		<h3>A navigation of sorts</h3>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/projects">Some of what I've done</a></li>
+			<li><a href="/about">About me</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="top-closed-menu">
+		
+		<a href="/" class="button button-back">
+			<div class="arrow">
+				<span>1</span>
+			</div>
+			<h5>Back to beginning</h5>
+		</a>
+		
 
-        <div id="menu-button" class="transform-button"></div>
-    </div>
-    <script>
-        
-        window.addEventListener('resize', header);
-        
-        function header() {
-            console.log('teste');
-            if (window.matchMedia('(max-width:500px)').matches) {
-                var open = 0;
-                $("#nav").hide();
-                $("#menu-button").click(function() {
-                    $("#nav").stop().slideToggle(150, 'swing');
-                    open = open ? 0 : 1;
-                    $("#menu-button").toggleClass('transform-button');
-                    $("#top-closed-menu").animate({
-                        'top': '20px'
-                    });
-                });
+		<div id="menu-button" class="transform-button"></div>
+	</div>
+	<script>
+		window.addEventListener('resize', header);
 
-                $("main").not("header *").on('click', function() {
-                    if (open == 1) {
-                        $("#nav").stop().slideToggle(100, 'swing', function() {
-                            open = open ? 0 : 1;
-                            $("#menu-button").toggleClass('transform-button');
-                            $("#top-closed-menu").animate({
-                                'top': ''
-                            });
-                        });
-                    }
-                });
-            } else {
-                $("#nav").show();
-            }
-        };
+		function header() {
+			if (window.matchMedia('(max-width:500px)').matches) {
+				var open = 0;
+				$("#nav").hide();
+				$("#menu-button").click(function() {
+					$("#nav").stop().slideToggle(150, 'swing');
+					open = open ? 0 : 1;
+					$("#menu-button").toggleClass('transform-button');
+					$("#top-closed-menu").animate({
+						'top': '20px'
+					});
+				});
 
-    </script>
-</header>
-<main aria-label="Content">
+				$("main").not("header *").on('click', function() {
+					if (open == 1) {
+						$("#nav").stop().slideToggle(100, 'swing', function() {
+							open = open ? 0 : 1;
+							$("#menu-button").toggleClass('transform-button');
+							$("#top-closed-menu").animate({
+								'top': ''
+							});
+						});
+					}
+				});
+			} else {
+				$("#nav").show();
+			}
+		};
+	</script>
+</header><main aria-label="Content">
                 <section title="Some of what I've done" id="projects">
     <header>
         <h1 class="titulo-bloco">Some of<br />what I've<br />done</h1>
@@ -204,28 +200,25 @@
 
         
         <footer>
-    <p>Lisbon — 2019</p>
-    <div id="sticky-bottom">
-        <a href="/" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to beginning</h5>
-        </a>
-        <img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
-    </div>
-    
-    <script>
-        function goTop() {
-            $("html, body").stop().animate({
-                scrollTop: 0
-            }, 400, 'swing');
-        }
-    </script>
+	<p>Lisbon — 2020</p>
+	<div id="sticky-bottom">
+		<a href="/" class="button button-back">
+			<div class="arrow">
+				<span>1</span>
+			</div>
+			<h5>Back to beginning</h5>
+		</a>
+		<img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
+	</div>
+
+	<script>
+		function goTop() {
+			$("html, body").stop().animate({
+				scrollTop: 0
+			}, 200, 'swing');
+		}
+	</script>
 </footer>
-
-
-
       </div>
       
       <script language="javascript" type="text/javascript" src="/assets/js/all.js"></script>

@@ -54,131 +54,118 @@
     <script language="javascript" type="text/javascript" src="/assets/js/libs/typebutter.banglaregular.js"></script>
 </head>
 <body>
-    <div class="wrapper mint project-page"><header>
-    <nav id="nav">
-        <h3>Guess I needed a menu of sorts.</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Some of what I've done</a></li>
-            <li><a href="/about">About me</a></li>
-            <li><a href="/about#contact">Contacts</a></li>
-        </ul>
-    </nav>
-    <div id="top-closed-menu">
-        
-        <a href="javascript:history.back()" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to projects</h5>
-        </a>
-        
+	<div class="wrapper mint project-page"><header>
+	<nav id="nav">
+		<h3>A navigation of sorts</h3>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/projects">Some of what I've done</a></li>
+			<li><a href="/about">About me</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="top-closed-menu">
+		
+		<a href="javascript:history.back()" class="button button-back">
+			<div class="arrow">
+				<span>1</span>
+			</div>
+			<h5>Back to projects</h5>
+		</a>
+		
 
-        <div id="menu-button" class="transform-button"></div>
-    </div>
-    <script>
-        
-        window.addEventListener('resize', header);
-        
-        function header() {
-            console.log('teste');
-            if (window.matchMedia('(max-width:500px)').matches) {
-                var open = 0;
-                $("#nav").hide();
-                $("#menu-button").click(function() {
-                    $("#nav").stop().slideToggle(150, 'swing');
-                    open = open ? 0 : 1;
-                    $("#menu-button").toggleClass('transform-button');
-                    $("#top-closed-menu").animate({
-                        'top': '20px'
-                    });
-                });
+		<div id="menu-button" class="transform-button"></div>
+	</div>
+	<script>
+		window.addEventListener('resize', header);
 
-                $("main").not("header *").on('click', function() {
-                    if (open == 1) {
-                        $("#nav").stop().slideToggle(100, 'swing', function() {
-                            open = open ? 0 : 1;
-                            $("#menu-button").toggleClass('transform-button');
-                            $("#top-closed-menu").animate({
-                                'top': ''
-                            });
-                        });
-                    }
-                });
-            } else {
-                $("#nav").show();
-            }
-        };
+		function header() {
+			if (window.matchMedia('(max-width:500px)').matches) {
+				var open = 0;
+				$("#nav").hide();
+				$("#menu-button").click(function() {
+					$("#nav").stop().slideToggle(150, 'swing');
+					open = open ? 0 : 1;
+					$("#menu-button").toggleClass('transform-button');
+					$("#top-closed-menu").animate({
+						'top': '20px'
+					});
+				});
 
-    </script>
-</header>
-<main aria-label="Content">
-            <article>
-                <header>
-                    <h1>mint</h1>
-                    <p>mint is a UX/UI case study that aims to reinvent the traditionally confusing interface of photo cameras by giving it a modern experience with intuitive smartphone-like features such as a cleaner, more approachable look and a simpler interface with a faster learning curve for everyone. mint is also a cloud based aecosystem that focuses on easier sharing options like multi-device syncronization and a simple to use photo management system on the go.</p>
-                    
-                </header>
-                <main>
-                    <ul>
-                        
-                        <li class="">
-                            <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/1.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/1.png&h=1&q=5" alt="mint">
-                        </li>
-                        
-                        <li class="">
-                            <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/features.jpg&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/features.jpg&h=1&q=5" alt="mint">
-                        </li>
-                        
-                        <li class="">
-                            <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/landscape.jpg&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/landscape.jpg&h=1&q=5" alt="mint">
-                        </li>
-                        
-                    </ul>
-                </main>
-                <footer>
-    <h4>In collaboration with:</h4>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/nicole-henriques/" target="_blank">Nicole Henriques</a></li>
-    </ul>
-    <h4>2019</h4>
-</footer>
+				$("main").not("header *").on('click', function() {
+					if (open == 1) {
+						$("#nav").stop().slideToggle(100, 'swing', function() {
+							open = open ? 0 : 1;
+							$("#menu-button").toggleClass('transform-button');
+							$("#top-closed-menu").animate({
+								'top': ''
+							});
+						});
+					}
+				});
+			} else {
+				$("#nav").show();
+			}
+		};
+	</script>
+</header><main aria-label="Content">
+			<article>
+				<header>
+					<h1>mint</h1>
+					<p>mint is a UX/UI case study that aims to reinvent the traditionally confusing interface of photo cameras by giving it a modern experience with intuitive smartphone-like features such as a cleaner, more approachable look and a simpler interface with a faster learning curve for everyone. mint is also a cloud based aecosystem that focuses on easier sharing options like multi-device syncronization and a simple to use photo management system on the go.</p>
+					
+				</header>
+				<main>
+					<ul>
+						
+						<li class="">
+							<h4></h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/1.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/1.png&h=1&q=5" alt="mint">
+						</li>
+						
+						<li class="">
+							<h4></h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/features.jpg&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/features.jpg&h=1&q=5" alt="mint">
+						</li>
+						
+						<li class="">
+							<h4></h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/landscape.jpg&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/mint/landscape.jpg&h=1&q=5" alt="mint">
+						</li>
+						
+					</ul>
+				</main>
+				
 
-                <div id="sticky-bottom">
-                    <a href="javascript:history.back()" class="button button-back">
-                        <div class="arrow">
-                            <span>1</span>
-                        </div>
-                        <h5>Back to projects</h5>
-                    </a>
-                </div>
-                <!--
-    <footer>
-        <h4>In collaboration with:</h4>
-        <ul>
-            
-                <li><a href="https://www.linkedin.com/in/nicole-henriques/">Nicole Henriques</a></li>
-            
-        </ul>
-        <h4>late 2017</h4>
-    </footer>
--->
-                <script>
-                    $('.lazy').Lazy({
-                        appendScroll: $('main'),
-                        effect: "fadeIn",
-                        effectTime: 500
-                    });
-
-                </script>
-            </article>
-        </main>
+				<div id="sticky-bottom">
+					<a href="javascript:history.back()" class="button button-back">
+						<div class="arrow">
+							<span>1</span>
+						</div>
+						<h5>Back to projects</h5>
+					</a>
+				</div>
+				<footer>
+					<h4>In collaboration with:</h4>
+					<ul>
+						
+						<li><a href="https://www.linkedin.com/in/nicole-henriques/" target="_blank">Nicole Henriques</a></li>
+						
+					</ul>
+					<h4>late 2017</h4>
+				</footer>
+				<script>
+					$('.lazy').Lazy({
+						appendScroll: $('main'),
+						effect: "fadeIn",
+						effectTime: 500
+					});
+				</script>
+			</article>
+		</main>
 
 
-        <footer>
+		<footer>
     <p>Lisbon — 2019</p>
     <div id="sticky-bottom">
         <a href="javascript:history.back()" class="button button-back">
@@ -191,7 +178,7 @@
     </div>
 </footer>
 
-    </div>
+	</div>
 
 </body>
 

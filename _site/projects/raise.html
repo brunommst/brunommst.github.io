@@ -54,132 +54,120 @@
     <script language="javascript" type="text/javascript" src="/assets/js/libs/typebutter.banglaregular.js"></script>
 </head>
 <body>
-    <div class="wrapper Raise project-page"><header>
-    <nav id="nav">
-        <h3>Guess I needed a menu of sorts.</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Some of what I've done</a></li>
-            <li><a href="/about">About me</a></li>
-            <li><a href="/about#contact">Contacts</a></li>
-        </ul>
-    </nav>
-    <div id="top-closed-menu">
-        
-        <a href="javascript:history.back()" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to projects</h5>
-        </a>
-        
+	<div class="wrapper Raise project-page"><header>
+	<nav id="nav">
+		<h3>A navigation of sorts</h3>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/projects">Some of what I've done</a></li>
+			<li><a href="/about">About me</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="top-closed-menu">
+		
+		<a href="javascript:history.back()" class="button button-back">
+			<div class="arrow">
+				<span>1</span>
+			</div>
+			<h5>Back to projects</h5>
+		</a>
+		
 
-        <div id="menu-button" class="transform-button"></div>
-    </div>
-    <script>
-        
-        window.addEventListener('resize', header);
-        
-        function header() {
-            console.log('teste');
-            if (window.matchMedia('(max-width:500px)').matches) {
-                var open = 0;
-                $("#nav").hide();
-                $("#menu-button").click(function() {
-                    $("#nav").stop().slideToggle(150, 'swing');
-                    open = open ? 0 : 1;
-                    $("#menu-button").toggleClass('transform-button');
-                    $("#top-closed-menu").animate({
-                        'top': '20px'
-                    });
-                });
+		<div id="menu-button" class="transform-button"></div>
+	</div>
+	<script>
+		window.addEventListener('resize', header);
 
-                $("main").not("header *").on('click', function() {
-                    if (open == 1) {
-                        $("#nav").stop().slideToggle(100, 'swing', function() {
-                            open = open ? 0 : 1;
-                            $("#menu-button").toggleClass('transform-button');
-                            $("#top-closed-menu").animate({
-                                'top': ''
-                            });
-                        });
-                    }
-                });
-            } else {
-                $("#nav").show();
-            }
-        };
+		function header() {
+			if (window.matchMedia('(max-width:500px)').matches) {
+				var open = 0;
+				$("#nav").hide();
+				$("#menu-button").click(function() {
+					$("#nav").stop().slideToggle(150, 'swing');
+					open = open ? 0 : 1;
+					$("#menu-button").toggleClass('transform-button');
+					$("#top-closed-menu").animate({
+						'top': '20px'
+					});
+				});
 
-    </script>
-</header>
-<main aria-label="Content">
-            <article>
-                <header>
-                    <h1>Raise</h1>
-                    <p>Raise is donation service case study. It was designed with one thing in mind: Get more people donating money! <br>Sounds hard, but really it shouldn't. People generally like to give money and those who can don't feel comfortable doing it; organizations, the smaller they are the less direct platforms to create and share campaigns they have; and finally companies like to be associated with good causes but don't have the pressure to do it.<br>With all this in mind we set out to create an MVP for a service that accommodates all of these parties' needs and connects them to bring more money to those who need it.</p>
-                    
-                </header>
-                <main>
-                    <ul>
-                        
-                        <li class="">
-                            <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/raise.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/raise.png&h=1&q=5" alt="Raise">
-                        </li>
-                        
-                        <li class="">
-                            <h4></h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/menu.jpg&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/menu.jpg&h=1&q=5" alt="Raise">
-                        </li>
-                        
-                        <li class="">
-                            <h4>Checkouts — an easy way of donating while shopping</h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/checkouts.jpg&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/checkouts.jpg&h=1&q=5" alt="Raise">
-                        </li>
-                        
-                    </ul>
-                </main>
-                <footer>
-    <h4>In collaboration with:</h4>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/nicole-henriques/" target="_blank">Nicole Henriques</a></li>
-        <li><a href="https://www.linkedin.com/in/joaofirmo/" target="_blank">João Firmo</a></li>
-    </ul>
-    <h4>2019</h4>
-</footer>
+				$("main").not("header *").on('click', function() {
+					if (open == 1) {
+						$("#nav").stop().slideToggle(100, 'swing', function() {
+							open = open ? 0 : 1;
+							$("#menu-button").toggleClass('transform-button');
+							$("#top-closed-menu").animate({
+								'top': ''
+							});
+						});
+					}
+				});
+			} else {
+				$("#nav").show();
+			}
+		};
+	</script>
+</header><main aria-label="Content">
+			<article>
+				<header>
+					<h1>Raise</h1>
+					<p>Raise is donation service case study. It was designed with one thing in mind: Get more people donating money! <br>Sounds hard, but really it shouldn't. People generally like to give money and those who can don't feel comfortable doing it; organizations, the smaller they are the less direct platforms to create and share campaigns they have; and finally companies like to be associated with good causes but don't have the pressure to do it.<br>With all this in mind we set out to create an MVP for a service that accommodates all of these parties' needs and connects them to bring more money to those who need it.</p>
+					
+				</header>
+				<main>
+					<ul>
+						
+						<li class="">
+							<h4></h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/raise.png&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/raise.png&h=1&q=5" alt="Raise">
+						</li>
+						
+						<li class="">
+							<h4></h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/menu.jpg&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/menu.jpg&h=1&q=5" alt="Raise">
+						</li>
+						
+						<li class="">
+							<h4>Checkouts — an easy way of donating while shopping</h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/checkouts.jpg&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/raise/checkouts.jpg&h=1&q=5" alt="Raise">
+						</li>
+						
+					</ul>
+				</main>
+				
 
-                <div id="sticky-bottom">
-                    <a href="javascript:history.back()" class="button button-back">
-                        <div class="arrow">
-                            <span>1</span>
-                        </div>
-                        <h5>Back to projects</h5>
-                    </a>
-                </div>
-                <!--
-    <footer>
-        <h4>In collaboration with:</h4>
-        <ul>
-            
-                <li><a href="https://www.behance.net/nicolehenriques">Nicole Henriques</a></li>
-            
-        </ul>
-        <h4>2019</h4>
-    </footer>
--->
-                <script>
-                    $('.lazy').Lazy({
-                        appendScroll: $('main'),
-                        effect: "fadeIn",
-                        effectTime: 500
-                    });
-
-                </script>
-            </article>
-        </main>
+				<div id="sticky-bottom">
+					<a href="javascript:history.back()" class="button button-back">
+						<div class="arrow">
+							<span>1</span>
+						</div>
+						<h5>Back to projects</h5>
+					</a>
+				</div>
+				<footer>
+					<h4>In collaboration with:</h4>
+					<ul>
+						
+						<li><a href="https://www.behance.net/nicolehenriques" target="_blank">Nicole Henriques</a></li>
+						
+						<li><a href="https://www.linkedin.com/in/joaofirmo" target="_blank">João Firmo</a></li>
+						
+					</ul>
+					<h4>2019</h4>
+				</footer>
+				<script>
+					$('.lazy').Lazy({
+						appendScroll: $('main'),
+						effect: "fadeIn",
+						effectTime: 500
+					});
+				</script>
+			</article>
+		</main>
 
 
-        <footer>
+		<footer>
     <p>Lisbon — 2019</p>
     <div id="sticky-bottom">
         <a href="javascript:history.back()" class="button button-back">
@@ -192,7 +180,7 @@
     </div>
 </footer>
 
-    </div>
+	</div>
 
 </body>
 
