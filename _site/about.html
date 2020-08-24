@@ -55,85 +55,81 @@
 </head>
 <body>
       <div class="wrapper about "><header>
-    <nav id="nav">
-        <h3>Guess I needed a menu of sorts.</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Some of what I've done</a></li>
-            <li><a href="/about">About me</a></li>
-            <li><a href="/about#contact">Contacts</a></li>
-        </ul>
-    </nav>
-    <div id="top-closed-menu">
-        
-        <a href="/" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to beginning</h5>
-        </a>
-        
+	<nav id="nav">
+		<h3>A navigation of sorts</h3>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/projects">Some of what I've done</a></li>
+			<li><a href="/about">About me</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="top-closed-menu">
+		
+		<a href="/" class="button button-back">
+			<div class="arrow">
+				<span>1</span>
+			</div>
+			<h5>Back to beginning</h5>
+		</a>
+		
 
-        <div id="menu-button" class="transform-button"></div>
-    </div>
-    <script>
-        
-        window.addEventListener('resize', header);
-        
-        function header() {
-            console.log('teste');
-            if (window.matchMedia('(max-width:500px)').matches) {
-                var open = 0;
-                $("#nav").hide();
-                $("#menu-button").click(function() {
-                    $("#nav").stop().slideToggle(150, 'swing');
-                    open = open ? 0 : 1;
-                    $("#menu-button").toggleClass('transform-button');
-                    $("#top-closed-menu").animate({
-                        'top': '20px'
-                    });
-                });
+		<div id="menu-button" class="transform-button"></div>
+	</div>
+	<script>
+		window.addEventListener('resize', header);
 
-                $("main").not("header *").on('click', function() {
-                    if (open == 1) {
-                        $("#nav").stop().slideToggle(100, 'swing', function() {
-                            open = open ? 0 : 1;
-                            $("#menu-button").toggleClass('transform-button');
-                            $("#top-closed-menu").animate({
-                                'top': ''
-                            });
-                        });
-                    }
-                });
-            } else {
-                $("#nav").show();
-            }
-        };
+		function header() {
+			if (window.matchMedia('(max-width:500px)').matches) {
+				var open = 0;
+				$("#nav").hide();
+				$("#menu-button").click(function() {
+					$("#nav").stop().slideToggle(150, 'swing');
+					open = open ? 0 : 1;
+					$("#menu-button").toggleClass('transform-button');
+					$("#top-closed-menu").animate({
+						'top': '20px'
+					});
+				});
 
-    </script>
-</header>
-<main aria-label="Content">
+				$("main").not("header *").on('click', function() {
+					if (open == 1) {
+						$("#nav").stop().slideToggle(100, 'swing', function() {
+							open = open ? 0 : 1;
+							$("#menu-button").toggleClass('transform-button');
+							$("#top-closed-menu").animate({
+								'top': ''
+							});
+						});
+					}
+				});
+			} else {
+				$("#nav").show();
+			}
+		};
+	</script>
+</header><main aria-label="Content">
                 <section title="sobre" id="sobre">
     <header>
         <h2 class="titulo-bloco">About me</h2>
     </header>
     <p>Hello again! My name is Bruno Santos <span class="italic small-text">(in case you haven't seen the 100px sized one on the front)</span> and I'm a Digital Designer from Lisbon who loves to explore, experiment and have fun with the web.</p>
     <br />    
-    <p><span class="bold">Design</span>, <span class="bold">Multidisciplinarity</span>, <span class="bold">Experimentation</span>, <span class="bold">Code</span> and <span class="bold italic">the ability to Google my way through anything</span> are my best traits. I really want to get technology and design into the hands of people through new forms of interaction in digital experiences. <br />Websites and apps are getting boring, design has reached a weird state where "pre-formatted" blocks can be arranged to make digital interfaces that are too familiar — <span class="underline">and even though there is obviously a time and a place for them</span> — I feel like it's taking the <span class="bold">joy and the excitement</span> out of the web. That's why I always try to create by breaking some rules and focusing my research in endless experimentation <span class="italic small-text">while abusing digital tools as much as possible</span> to hopefully bring some of it back.</p>
+    <p><span class="bold">Design</span>, <span class="bold">Code</span>, <span class="bold">Multidisciplinarity</span>, <span class="bold">Experimentation</span> and <span class="bold italic">the ability to Google my way through anything</span> are my best traits. I really want to get technology and design into the hands of people through new forms of interaction in digital experiences. <br />Websites and apps are getting boring, design has reached a weird state where digital interfaces that are becoming too familiar — <span class="underline">and even though there is obviously a time and a place for them</span> — I feel like it's taking the <span class="bold">joy and the excitement</span> out of the web. That's why I always try to create by breaking some rules and focusing my research in endless experimentation <span class="italic small-text">while abusing digital tools as much as possible</span> to hopefully bring some of it back.</p>
     <br />
     <p>Currently <span class="italic">(as of July 2019)</span>, I just finished my Postgraduate in Digital Experience Design and I'm starting a new chapter working at <a href="https://with-company.com/" class="bold">With Company</a> in sunny Lisbon, where I hope to grow as a designer and bring some great projects to life while working with great people and have some fun doing it. <br /><a href="mailto:hello@bru-no.com?subject=I really want to talk to you!&amp;body=Hi Bruno — I'm really cool cause I clicked that link to actually talk to you!">Let me know if you want to chat!</a></p>
 </section>
 
-<section title="Education and Experience" id="education">
+<!-- <section title="Education and Experience" id="education">
     <header>
-        <h2 class="titulo-bloco">Education and<br />Experience</h2>
+        <h2 class="titulo-bloco">Education and<br>Experience</h2>
     </header>
     <div class="bloco">
         <p class="hidden">Academic course:</p>
         <ul>
             <li><p><span class="bold">Communication Design BA</span> @    <a href="http://www.belasartes.ulisboa.pt" target="_blank">FBAUL</a></p></li>
-            <li><p>Postgraduate in <br /><span class="bold">Digital Experience Design</span><br />also @<a href="http://www.belasartes.ulisboa.pt" target="_blank">FBAUL</a><a href="http://dxd.belasartes.ulisboa.pt" target="_blank">(PG-DXD)</a></p></li>
-            <li><p>Weekend Workshop <br />in <span class="bold">Web Copywriting</span> @<a href="https://edit.com.pt/" target="_blank">EDIT</a></p></li>
+            <li><p>Postgraduate in <br><span class="bold">Digital Experience Design</span><br>also @<a href="http://www.belasartes.ulisboa.pt" target="_blank">FBAUL</a><a href="http://dxd.belasartes.ulisboa.pt" target="_blank">(PG-DXD)</a></p></li>
+            <li><p>Weekend Workshop <br>in <span class="bold">Web Copywriting</span> @<a href="https://edit.com.pt/" target="_blank">EDIT</a></p></li>
         </ul>
         <p class="underline">Actual work:</p>
         <ul>
@@ -141,15 +137,15 @@
             <li><p>as a Digital Experience Designer at <a href="https://with-company.com/" class="bold">With Company</a>.</p></li>
         </ul>
     </div>
-</section>
+</section> -->
 
-<section title="skills" id="skills">
+<!-- <section title="skills" id="skills">
     <header>
         <h2 class="titulo-bloco">Skills</h2>
         <p>What I like &amp; What I can do.</p>
     </header>
     <div class="bloco">
-        <br />
+        <br>
         <p class="underline">Digital Design:</p>
         <ul>
             <li>UX/UI</li>
@@ -170,7 +166,7 @@
             <li class="italic ">and also, Cloudflare is the best thing that has ever happenned to mankind</li>
         </ul>
     </div>
-</section>
+</section> -->
 
 <section title="Contact" id="contact">
     <h2 class="titulo-bloco">Contact me!</h2>
@@ -187,28 +183,25 @@
 
         
         <footer>
-    <p>Lisbon — 2019</p>
-    <div id="sticky-bottom">
-        <a href="/" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to beginning</h5>
-        </a>
-        <img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
-    </div>
-    
-    <script>
-        function goTop() {
-            $("html, body").stop().animate({
-                scrollTop: 0
-            }, 400, 'swing');
-        }
-    </script>
+	<p>Lisbon — 2020</p>
+	<div id="sticky-bottom">
+		<a href="/" class="button button-back">
+			<div class="arrow">
+				<span>1</span>
+			</div>
+			<h5>Back to beginning</h5>
+		</a>
+		<img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
+	</div>
+
+	<script>
+		function goTop() {
+			$("html, body").stop().animate({
+				scrollTop: 0
+			}, 200, 'swing');
+		}
+	</script>
 </footer>
-
-
-
       </div>
       
       <script language="javascript" type="text/javascript" src="/assets/js/all.js"></script>

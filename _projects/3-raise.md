@@ -19,4 +19,6 @@ images:
 persons:
 - name: Nicole Henriques
   link: https://www.behance.net/nicolehenriques
+- name: João Firmo
+  link: https://www.linkedin.com/in/joaofirmo
 ---

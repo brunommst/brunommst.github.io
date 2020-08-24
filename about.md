@@ -10,12 +10,12 @@ title: about
     </header>
     <p>Hello again! My name is Bruno Santos <span class="italic small-text">(in case you haven't seen the 100px sized one on the front)</span> and I'm a Digital Designer from Lisbon who loves to explore, experiment and have fun with the web.</p>
     <br>    
-    <p><span class="bold">Design</span>, <span class="bold">Multidisciplinarity</span>, <span class="bold">Experimentation</span>, <span class="bold">Code</span> and <span class="bold italic">the ability to Google my way through anything</span> are my best traits. I really want to get technology and design into the hands of people through new forms of interaction in digital experiences. <br>Websites and apps are getting boring, design has reached a weird state where "pre-formatted" blocks can be arranged to make digital interfaces that are too familiar — <span class="underline">and even though there is obviously a time and a place for them</span> — I feel like it's taking the <span class="bold">joy and the excitement</span> out of the web. That's why I always try to create by breaking some rules and focusing my research in endless experimentation <span class="italic small-text">while abusing digital tools as much as possible</span> to hopefully bring some of it back.</p>
+    <p><span class="bold">Design</span>, <span class="bold">Code</span>, <span class="bold">Multidisciplinarity</span>, <span class="bold">Experimentation</span> and <span class="bold italic">the ability to Google my way through anything</span> are my best traits. I really want to get technology and design into the hands of people through new forms of interaction in digital experiences. <br>Websites and apps are getting boring, design has reached a weird state where digital interfaces that are becoming too familiar — <span class="underline">and even though there is obviously a time and a place for them</span> — I feel like it's taking the <span class="bold">joy and the excitement</span> out of the web. That's why I always try to create by breaking some rules and focusing my research in endless experimentation <span class="italic small-text">while abusing digital tools as much as possible</span> to hopefully bring some of it back.</p>
     <br>
     <p>Currently <span class="italic">(as of July 2019)</span>, I just finished my Postgraduate in Digital Experience Design and I'm starting a new chapter working at <a href="https://with-company.com/" class="bold">With Company</a> in sunny Lisbon, where I hope to grow as a designer and bring some great projects to life while working with great people and have some fun doing it. <br><a href="mailto:hello@bru-no.com?subject=I really want to talk to you!&body=Hi Bruno — I'm really cool cause I clicked that link to actually talk to you!">Let me know if you want to chat!</a></p>
 </section>
 
-<section title="Education and Experience" id="education">
+<!-- <section title="Education and Experience" id="education">
     <header>
         <h2 class="titulo-bloco">Education and<br>Experience</h2>
     </header>
@@ -32,9 +32,9 @@ title: about
             <li><p>as a Digital Experience Designer at <a href="https://with-company.com/" class="bold">With Company</a>.</p></li>
         </ul>
     </div>
-</section>
+</section> -->
 
-<section title="skills" id="skills">
+<!-- <section title="skills" id="skills">
     <header>
         <h2 class="titulo-bloco">Skills</h2>
         <p>What I like &amp; What I can do.</p>
@@ -61,7 +61,7 @@ title: about
             <li class="italic ">and also, Cloudflare is the best thing that has ever happenned to mankind</li>
         </ul>
     </div>
-</section>
+</section> -->
 
 <section title="Contact" id="contact">
     <h2 class="titulo-bloco">Contact me!</h2>
