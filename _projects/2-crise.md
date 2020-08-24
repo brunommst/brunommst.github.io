@@ -5,6 +5,7 @@ slug: crise-de-identidade
 category:
 - Website
 - Digital Design
+- Development
 year: "2018"
 description: CRISE DE IDENTIDADE is the 8th installment of the Communication Design
   B.A. graduates' annual exhibition on the Faculty of Fine-Arts of the University

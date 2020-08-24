@@ -6,6 +6,7 @@ category:
 - Website
 - Digital Design
 - Typography
+- Development
 year: "2020"
 description: ''
 covers: []
@@ -15,6 +16,7 @@ persons:
   link: https://cosmvs.com
 category-new:
 - Website
+links: []
 published: false
 
 ---
