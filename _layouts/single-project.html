@@ -34,7 +34,7 @@
 					</ul>
 				</main>
 				{{ content }}
-				<<<<<<< HEAD <footer>
+				<footer>
 					<h4>In collaboration with:</h4>
 					<ul>
 						{% for person in page.persons %}
@@ -46,28 +46,12 @@
 						{% endfor %}
 					</ul>
 					<h4>{{ page.year }}</h4>
-					</footer>
+				</footer>
 
-					<div id="sticky-bottom">
-						<a href="javascript:history.back()" class="button button-back">
-							<div class="arrow">
-								<span>1</span>
-							</div>
-							<h5>Back to projects</h5>
-						</a>
-					</div>
-					<script>
-						$('.lazy').Lazy({
-							appendScroll: $('main'),
-							effect: "fadeIn",
-							effectTime: 500
-						});
-					</script>
 			</article>
 		</main>
 
 
-		=======
 		<div id="sticky-bottom">
 			<a href="javascript:history.back()" class="button button-back">
 				<div class="arrow">
@@ -95,13 +79,12 @@
 		</article>
 		</main>
 
-
-		>>>>>>> 4f5354406b4a6c03c22b758d2aa0345c0ff29d16
 		{% if page.collection == 'projects' %}
 		{%- include single_project-footer.html -%}
 		{% else %}
 		{%- include footer.html -%}
 		{% endif %}
+
 	</div>
 
 </body>
