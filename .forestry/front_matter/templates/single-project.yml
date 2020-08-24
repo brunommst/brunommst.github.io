@@ -56,4 +56,5 @@ fields:
     name: link
     label: link
 pages:
+- _projects/1-a70.md
 - _projects/promenade.md
