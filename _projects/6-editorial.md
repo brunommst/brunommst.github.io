@@ -5,6 +5,7 @@ slug: editorial
 category:
 - Editorial
 - Creative Coding
+- Experimental
 year: "2018"
 description: This is a reissue of Ernest Hemingway’s acclaimed work 'The Old Man and
   the Sea' using an algorithm to generate both the book pagination and the illustrations
@@ -22,5 +23,6 @@ images:
   alt: Editorial Design
 - url: "/assets/images/projects/edit/edit4.png"
   alt: Editorial Design
+persons: []
 
 ---
