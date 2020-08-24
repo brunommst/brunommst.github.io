@@ -2,7 +2,8 @@
 layout: single-project
 title: Raise
 slug: raise
-category: product
+category:
+- Product Design
 year: "2019"
 description: 'Raise is donation service case study. It was designed with one thing
   in mind: Get more people donating money! <br>Sounds hard, but really it shouldn''t.

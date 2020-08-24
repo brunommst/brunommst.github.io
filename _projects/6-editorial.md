@@ -2,7 +2,9 @@
 layout: single-project
 title: An algorithm for a book
 slug: editorial
-category: general
+category:
+- Editorial
+- Creative Coding
 year: "2018"
 description: This is a reissue of Ernest Hemingway’s acclaimed work 'The Old Man and
   the Sea' using an algorithm to generate both the book pagination and the illustrations

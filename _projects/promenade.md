@@ -2,7 +2,8 @@
 layout: single-project
 title: Promenade
 slug: promenade
-category: ''
+category:
+- Website
 year: ''
 description: ''
 covers: []

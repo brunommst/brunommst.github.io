@@ -2,7 +2,10 @@
 layout: single-project
 title: ON THE ROLE
 slug: ontherole
-category: general
+category:
+- Website
+- Visual Design
+- Typography
 year: 2017
 description: "On The Role is a question in form of a magazine, that aims to provoque discussion around the role of men in feminist day to day struggles. With the more recent growth of the feminist movement it is mandatory that all individuals should consider it as well as be considered by it. Achieving through this, emancipation of all human beings."
 covers:
