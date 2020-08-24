@@ -52,16 +52,10 @@ fields:
   - type: text
     name: alt
     label: alt
-- type: field_group_list
-  name: images
-  label: images
-  fields:
-  - type: file
-    name: url
-    label: url
-  - type: text
-    name: alt
-    label: alt
+- name: gallery
+  type: image_gallery
+  config: {}
+  label: Gallery
 - type: field_group_list
   name: persons
   label: persons
