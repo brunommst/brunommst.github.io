@@ -33,7 +33,11 @@
 					<h4>In collaboration with:</h4>
 					<ul>
 						{% for person in page.persons %}
+						{% if person.link %}
 						<li><a href="{{ person.link }}" target="_blank">{{ person.name }}</a></li>
+						{% else %}
+						<li>{{ person.name }}</li>
+						{% endif %}
 						{% endfor %}
 					</ul>
 					<h4>{{ page.year }}</h4>
