@@ -24,6 +24,24 @@ fields:
   label: Category
   description: Website<br>Communication<br>Typography<br>Product Design<br>Experimental<br>Digital
     Design<br>Editorial<br>Creative Coding
+- name: links
+  type: field_group_list
+  fields:
+  - name: url
+    type: text
+    config:
+      required: false
+    label: url
+  - name: linktext
+    type: text
+    config:
+      required: false
+    label: linktext
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: links
 - type: field_group_list
   name: covers
   label: covers
