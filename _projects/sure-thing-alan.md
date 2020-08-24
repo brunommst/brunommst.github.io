@@ -6,7 +6,7 @@ category:
 - Communication Design
 - Typography
 title: Sure thing, Alan
-slug: turing
+slug: surethingalan
 year: "2018"
 description: "'Sure thing, Alan' is an academic exercise of exploring the interaction
   between humans and computers. By analysing what sets them apart and what are the
