@@ -55,89 +55,89 @@
 </head>
 <body>
       <div class="wrapper home "><header>
-    <nav id="nav">
-        <h3>Guess I needed a menu of sorts.</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Some of what I've done</a></li>
-            <li><a href="/about">About me</a></li>
-            <li><a href="/about#contact">Contacts</a></li>
-        </ul>
-    </nav>
-    <div id="top-closed-menu">
-        
-        <a href="/" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to beginning</h5>
-        </a>
-        
+	<nav id="nav">
+		<h3>A navigation of sorts</h3>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/projects">Some of what I've done</a></li>
+			<li><a href="/about">About me</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div id="top-closed-menu">
+		
+		<a href="/" class="button button-back">
+			<div class="arrow">
+				<span>1</span>
+			</div>
+			<h5>Back to beginning</h5>
+		</a>
+		
 
-        <div id="menu-button" class="transform-button"></div>
-    </div>
-    <script>
-        
-        window.addEventListener('resize', header);
-        
-        function header() {
-            console.log('teste');
-            if (window.matchMedia('(max-width:500px)').matches) {
-                var open = 0;
-                $("#nav").hide();
-                $("#menu-button").click(function() {
-                    $("#nav").stop().slideToggle(150, 'swing');
-                    open = open ? 0 : 1;
-                    $("#menu-button").toggleClass('transform-button');
-                    $("#top-closed-menu").animate({
-                        'top': '20px'
-                    });
-                });
+		<div id="menu-button" class="transform-button"></div>
+	</div>
+	<script>
+		window.addEventListener('resize', header);
 
-                $("main").not("header *").on('click', function() {
-                    if (open == 1) {
-                        $("#nav").stop().slideToggle(100, 'swing', function() {
-                            open = open ? 0 : 1;
-                            $("#menu-button").toggleClass('transform-button');
-                            $("#top-closed-menu").animate({
-                                'top': ''
-                            });
-                        });
-                    }
-                });
-            } else {
-                $("#nav").show();
-            }
-        };
+		function header() {
+			if (window.matchMedia('(max-width:500px)').matches) {
+				var open = 0;
+				$("#nav").hide();
+				$("#menu-button").click(function() {
+					$("#nav").stop().slideToggle(150, 'swing');
+					open = open ? 0 : 1;
+					$("#menu-button").toggleClass('transform-button');
+					$("#top-closed-menu").animate({
+						'top': '20px'
+					});
+				});
 
-    </script>
-</header>
-<main aria-label="Content">
-                <div id="outdated">
-<h2>This website is outdated<br />This website is outdated</h2>
+				$("main").not("header *").on('click', function() {
+					if (open == 1) {
+						$("#nav").stop().slideToggle(100, 'swing', function() {
+							open = open ? 0 : 1;
+							$("#menu-button").toggleClass('transform-button');
+							$("#top-closed-menu").animate({
+								'top': ''
+							});
+						});
+					}
+				});
+			} else {
+				$("#nav").show();
+			}
+		};
+	</script>
+</header><main aria-label="Content">
+                <!--
+<div id="outdated">
+<h2>This website is outdated<br>This website is outdated</h2>
 <h4><a href="#contact">Contact me</a> for updated news!</h4>
-</div>
+</div> -->
 
 <section title="name" id="name">
     <h1>Bru-no Santos Digital Designer</h1>
 </section>
+
 <section title="sobre" id="sobre">
     <header>
         <h2 class="titulo-bloco hidden">About me</h2>
     </header>
-    <p>Hey! Welcome to my website / portfolio / online place where I put my stuff that I'm never satisfied with.</p>
-    <p>I’m a Digital Experience Designer from Lisbon who loves to explore, experiment and have fun with the web. Feel free to explore around or just <a href="#contact">talk to me!<a href="#contact">&lt;/p&gt;
-    <a href="about" class="button button-forward center">
-        <div class="arrow">
-            <span>1</span>
-        </div>
-        <h5>find out more</h5>
-    </a>
-&lt;/section&gt;
+		<main>
+	    <p>Hey! Welcome to my website / portfolio / online place where I put my stuff that I'm never satisfied with.</p>
+	    <p>I’m a Digital Experience Designer from Lisbon who loves to explore, experiment and have fun with the web. Feel free to explore around or just <a href="#contact">talk to me!</a></p>
+	    <a href="about" class="button button-forward center">
+	        <div class="arrow">
+	            <span>1</span>
+	        </div>
+	        <h5>find out more</h5>
+	    </a>
+		</main>
+</section>
 
-<section title="Some of what I've done" id="projects">
+<!-- <section title="Some of what I've done" id="projects">
     <header>
-        <h2 class="titulo-bloco">Some of<br />what I've<br />done</h2>
+        <h2 class="titulo-bloco">Some of<br>what I've<br>done</h2>
     </header>
     <aside class="filter">
         <h3 class="filter-open">filter</h3>
@@ -155,7 +155,7 @@
             <article>
                 <h3>Anjos70 website</h3>
                 
-                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/a70-thumb.jpg&amp;h=500&amp;q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/a70-thumb.jpg&amp;h=2&amp;q=10" alt="Anjos70 website" />
+                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/a70-thumb.jpg&h=500&q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/a70-thumb.jpg&h=2&q=10" alt="Anjos70 website">
                 
             </article>
         </a>
@@ -164,7 +164,7 @@
             <article>
                 <h3>CRISE DE IDENTIDADE</h3>
                 
-                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/crise-thumb.jpg&amp;h=500&amp;q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/crise-thumb.jpg&amp;h=2&amp;q=10" alt="Crise de Identidade" />
+                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/crise-thumb.jpg&h=500&q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/crise-thumb.jpg&h=2&q=10" alt="Crise de Identidade">
                 
             </article>
         </a>
@@ -173,7 +173,7 @@
             <article>
                 <h3>Raise</h3>
                 
-                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/raise-thumb.jpg&amp;h=500&amp;q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/raise-thumb.jpg&amp;h=2&amp;q=10" alt="Raise" />
+                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/raise-thumb.jpg&h=500&q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/raise-thumb.jpg&h=2&q=10" alt="Raise">
                 
             </article>
         </a>
@@ -182,7 +182,7 @@
             <article>
                 <h3>mint</h3>
                 
-                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/mint-thumb.jpg&amp;h=500&amp;q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/mint-thumb.jpg&amp;h=2&amp;q=10" alt="mint" />
+                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/mint-thumb.jpg&h=500&q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/mint-thumb.jpg&h=2&q=10" alt="mint">
                 
             </article>
         </a>
@@ -191,7 +191,7 @@
             <article>
                 <h3>ON THE ROLE</h3>
                 
-                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/otr-thumb.jpg&amp;h=500&amp;q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/otr-thumb.jpg&amp;h=2&amp;q=10" alt="On The Role image" />
+                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/otr-thumb.jpg&h=500&q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/otr-thumb.jpg&h=2&q=10" alt="On The Role image">
                 
             </article>
         </a>
@@ -200,7 +200,7 @@
             <article>
                 <h3>Editorial Design</h3>
                 
-                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/edit-thumb.jpg&amp;h=500&amp;q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/edit-thumb.jpg&amp;h=2&amp;q=10" alt="Editorial Design" />
+                <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/edit-thumb.jpg&h=500&q=60" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/thumbnails/edit-thumb.jpg&h=2&q=10" alt="Editorial Design">
                 
             </article>
         </a>
@@ -213,9 +213,9 @@
             </div>
             <h5>see all projects</h5>
         </a>
-        <p>A lot more coming<br />be sure to check back soon!</p>
+        <p>A lot more coming<br>be sure to check back soon!</p>
     </footer>
-</section>
+</section> -->
 
 <section title="Countdown" id="timer">
     <div class="wrapper">
@@ -229,8 +229,9 @@
 </section>
 
 <script language="javascript" type="text/javascript" src="/assets/js/home.js"></script>
+
 <script language="javascript" type="text/javascript" src="/assets/js/filter.js"></script>
-</a></a></p></section>
+
 <section title="Contact" id="contact">
     <h2 class="titulo-bloco">Contact me!</h2>
     <div class="bloco">
@@ -242,28 +243,25 @@
 
         
         <footer>
-    <p>Lisbon — 2019</p>
-    <div id="sticky-bottom">
-        <a href="/" class="button button-back">
-            <div class="arrow">
-                <span>1</span>
-            </div>
-            <h5>Back to beginning</h5>
-        </a>
-        <img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
-    </div>
-    
-    <script>
-        function goTop() {
-            $("html, body").stop().animate({
-                scrollTop: 0
-            }, 400, 'swing');
-        }
-    </script>
+	<p>Lisbon — 2020</p>
+	<div id="sticky-bottom">
+		<a href="/" class="button button-back">
+			<div class="arrow">
+				<span>1</span>
+			</div>
+			<h5>Back to beginning</h5>
+		</a>
+		<img src="/assets/images/arrow-b.svg" alt="arrow to go back to top" onclick="goTop()">
+	</div>
+
+	<script>
+		function goTop() {
+			$("html, body").stop().animate({
+				scrollTop: 0
+			}, 200, 'swing');
+		}
+	</script>
 </footer>
-
-
-
       </div>
       
       <script language="javascript" type="text/javascript" src="/assets/js/all.js"></script>

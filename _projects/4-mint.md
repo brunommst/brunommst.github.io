@@ -20,10 +20,3 @@ persons:
 - name: Nicole Henriques
   link: https://www.linkedin.com/in/nicole-henriques/
 ---
-<footer>
-    <h4>In collaboration with:</h4>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/nicole-henriques/" target="_blank">Nicole Henriques</a></li>
-    </ul>
-    <h4>2019</h4>
-</footer>
