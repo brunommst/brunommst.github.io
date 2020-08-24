@@ -1,6 +1,6 @@
 ---
 label: Single Project
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: layout
@@ -53,3 +53,13 @@ fields:
   - type: text
     name: text
     label: text
+- type: field_group_list
+  name: persons
+  label: persons
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: link
+    label: link
