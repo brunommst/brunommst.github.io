@@ -25,5 +25,11 @@ images:
 - url: "/assets/images/projects/edit/edit4.png"
   alt: Editorial Design
 persons: []
+links: []
+gallery:
+- "/assets/images/projects/edit/edit1.png"
+- "/assets/images/projects/edit/edit2.png"
+- "/assets/images/projects/edit/edit3.png"
+- "/assets/images/projects/edit/edit4.png"
 
 ---
