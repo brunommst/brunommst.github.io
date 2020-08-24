@@ -41,5 +41,11 @@ persons:
   link: https://www.instagram.com/palomamoniiz
 - name: Ricardo Gonçalves
   link: https://www.instagram.com/oricardogoncalves
+cover-image: "/assets/images/projects/2020-08/crise-thumb.jpg"
+gallery:
+- "/assets/images/projects/crise/3.png"
+- "/assets/images/projects/crise/catalogo.png"
+- "/assets/images/projects/crise/1.png"
+- "/assets/images/projects/crise/2.png"
 
 ---
