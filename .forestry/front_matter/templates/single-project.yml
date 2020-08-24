@@ -12,16 +12,32 @@ fields:
 - type: text
   name: slug
   label: slug
-- name: category
-  type: tag_list
-  default: []
-  label: Category
 - type: text
   name: year
   label: year
 - type: textarea
   name: description
   label: description
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Website
+    - Communication
+    - Typography
+    - Product Design
+    - Experimental
+    - Digital Design
+    - Editorial
+    - Creative Coding
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
 - type: field_group_list
   name: covers
   label: covers
