@@ -42,16 +42,11 @@ fields:
     max: 
     labelField: 
   label: links
-- type: field_group_list
-  name: covers
-  label: covers
-  fields:
-  - type: file
-    name: url
-    label: url
-  - type: text
-    name: alt
-    label: alt
+- name: cover-image
+  type: file
+  config:
+    maxSize: 64
+  label: Cover Image
 - name: gallery
   type: image_gallery
   config: {}
