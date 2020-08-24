@@ -4,67 +4,66 @@
 {%- include head.html -%}
 
 <body>
-    <div class="wrapper {{ page.title }} {% if page.collection == 'projects' %}project-page{% endif %}">
+	<div class="wrapper {{ page.title }} {% if page.collection == 'projects' %}project-page{% endif %}">
 
-        {%- include header.html -%}
+		{%- include header.html -%}
 
-        <main aria-label="Content">
-            <article>
-                <header>
-                    <h1>{{ page.title | escape }}</h1>
-                    <p>{{ page.description}}</p>
-                    {% for link in page.links %}
-                    <a href="{{ link.url }}" target="_blank">{{ link.linktext }}</a>
-                    {% endfor %}
-                </header>
-                <main>
-                    <ul>
-                        {% for image in page.images %}
-                        <li class="{{ image.device }}">
-                            <h4>{{ image.text }}</h4>
-                            <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io{{ image.url }}&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io{{ image.url }}&h=1&q=5" alt="{{ image.alt }}">
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </main>
-                {{ content }}
-                <div id="sticky-bottom">
-                    <a href="javascript:history.back()" class="button button-back">
-                        <div class="arrow">
-                            <span>1</span>
-                        </div>
-                        <h5>Back to projects</h5>
-                    </a>
-                </div>
-                <!--
-    <footer>
-        <h4>In collaboration with:</h4>
-        <ul>
-            {% for person in page.persons %}
-                <li><a href="{{ person.link }}">{{ person.name }}</a></li>
-            {% endfor %}
-        </ul>
-        <h4>{{ page.year }}</h4>
-    </footer>
--->
-                <script>
-                    $('.lazy').Lazy({
-                        appendScroll: $('main'),
-                        effect: "fadeIn",
-                        effectTime: 500
-                    });
+		<main aria-label="Content">
+			<article>
+				<header>
+					<h1>{{ page.title | escape }}</h1>
+					<p>{{ page.description}}</p>
+					{% for link in page.links %}
+					<a href="{{ link.url }}" target="_blank">{{ link.linktext }}</a>
+					{% endfor %}
+				</header>
+				<main>
+					<ul>
+						{% for image in page.images %}
+						<li class="{{ image.device }}">
+							<h4>{{ image.text }}</h4>
+							<img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io{{ image.url }}&w=1300&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io{{ image.url }}&h=1&q=5" alt="{{ image.alt }}">
+						</li>
+						{% endfor %}
+					</ul>
+				</main>
+				{{ content }}
 
-                </script>
-            </article>
-        </main>
+				<footer>
+					<h4>In collaboration with:</h4>
+					<ul>
+						{% for person in page.persons %}
+						<li><a href="{{ person.link }}" target="_blank">{{ person.name }}</a></li>
+						{% endfor %}
+					</ul>
+					<h4>{{ page.year }}</h4>
+				</footer>
+
+				<div id="sticky-bottom">
+					<a href="javascript:history.back()" class="button button-back">
+						<div class="arrow">
+							<span>1</span>
+						</div>
+						<h5>Back to projects</h5>
+					</a>
+				</div>
+				<script>
+					$('.lazy').Lazy({
+						appendScroll: $('main'),
+						effect: "fadeIn",
+						effectTime: 500
+					});
+				</script>
+			</article>
+		</main>
 
 
-        {% if page.collection == 'projects' %}
-        {%- include single_project-footer.html -%}
-        {% else %}
-        {%- include footer.html -%}
-        {% endif %}
-    </div>
+		{% if page.collection == 'projects' %}
+		{%- include single_project-footer.html -%}
+		{% else %}
+		{%- include footer.html -%}
+		{% endif %}
+	</div>
 
 </body>
 

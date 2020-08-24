@@ -20,11 +20,3 @@ persons:
 - name: Nicole Henriques
   link: https://www.behance.net/nicolehenriques
 ---
-<footer>
-    <h4>In collaboration with:</h4>
-    <ul>
-        <li><a href="https://www.linkedin.com/in/nicole-henriques/" target="_blank">Nicole Henriques</a></li>
-        <li><a href="https://www.linkedin.com/in/joaofirmo/" target="_blank">João Firmo</a></li>
-    </ul>
-    <h4>2019</h4>
-</footer>

@@ -21,21 +21,14 @@ images:
 - url: "/assets/images/projects/crise/2.png"
   alt: Crise de Identidade
 persons:
-- name: Ricardo Gonçalves
-  link: ricardo.com
+- name: Beatriz Roque
+- name: Catarina Fazenda
+- name: Gonçalo Silva
+  link: https://www.linkedin.com/in/gonçalo-silva-387ba3b1
+- name: Margarida Sousa
+  link: https://www.linkedin.com/in/margarida-silva-437769171
 - name: Paloma Moniz
-  link: paloma.com
+  link: https://www.instagram.com/palomamoniiz
+- name: Ricardo Gonçalves
+  link: https://www.instagram.com/oricardogoncalves
 ---
-
-<footer>
-    <h4>In collaboration with:</h4>
-    <ul>
-        <li>Beatriz Roque</li>
-        <li>Catarina Fazenda</li>
-        <li><a href="https://www.linkedin.com/in/gonçalo-silva-387ba3b1/" target="_blank">Gonçalo Silva</a></li>
-        <li><a href="https://www.linkedin.com/in/margarida-silva-437769171/" target="_blank">Margarida Sousa</a></li>
-        <li><a href="https://www.instagram.com/palomamoniiz/" target="_blank">Paloma Moniz</a></li>
-        <li><a href="https://www.instagram.com/oricardogoncalves/" target="_blank">Ricardo Gonçalves</a></li>
-    </ul>
-    <h4>2018</h4>
-</footer>
