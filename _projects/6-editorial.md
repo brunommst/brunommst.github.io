@@ -6,6 +6,7 @@ category:
 - Editorial
 - Creative Coding
 - Experimental
+- Creative Coding
 year: "2018"
 description: This is a reissue of Ernest Hemingway’s acclaimed work 'The Old Man and
   the Sea' using an algorithm to generate both the book pagination and the illustrations
