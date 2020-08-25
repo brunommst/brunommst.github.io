@@ -1,11 +1,11 @@
 (function ($) {
-    
+
     $('.lazy').Lazy({
         effect: "fadeIn",
         effectTime: 500
     });
-    
-    
+
+
     // NOME ALTERAR COM O SCROLL
 
     (function () {
@@ -15,18 +15,19 @@
 
         $("#sticky-bottom").stop().hide();
         var update = function () {
-            if (lastScrollY < 700 && window.innerWidth < 700) {
+            if (lastScrollY < 700 && window.matchMedia('(max-width:767px)').matches) {
                 scrolldist = lastScrollY * 0.05;
 
-                document.querySelector("#name h1").style.transform = "scaleY(calc(1 - " + scrolldist*0.05 + ")) scaleX(calc(1 + " + scrolldist*0.02 + "))";
+                document.querySelector("#name h1").style.transform = "scale3d(calc(1 - " + scrolldist*0.02 + "),calc(1 + " + scrolldist*0.05 + "),1)";
                 $("#sticky-bottom").stop().fadeOut(50);
-            } else if (lastScrollY < 1000 && window.innerWidth > 500) {
+
+            } else if (lastScrollY < 1000 && window.matchMedia('(min-width:768px)').matches) {
                 scrolldist = lastScrollY * 0.02;
-        
-                document.querySelector("#name h1").style.transform = "scaleY(calc(1 - " + scrolldist*0.05 + ")) scaleX(calc(1 + " + scrolldist*0.02 + "))";
+
+                document.querySelector("#name h1").style.transform = "scale3d(calc(1 + " + scrolldist*0.05 + "), calc(1 - " + scrolldist*0.02 + "),1)";
                 $("#sticky-bottom").stop().fadeOut(50);
             } else {
-                document.querySelector("#name h1").style.transform = "scaleY(0) scaleX(0)";
+                document.querySelector("#name h1").style.transform = "scale3d(1,1,1)";
                 $("#sticky-bottom").stop().fadeIn(50);
             }
             ticking = false;
@@ -43,11 +44,11 @@
         };
         $(window).on('scroll', onScroll);
     })();
-    
-    
-    
-    //TIMER 
-    
+
+
+
+    //TIMER
+
     var date = new Date(),
         month = date.getMonth();
     day = date.getDate(),
@@ -82,12 +83,12 @@
         } else if ($('.countdown').not(':visible')) {
             $('.countdown').show();
         }
-        
+
         countDown();
         setInterval(function () {
             countDown();
         }, 1000);
 
     });
-    
+
 })(jQuery);

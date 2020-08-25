@@ -54,12 +54,12 @@
     <script language="javascript" type="text/javascript" src="/assets/js/libs/typebutter.banglaregular.js"></script>
 </head>
 <body>
-      <div class="wrapper home "><header>
+      <div class="wrapper home "><header id="header" class="closed">
 	<nav id="nav">
 		<h3>A navigation of sorts</h3>
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li><a href="/projects">Some of what I've done</a></li>
+			<li><a href="#projects">Some of what I've done</a></li>
 			<li><a href="/about">About me</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
@@ -79,34 +79,25 @@
 	<script>
 		window.addEventListener('resize', header);
 
-		function header() {
-			if (window.matchMedia('(max-width:500px)').matches) {
-				var open = 0;
-				$("#nav").hide();
-				$("#menu-button").click(function() {
-					$("#nav").stop().slideToggle(150, 'swing');
-					open = open ? 0 : 1;
-					$("#menu-button").toggleClass('transform-button');
-					$("#top-closed-menu").animate({
-						'top': '20px'
-					});
-				});
 
-				$("main").not("header *").on('click', function() {
-					if (open == 1) {
-						$("#nav").stop().slideToggle(100, 'swing', function() {
-							open = open ? 0 : 1;
-							$("#menu-button").toggleClass('transform-button');
-							$("#top-closed-menu").animate({
-								'top': ''
-							});
-						});
-					}
-				});
+		var open = false;
+
+		function header() {
+			open = open ? false : true;
+			console.log(open);
+			$("#menu-button").toggleClass('transform-button');
+			if (open == true) {
+				$("#header").removeClass('closed')
 			} else {
-				$("#nav").show();
+				$("#header").addClass('closed')
 			}
-		};
+		}
+
+		if (window.matchMedia('(max-width:767px)').matches) {
+
+			$("#menu-button").click(header);
+
+		}
 	</script>
 </header><main aria-label="Content">
                 <!--
@@ -116,23 +107,178 @@
 </div> -->
 
 <section title="name" id="name">
-    <h1>Bru-no Santos Digital Designer</h1>
+	<h1>Bruno Santos Digital Designer</h1>
 </section>
 
 <section title="sobre" id="sobre">
-    <header>
-        <h2 class="titulo-bloco hidden">About me</h2>
-    </header>
-		<main>
-	    <p>Hey! Welcome to my website / portfolio / online place where I put my stuff that I'm never satisfied with.</p>
-	    <p>I’m a Digital Experience Designer from Lisbon who loves to explore, experiment and have fun with the web. Feel free to explore around or just <a href="#contact">talk to me!</a></p>
-	    <a href="about" class="button button-forward center">
-	        <div class="arrow">
-	            <span>1</span>
-	        </div>
-	        <h5>find out more</h5>
-	    </a>
-		</main>
+	<header>
+		<h2 class="titulo-bloco hidden">About me</h2>
+	</header>
+	<main>
+		<p>A Digital Experience Designer from Lisbon who loves to explore, experiment and have fun with the web.</p>
+	</main>
+</section>
+
+<section title="Some of what I've done" id="projects" class="inner_width">
+	<header>
+		<h2 class="titulo-bloco">Some of<br />what I've<br />done</h2>
+		<p>This is a collection of my favourite projects from the last couple of years. From Graphic Design to Digital Product Design, websites and apps, a lot of case studies and even some fully shipped projects.</p>
+	</header>
+	<main>
+		<ul class="projects">
+			
+			<li class="single_project">
+				<a href="/projects/anjos70">
+					<h4>Anjos70</h4>
+
+					<!-- 
+<ul class="categories">
+	
+	<li class="single_category">
+		<h6>Website</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Digital Design</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Development</h6>
+	</li>
+	
+</ul>
+ -->
+
+					<div class="cover-image_container">
+						<!-- <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/a70-thumb.jpg&w=400&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/a70-thumb.jpg&h=2&q=10" -->
+						<img class="lazy" data-src="project.cover-image }}" src="/assets/images/projects/2020-08/a70-thumb.jpg" alt="Anjos70's Cover Image'" />
+					</div>
+
+				</a>
+			</li>
+			
+			<li class="single_project">
+				<a href="/projects/crise-de-identidade">
+					<h4>CRISE DE IDENTIDADE</h4>
+
+					<!-- 
+<ul class="categories">
+	
+	<li class="single_category">
+		<h6>Website</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Digital Design</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Development</h6>
+	</li>
+	
+</ul>
+ -->
+
+					<div class="cover-image_container">
+						<!-- <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/crise-thumb.jpg&w=400&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/crise-thumb.jpg&h=2&q=10" -->
+						<img class="lazy" data-src="project.cover-image }}" src="/assets/images/projects/2020-08/crise-thumb.jpg" alt="CRISE DE IDENTIDADE's Cover Image'" />
+					</div>
+
+				</a>
+			</li>
+			
+			<li class="single_project">
+				<a href="/projects/mint">
+					<h4>mint</h4>
+
+					<!-- 
+<ul class="categories">
+	
+	<li class="single_category">
+		<h6>Product Design</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Digital Design</h6>
+	</li>
+	
+</ul>
+ -->
+
+					<div class="cover-image_container">
+						<!-- <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/mint-thumb.jpg&w=400&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/mint-thumb.jpg&h=2&q=10" -->
+						<img class="lazy" data-src="project.cover-image }}" src="/assets/images/projects/2020-08/mint-thumb.jpg" alt="mint's Cover Image'" />
+					</div>
+
+				</a>
+			</li>
+			
+			<li class="single_project">
+				<a href="/projects/ontherole">
+					<h4>ON THE ROLE</h4>
+
+					<!-- 
+<ul class="categories">
+	
+	<li class="single_category">
+		<h6>Editorial</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Communication</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Typography</h6>
+	</li>
+	
+</ul>
+ -->
+
+					<div class="cover-image_container">
+						<!-- <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/otr-thumb.jpg&w=400&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/otr-thumb.jpg&h=2&q=10" -->
+						<img class="lazy" data-src="project.cover-image }}" src="/assets/images/projects/2020-08/otr-thumb.jpg" alt="ON THE ROLE's Cover Image'" />
+					</div>
+
+				</a>
+			</li>
+			
+			<li class="single_project">
+				<a href="/projects/editorial">
+					<h4>An algorithm for a book</h4>
+
+					<!-- 
+<ul class="categories">
+	
+	<li class="single_category">
+		<h6>Editorial</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Creative Coding</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Experimental</h6>
+	</li>
+	
+	<li class="single_category">
+		<h6>Creative Coding</h6>
+	</li>
+	
+</ul>
+ -->
+
+					<div class="cover-image_container">
+						<!-- <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/artboard-5.jpg&w=400&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io/assets/images/projects/2020-08/artboard-5.jpg&h=2&q=10" -->
+						<img class="lazy" data-src="project.cover-image }}" src="/assets/images/projects/2020-08/artboard-5.jpg" alt="An algorithm for a book's Cover Image'" />
+					</div>
+
+				</a>
+			</li>
+			
+		</ul>
+	</main>
 </section>
 
 <!-- <section title="Some of what I've done" id="projects">
@@ -209,14 +355,14 @@
 </section> -->
 
 <section title="Countdown" id="timer">
-    <div class="wrapper">
-        <div class="countdown">
-            <h3 class="hours"></h3>
-            <h3 class="minutes"></h3>
-            <h3 class="seconds"></h3>
-        </div>
-        <h4>Come back later tonight!</h4>
-    </div>
+	<div class="wrapper">
+		<div class="countdown">
+			<h3 class="hours"></h3>
+			<h3 class="minutes"></h3>
+			<h3 class="seconds"></h3>
+		</div>
+		<h4>Come back tonight!</h4>
+	</div>
 </section>
 
 <script language="javascript" type="text/javascript" src="/assets/js/home.js"></script>

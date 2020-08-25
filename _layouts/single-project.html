@@ -16,13 +16,18 @@
 					{% for link in page.links %}
 					<a href="{{ link.url }}" target="_blank">{{ link.linktext }}</a>
 					{% endfor %}
-					{% if page.category %}
-					<ul>
-						{% for single_category in page.category %}
-						<li>{{ single_category }}</li>
+
+
+					{% if project.category %}
+					<ul class="categories">
+						{% for single_category in project.category %}
+						<li class="single_category">
+							<h6>{{ single_category }}</h6>
+						</li>
 						{% endfor %}
 					</ul>
 					{% endif %}
+
 				</header>
 				<main>
 					<ul>
@@ -48,35 +53,17 @@
 					<h4>{{ page.year }}</h4>
 				</footer>
 
-			</article>
-		</main>
 
-
-		<div id="sticky-bottom">
-			<a href="javascript:history.back()" class="button button-back">
-				<div class="arrow">
-					<span>1</span>
+				<div id="sticky-bottom">
+					<a href="javascript:history.back()" class="button button-back">
+						<div class="arrow">
+							<span>1</span>
+						</div>
+						<h5>Back to projects</h5>
+					</a>
 				</div>
-				<h5>Back to projects</h5>
-			</a>
-		</div>
-		<footer>
-			<h4>In collaboration with:</h4>
-			<ul>
-				{% for person in page.persons %}
-				<li><a href="{{ person.link }}" target="_blank">{{ person.name }}</a></li>
-				{% endfor %}
-			</ul>
-			<h4>{{ page.year }}</h4>
-		</footer>
-		<script>
-			$('.lazy').Lazy({
-				appendScroll: $('main'),
-				effect: "fadeIn",
-				effectTime: 500
-			});
-		</script>
-		</article>
+
+			</article>
 		</main>
 
 		{% if page.collection == 'projects' %}

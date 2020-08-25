@@ -54,12 +54,12 @@
     <script language="javascript" type="text/javascript" src="/assets/js/libs/typebutter.banglaregular.js"></script>
 </head>
 <body>
-      <div class="wrapper  "><header>
+      <div class="wrapper  "><header id="header" class="closed">
 	<nav id="nav">
 		<h3>A navigation of sorts</h3>
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li><a href="/projects">Some of what I've done</a></li>
+			<li><a href="#projects">Some of what I've done</a></li>
 			<li><a href="/about">About me</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
@@ -79,34 +79,25 @@
 	<script>
 		window.addEventListener('resize', header);
 
-		function header() {
-			if (window.matchMedia('(max-width:500px)').matches) {
-				var open = 0;
-				$("#nav").hide();
-				$("#menu-button").click(function() {
-					$("#nav").stop().slideToggle(150, 'swing');
-					open = open ? 0 : 1;
-					$("#menu-button").toggleClass('transform-button');
-					$("#top-closed-menu").animate({
-						'top': '20px'
-					});
-				});
 
-				$("main").not("header *").on('click', function() {
-					if (open == 1) {
-						$("#nav").stop().slideToggle(100, 'swing', function() {
-							open = open ? 0 : 1;
-							$("#menu-button").toggleClass('transform-button');
-							$("#top-closed-menu").animate({
-								'top': ''
-							});
-						});
-					}
-				});
+		var open = false;
+
+		function header() {
+			open = open ? false : true;
+			console.log(open);
+			$("#menu-button").toggleClass('transform-button');
+			if (open == true) {
+				$("#header").removeClass('closed')
 			} else {
-				$("#nav").show();
+				$("#header").addClass('closed')
 			}
-		};
+		}
+
+		if (window.matchMedia('(max-width:767px)').matches) {
+
+			$("#menu-button").click(header);
+
+		}
 	</script>
 </header><main aria-label="Content">
                 <style type="text/css" media="screen">
