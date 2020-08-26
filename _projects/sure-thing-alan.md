@@ -10,8 +10,8 @@ slug: surethingalan
 year: "2018"
 description: "'Sure thing, Alan' is an academic exercise of exploring the interaction
   between humans and computers. By analysing what sets them apart and what are the
-  current user validation systems in place today, it demonstrates how both parties
-  complete each other in order to achieve technological progress."
+  current user validation systems in place today, it demonstrates how they complete
+  each other to reach technological progress."
 links: []
 covers: []
 images:
@@ -20,6 +20,8 @@ images:
 - url: ''
   alt: ''
 persons: []
+cover-image: ''
+gallery: []
 published: false
 
 ---
