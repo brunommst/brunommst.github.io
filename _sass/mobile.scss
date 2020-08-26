@@ -217,6 +217,11 @@ body {
                 font-size: 25px;
                 margin: 5px 0;
 
+								&.sub {
+									margin-left: 5px;
+									font-size: 20px;
+								}
+
                 a {
                     text-decoration: none;
                 }
@@ -1003,10 +1008,13 @@ body {
         background: rgba(255, 255, 255, .9);
     }
 
-    #sobre p {
-        font-family: $font-regular;
-        line-height: 1.8;
-    }
+    #sobre {
+			margin-top: -200px;
+			p {
+				font-family: $font-regular;
+				line-height: 1.8;
+			}
+		}
 
     /* EDUCATION */
 
@@ -1060,7 +1068,7 @@ body {
 
             p {
                 font-family: $font-regular;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 1.6;
                 margin-bottom: 20px;
             }
@@ -1131,6 +1139,28 @@ body {
     footer p {
         display: none;
     }
+}
+
+
+.projects, .about {
+	@media screen and (max-width: 767px) {
+		#header {
+			position: relative;
+		}
+		section:first-of-type {
+			margin-top: -200px !important;
+		}
+	}
+}
+.project-page {
+	@media screen and (max-width: 767px) {
+		#header {
+			position: relative;
+		}
+		& > main {
+			margin-top: -250px !important;
+		}
+	}
 }
 
 //EXPERIMENTS PAGE

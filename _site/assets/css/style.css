@@ -106,10 +106,10 @@ ul {
   font-family: Bangla-Bold, sans-serif; }
 
 .button {
-  width: -webkit-calc(100vw - 40px - 60px - 30px);
-  width: -moz-calc(100vw - 40px - 60px - 30px);
-  width: calc(100vw - 40px - 60px - 30px);
-  height: 60px;
+  width: -webkit-calc(100vw - 40px - 50px - 60px);
+  width: -moz-calc(100vw - 40px - 50px - 60px);
+  width: calc(100vw - 40px - 50px - 60px);
+  height: 50px;
   background: var(--white);
   border: 1px solid var(--black);
   display: -webkit-box;
@@ -369,6 +369,9 @@ body {
       .wrapper > header nav ul li {
         font-size: 25px;
         margin: 5px 0; }
+        .wrapper > header nav ul li.sub {
+          margin-left: 5px;
+          font-size: 20px; }
         .wrapper > header nav ul li a {
           text-decoration: none; }
   .wrapper > header #top-closed-menu {
@@ -1033,9 +1036,11 @@ body {
     top: 0;
     padding-top: 20px;
     background: rgba(255, 255, 255, 0.9); }
-  .about #sobre p {
-    font-family: Bangla-Regular, sans-serif;
-    line-height: 1.8; }
+  .about #sobre {
+    margin-top: -200px; }
+    .about #sobre p {
+      font-family: Bangla-Regular, sans-serif;
+      line-height: 1.8; }
   .about #education {
     white-space: nowrap; }
     .about #education .titulo-bloco {
@@ -1061,7 +1066,7 @@ body {
       margin: 0 0 20px; }
     .project-page article header p {
       font-family: Bangla-Regular, sans-serif;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.6;
       margin-bottom: 20px; }
     .project-page article header a {
@@ -1108,6 +1113,18 @@ body {
   display: none; }
 .project-page footer p {
   display: none; }
+
+@media screen and (max-width: 767px) {
+  .projects #header, .about #header {
+    position: relative; }
+  .projects section:first-of-type, .about section:first-of-type {
+    margin-top: -200px !important; } }
+
+@media screen and (max-width: 767px) {
+  .project-page #header {
+    position: relative; }
+  .project-page > main {
+    margin-top: -250px !important; } }
 
 #experiments {
   overflow: hidden; }

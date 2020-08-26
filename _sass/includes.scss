@@ -141,10 +141,10 @@ ul {
 
 // Arrow Buttons
 .button {
-    width: -webkit-calc(100vw - 40px - 60px - 30px);
-    width: -moz-calc(100vw - 40px - 60px - 30px);
-    width: calc(100vw - 40px - 60px - 30px);
-    height: 60px;
+    width: -webkit-calc(100vw - 40px - 50px - 60px);
+    width: -moz-calc(100vw - 40px - 50px - 60px);
+    width: calc(100vw - 40px - 50px - 60px);
+    height: 50px;
 
     background: var(--white);
     border: 1px solid var(--black);
