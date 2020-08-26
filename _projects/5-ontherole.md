@@ -7,11 +7,10 @@ category:
 - Communication
 - Typography
 year: "2017"
-description: On The Role is a question in form of a magazine, that aims to provoque
-  discussion around the role of men in feminist day to day struggles. With the more
-  recent growth of the feminist movement it is mandatory that all individuals should
-  consider it as well as be considered by it. Achieving through this, emancipation
-  of all human beings.
+description: 'A question turned magazine. This first issue works as a discussion about
+  the role of men in the feminist movement. After all the cases of harassment in 2017,
+  we question how has popular culture evolved, how can gender roles change and become
+  ever more diluted. '
 covers:
 - url: "/assets/images/thumbnails/otr-thumb.jpg"
   alt: On The Role image
@@ -33,7 +32,9 @@ persons:
   link: https://www.instagram.com/oricardogoncalves/
 - name: Paloma Moniz
   link: https://www.instagram.com/palomamoniiz/
-links: []
+links:
+- url: https://ontherole.github.io/
+  linktext: the website
 cover-image: "/assets/images/projects/2020-08/otr-thumb.jpg"
 gallery:
 - "/assets/images/projects/otr/1.png"
