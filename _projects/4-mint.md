@@ -8,10 +8,10 @@ category:
 year: late 2017
 description: mint is a UX/UI case study that aims to reinvent the traditionally confusing
   interface of photo cameras by giving it a modern experience with intuitive smartphone-like
-  features such as a cleaner, more approachable look and a simpler interface with
-  a faster learning curve for everyone. mint is also a cloud based aecosystem that
-  focuses on easier sharing options like multi-device syncronization and a simple
-  to use photo management system on the go.
+  features and a simpler and more approachable interface that provides a faster learning
+  curve for all kinds of users. mint also has a cloud based ecosystem that focuses
+  on easier sharing options like multi-device synchronisation and a simple photo management
+  system on the go.
 covers:
 - url: "/assets/images/thumbnails/mint-thumb.jpg"
   alt: mint
