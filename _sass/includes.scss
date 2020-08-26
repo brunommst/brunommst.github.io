@@ -150,13 +150,9 @@ ul {
     border: 1px solid var(--black);
 
     display: -webkit-box;
-
     display: -webkit-flex;
-
     display: -moz-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -223,7 +219,7 @@ ul {
         width: 28px;
         height: 100%;
 
-        font-size: 23px;
+        font-size: 21px;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-box;
@@ -347,8 +343,8 @@ ul.categories {
 @media only screen and (min-width: 768px) {
 
     .button {
-        max-width: 250px;
-        height: 50px;
+        max-width: 220px;
+        height: 45px;
 
         &:hover {
             color: var(--white);
@@ -356,7 +352,7 @@ ul.categories {
         }
 
         h5 {
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 }

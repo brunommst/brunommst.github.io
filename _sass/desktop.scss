@@ -133,11 +133,12 @@
 		-moz-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
-		padding: 50px 20px 20px;
+		padding: 40px 30px 20px;
 
 		position: relative;
 
 		&.closed {
+			pointer-events: all;
 			#nav {
 				opacity: 1;
 				-webkit-transform: none;
@@ -167,6 +168,11 @@
 			-moz-box-pack: end;
 			-ms-flex-pack: end;
 			justify-content: flex-end;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-moz-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
 
 			h3 {
 				display: none;
@@ -229,7 +235,7 @@
 	.wrapper > footer {
 		max-width: 1300px;
 		margin: 0 auto;
-		height: 150px;
+		height: 130px;
 
 		#sticky-bottom {
 			max-width: 1300px;
@@ -320,7 +326,7 @@
 	}
 
 	.home {
-		#sobre {
+		section#sobre {
 			margin: 0 5vw 100px 45vw;
 			padding: 30px 20px 20px;
 			font-family: $font-regular;
@@ -333,8 +339,41 @@
 			}
 		}
 
-		#projects {
+		section#projects {
+			margin-top: 400px;
+			header {
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				-webkit-flex-direction: row;
+				-moz-box-orient: horizontal;
+				-moz-box-direction: normal;
+				-ms-flex-direction: row;
+				flex-direction: row;
+			}
 
+			h2 {
+				height: auto;
+				width: 50%;
+				margin: 0;
+				font-size: 60px;
+			}
+
+			p {
+				width: 40%;
+				margin-right: 10%;
+			}
+			main {
+				margin-top: 50px;
+				ul.projects {
+					padding-left: 50px;
+					li.single_project {
+						margin-top: 50px;
+						h4 {
+							font-size: 40px;
+						}
+					}
+				}
+			}
 		}
 
 		section #contact {
@@ -428,15 +467,20 @@
 
 		& > main {
 			height: 100vh;
-			max-width: 1400px;
+			width: 100%;
+			max-width: unset;
 			margin: auto;
 			overflow-x: hidden;
 			overflow-y: scroll;
 		}
 
-		header {
-			p {
-				font-size: 16px;
+		article {
+			max-width: 1300px;
+			margin: 0 auto;
+			header {
+				p {
+					font-size: 16px;
+				}
 			}
 		}
 
@@ -451,9 +495,10 @@
 			header {
 				position: fixed;
 				top: 150px;
-				max-width: 500px;
-				padding: 10px;
+				max-width: 450px;
+				padding: 20px;
 				border: 1px solid transparent;
+				margin: 50px 0 0 50px;
 
 				&:hover {
 					border: 1px solid var(--black);

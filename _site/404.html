@@ -56,12 +56,12 @@
 <body>
       <div class="wrapper  "><header id="header" class="closed">
 	<nav id="nav">
-		<h3>A navigation of sorts</h3>
+		<h3>Don't want you to get lost</h3>
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="#projects">Some of what I've done</a></li>
+			<li><a href="/">Start</a></li>
+			<li><a href="/#projects">Some of what I've done</a></li>
 			<li><a href="/about">About me</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="/#contact">Contact</a></li>
 		</ul>
 	</nav>
 	<div id="top-closed-menu">
@@ -77,14 +77,12 @@
 		<div id="menu-button" class="transform-button"></div>
 	</div>
 	<script>
-		window.addEventListener('resize', header);
-
+		// window.addEventListener('load', header);
 
 		var open = false;
 
 		function header() {
 			open = open ? false : true;
-			console.log(open);
 			$("#menu-button").toggleClass('transform-button');
 			if (open == true) {
 				$("#header").removeClass('closed')
