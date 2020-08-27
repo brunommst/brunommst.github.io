@@ -2,11 +2,7 @@
 layout: home
 title: home
 ---
-<!--
-<div id="outdated">
-<h2>This website is outdated<br>This website is outdated</h2>
-<h4><a href="#contact">Contact me</a> for updated news!</h4>
-</div> -->
+
 
 <section title="name" id="name">
 	<h1>Bruno Santos Digital Designer</h1>
