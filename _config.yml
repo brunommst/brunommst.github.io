@@ -1,7 +1,7 @@
-title: bru-no digital designer
+title: bruno santos
 author: Bruno Santos
 email: brunommst@gmail.com
-description: Personal Portfolio website of Bruno Santos, a digital designer from Lisbon, the one in Portugal.
+description: Personal Portfolio website of Bruno Santos, a digital designer from Lisbon, the sunny one in Portugal.
 
 exclude:
   - Gemfile
@@ -12,8 +12,8 @@ exclude:
 collections:
   projects:
     output: true
-    permalink: /projects/:title
-  
+    permalink: /:title
+
 # Date format for posts
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 date_format: "%b %-d, %Y"

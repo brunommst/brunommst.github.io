@@ -879,6 +879,10 @@ body {
           object-position: center; }
   .home section#contact {
     margin-top: 50px; }
+    .home section#contact .text {
+      max-width: 500px;
+      margin: 20px auto;
+      line-height: 1.8; }
 .home footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1423,7 +1427,8 @@ body {
       .home section#projects main ul.projects {
         padding-left: 50px; }
         .home section#projects main ul.projects li.single_project {
-          margin-top: 50px; }
+          margin-top: 0;
+          padding: 25px 0; }
           .home section#projects main ul.projects li.single_project h4 {
             font-size: 40px; }
   .home section #contact {
