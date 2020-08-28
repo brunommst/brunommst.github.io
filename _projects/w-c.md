@@ -8,16 +8,21 @@ category:
 title: w—c
 slug: wc
 year: "2018"
-description: |-
-  What started out as an idea for a website that would scroll diagonally,
+description: 'What started out as an idea for a website that could scroll diagonally
   turned into a case study of a social media platform aimed at creatives who want
-  to share their unfinished projects, experimentations, tests or errors without having to polish them for an instagram or a behance post. W—C was envisioned and prototyped in my first year of college and later turned into a full case study for a course on UI design in my Post-Grad year.
+  to share their unfinished projects, experimentations, tests or errors without having
+  to polish them for an instagram or a behance post. W—C was envisioned and prototyped
+  in my first year of college and later turned into a full case study for a course
+  on UI design in my Post-Grad year. '
 links: []
 covers: []
 images: []
 persons: []
-cover-image: ''
-gallery: []
-published: false
+cover-image: "/assets/images/projects/2020-08/artboard-9.png"
+gallery:
+- "/assets/images/projects/2020-08/homepage-loved-2x.png"
+- "/assets/images/projects/2020-08/loved-2x-1.png"
+- "/assets/images/projects/2020-08/my-profile-2x.png"
+- "/assets/images/projects/2020-08/individual-2x-1.png"
 
 ---
