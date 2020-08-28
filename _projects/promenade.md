@@ -25,8 +25,9 @@ links:
   linktext: Website
 cover-image: "/assets/images/projects/2020-08/artboard-8.png"
 gallery:
-- "/assets/images/projects/2020-08/artboard-3.png"
+- "/assets/images/projects/2020-08/screenshot-2020-08-28-at-10-50-31.png"
 - "/assets/images/projects/2020-08/artboard-2.png"
-published: false
+- "/assets/images/projects/2020-08/artboard-3.png"
+- "/assets/images/projects/2020-08/screenshot-2020-08-27-at-16-27-42.png"
 
 ---
