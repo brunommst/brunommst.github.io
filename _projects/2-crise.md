@@ -7,12 +7,9 @@ category:
 - Digital Design
 - Development
 year: "2018"
-description: CRISE DE IDENTIDADE is the 8th instalment of the Communication Design
-  B.A. graduates' annual exhibition on the Faculty of Fine-Arts of the University
-  of Lisbon. Youth, Identity and Design were the main ideas behind this two week long
-  event that displayed over 75 design projects and brought various guests like Elise
-  by Olsen, Mário Moura, Estúdio Desisto, and others to talk about what design means
-  in this generation.
+description: |-
+  CRISE DE IDENTIDADE is the 8th installment of the annual exhibition of the Communication Design B.A. graduates of the Faculty of Fine-Arts of the University of Lisbon.
+  Designed and developed the website for the exhibition about what design means in this generation, alongside six other finalists of the course.
 links:
 - url: http://crisedeidentidade.belasartes.ulisboa.pt/
   linktext: Website

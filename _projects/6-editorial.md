@@ -8,10 +8,10 @@ category:
 - Experimental
 - Creative Coding
 year: "2018"
-description: This is a reissue of Ernest Hemingway’s acclaimed work 'The Old Man and
-  the Sea' using an algorithm to generate both the book pagination and the illustrations
-  beside them. A book coded using Javascript and printed using a Risograph process
-  on recicled paper.
+description: "This is a reissue of Ernest Hemingway’s acclaimed work using computer
+  generated pagination to obtain the represented visuals. \nAn experimental project
+  in which the book was completely coded in a Javascript environment and printed using
+  a Risograph process on recicled paper."
 covers:
 - url: "/assets/images/thumbnails/edit-thumb.jpg"
   alt: Editorial Design
