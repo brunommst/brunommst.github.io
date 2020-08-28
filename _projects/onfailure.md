@@ -7,17 +7,23 @@ category:
 title: onfailure
 slug: onfailure
 year: "2017"
-description: onfailure compiles various artists of the experimental electronic music
-  genre into a special edition issue. Contains a CD, a descriptive booklet änd a series
-  of 12 computer generated music visualizations. Each of them is created by a Javascript
-  application that processes the CD’s songs and produces prints based on their individual
-  characteristics.
+description: "onfailure compiles various experimental electronice artists into a special
+  edition issue. Contains a CD, a descriptive booklet and a series of 12 unique computer
+  generated music visualizations. \nThis academic project was my first endeavour into
+  creative coding and what made me want to pursue front-end development as a design
+  tool. "
 links: []
 covers: []
 images: []
 persons:
 - name: Ricardo Gonçalves
   link: https://www.instagram.com/oricardogoncalves
-published: false
+cover-image: "/assets/images/projects/2020-08/artboard-10.png"
+gallery:
+- "/assets/images/projects/2020-08/artboard-7.png"
+- "/assets/images/projects/2020-08/artboard-3.png"
+- "/assets/images/projects/2020-08/artboard-6.png"
+- "/assets/images/projects/2020-08/artboard-4.png"
+- "/assets/images/projects/2020-08/artboard-5.png"
 
 ---
