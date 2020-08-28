@@ -20,7 +20,7 @@ links:
 covers: []
 images: []
 persons: []
-cover-image: "/assets/images/projects/2020-08/artboard-9.png"
+cover-image: "/assets/images/projects/2020-08/artboard-9-11.png"
 gallery:
 - "/assets/images/projects/2020-08/homepage-loved-2x.png"
 - "/assets/images/projects/2020-08/loved-2x-1.png"
