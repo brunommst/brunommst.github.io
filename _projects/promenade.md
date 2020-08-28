@@ -23,8 +23,10 @@ category-new:
 links:
 - url: https://promenade.pt/en/
   linktext: Website
-cover-image: ''
-gallery: []
+cover-image: "/assets/images/projects/2020-08/artboard-8.png"
+gallery:
+- "/assets/images/projects/2020-08/artboard-3.png"
+- "/assets/images/projects/2020-08/artboard-2.png"
 published: false
 
 ---
