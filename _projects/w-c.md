@@ -14,7 +14,9 @@ description: 'What started out as an idea for a website that could scroll diagon
   to polish them for an instagram or a behance post. W—C was envisioned and prototyped
   in my first year of college and later turned into a full case study for a course
   on UI design in my Post-Grad year. '
-links: []
+links:
+- url: https://medium.com/@brunommst/w-c-case-study-7c35bfb2c290
+  linktext: Read full case study
 covers: []
 images: []
 persons: []
