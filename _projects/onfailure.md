@@ -20,10 +20,10 @@ persons:
   link: https://www.instagram.com/oricardogoncalves
 cover-image: "/assets/images/projects/2020-08/artboard-10.png"
 gallery:
-- "/assets/images/projects/2020-08/artboard-7.png"
-- "/assets/images/projects/2020-08/artboard-3.png"
-- "/assets/images/projects/2020-08/artboard-6.png"
-- "/assets/images/projects/2020-08/artboard-4.png"
-- "/assets/images/projects/2020-08/artboard-5.png"
+- "/assets/images/projects/2020-08/onfa6.png"
+- "/assets/images/projects/2020-08/onfa5.png"
+- "/assets/images/projects/2020-08/onfa4.png"
+- "/assets/images/projects/2020-08/onfa3.png"
+- "/assets/images/projects/2020-08/onfa2.png"
 
 ---
