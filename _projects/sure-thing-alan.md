@@ -20,8 +20,10 @@ images:
 - url: ''
   alt: ''
 persons: []
-cover-image: ''
-gallery: []
-published: false
+cover-image: "/assets/images/projects/2020-08/artboard-9.png"
+gallery:
+- "/assets/images/projects/2020-08/artboard-4.png"
+- "/assets/images/projects/2020-08/artboard-5.png"
+- "/assets/images/projects/2020-08/artboard-6.png"
 
 ---

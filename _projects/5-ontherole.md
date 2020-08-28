@@ -7,10 +7,9 @@ category:
 - Communication
 - Typography
 year: "2017"
-description: 'A question turned magazine. This first issue works as a discussion about
-  the role of men in the feminist movement. After all the cases of harassment in 2017,
-  we question how has popular culture evolved, how can gender roles change and become
-  ever more diluted. '
+description: |-
+  A question turned magazine. This first issue discusses the role of men in the feminist movement. After all the cases of harassment in 2017, we questioned how popular culture has evolved and how gender roles can change and dilute.
+  This academic project was a turning point for me and impacted the way I see modern design and typography.
 covers:
 - url: "/assets/images/thumbnails/otr-thumb.jpg"
   alt: On The Role image
