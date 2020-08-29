@@ -1099,8 +1099,8 @@ body {
     .project-page article main ul .mobile {
       display: block; }
     .project-page article main ul img {
-      max-height: 90%;
-      width: 100%;
+      max-height: 80%;
+      width: 90%;
       -o-object-fit: contain;
       object-fit: contain;
       -o-object-position: 50% 50%;
