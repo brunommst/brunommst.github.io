@@ -20,10 +20,10 @@ images:
 - url: ''
   alt: ''
 persons: []
-cover-image: "/assets/images/projects/2020-08/artboard-9.png"
+cover-image: "/assets/images/projects/2020-09/screenshot-2020-09-30-at-12-25-22.png"
 gallery:
-- "/assets/images/projects/2020-08/artboard-4.png"
-- "/assets/images/projects/2020-08/artboard-5.png"
-- "/assets/images/projects/2020-08/artboard-6.png"
+- "/assets/images/projects/2020-09/sure1.png"
+- "/assets/images/projects/2020-09/sure2.png"
+- "/assets/images/projects/2020-09/sure3.png"
 
 ---
