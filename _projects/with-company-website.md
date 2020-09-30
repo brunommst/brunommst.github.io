@@ -16,7 +16,7 @@ persons: []
 links:
 - linktext: Website
   url: https://with-company.com
-cover-image: "/assets/images/projects/2020-08/artboard-7.png"
+cover-image: "/assets/images/projects/2020-08/artboard-1.png"
 gallery:
 - "/assets/images/projects/2020-08/screenshot-2020-08-28-at-11-14-09.png"
 - "/assets/images/projects/2020-08/artboard-1.png"
