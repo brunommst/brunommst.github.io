@@ -1,0 +1,13 @@
+/* Set font availability to use in email mkt */
+@font-face {
+  font-family: 'Connected Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://ndi.video/wp-content/themes/ndi-theme/assets/fonts/connected-sans/ConnectedSans-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Connected Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://ndi.video/wp-content/themes/ndi-theme/assets/fonts/connected-sans/ConnectedSans-Medium.woff2') format('woff2');
+}
