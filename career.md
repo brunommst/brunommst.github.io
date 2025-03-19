@@ -1,6 +1,6 @@
 ---
-title: career
 layout: empty
+title: career
 ---
 
 <div id="notion_iframe" style="width:100vw;height:100vh;margin:0;padding:0;">
