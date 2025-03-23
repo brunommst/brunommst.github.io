@@ -51,7 +51,7 @@ title: home
 	</main>
 </section>
 
-<section title="Countdown" id="timer">
+<!--<section title="Countdown" id="timer">
 	<div class="wrapper">
 		<div class="countdown">
 			<h3 class="hours"></h3>
@@ -60,7 +60,7 @@ title: home
 		</div>
 		<h4>Come back tonight!</h4>
 	</div>
-</section>
+</section>-->
 
 <script language="javascript" type="text/javascript" src="{{ "/assets/js/home.js" | relative_url }}"></script>
 <script language="javascript" type="text/javascript" src="{{ "/assets/js/filter.js" | relative_url }}"></script>
