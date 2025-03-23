@@ -31,5 +31,5 @@ gallery:
 - "/assets/images/projects/mint/1.png"
 - "/assets/images/projects/mint/features.jpg"
 - "/assets/images/projects/mint/landscape.jpg"
-
+published: false
 ---
