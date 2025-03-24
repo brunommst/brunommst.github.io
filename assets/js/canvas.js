@@ -30,8 +30,8 @@ var t = function (p) {
 
     p.windowResized = function() {
         var canvasDiv = document.getElementById('c2');
-    var cwidth = canvasDiv.offsetWidth;
-    var cheight = canvasDiv.offsetHeight;
+        var cwidth = canvasDiv.offsetWidth;
+        var cheight = canvasDiv.offsetHeight;
         p.resizeCanvas(cwidth, cheight);
     }
 };
