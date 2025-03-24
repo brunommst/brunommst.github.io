@@ -11,8 +11,8 @@ links:
 - url: https://mimi.io  
   linktext: Website
 covers:
-- url: "/aassets/images/projects/mimi/cover.jpg"
-  alt: Anjos70 website
+- url: "/assets/images/projects/mimi/cover.jpg"
+  alt: 
 images:
 - url: "/assets/images/projects/mimi/brand.png"
   alt: 
@@ -26,7 +26,7 @@ images:
   alt: 
 - url: "/assets/images/projects/mimi/appstore.png"
   alt:   
-cover-image: "/assassets/images/projects/mimi/cover.jpg"
+cover-image: "/assets/images/projects/mimi/cover.jpg"
 gallery:
 - "/assets/images/projects/mimi/brand.png"
 - "/assets/images/projects/mimi/cochlea.png"
