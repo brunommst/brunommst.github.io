@@ -105,6 +105,9 @@ title: home
 		}
 	}
 	@media (min-width:768px) {
+		.wrapper>header nav ul {
+			width:350px;
+		}
 		.home section#sobre {
 			margin: 0;
 			width:50%;
