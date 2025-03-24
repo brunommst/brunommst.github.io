@@ -18,4 +18,5 @@ gallery:
 - "/assets/images/projects/tt/intro.jpg"
 - "/assets/images/projects/tt/website.jpg"
 - "/assets/images/projects/tt/lidars.jpg"
+published: false
 ---

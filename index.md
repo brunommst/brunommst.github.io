@@ -127,7 +127,7 @@ title: home
 			opacity: 1;
 		}
 		.home section#projects main ul.projects li.single_project h4 {
-			margin-bottom:0;
+			margin-bottom:2px;
 		}
 	}
 

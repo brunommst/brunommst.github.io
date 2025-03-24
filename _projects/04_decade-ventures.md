@@ -12,25 +12,19 @@ links:
 - url: https://www.linkedin.com/company/decade-ventures/
   linktext: Website
 covers:
-- url: "/assets/images/thumbnails/a70-thumb.jpg"
-  alt: Anjos70 website
+- url: "/assets/images/projects/decade/logo.png"
+  alt: Decade Ventures logo
 images:
-- url: "/assets/images/projects/a70/junedesktop.png"
-  alt: Anjos70 website
-  text: June Website
-- url: "/assets/images/projects/a70/mobile-all.png"
-  alt: Anjos70 website
-  device: desktop
-- url: "/assets/images/projects/a70/mobile.png"
-  alt: Anjos70 website
-  device: mobile
-- url: "/assets/images/projects/a70/mobile3.png"
-  alt: Anjos70 website
-  device: mobile
-cover-image: "/assets/images/projects/2020-08/a70-thumb.jpg"
+- url: "/assets/images/projects/decade/logo.png"
+  alt: Decade Ventures logo
+- url: "/assets/images/projects/decade/tagline.png"
+  alt: 
+- url: "/assets/images/projects/decade/promo.png"
+  alt: 
+cover-image: "/assets/images/projects/decade/logo.png"
 gallery:
-- "/assets/images/projects/a70/april.png"
-- "/assets/images/projects/a70/june.png"
-- "/assets/images/projects/a70/a70-mobileall.png"
+- "/assets/images/projects/decade/logo.png"
+- "/assets/images/projects/decade/tagline.png"
+- "/assets/images/projects/decade/promo.png"
 
 ---
