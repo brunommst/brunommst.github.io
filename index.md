@@ -13,7 +13,7 @@ title: home
 		<h2 class="titulo-bloco hidden">About me</h2>
 	</header>
 	<main>
-		<p>A multidisciplinary designer working across design and technology, combining curiosity and ingenuity to create digital products and experiences. Firm believer that design should be equal parts form and function.</p>
+		<p>A multidisciplinary designer <b>working across design and technology</b>, combining curiosity and ingenuity to create digital products and experiences. <i>Firm believer</i> that design should be equal parts form and function.</p>
 	</main>
 </section>
 
@@ -90,6 +90,10 @@ title: home
 	.home section#projects main ul.projects li.single_project {
         padding: 15px 0;
     }
+
+	h1, h2, h3, h4, h5 {
+		line-height:120% !important;
+	}
 
 	@media (max-width:767px) {
 		.home section#projects main ul.projects li.single_project a {
