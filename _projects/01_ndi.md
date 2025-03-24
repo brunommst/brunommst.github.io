@@ -11,7 +11,9 @@ description: |-
   Co-led the rebranding of NDI, evolving its identity to better reflect establish its role in the future of video-over-IP. The new design system balances flexibility and consistency, ensuring a strong, modern brand presence across digital and physical touchpoints. Since then, I've continued working bringing the NDI brand presence and consistency to both marketing campaigns and internal products.
 links:
 - url: https://ndi.video/
-  linktext: Website
+  linktext: NDI website
+- url: https://ndi.video/ndi6
+  linktext: NDI 6 Campaign
 covers:
 - url: "/assets/images/projects/ndi/cover.jpg"
   alt: 
