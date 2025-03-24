@@ -6,31 +6,33 @@ category:
 - Branding
 year: "2022"
 description: |-
-  Co-designed and implemented a dynamic website for Anjos70. A challenging project where I learned a lot about Wordpress integration, optimisation and dynamic content fetching.
-  The website changes monthly to accommodate the ever changing events hosted on the venue, as well as the visual queues chosen for each month, such as colour and typography.
+  Bio-inspired rebrand for a German tech company specializing in hearing-based audio personalization. My first large-scale tech rebrand, which helped Mimi secure a new round of Series B funding.
 links:
-- url: https://ndi.video/
+- url: https://mimi.io  
   linktext: Website
 covers:
-- url: "/assets/images/thumbnails/a70-thumb.jpg"
+- url: "/aassets/images/projects/mimi/cover.jpg"
   alt: Anjos70 website
 images:
-- url: "/assets/images/projects/a70/junedesktop.png"
-  alt: Anjos70 website
-  text: June Website
-- url: "/assets/images/projects/a70/mobile-all.png"
-  alt: Anjos70 website
-  device: desktop
-- url: "/assets/images/projects/a70/mobile.png"
-  alt: Anjos70 website
-  device: mobile
-- url: "/assets/images/projects/a70/mobile3.png"
-  alt: Anjos70 website
-  device: mobile
-cover-image: "/assets/images/projects/2020-08/a70-thumb.jpg"
+- url: "/assets/images/projects/mimi/brand.png"
+  alt: 
+- url: "/assets/images/projects/mimi/cochlea.png"
+  alt: 
+- url: "/assets/images/projects/mimi/app.png"
+  alt: 
+- url: "/assets/images/projects/mimi/ids.png"
+  alt: 
+- url: "/assets/images/projects/mimi/promos.png"
+  alt: 
+- url: "/assets/images/projects/mimi/appstore.png"
+  alt:   
+cover-image: "/assassets/images/projects/mimi/cover.jpg"
 gallery:
-- "/assets/images/projects/a70/april.png"
-- "/assets/images/projects/a70/june.png"
-- "/assets/images/projects/a70/a70-mobileall.png"
+- "/assets/images/projects/mimi/brand.png"
+- "/assets/images/projects/mimi/cochlea.png"
+- "/assets/images/projects/mimi/app.png"
+- "/assets/images/projects/mimi/ids.png"
+- "/assets/images/projects/mimi/promos.png"
+- "/assets/images/projects/mimi/appstore.png"
 
 ---
