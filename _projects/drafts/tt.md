@@ -34,5 +34,7 @@ gallery:
 - "/assets/images/projects/a70/april.png"
 - "/assets/images/projects/a70/june.png"
 - "/assets/images/projects/a70/a70-mobileall.png"
+published: false
+
 
 ---

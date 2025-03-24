@@ -15,6 +15,4 @@ links:
 cover-image: ''
 gallery: []
 persons: []
-published: false
-
 ---
