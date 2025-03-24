@@ -4,12 +4,12 @@ title: Decade Ventures
 slug: decade-ventures
 category:
 - Branding
-year: "2023"
+year: "2022"
 description: |-
-  Co-designed and implemented a dynamic website for Anjos70. A challenging project where I learned a lot about Wordpress integration, optimisation and dynamic content fetching.
-  The website changes monthly to accommodate the ever changing events hosted on the venue, as well as the visual queues chosen for each month, such as colour and typography.
+  Designed the brand for Decade Ventures, a remote incubation programme for early-stage founders building climate solving tools and businesses.
+
 links:
-- url: https://ndi.video/
+- url: https://www.linkedin.com/company/decade-ventures/
   linktext: Website
 covers:
 - url: "/assets/images/thumbnails/a70-thumb.jpg"

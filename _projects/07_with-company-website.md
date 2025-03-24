@@ -1,8 +1,8 @@
 ---
 layout: single-project
 category:
-- Website
-- Development
+- Web Development
+- Web Design
 title: With Company Website
 slug: with-company
 year: 2019-2020

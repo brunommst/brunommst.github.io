@@ -4,7 +4,7 @@ title: Promenade
 slug: promenade
 category:
 - Web Design
-- Web Development
+- Web Dev
 - Branding
 year: "2020"
 description: Designed a modern, experimental website for a Lisbon-based independent production house. The website aims to bring a cinema-like UX/UI experience to the browser, creating an immersive way to showcase their work and highlight their expanding group of directors.

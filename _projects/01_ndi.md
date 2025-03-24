@@ -4,9 +4,10 @@ title: NDI
 slug: ndi
 category:
 - Branding
-- Website
-- Development
-year: "2023"
+- Product Design
+- Web Design
+- Web Dev
+year: "2023-2025"
 description: |-
   Co-led the rebranding of NDI, evolving its identity to better reflect establish its role in the future of video-over-IP. The new design system balances flexibility and consistency, ensuring a strong, modern brand presence across digital and physical touchpoints. Since then, I've continued working bringing the NDI brand presence and consistency to both marketing campaigns and internal products.
 links:

@@ -4,11 +4,11 @@ title: CRISE DE IDENTIDADE
 slug: crise-de-identidade
 category:
 - Web Design
-- Web Development
+- Web Dev
 year: "2018"
 description: |-
   CRISE DE IDENTIDADE is the 8th installment of the annual exhibition of the Communication Design B.A. graduates of the Faculty of Fine-Arts of the University of Lisbon.
-  Designed and developed the website for the exhibition about what design means in this generation, alongside six other finalists of the course.
+  Designed and developed the website for the exhibition about what design means in this generation, alongside six other selected course finalists.
 links:
 - url: http://crisedeidentidade.belasartes.ulisboa.pt/
   linktext: Website

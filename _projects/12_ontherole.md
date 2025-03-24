@@ -4,7 +4,7 @@ title: ON THE ROLE
 slug: ontherole
 category:
 - Editorial
-- Communication
+- Graphic Design
 - Typography
 year: "2017"
 description: |-

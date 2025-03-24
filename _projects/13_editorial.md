@@ -6,7 +6,6 @@ category:
 - Editorial
 - Creative Coding
 - Experimental
-- Creative Coding
 year: "2018"
 description: "This is a reissue of Ernest Hemingway’s acclaimed work using computer
   generated pagination to obtain the represented visuals. \nAn experimental project

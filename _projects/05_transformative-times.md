@@ -3,14 +3,15 @@ layout: single-project
 category: []
 title: Transformative Times
 slug: transformative-times
+category:
+- Branding
+- Web Design
+- Web Dev
+- Experimental
 year: "2020"
-description: Designed and developed the website for Transformative Times, a side project
-  by With Company that aims to study and explore how interconnected systems are shaping
-  and changing our ways of living. This website marked the start of this project,
-  using an interactive form to understand how people were reacting to the current
-  pandemic.
+description: Designed and developed the website for Transformative Times, a With Company spinoff that aims to study and explore how interconnected systems are shaping and changing our ways of living.
 links:
-- url: https://with-company.com/transformative-times
+- url: https://transformative-times.com 
   linktext: Website
 cover-image: "/assets/images/projects/tt/cover.jpg"
 gallery:

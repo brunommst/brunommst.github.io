@@ -10,6 +10,8 @@ description: |-
 links:
 - url: https://mimi.io  
   linktext: Website
+- url: https://www.fastcompany.com/90797142/health-wellness-brands-that-matter-2022
+  linktext: mimi receives Fast Company's Brand That Matter award.
 covers:
 - url: "/assets/images/projects/mimi/cover.jpg"
   alt: 

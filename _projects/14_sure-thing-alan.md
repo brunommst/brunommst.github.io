@@ -3,12 +3,11 @@ layout: single-project
 category:
 - Editorial
 - Experimental
-- Communication Design
 - Typography
 title: Sure thing, Alan
 slug: surethingalan
 year: "2018"
-description: "‘Sure thing, Alan’ is an academic exercise on exploring the interaction
+description: "<i>Sure thing, Alan</i> is an academic exercise on exploring the interaction
   between humans and computers. A visual essay that analyses what sets them apart
   and what the current user validation systems in place are, demonstrating how technological
   progress can only be achieved through harmony between the two."
