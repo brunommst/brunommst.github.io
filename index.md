@@ -40,7 +40,7 @@ title: home
 {% endif %} -->
 
 					<div class="cover-image_container">
-						<!-- <img class="lazy" data-src="https://images.weserv.nl?url=https://brunommst.github.io{{ project.cover-image }}&w=400&q=80" src="https://images.weserv.nl?url=https://brunommst.github.io{{ project.cover-image }}&h=2&q=10" -->
+						<!-- <img class="lazy" data-src="https://images.weserv.nl?url=https://bru-no.com{{ project.cover-image }}&w=400&q=80" src="https://images.weserv.nl?url=https://bru-no.com{{ project.cover-image }}&h=2&q=10" -->
 						<img class="lazy" data-src="project.cover-image }}" src="{{ project.cover-image }}" alt="{{ project.title }}'s Cover Image'">
 					</div>
 
