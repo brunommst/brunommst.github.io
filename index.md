@@ -79,11 +79,12 @@ title: home
 	}
 	ul.categories li.single_category {
 		margin: 6px 4px 6px;
+		padding:12px 10px;
 		line-height: 1px;
 	}
 	ul.categories li.single_category h6 {
-		margin: 0 0 -5px;
-		line-height: 1px;
+		margin: 0 0 -4px;
+		line-height: 4px;
 	}
 	
 	.home section#projects main ul.projects li.single_project {
