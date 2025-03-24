@@ -106,10 +106,17 @@ title: home
 			width:50%;
 			margin-left:50%;
 		}
+		.home section#sobre:hover {
+			background: unset !important;
+		}
 	}
 
 	.home section#contact {
 		margin-top:200px;
+	}
+
+	.home section#projects main ul.projects li.single_project:hover .cover-image_container {
+		opacity: 1;
 	}
 
 <style>
