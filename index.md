@@ -81,10 +81,13 @@ title: home
 		margin: 6px 4px 6px;
 		padding:12px 10px;
 		line-height: 1px;
+		border-color:orangered;
+		color:orangered;
+		opacity:0.7;
 	}
 	ul.categories li.single_category h6 {
-		margin: 0 0 -4px;
-		line-height: 4px;
+		margin: 0 0 -5px;
+		line-height: 10px;
 	}
 	
 	.home section#projects main ul.projects li.single_project {
@@ -120,19 +123,30 @@ title: home
 		.home section#projects {
 			margin-top:40vh;
 		}
+		.home section#projects main ul.projects li.single_project:hover .cover-image_container {
+			opacity: 1;
+		}
+		.home section#projects main ul.projects li.single_project h4 {
+			margin-bottom:0;
+		}
 	}
 
 	.home section#contact {
 		margin-top:200px;
 	}
 
-	.home section#projects main ul.projects li.single_project:hover .cover-image_container {
-		opacity: 1;
-	}
 
 	#name h1 {
 		transform-origin: bottom left;
 	}
+
+	#contact .bloco a {
+		font-size: 18px;
+		line-height: 180%;
+		color:orangered;
+	}
+
+
 
 	
 
