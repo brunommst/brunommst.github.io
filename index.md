@@ -29,7 +29,7 @@ title: home
 				<a href="{{ site.baseurl }}/{{ project.slug }}">
 					<h4>{{ project.title }}</h4>
 
-					<!-- {% if project.category %}
+					{% if project.category %}
 <ul class="categories">
 	{% for single_category in project.category %}
 	<li class="single_category">
@@ -37,7 +37,7 @@ title: home
 	</li>
 	{% endfor %}
 </ul>
-{% endif %} -->
+{% endif %}
 
 					<div class="cover-image_container">
 						<!-- <img class="lazy" data-src="https://images.weserv.nl?url=https://bru-no.com{{ project.cover-image }}&w=400&q=80" src="https://images.weserv.nl?url=https://bru-no.com{{ project.cover-image }}&h=2&q=10" -->
