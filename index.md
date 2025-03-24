@@ -17,20 +17,6 @@ title: home
 	</main>
 </section>
 
-<section title="Some of what I've done" id="projects" class="inner_width">
-	<header>
-		<h2 class="titulo-bloco">Some of<br>what I've<br>done</h2>
-		<p>Hasn't been long, but I've done a lot on the past few years. These are some of the projects I feel represent me the best. From <i>hard-core</i> web design and development to editorial design and experimental stuff.</p>
-	</header>
-	<main>
-		<ul class="projects">
-			{% for project in site.projects %}
-			<li class="single_project">
-				<a href="{{ site.baseurl }}/{{ project.slug }}">
-					<h4>{{ project.title }}</h4>
-
-
-
 
 <style>
 	#projects > main > ul > a {
@@ -67,6 +53,19 @@ title: home
 	}
 
 <style>
+
+<section title="Some of what I've done" id="projects" class="inner_width">
+	<header>
+		<h2 class="titulo-bloco">Some of<br>what I've<br>done</h2>
+		<p>Hasn't been long, but I've done a lot on the past few years. These are some of the projects I feel represent me the best. From <i>hard-core</i> web design and development to editorial design and experimental stuff.</p>
+	</header>
+	<main>
+		<ul class="projects">
+			{% for project in site.projects %}
+			<li class="single_project">
+				<a href="{{ site.baseurl }}/{{ project.slug }}">
+					<h4>{{ project.title }}</h4>
+
 
 					{% if project.category %}
 <ul class="categories">
