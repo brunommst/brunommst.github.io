@@ -7,31 +7,28 @@ category:
 - Speculative Design
 year: "2023"
 description: |-
-  Co-designed and implemented a dynamic website for Anjos70. A challenging project where I learned a lot about Wordpress integration, optimisation and dynamic content fetching.
-  The website changes monthly to accommodate the ever changing events hosted on the venue, as well as the visual queues chosen for each month, such as colour and typography.
+  Contributed to a systemic design project reimagining how organizations like <a href="https://www.undp.org/" target="_blank">United Nations Development Programme</a> could reform and evolve to tackle complex planetary challenges. Rooted in insights from the Strategic Plan 2022-2025 and the Human Development Report 2022, this work leveraged speculative design and future-thinking methodologies to explore radical transformations in global development—envisioning new ways of organizing, working, and living.
 links:
-- url: https://ndi.video/
+- url: https://www.bluemarble.world/
   linktext: Website
 covers:
-- url: "/assets/images/thumbnails/a70-thumb.jpg"
-  alt: Anjos70 website
+- url: "/assets/images/projects/bluemarble/cover.png"
+  alt: Blue Marble logo
 images:
-- url: "/assets/images/projects/a70/junedesktop.png"
-  alt: Anjos70 website
+- url: "/assets/images/projects/bluemarble/identity.png"
+  alt: Blue Marble identity
   text: June Website
-- url: "/assets/images/projects/a70/mobile-all.png"
-  alt: Anjos70 website
-  device: desktop
-- url: "/assets/images/projects/a70/mobile.png"
-  alt: Anjos70 website
-  device: mobile
-- url: "/assets/images/projects/a70/mobile3.png"
-  alt: Anjos70 website
-  device: mobile
-cover-image: "/assets/images/projects/2020-08/a70-thumb.jpg"
+- url: "/assets/images/projects/bluemarble/website1.png"
+  alt: Blue Marble website
+- url: "/assets/images/projects/bluemarble/website2.png"
+  alt: Blue Marble website
+- url: "/assets/images/projects/bluemarble/poster.png"
+  alt: Blue Marble poster
+cover-image: "/asseassets/images/projects/bluemarble/cover.png"
 gallery:
-- "/assets/images/projects/a70/april.png"
-- "/assets/images/projects/a70/june.png"
-- "/assets/images/projects/a70/a70-mobileall.png"
+- "/assets/images/projects/bluemarble/identity.png"
+- "/assets/images/projects/bluemarble/website1.png"
+- "/assets/images/projects/bluemarble/website2.png"
+- "/assets/images/projects/bluemarble/poster.png"
 
 ---
