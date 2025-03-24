@@ -107,6 +107,10 @@ title: home
 			padding-left: 8px;
 			line-height:120%;
 		}
+		.wrapper>header nav ul li.sub {
+			margin:0;
+			font-size:25px;
+		}
 	}
 	@media (min-width:768px) {
 		.wrapper>header nav ul {
@@ -137,9 +141,6 @@ title: home
 		transform-origin: bottom left;
 	}
 
-	.wrapper>header nav ul li.sub {
-		margin:0;
-		font-size:25px;
-	}
+	
 
 <style>
