@@ -1,7 +1,7 @@
 (function ($) {
 
     //TIMER 
-
+    /*
     var date = new Date(),
         month = date.getMonth();
         day = date.getDate(),
@@ -31,7 +31,7 @@
         $("#timer h4").html('Come back later tonight!');
     }
 
-    /*$(function () {
+    $(function () {
         if (date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()) {
             // THIS MEANS THAT WE OUTSIDE OF INTERVAL
             document.documentElement.style.setProperty('--white', 'black');
