@@ -97,7 +97,7 @@ title: home
 			align-items: flex-start;
 		}
 		.home section#projects header p, .home section#projects main ul.projects {
-			padding-left: 10px;
+			padding-left: 0;
 		}
 		#projects h4 {
 			padding-left: 8px;
@@ -128,6 +128,11 @@ title: home
 
 	#name h1 {
 		transform-origin: bottom left;
+	}
+
+	.wrapper>header nav ul li.sub {
+		margin:0;
+		font-size:25px;
 	}
 
 <style>
