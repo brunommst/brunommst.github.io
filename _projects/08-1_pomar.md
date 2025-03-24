@@ -9,14 +9,14 @@ description: |-
   Graphic Design for the short film 'O Pomar'.
 
 links:
-- url: https://www.linkedin.com/company/decade-ventures/
-  linktext: Website
+- url: https://www.filmin.pt/curta/o-pomar
+  linktext: FILMIN
 covers:
 - url: "/assets/images/projects/pomar/cover.jpg"
-  alt: Decade Ventures logo
+  alt: 
 images:
 - url: "/assets/images/projects/pomar/cartaz.png"
-  alt: Decade Ventures logo
+  alt: 
 - url: "/assets/images/projects/pomar/creditos.png"
   alt: 
 - url: "/assets/images/projects/pomar/horizontais.png"
