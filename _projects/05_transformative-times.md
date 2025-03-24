@@ -12,7 +12,9 @@ description: Designed and developed the website for Transformative Times, a side
 links:
 - url: https://with-company.com/transformative-times
   linktext: Website
-cover-image: ''
-gallery: []
-persons: []
+cover-image: "/assets/images/projects/tt/cover.jpg"
+gallery:
+- "/assets/images/projects/tt/intro.jpg"
+- "/assets/images/projects/tt/website.jpg"
+- "/assets/images/projects/tt/lidars.jpg"
 ---
