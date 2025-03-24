@@ -68,13 +68,13 @@ title: home
 
 
 <style>
-	#projects > main > ul > a {
+	#projects > main ul a {
 		text-decoration: none;
 	}
-	#projects > main > ul > a:hover h4 {
+	#projects > main ul a:hover h4 {
 		text-decoration: underline;
 	}
-	ul.categories li.single_category h6 {
+	ul.categories li.single_category {
 		margin: 4px 8px 2px;
 		line-height: 1px;
 	}
@@ -83,7 +83,7 @@ title: home
     }
 
 	@media (max-width:767px) {
-		#projects > main > ul > a {
+		#projects > main ul a {
 			flex-direction: column;
 			align-items: flex-start;
 		}
@@ -92,7 +92,7 @@ title: home
 		}
 	}
 	@media (min-width:768px) {
-		.home section#sobre
+		.home section#sobre {
 			margin: 0 5vw 100px 25vw;
 		}
 	}
