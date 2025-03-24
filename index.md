@@ -29,6 +29,45 @@ title: home
 				<a href="{{ site.baseurl }}/{{ project.slug }}">
 					<h4>{{ project.title }}</h4>
 
+
+
+
+<style>
+	#projects > main > ul > a {
+		text-decoration: none;
+	}
+	#projects > main > ul > a:hover h4 {
+		text-decoration: underline;
+	}
+	ul.categories li.single_category h6 {
+		margin: 4px 8px 2px;
+		line-height: 1px;
+	}
+	.home section#projects main ul.projects li.single_project {
+        padding: 15px 0;
+    }
+
+	@media (max-width:767px) {
+		#projects > main > ul > a {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.home section#projects header p, .home section#projects main ul.projects {
+			padding-left: 10px;
+		}
+	}
+	@media (min-width:768px) {
+		.home section#sobre
+			margin: 0 5vw 100px 25vw;
+		}
+	}
+
+	.home section#contact {
+		margin-top:200px;
+	}
+
+<style>
+
 					{% if project.category %}
 <ul class="categories">
 	{% for single_category in project.category %}
