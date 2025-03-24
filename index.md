@@ -20,7 +20,7 @@ title: home
 <section title="Some of what I've done" id="projects" class="inner_width">
 	<header>
 		<h2 class="titulo-bloco">Some of<br>what I've<br>done</h2>
-		<p>MMy work has always been driven by an experimental approach to design, blending creativity with technology to build innovative and functional experiences.</p>
+		<p>My work has always been driven by an experimental approach to design, blending creativity with technology to build innovative and functional experiences.</p>
 	</header>
 	<main>
 		<ul class="projects">
