@@ -24,7 +24,7 @@ images:
   alt: Blue Marble website
 - url: "/assets/images/projects/bluemarble/poster.png"
   alt: Blue Marble poster
-cover-image: "/asseassets/images/projects/bluemarble/cover.png"
+cover-image: "/assets/images/projects/bluemarble/cover.png"
 gallery:
 - "/assets/images/projects/bluemarble/identity.png"
 - "/assets/images/projects/bluemarble/website1.png"
