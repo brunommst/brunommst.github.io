@@ -258,8 +258,9 @@ ul.categories {
     ul.categories li.single_category h6 {
       font-family: Bangla-Regular, sans-serif;
       font-size: 13px;
-      line-height: 1.4;
+      line-height: 1;
       margin: 0;
+      padding: 4px 8px 2px !important;
       margin-top: 2px;
       text-decoration: none !important; }
 
