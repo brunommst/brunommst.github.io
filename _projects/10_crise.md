@@ -13,7 +13,7 @@ links:
 - url: http://crisedeidentidade.belasartes.ulisboa.pt/
   linktext: Website
 covers:
-- url: "/assets/images/projects/crise/crise(1).jpg"
+- url: "/assets/images/projects/crise/crise-1.jpg"
   alt: Crise de Identidade
 images:
 - url: "/assets/images/projects/crise/catalogo.png"
@@ -24,7 +24,7 @@ images:
   alt: Crise de Identidade
 - url: "/assets/images/projects/crise/2.png"
   alt: Crise de Identidade
-cover-image: "/assets/images/projects/crise/crise(1).jpg"
+cover-image: "/assets/images/projects/crise/crise-1.jpg"
 gallery:
 - "/assets/images/projects/crise/3.png"
 - "/assets/images/projects/crise/catalogo.png"
