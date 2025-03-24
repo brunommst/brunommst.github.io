@@ -13,14 +13,14 @@ title: home
 		<h2 class="titulo-bloco hidden">About me</h2>
 	</header>
 	<main>
-		<p>A Digital Experience Designer from Lisbon who loves to use design, technology and creativity to explore, experiment and have fun with the web.</p>
+		<p>A multidisciplinary designer working across design and technology, combining curiosity and ingenuity to create digital products and experiences. Firm believer that design should be equal parts form and function.</p>
 	</main>
 </section>
 
 <section title="Some of what I've done" id="projects" class="inner_width">
 	<header>
 		<h2 class="titulo-bloco">Some of<br>what I've<br>done</h2>
-		<p>Hasn't been long, but I've done a lot on the past few years. These are some of the projects I feel represent me the best. From <i>hard-core</i> web design and development to editorial design and experimental stuff.</p>
+		<p>MMy work has always been driven by an experimental approach to design, blending creativity with technology to build innovative and functional experiences.</p>
 	</header>
 	<main>
 		<ul class="projects">
