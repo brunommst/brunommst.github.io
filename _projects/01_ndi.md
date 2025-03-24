@@ -8,34 +8,39 @@ category:
 - Development
 year: "2023"
 description: |-
-  Co-designed and implemented a dynamic website for Anjos70. A challenging project where I learned a lot about Wordpress integration, optimisation and dynamic content fetching.
-  The website changes monthly to accommodate the ever changing events hosted on the venue, as well as the visual queues chosen for each month, such as colour and typography.
+  Co-led the rebranding of NDI, evolving its identity to better reflect its role in the future of IP video. The new design system balances flexibility and consistency, ensuring a strong, modern brand presence across digital and physical touchpoints.
 links:
 - url: https://ndi.video/
   linktext: Website
 covers:
-- url: "/assets/images/thumbnails/a70-thumb.jpg"
-  alt: Anjos70 website
+- url: "/assets/images/projects/ndi/cover.jpg"
+  alt: 
 images:
-- url: "/assets/images/projects/a70/junedesktop.png"
-  alt: Anjos70 website
-  text: June Website
-- url: "/assets/images/projects/a70/mobile-all.png"
-  alt: Anjos70 website
-  device: desktop
-- url: "/assets/images/projects/a70/mobile.png"
-  alt: Anjos70 website
-  device: mobile
-- url: "/assets/images/projects/a70/mobile3.png"
-  alt: Anjos70 website
-  device: mobile
+- url: "/assets/images/projects/ndi/ndi6.png"
+  alt: 
+- url: "/aassets/images/projects/ndi/logo.png"
+  alt: 
+- url: "/assets/images/projects/ndi/advanced.png"
+  alt: 
+- url: "/assets/images/projects/ndi/community.png"
+  alt: 
+- url: "/assets/images/projects/ndi/website1.png"
+  alt: 
+- url: "/assets/images/projects/ndi/website2.png"
+  alt: 
+- url: "/assets/images/projects/ndi/FINAL-optimised.mp4"
+  alt: 
 persons:
 - name: Luis Medeiros
   link: https://luismedeiros.pt
-cover-image: "/assets/images/projects/2020-08/a70-thumb.jpg"
+cover-image: "/assets/images/projects/ndi/cover.jpg"
 gallery:
-- "/assets/images/projects/a70/april.png"
-- "/assets/images/projects/a70/june.png"
-- "/assets/images/projects/a70/a70-mobileall.png"
+- "/assets/images/projects/ndi/logo.png"
+- "/assets/images/projects/ndi/ndi6.png"
+- "/assets/images/projects/ndi/advanced.png"
+- "/assets/images/projects/ndi/community.png"
+- "/assets/images/projects/ndi/website1.png"
+- "/assets/images/projects/ndi/website2.png"
+- "/assets/images/projects/ndi/FINAL-optimised.mp4"
 
 ---
