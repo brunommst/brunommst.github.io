@@ -92,12 +92,16 @@ title: home
     }
 
 	@media (max-width:767px) {
-		#projects > main ul a {
+		.home section#projects main ul.projects li.single_project a {
 			flex-direction: column;
 			align-items: flex-start;
 		}
 		.home section#projects header p, .home section#projects main ul.projects {
 			padding-left: 10px;
+		}
+		#projects h4 {
+			padding-left: 8px;
+			line-height:120%;
 		}
 	}
 	@media (min-width:768px) {
@@ -109,6 +113,9 @@ title: home
 		.home section#sobre:hover {
 			background: unset !important;
 		}
+		.home section#projects {
+			margin-top:40vh;
+		}
 	}
 
 	.home section#contact {
@@ -117,6 +124,10 @@ title: home
 
 	.home section#projects main ul.projects li.single_project:hover .cover-image_container {
 		opacity: 1;
+	}
+
+	#name h1 {
+		transform-origin: bottom left;
 	}
 
 <style>
