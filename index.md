@@ -107,15 +107,8 @@ title: home
 			padding-left: 8px;
 			line-height:120%;
 		}
-		.wrapper>header nav ul li.sub {
-			margin:0;
-			font-size:25px;
-		}
 	}
 	@media (min-width:768px) {
-		.wrapper>header nav ul {
-			width:350px;
-		}
 		.home section#sobre {
 			margin: 0;
 			width:50%;
