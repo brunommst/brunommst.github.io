@@ -68,6 +68,9 @@ title: home
 
 
 <style>
+	body {
+		background:#f2f2f2 !important;
+	}
 	#projects > main ul a {
 		text-decoration: none;
 	}
@@ -75,9 +78,14 @@ title: home
 		text-decoration: underline;
 	}
 	ul.categories li.single_category {
-		margin: 4px 8px 2px;
+		margin: 6px 4px 6px;
 		line-height: 1px;
 	}
+	ul.categories li.single_category h6 {
+		margin: 0 0 -5px;
+		line-height: 1px;
+	}
+	
 	.home section#projects main ul.projects li.single_project {
         padding: 15px 0;
     }
@@ -93,7 +101,9 @@ title: home
 	}
 	@media (min-width:768px) {
 		.home section#sobre {
-			margin: 0 5vw 100px 25vw;
+			margin: 0;
+			width:50%;
+			margin-left:50%;
 		}
 	}
 
