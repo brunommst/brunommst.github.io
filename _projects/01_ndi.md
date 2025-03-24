@@ -8,7 +8,7 @@ category:
 - Development
 year: "2023"
 description: |-
-  Co-led the rebranding of NDI, evolving its identity to better reflect its role in the future of IP video. The new design system balances flexibility and consistency, ensuring a strong, modern brand presence across digital and physical touchpoints.
+  Co-led the rebranding of NDI, evolving its identity to better reflect establish its role in the future of video-over-IP. The new design system balances flexibility and consistency, ensuring a strong, modern brand presence across digital and physical touchpoints. Since then, I've continued working bringing the NDI brand presence and consistency to both marketing campaigns and internal products.
 links:
 - url: https://ndi.video/
   linktext: Website
@@ -24,11 +24,9 @@ images:
   alt: 
 - url: "/assets/images/projects/ndi/community.png"
   alt: 
-- url: "/assets/images/projects/ndi/website1.png"
+- url: "/assets/images/projects/ndi/website.png"
   alt: 
 - url: "/assets/images/projects/ndi/website2.png"
-  alt: 
-- url: "/assets/images/projects/ndi/FINAL-optimised.mp4"
   alt: 
 persons:
 - name: Luis Medeiros
@@ -39,8 +37,7 @@ gallery:
 - "/assets/images/projects/ndi/ndi6.png"
 - "/assets/images/projects/ndi/advanced.png"
 - "/assets/images/projects/ndi/community.png"
-- "/assets/images/projects/ndi/website1.png"
+- "/assets/images/projects/ndi/website.png"
 - "/assets/images/projects/ndi/website2.png"
-- "/assets/images/projects/ndi/FINAL-optimised.mp4"
 
 ---
