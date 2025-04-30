@@ -296,7 +296,7 @@ body {
   z-index: 1;
   width: 100%; }
   .wrapper > header.closed {
-    pointer-events: none; }
+    pointer-events: unset; }
     .wrapper > header.closed #menu-button {
       pointer-events: all; }
     .wrapper > header.closed #nav {
